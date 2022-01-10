@@ -1,15 +1,17 @@
 import React from 'react'
+import Header from './components/Header'
+import Navbar from './components/Navbar'
 
 const App = () => {
     return (
-        <div>
-            <div className="container">
-                <div className="row">
-                    <div className="oc">qw21q231</div>
-
-                </div>
-            </div>
-        </div>
+        <>
+        <Navbar />
+        <Header />
+            {/* About us 
+            Projects
+            Portfolio
+            Contacs */}
+        </>
     )
 }
 

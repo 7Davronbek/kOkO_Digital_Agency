@@ -1,5 +1,80 @@
 body {
-    background-color: red !important;
-    // color: green !important;
+    color: #000;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin-bottom: 0 !important;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+        outline: none !important;
+
+        &:hover {
+            text-decoration: none !important;
+            color: #666;
+        }
+    }
+
+    ul,
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0 !important;
+    }
+
+    .myBtn {
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+        font-weight: 500;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+
+    .loader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        z-index: 9999;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .navBar {
+        padding: 20px 0;
+        box-shadow: 0 0 10px silver;
+    }
+
+    .header {
+
+        p {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            color: #888888;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 55px;
+            line-height: 82px;
+        }
+
+    }
 }
