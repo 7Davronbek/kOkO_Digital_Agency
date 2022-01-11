@@ -1,9 +1,17 @@
+// ************************* COLOR ************************
+$backgroundColor: #24252D;
+$colorPink: #bb92e5;
+$colorBlue: #5789ff;
+$colorGreen: #99d5ae;
+$colorWhite: #fff;
+
 body {
-    color: #000;
+    color: $colorWhite;
     width: 100%;
     overflow-x: hidden;
-    background-color: #fff;
+    background-color: $backgroundColor;
     font-family: 'Poppins', sans-serif;
+    background: #24252D;
 
     h1,
     h2,
@@ -34,12 +42,54 @@ body {
     }
 
     .myBtn {
-        transition: all .5s ease-in-out;
+        transition: all .7s ease-in-out;
         cursor: pointer;
         font-weight: 500;
+        position: relative;
+        overflow: hidden;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-color: $colorWhite;
+            transform: translateY(100px) rotate(10deg);
+            width: 200%;
+            height: 200%;
+            left: -50px;
+            top: -15px;
+            transition: all .5s ease-in-out;
+        }
+
+        &::before {
+            content: 'Get started';
+            font-size: 14px;
+            font-weight: 700;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .5s ease-in-out;
+            opacity: 0;
+            transform: translateY(10px);
+            color: $backgroundColor;
+        }
 
         &:hover {
-            transform: translateY(-3px);
+            // transform: translateY(-3px);
+
+            &::after {
+                transform: translateY(0) rotate(10deg);
+            }
+
+            &::before {
+                opacity: 1;
+                z-index: 2;
+                transform: translateY(0);
+            }
         }
     }
 
@@ -56,25 +106,118 @@ body {
         bottom: 0;
     }
 
+    .navbarLine {
+        padding-top: 100px;
+    }
+
     .navBar {
         padding: 20px 0;
         box-shadow: 0 0 10px silver;
+        background-color: #fff;
+        color: #000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99999;
+        transition: all .9s linear;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+
+
+        h6,
+        b {
+            transition: all .9s linear;
+        }
+
+        ul {
+
+            .myLi {
+                position: relative;
+
+                .myA {
+                    transition: all .9s linear !important;
+
+
+                    &.navlinkActive, &:hover {
+                        // background-color: #000;
+                        // color: #666;
+                        // padding: 70px 30px;
+
+                    }
+                }
+            }
+        }
+
+        &.navbarActive {
+            background-color: #0000000d;
+            color: $colorWhite;
+            padding: 5px 0;
+
+            a {
+                color: $colorWhite;
+            }
+        }
     }
 
     .header {
+        position: relative;
+
+        .secondi {
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            left: 1px;
+        }
+
+        .myBtn {
+            color: $colorBlue;
+            padding: 10px 30px;
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 12px 45px;
+            border: 2px solid $colorBlue;
+            background: transparent;
+        }
+
+        i {
+            img {
+                transform: translate(-135px, 60px);
+            }
+        }
 
         p {
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 21px;
-            color: #888888;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            color: #c9c9c9;
+            width: 85%;
+            margin-top: 25px;
+            margin-bottom: 65px !important;
         }
 
         h1 {
             font-weight: 600;
-            font-size: 55px;
+            font-size: 48px;
             line-height: 82px;
+            color: $colorBlue;
+            margin-top: 150px;
         }
 
+        video {
+            position: absolute;
+            z-index: -1;
+        }
+
+    }
+
+    .services {
+
+        .card {
+
+            .card-header {
+            }
+        }
     }
 }
