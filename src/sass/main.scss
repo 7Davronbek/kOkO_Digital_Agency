@@ -41,6 +41,16 @@ body {
         padding: 0 !important;
     }
 
+    .card {
+        background-color: transparent;
+        padding: 0;
+
+        .card-body {
+            background-color: transparent;
+            padding: 0;
+        }
+    }
+
     .myBtn {
         transition: all .7s ease-in-out;
         cursor: pointer;
@@ -123,6 +133,7 @@ body {
         transition: all .9s linear;
         backdrop-filter: blur(15px);
         -webkit-backdrop-filter: blur(15px);
+        user-select: none;
 
 
         h6,
@@ -171,7 +182,7 @@ body {
         }
 
         .myBtn {
-            color: $colorBlue;
+            color: $colorWhite;
             padding: 10px 30px;
             margin-top: 20px;
             font-size: 14px;
@@ -213,11 +224,105 @@ body {
     }
 
     .services {
+        user-select: none;
+        padding-top: 100px;
+        position: relative;
 
         .card {
+            width: 25%;
+            transition: .5s ease;
+            z-index: 1;
+            
+            .card-body {
 
-            .card-header {
+                i {
+                    position: absolute;
+                    z-index: -1;
+                }
+
+                p {
+                    transition: all .5s ease;
+                    transform: translateY(200px);
+                    opacity: 0;
+                    width: 80%;
+                    margin: 0 auto;
+                    text-align: center;
+                    color: #eee;
+                    font-size: 14px;
+                }
+
+                h5 {
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 17px;
+                    text-transform: uppercase;
+                    transition: all .5s ease;
+                    transform: translateY(150px);
+                    width: 80%;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+            }
+
+            // &::after {
+            //     content: '';
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     right: 0;
+            //     bottom: 0;
+            //     background-color: #00000059;
+            //     height: 400px;
+            //     z-index: -1;
+            //     transition: all .5s ease;
+            // }
+
+            &:hover {
+                width: 35%;
+                transform:  translateY(-40px);
+                z-index: 2;
+                cursor: pointer;
+
+                // &::after {
+                //     opacity: 0;
+                // }
+
+                h5 {
+                    font-size: 22px;
+                    transform: translateY(100px);
+                }
+
+                p {
+                    opacity: 1;
+                    transform: translateY(125px);
+                    font-weight: 400;
+                    font-size: 15px;
+                }
             }
         }
+    }
+
+
+
+
+    // .div {
+    //     animation: anim 10s linear infinite;
+    //     ul {
+    //         white-space: nowrap;
+    //         overflow: hidden;
+    //     }
+    // }
+}
+
+
+
+
+@keyframes anim {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-50%, 0, 0);
     }
 }

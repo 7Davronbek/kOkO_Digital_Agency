@@ -25,7 +25,7 @@ const Navbar = () => {
                         <Link to='/' className="logo d-flex align-items-center">
                             <img className='' src="/assets/image/miniLogo.svg" alt="" />
                             <h6>
-                                Smartpackprint
+                                Koko Agency
                             </h6>
                         </Link>
                     </div>

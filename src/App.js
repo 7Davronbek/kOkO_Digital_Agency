@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from './components/Header'
-import Navbar from './components/Navbar'
 import 'aos/dist/aos.css'
 import 'aos/dist/aos.js'
 import Services from './components/Services'
