@@ -148,12 +148,31 @@ body {
 
                 .myA {
                     transition: all .9s linear !important;
+                    position: relative;
+
+                    &::after {
+
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        background-color: #DE1E3A;
+                        left: 0;
+                        bottom: -10px;
+                        transform: scaleX(0);
+                        transform-origin: left;
+                        transition: all 0.5s ease;
+                    }
 
 
-                    &.navlinkActive, &:hover {
-                        // background-color: #000;
-                        // color: #666;
-                        // padding: 70px 30px;
+                    &.navlinkActive,
+                    &:hover {
+
+                        &::after {
+                            transform: scaleX(1);
+                            transform-origin: right;
+                            background-color: #DE1E3A;
+                        }
 
                     }
                 }
@@ -228,16 +247,28 @@ body {
         padding-top: 100px;
         position: relative;
 
+        h4 {
+            margin: 20px 0 80px 0 !important;
+            color: $colorBlue;
+            font-weight: bold;
+            font-size: 38px;
+        }
+
         .card {
             width: 25%;
             transition: .5s ease;
             z-index: 1;
-            
+
             .card-body {
 
                 i {
                     position: absolute;
                     z-index: -1;
+
+                    img {
+                        transition: all .5s ease;
+                        opacity: 0.3;
+                    }
                 }
 
                 p {
@@ -264,28 +295,20 @@ body {
                 }
             }
 
-            // &::after {
-            //     content: '';
-            //     position: absolute;
-            //     top: 0;
-            //     left: 0;
-            //     right: 0;
-            //     bottom: 0;
-            //     background-color: #00000059;
-            //     height: 400px;
-            //     z-index: -1;
-            //     transition: all .5s ease;
-            // }
 
             &:hover {
                 width: 35%;
-                transform:  translateY(-40px);
+                transform: translateY(-60px);
                 z-index: 2;
                 cursor: pointer;
 
-                // &::after {
-                //     opacity: 0;
-                // }
+                i {
+                    img {
+                        opacity: 1;
+                    }
+                }
+
+
 
                 h5 {
                     font-size: 22px;
@@ -301,6 +324,12 @@ body {
             }
         }
     }
+
+    .servicesLine {
+        margin-bottom: 400px;
+    }
+
+    .portfolio {}
 
 
 

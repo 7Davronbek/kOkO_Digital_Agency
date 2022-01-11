@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-import { useHistory } from 'react-router-dom';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min'
+import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
-    const history = useHistory()
+    const location = useLocation();
 
         const changeNavbar = () => {
             if(window.scrollY >= 30) {
@@ -32,11 +31,11 @@ const Navbar = () => {
 
                     <div className="col-md-8">
                         <ul className='d-flex align-items-center justify-content-center'>
-                            <li className={`mr-5 myLi`}><Link className={`myA  ${history.location.pathname === '/' ? 'navlinkActive' : ''}`} to='/'>Home</Link></li>
-                            <li className={`mr-5 myLi`}><Link className={`myA ${history.location.pathname === '/about-us' ? 'navlinkActive' : ''}`} to='/about-us'>About us</Link></li>
-                            <li className={`mr-5 myLi`}><Link className={`myA ${history.location.pathname === '/projects' ? 'navlinkActive' : ''}`} to='/projects'>Projects</Link></li>
-                            <li className={`mr-5 myLi`}><Link className={`myA ${history.location.pathname === '/contacts' ? 'navlinkActive' : ''}`} to='/contacts'>Contacts</Link></li>
-                            <li className={`mr-5 myLi`}><Link className={`myA ${history.location.pathname === '/services' ? 'navlinkActive' : ''}`} to='/services'>Services</Link></li>
+                            <li className={`mr-5 myLi`}><Link className={`myA  ${location.pathname === '/' ? 'navlinkActive' : ''}`} to='/'>Home</Link></li>
+                            <li className={`mr-5 myLi`}><Link className={`myA ${location.pathname === '/about-us' ? 'navlinkActive' : ''}`} to='/about-us'>About us</Link></li>
+                            <li className={`mr-5 myLi`}><Link className={`myA ${location.pathname === '/projects' ? 'navlinkActive' : ''}`} to='/projects'>Projects</Link></li>
+                            <li className={`mr-5 myLi`}><Link className={`myA ${location.pathname === '/contacts' ? 'navlinkActive' : ''}`} to='/contacts'>Contacts</Link></li>
+                            <li className={`mr-5 myLi`}><Link className={`myA ${location.pathname === '/services' ? 'navlinkActive' : ''}`} to='/services'>Services</Link></li>
                         </ul>
                     </div>
 
