@@ -1,0 +1,182 @@
+
+// ************************* COLOR ************************
+$backgroundColor: #24252d;
+$colorPink: #bb92e5;
+$colorBlue: #6f73ee;
+$colorGreen: #99d5ae;
+$colorWhite: #fff;
+
+// *********************** ICON ************************
+
+.icon {
+    width: 28px;
+    height: 25px;
+    display: inline-block;
+  
+    mask-size: 100%;
+    mask-repeat: no-repeat;
+  
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+  
+    background-color: #fff;
+  
+    &.icon-telegram {
+      mask-image: url("../image/tg.svg");
+      -webkit-mask-image: url("../image/tg.svg");
+      width: 29px;
+    }
+  
+    &.icon-instagram {
+      mask-image: url("../image/ins.svg");
+      -webkit-mask-image: url("../image/ins.svg");
+    }
+}
+
+// ********************** DEFAULT *****************************
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0 !important;
+}
+
+.card {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+
+  .card-body {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+  }
+}
+
+.myBtn {
+  transition: all 0.7s ease-in-out;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  color: $colorBlue;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 45px;
+  border: 2px solid $colorBlue;
+  background: transparent;
+  transition: all 0.5s ease-in-out;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $colorWhite;
+    transform: translateY(100px) rotate(10deg);
+    width: 200%;
+    height: 200%;
+    left: -50px;
+    top: -15px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &::before {
+    content: "Get started";
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    font-weight: 700;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(10px);
+    color: $backgroundColor;
+
+    @media(max-width: 992px) {
+      font-size: 16px;
+    }
+  }
+
+  &:hover {
+    border-color: transparent;
+    // transform: translateY(-3px);
+
+    &::after {
+      transform: translateY(0) rotate(10deg);
+    }
+
+    &::before {
+      opacity: 1;
+      z-index: 2;
+      transform: translateY(0);
+    }
+  }
+
+  @media(max-width: 992px) {
+    font-size: 16px;
+  }
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $backgroundColor;
+  position: fixed;
+  z-index: 999999;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  h5 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin-bottom: 0 !important;
+  }
+
+  img {
+    user-select: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+    outline: none !important;
+
+    &:hover {
+      text-decoration: none !important;
+      color: #666;
+    }
+  }
+
+.myText {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 51px;
+
+    @media(max-width: 676px) {
+      font-size: 30px;
+      line-height: 34px;
+    }
+}
