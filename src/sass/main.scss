@@ -52,6 +52,7 @@ body {
         ul {
 
           .servicesLi {
+            z-index: 99;
 
             @media(max-width: 992px) {
               transform: translateX(58px);
@@ -96,7 +97,7 @@ body {
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(40, 48, 54, 0.6);
+        background: rgba(0, 0, 0, 0.85);
         -webkit-backdrop-filter: blur(50px);
         backdrop-filter: blur(50px);
         height: 100vh;
@@ -114,7 +115,7 @@ body {
       position: relative;
       width: 20px;
       height: 20px;
-      margin-right: 20px;
+      margin-right: 25px;
       transition: all .5s ease-in-out;
       z-index: 999999;
 
@@ -207,7 +208,7 @@ body {
       .servicesDiv {
         top: 25px;
         background: #000000d9;
-        padding: 15px 25px;
+        padding: 25px 25px;
         width: 200px;
         left: -25px;
         border-radius: 10px;
