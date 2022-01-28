@@ -46,7 +46,7 @@ const WebHeader = () => {
                         </div>
                     </div>
 
-                    <div className="row align-items-center mt-4">
+                    <div className="row flex-lg-row flex-column-reverse align-items-center mt-4">
                         <div data-aos='fade-right' className="col-lg-6">
                             <h1>Разработка телеграм ботов</h1>
                             <h6>Телеграм бот – это программа, выполняющая различные действия, автоматически или по определенной команде. Боты «Телеграм» универсальны и выполняют множество задач на любой вкус. Найти информацию, скачать книгу, фильм, музыку, развлечь — это лишь маленький перечень возможностей ботов</h6>

@@ -2,9 +2,9 @@
 
 html {
   ::selection {
-  background-color: $colorBlue;
-  color: #fff;
-}
+    background-color: $colorBlue;
+    color: #fff;
+  }
 
   // scroll-behavior: smooth;
   overflow-x: hidden;
@@ -827,6 +827,7 @@ body {
 
     .carouselWrap {
       width: 200px;
+
       img {
         width: 100%;
       }
@@ -1002,6 +1003,7 @@ body {
 
     .i {
       overflow: hidden;
+
       img {
         border-radius: 20px;
         transition: all .5s ease;
@@ -1674,8 +1676,6 @@ body {
     }
   }
 
-  // .webHeader {
-  // }
   .myWebHeader {
     padding: 50px 0;
 
@@ -1686,23 +1686,50 @@ body {
       margin: 0.8rem 0 1.5rem 0;
       margin-bottom: 35px !important;
       color: $colorBlue;
+
+      @media(max-width: 767px) {
+        font-size: 36px;
+        line-height: 50px;
+        margin-bottom: 25px !important;
+      }
+    }
+
+    i {
+      img {
+        @media(max-width: 767px) {
+          width: 100%;
+        }
+      }
     }
 
     p {
       font-size: 16px;
       line-height: 28px;
       margin-top: 15px;
+
+      @media(max-width: 992px) {
+        margin-bottom: 20px !important;
+      }
+    }
+
+    @media(max-width: 767px) {
+      padding: 20px 0;
     }
   }
 
-  // .webConsist {
-  // }
   .myWebConsist {
     padding: 0px 0 50px 0;
 
     i {
       img {
         border-radius: 20px;
+
+        @media(max-width: 767px) {
+          height: 400px;
+          display: flex;
+          margin: 10px auto;
+          width: auto !important;
+        }
       }
     }
 
@@ -1715,7 +1742,7 @@ body {
     }
 
     .myRow {
-      border-bottom: 1px dashed $colorGreen;
+      border-bottom: 1px dashed $colorBlue;
       padding-bottom: 50px;
     }
 
@@ -1726,6 +1753,13 @@ body {
       margin: 0.8rem 0 1.5rem 0;
       margin-bottom: 45px !important;
       color: $colorBlue;
+
+      @media(max-width: 767px) {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
     }
 
     p {
@@ -1745,22 +1779,31 @@ body {
         left: -2px;
         top: 50%;
         transform: translateY(-50%);
+
+      }
+
+      @media(max-width: 767px) {
+        width: 70%;
+        margin: 0 auto;
       }
     }
   }
 
-  // .webWhyWe {
-  // }
   .myWebWhyWe {
     padding: 0px 0 50px 0;
 
     h2 {
-      font-weight: 700;
+      font-weight: 600;
       font-size: 2.875rem;
       line-height: 1;
       margin: 0.8rem 0 1.5rem 0;
       margin-bottom: 45px !important;
       color: $colorBlue;
+
+      @media(max-width: 767px) {
+        font-size: 40px;
+        line-height: 55px;
+      }
     }
 
     h1 {
@@ -1783,8 +1826,6 @@ body {
     }
   }
 
-  // .webSupport {
-  // }
   .myWebSupport {
     padding: 75px 0;
     background: rgba(44, 53, 61, 0.2);
@@ -1846,7 +1887,7 @@ body {
 
       @media(max-width: 600px) {
         right: 35px;
-        bottom: 75px;
+        bottom: 45px;
       }
     }
 
@@ -1872,7 +1913,7 @@ body {
 
       @media(max-width: 676px) {
         right: 35px;
-        bottom: 75px;
+        bottom: 45px;
       }
     }
   }
@@ -1990,7 +2031,7 @@ textarea {
 @keyframes anim1 {
   0% {
     transform: scale(2.2);
-    opacity: 0.1;
+    opacity: 0.2;
   }
 
   // 50% {
