@@ -53,7 +53,7 @@ const Contacts = () => {
                                         </div>
                                         <div className="col-md-6 mb-5">
                                             <div className="inputWrap">
-                                                <input onClick={() => setForm1(true)} type="text" className='form-control' />
+                                                <input onClick={() => setForm1(true)} type="number" className='form-control' />
                                                 <h6 className={`${form1 ? 'active' : ''}`}>Phone number*</h6>
                                             </div>
                                         </div>

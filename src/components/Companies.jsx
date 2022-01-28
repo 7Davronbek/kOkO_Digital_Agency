@@ -26,7 +26,7 @@ const Companies = () => {
                             0: {
                                 items: 1
                             },
-                            370: {
+                            330: {
                                 items: 2
                             },
                             550: {

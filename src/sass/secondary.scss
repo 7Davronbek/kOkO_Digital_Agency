@@ -31,6 +31,11 @@ $colorWhite: #fff;
       mask-image: url("../image/ins.svg");
       -webkit-mask-image: url("../image/ins.svg");
     }
+  
+    &.icon-facebook {
+      mask-image: url("../image/facebook.png");
+      -webkit-mask-image: url("../image/facebook.png");
+    }
 }
 
 // ********************** DEFAULT *****************************

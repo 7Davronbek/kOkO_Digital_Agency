@@ -760,6 +760,10 @@ body {
       @media(max-width: 767px) {
         width: 180px;
       }
+
+      @media(max-width: 500px) {
+        width: 150px;
+      }
     }
   }
 
@@ -811,10 +815,18 @@ body {
 
     .alice-carousel__next-btn {
       right: 20px;
+
+      @media(max-width: 767px) {
+        right: 10px;
+      }
     }
 
     .alice-carousel__prev-btn {
       left: 20px;
+
+      @media(max-width: 767px) {
+        left: 10px;
+      }
     }
 
     .alice-carousel__dots-item {
@@ -831,12 +843,20 @@ body {
     h6 {
       font-size: 24px;
       color: $colorBlue;
+
+      @media(max-width: 767px) {
+        font-size: 22px;
+      }
     }
 
     h5 {
       font-size: 30px;
       color: #fff;
       margin: 15px 0 35px 0 !important;
+
+      @media(max-width: 767px) {
+        font-size: 25px;
+      }
     }
 
     .card {
@@ -849,37 +869,8 @@ body {
           transition: all 0.8s ease-in-out;
         }
 
-        .iconWrap {
-          top: 50%;
-          display: flex;
-          flex-direction: column;
-          right: 30px;
-          transform: translateY(-50%);
-          position: absolute;
-
-          .icon {
-            opacity: 0;
-            transform: translateX(10px);
-            background-color: $colorGreen;
-            margin-bottom: 15px;
-            z-index: -1;
-
-            &:nth-child(1) {
-              transition: all 0.4s ease-in-out;
-            }
-
-            &:nth-child(2) {
-              transition: all 0.4s ease-in-out 0.2s;
-            }
-
-            &:nth-child(3) {
-              transition: all 0.4s ease-in-out 0.4s;
-            }
-
-            &:nth-child(4) {
-              transition: all 0.4s ease-in-out 0.6s;
-            }
-          }
+        @media(max-width: 767px) {
+          padding: 10px;
         }
       }
 
@@ -895,29 +886,24 @@ body {
           span {
             text-transform: uppercase;
           }
+
+          @media(max-width: 767px) {
+            font-size: 16px;
+          }
         }
 
         p {
           font-size: 18px;
           color: #fefefe;
           margin-top: 10px;
-        }
-      }
 
-      &:hover {
-        .card-header {
-          img {
-            opacity: 0.5;
+          @media(max-width: 767px) {
+            font-size: 14px;
           }
         }
 
-        .iconWrap {
-          .icon {
-            opacity: 1;
-            transform: translateX(0);
-            z-index: 1;
-            cursor: pointer;
-          }
+        @media(max-width: 767px) {
+          padding: 10px;
         }
       }
     }
@@ -1123,6 +1109,11 @@ body {
       font-size: 60px;
       color: $colorWhite;
       margin-bottom: 50px !important;
+
+      @media(max-width: 767px) {
+        font-size: 40px;
+        line-height: 55px;
+      }
     }
 
     a {
@@ -1130,6 +1121,11 @@ body {
       color: $colorWhite;
       letter-spacing: 2px;
       font-weight: 600;
+
+      @media(max-width: 767px) {
+        font-size: 24px;
+        letter-spacing: 1px;
+      }
     }
 
     .myBtn {
@@ -1156,6 +1152,11 @@ body {
           font-weight: 500;
         }
       }
+
+      @media(max-width: 767px) {
+        font-size: 15px;
+        padding: 10px 20px;
+      }
     }
 
     &::before {
@@ -1175,6 +1176,10 @@ body {
 
     h1 {
       color: $colorBlue;
+
+      @media(max-width: 767px) {
+        font-size: 30px;
+      }
     }
 
     h6 {
@@ -1248,10 +1253,10 @@ body {
       b {
         color: #fff;
       }
+    }
 
-      @media(max-width: 767px) {
-        padding: 20px 0 30px;
-      }
+    @media(max-width: 767px) {
+      padding: 20px 0 30px;
     }
   }
 
@@ -1341,7 +1346,7 @@ body {
   }
 
   .design {
-    background-image: url(../image/design.webp);
+    background-image: url(../image/cover1.jpg);
   }
 
   .moushen {
@@ -1350,13 +1355,17 @@ body {
 
   .courses {
     width: 100%;
-    background-size: cover;
-    height: 80vh;
+    // background-size: cover;
+    // object-fit: cover;
+    height: 60vh;
+    vertical-align: middle;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-position-x: -150px;
+    background-repeat: no-repeat;
+    // background-position-x: -150px;
     position: relative;
+    background-size: 100% 60vh;
 
     .container {
       z-index: 10;
@@ -1392,6 +1401,10 @@ body {
       right: 0;
       bottom: 0;
       background-color: #000000ab;
+    }
+
+    @media(max-width: 767px) {
+      background-size: auto;
     }
   }
 
@@ -1437,6 +1450,7 @@ body {
 
         @media(max-width: 992px) {
           right: 0;
+          z-index: -1;
         }
       }
 

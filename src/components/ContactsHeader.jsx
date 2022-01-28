@@ -15,8 +15,8 @@ const ContactsHeader = () => {
                     <div className="col-12 text-center">
                         <h1 data-aos='fade-down'>Contacts</h1>
                     </div>
-                    <div className="col-12 d-flex align-items-center justify-content-center">
-                        <div data-aos='fade-right' className="d-flex align-items-center flex-column mr-5">
+                    <div className="col-12 flex-column flex-lg-row d-flex align-items-center justify-content-center">
+                        <div data-aos='fade-right' className="d-flex align-items-center flex-column mr-lg-5 mb-lg-0 mb-4">
                             <a href="tel: +998943698058">+99897 777 77 07</a>
                             <button className="btn myBtn first">Bepul Konsultatsiya</button>
                         </div>
@@ -29,8 +29,7 @@ const ContactsHeader = () => {
                     <div className="col-12 text-center mt-5 pt-5">
                         <i data-aos='fade-up' className="icon icon-instagram mr-3"></i>
                         <i data-aos='fade-up' className="icon icon-telegram mr-3"></i>
-                        <i data-aos='fade-up' className="icon icon-telegram mr-3"></i>
-                        <i data-aos='fade-up' className="icon icon-instagram "></i>
+                        <i data-aos='fade-up' className="icon icon-facebook  mb-1"></i>
                     </div>
                 </div>
             </div>

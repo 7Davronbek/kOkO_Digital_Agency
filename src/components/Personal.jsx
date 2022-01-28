@@ -32,13 +32,6 @@ const Personal = () => {
                             <div className="card">
                                 <div className="card-header position-relative">
                                     <img src="/assets/image/personal1.jpg" alt="" className="w-100" />
-
-                                    <div className="iconWrap">
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                    </div>
                                 </div>
                                 <div className="card-body">
                                     <h4>Elvilra <span>Muhamedjanova</span></h4>
@@ -50,13 +43,6 @@ const Personal = () => {
                             <div className="card">
                                 <div className="card-header position-relative">
                                     <img src="/assets/image/personal2.png" alt="" className="w-100" />
-
-                                    <div className="iconWrap">
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                    </div>
                                 </div>
                                 <div className="card-body">
                                     <h4>Farxod <span>Eshonov</span></h4>
@@ -68,13 +54,6 @@ const Personal = () => {
                             <div className="card">
                                 <div className="card-header position-relative">
                                     <img src="/assets/image/personal3.jpg" alt="" className="w-100" />
-
-                                    <div className="iconWrap">
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                    </div>
                                 </div>
                                 <div className="card-body">
                                     <h4>Elvilra <span>Muhamedjanova</span></h4>
@@ -87,13 +66,6 @@ const Personal = () => {
                             <div className="card">
                                 <div className="card-header position-relative">
                                     <img src="/assets/image/personal2.png" alt="" className="w-100" />
-
-                                    <div className="iconWrap">
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                    </div>
                                 </div>
                                 <div className="card-body">
                                     <h4>Elvilra <span>Muhamedjanova</span></h4>
@@ -105,13 +77,6 @@ const Personal = () => {
                             <div className="card">
                                 <div className="card-header position-relative">
                                     <img src="/assets/image/personal3.jpg" alt="" className="w-100" />
-
-                                    <div className="iconWrap">
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                    </div>
                                 </div>
                                 <div className="card-body">
                                     <h4>Elvilra <span>Muhamedjanova</span></h4>
@@ -123,13 +88,6 @@ const Personal = () => {
                             <div className="card">
                                 <div className="card-header position-relative">
                                     <img src="/assets/image/personal2.png" alt="" className="w-100" />
-
-                                    <div className="iconWrap">
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                    </div>
                                 </div>
                                 <div className="card-body">
                                     <h4>Farxod <span>Eshonov</span></h4>
@@ -141,13 +99,6 @@ const Personal = () => {
                             <div className="card">
                                 <div className="card-header position-relative">
                                     <img src="/assets/image/personal1.jpg" alt="" className="w-100" />
-
-                                    <div className="iconWrap">
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                    </div>
                                 </div>
                                 <div className="card-body">
                                     <h4>Elvilra <span>Muhamedjanova</span></h4>
@@ -159,13 +110,6 @@ const Personal = () => {
                             <div className="card">
                                 <div className="card-header position-relative">
                                     <img src="/assets/image/personal2.png" alt="" className="w-100" />
-
-                                    <div className="iconWrap">
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                    </div>
                                 </div>
                                 <div className="card-body">
                                     <h4>Farxod <span>Eshonov</span></h4>
@@ -177,13 +121,6 @@ const Personal = () => {
                             <div className="card">
                                 <div className="card-header position-relative">
                                     <img src="/assets/image/personal1.jpg" alt="" className="w-100" />
-
-                                    <div className="iconWrap">
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                    </div>
                                 </div>
                                 <div className="card-body">
                                     <h4>Elvilra <span>Muhamedjanova</span></h4>
@@ -195,13 +132,6 @@ const Personal = () => {
                             <div className="card">
                                 <div className="card-header position-relative">
                                     <img src="/assets/image/personal2.png" alt="" className="w-100" />
-
-                                    <div className="iconWrap">
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                    </div>
                                 </div>
                                 <div className="card-body">
                                     <h4>Farxod <span>Eshonov</span></h4>
@@ -213,13 +143,6 @@ const Personal = () => {
                             <div className="card">
                                 <div className="card-header position-relative">
                                     <img src="/assets/image/personal3.jpg" alt="" className="w-100" />
-
-                                    <div className="iconWrap">
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                        <i className='icon icon-instagram'></i>
-                                        <i className='icon icon-telegram'></i>
-                                    </div>
                                 </div>
                                 <div className="card-body">
                                     <h4>Elvilra <span>Muhamedjanova</span></h4>
