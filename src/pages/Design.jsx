@@ -70,7 +70,7 @@ const Design = () => {
             </div>
           </div>
 
-          <div className="row align-items-center mt-4">
+          <div className="row flex-lg-row flex-column-reverse align-items-center mt-4">
             <div data-aos='fade-right' className="col-lg-6">
               <h1>Веб дизайн</h1>
               <h6>Веб-дизайн (от англ. Web design)  - это направление веб разработки и разные виды дизайна.  Основной целью веб-дизайна является проектирование пользовательских  веб-интерфейсов для сайтов или веб-приложений.</h6>
@@ -100,7 +100,7 @@ const Design = () => {
             </div>
           </div>
 
-          <div className="row align-items-center mt-4 myRow">
+          <div className="row flex-lg-row flex-column-reverse align-items-center mt-4 myRow">
             <div data-aos='fade-right' className="col-lg-6 ml-auto">
               <h1>Разработка брендбуков</h1>
               <h5>Разработка брендбука (brand book) – это совмещение работ по формированию основного документа, который состоит из важнейших информаций о бренде, правил использования, рекомендации и графического стиля.</h5>
@@ -129,7 +129,7 @@ const Design = () => {
             <div data-aos='fade-up' className="col-12 text-center">
               <h1>Вам также подходят</h1>
             </div>
-            <div data-aos='fade-up' className="col-lg-5 offset-lg-1">
+            <div data-aos='fade-up' className="col-lg-5 offset-lg-1  mb-4 mb-lg-0 ">
               <Link to='/web-development'>
                 <div className="card">
                   <div className="card-body">

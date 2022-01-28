@@ -13,10 +13,21 @@ const Personal = () => {
                 </div>
                 <div className="row">
                     <AliceCarousel responsive={{
-                        0: {
+                        350: {
+                            items: 2
+                        },
+                        1000: {
+                            items: 3
+                        },
+                        1200: {
                             items: 4
                         }
-                    }} animationType='slide'   mouseTracking autoPlay={true} autoPlayInterval={3500} infinite={true} className=''>
+                    }} animationType='slide'  
+                        mouseTracking 
+                        // autoPlay={true} 
+                        autoPlayInterval={3500} 
+                        infinite={true} 
+                        className=''>
                         <div className="carouserWrap">
                             <div className="card">
                                 <div className="card-header position-relative">

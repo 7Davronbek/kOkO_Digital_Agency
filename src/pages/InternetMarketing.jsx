@@ -76,7 +76,7 @@ const InternetMarketing = () => {
             </div>
           </div>
 
-          <div className="row align-items-center mt-4">
+          <div className="row flex-lg-row flex-column-reverse align-items-center mt-4">
             <div data-aos='fade-right' className="col-lg-6">
               <h1>SMM</h1>
               <h6>SMM (с англ "social media marketing") – это маркетинг в социальных медиа для того, чтобы привлечь внимание к бренду или товару.  Для этого могут использоваться различные социальные сети. </h6>
@@ -106,7 +106,7 @@ const InternetMarketing = () => {
             </div>
           </div>
 
-          <div className="row align-items-center mt-4 myRow">
+          <div className="row flex-lg-row flex-column-reverse align-items-center mt-4 myRow">
             <div data-aos='fade-right' className="col-lg-6 ml-auto">
               <h1>Контестная реклама</h1>
               <h5>Контекстная реклама — это различные объявления (текстовые, графические, видео), которые показываются пользователям в соответствии с их поисковыми запросами, интересами или поведением в интернете. Контекстная реклама показывается в поисковых системах, на различных сайтах, в мобильных приложениях и на других ресурсах.</h5>
@@ -135,7 +135,7 @@ const InternetMarketing = () => {
             <div data-aos='fade-up' className="col-12 text-center">
               <h1>Вам также подходят</h1>
             </div>
-            <div data-aos='fade-up' className="col-lg-5 offset-lg-1">
+            <div data-aos='fade-up' className="col-lg-5 offset-lg-1 mb-4 mb-lg-0 ">
               <Link to='/design'>
                 <div className="card">
                   <div className="card-body">

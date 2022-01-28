@@ -50,7 +50,7 @@ const Moushen = () => {
             <div data-aos='fade-up' className="col-12 text-center">
               <h1>Вам также подходят</h1>
             </div>
-            <div data-aos='fade-up' className="col-lg-5 offset-lg-1">
+            <div data-aos='fade-up' className="col-lg-5 offset-lg-1  mb-4 mb-lg-0 ">
               <Link to='/design'>
                 <div className="card">
                   <div className="card-body">

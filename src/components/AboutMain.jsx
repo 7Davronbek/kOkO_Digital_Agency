@@ -18,7 +18,7 @@ const AboutMain = () => {
                         <p data-aos='fade-right' className='mt-4'><b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, velit cumque facilis dolorem blanditiis sapiente sunt eius suscipit? Aliquid, deleniti?</b></p>
                         <p data-aos='fade-right' className='mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe velit dolorum quas repudiandae recusandae distinctio facere dignissimos nam autem perspiciatis. Quidem mollitia odio nemo nesciunt magni eius repellat ullam enim.</p>
                     </div>
-                    <div  data-aos='fade-left' className="col-lg-5 ml-auto">
+                    <div  data-aos='fade-left' className="col-lg-5 ml-auto mt-5 mt-lg-0">
                         <i><img src="/assets/image/card1.png" alt="" className="w-100 rounded"/></i>
                     </div>
                 </div>

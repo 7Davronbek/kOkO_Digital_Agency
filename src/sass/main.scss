@@ -578,81 +578,6 @@ body {
     }
   }
 
-  .myWebDepends {
-    padding: 50px 0;
-
-    h1 {
-      font-size: 32px;
-      margin-bottom: 45px !important;
-      color: $colorBlue;
-    }
-
-    .card {
-      height: 400px;
-      overflow: hidden;
-      border: 0;
-
-      .card-body {
-        border: 0;
-        overflow: hidden;
-
-        h5 {
-          font-size: 17px;
-          color: $colorGreen;
-          text-align: center;
-          transform: translateY(160px);
-          transition: all 0.5s ease;
-          text-transform: uppercase;
-        }
-
-        p {
-          transition: all 0.5s ease;
-          transform: translateY(250px);
-          opacity: 0;
-          margin: 0 auto;
-          text-align: center;
-          color: #eee;
-          font-weight: 500;
-          font-size: 18px;
-          width: 60%;
-        }
-
-        i {
-          display: block;
-          position: absolute;
-          z-index: -1;
-          top: -100px;
-          width: 100%;
-          opacity: 0.3;
-          transition: all .5s ease;
-
-          img {
-            border-radius: 10px;
-          }
-        }
-
-        &:hover {
-
-          h5 {
-            transform: translateY(150px);
-            font-size: 20px;
-          }
-
-          p {
-            transform: translateY(180px);
-            opacity: 1;
-          }
-
-          i {
-            opacity: 0.8;
-            transform: scale(1.1);
-          }
-        }
-      }
-    }
-
-  }
-
   .servicesLine {
     margin-bottom: 400px;
   }
@@ -1300,22 +1225,32 @@ body {
       margin-bottom: 40px !important;
       text-transform: uppercase;
       letter-spacing: 3px;
-      font-size: 14px;
-      font-weight: 600;
+      font-size: 16px;
+      font-weight: 500;
       color: $colorBlue
     }
 
     h1 {
       font-size: 48px;
+
+      @media(max-width: 767px) {
+        font-size: 38px;
+        line-height: 50px;
+        text-align: center;
+      }
     }
 
     p {
       line-height: 1.5;
-      font-size: 14px;
+      font-size: 15px;
       color: $colorGreen;
 
       b {
         color: #fff;
+      }
+
+      @media(max-width: 767px) {
+        padding: 20px 0 30px;
       }
     }
   }
@@ -1801,8 +1736,8 @@ body {
       color: $colorBlue;
 
       @media(max-width: 767px) {
-        font-size: 40px;
-        line-height: 55px;
+        font-size: 38px;
+        line-height: 45px;
       }
     }
 
@@ -1839,6 +1774,10 @@ body {
       font-size: 32px;
       margin-bottom: 16px !important;
       color: $colorBlue;
+
+      @media(max-width: 767px) {
+        font-size: 28px;
+      }
     }
 
     p {
@@ -1867,6 +1806,99 @@ body {
       z-index: -1;
       left: 0;
     }
+
+    @media(max-width: 767px) {
+      margin-bottom: 0;
+    }
+  }
+
+  .myWebDepends {
+    padding: 50px 0;
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 45px !important;
+      color: $colorBlue;
+
+      @media(max-width: 767px) {
+        font-size: 28px;
+      }
+    }
+
+    .card {
+      height: 400px;
+      overflow: hidden;
+      border: 0;
+
+      .card-body {
+        border: 0;
+        overflow: hidden;
+
+        h5 {
+          font-size: 17px;
+          color: $colorGreen;
+          text-align: center;
+          transform: translateY(160px);
+          transition: all 0.5s ease;
+          text-transform: uppercase;
+
+          @media(max-width: 767px) {
+            transform: translateY(150px);
+            font-size: 20px;
+          }
+        }
+
+        p {
+          transition: all 0.5s ease;
+          transform: translateY(250px);
+          opacity: 0;
+          margin: 0 auto;
+          text-align: center;
+          color: #eee;
+          font-weight: 500;
+          font-size: 18px;
+          width: 60%;
+
+          @media(max-width: 767px) {
+            transform: translateY(180px);
+            opacity: 1;
+          }
+        }
+
+        i {
+          display: block;
+          position: absolute;
+          z-index: -1;
+          top: -100px;
+          width: 100%;
+          opacity: 0.3;
+          transition: all .5s ease;
+
+          img {
+            border-radius: 10px;
+          }
+        }
+
+        &:hover {
+
+          h5 {
+            transform: translateY(150px);
+            font-size: 20px;
+          }
+
+          p {
+            transform: translateY(180px);
+            opacity: 1;
+          }
+
+          i {
+            opacity: 0.8;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+
   }
 
   .phoneWrap {
@@ -1885,7 +1917,7 @@ body {
       border-radius: 50%;
       animation: anim1 3s linear infinite reverse;
 
-      @media(max-width: 600px) {
+      @media(max-width: 676px) {
         right: 35px;
         bottom: 45px;
       }
