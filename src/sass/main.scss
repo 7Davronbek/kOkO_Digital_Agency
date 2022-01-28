@@ -1,6 +1,11 @@
 @import "./secondary.scss";
 
 html {
+  ::selection {
+  background-color: $colorBlue;
+  color: #fff;
+}
+
   // scroll-behavior: smooth;
   overflow-x: hidden;
 
@@ -447,7 +452,6 @@ body {
   }
 
   .services {
-    user-select: none;
     padding: 70px 0;
     position: relative;
 
@@ -456,6 +460,11 @@ body {
       color: $colorBlue;
       font-weight: bold;
       font-size: 38px;
+
+      @media(max-width: 767px) {
+        font-size: 35px;
+        margin-bottom: 40px !important;
+      }
     }
 
     .card {
@@ -477,15 +486,20 @@ body {
         }
 
         p {
-          transition: all 0.5s ease;
+          transition: all 0.3s ease;
           transform: translateY(200px);
           opacity: 0;
           width: 80%;
           margin: 0 auto;
           text-align: center;
           color: #eee;
-          font-weight: 500;
-          font-size: 18px;
+          font-weight: 400;
+          font-size: 15px;
+
+          @media (max-width: 992px) {
+            opacity: 1;
+            transform: translateY(125px);
+          }
         }
 
         h5 {
@@ -498,7 +512,12 @@ body {
           width: 80%;
           margin: 0 auto;
           text-align: center;
-          color: $colorGreen
+          color: $colorGreen;
+
+          @media(max-width: 992px) {
+            font-size: 22px;
+            transform: translateY(100px);
+          }
         }
       }
 
@@ -530,10 +549,32 @@ body {
         p {
           opacity: 1;
           transform: translateY(125px);
-          font-weight: 400;
-          font-size: 15px;
+        }
+
+        @media(max-width: 992px) {
+          transform: scale(1.5);
+          width: 50%;
+        }
+
+        @media(max-width: 767px) {
+          width: 100%;
         }
       }
+
+      @media(max-width: 992px) {
+        width: 50%;
+        margin-bottom: 81px;
+      }
+
+      @media(max-width: 767px) {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 30px;
+      }
+    }
+
+    @media(max-width: 992px) {
+      padding: 30px 0;
     }
   }
 
@@ -632,6 +673,10 @@ body {
         bottom: -161px;
         z-index: 1;
         right: -130px;
+
+        @media(max-width: 767px) {
+          z-index: -1;
+        }
       }
 
       .bg3 {
@@ -646,6 +691,12 @@ body {
       font-weight: bold;
       font-size: 38px;
       margin-bottom: 45px !important;
+
+      @media(max-width: 767px) {
+        font-size: 30px;
+        line-height: 45px;
+        z-index: 1;
+      }
     }
 
     .myBtn {
@@ -666,6 +717,7 @@ body {
 
     .card {
       cursor: pointer;
+      height: 300px;
       // transition: all .5s ease-in-out;
 
       .card-header {
@@ -700,6 +752,10 @@ body {
           opacity: 0;
         }
       }
+    }
+
+    @media(max-width: 767px) {
+      padding: 0 0 50px 0;
     }
   }
 
@@ -738,10 +794,19 @@ body {
         font-weight: bold;
         font-size: 38px;
         margin-bottom: 55px !important;
+
+        @media(max-width: 767px) {
+          font-size: 30px;
+          line-height: 45px;
+        }
       }
 
       .alice-carousel__wrapper {
         padding-left: 50px !important;
+
+        @media(max-width: 767px) {
+          padding-left: 15px !important;
+        }
       }
     }
 
@@ -757,6 +822,17 @@ body {
         &:hover {
           opacity: 1;
         }
+      }
+    }
+
+    .carouselWrap {
+      width: 200px;
+      img {
+        width: 100%;
+      }
+
+      @media(max-width: 767px) {
+        width: 180px;
       }
     }
   }
@@ -925,23 +1001,36 @@ body {
     padding: 50px 0 70px 0;
 
     .i {
+      overflow: hidden;
       img {
         border-radius: 20px;
+        transition: all .5s ease;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.5) translateY(20px);
+        }
       }
     }
 
     .colWrap {
       position: relative;
+      overflow: hidden;
 
       &::after {
         content: "";
         position: absolute;
         right: 0;
-        top: -10%;
+        top: 0;
         width: 2px;
-        height: 120%;
+        height: 100%;
         background-color: $colorBlue;
         border-radius: 10px;
+      }
+
+      @media(max-width: 992px) {
+        margin-top: 50px;
       }
     }
 
@@ -967,6 +1056,26 @@ body {
         width: 70px;
         height: 40px;
         border-radius: 50%;
+
+        @media(max-width: 1200px) {
+          width: 85px;
+        }
+
+        @media(max-width: 992px) {
+          width: 45px;
+        }
+
+        @media(max-width: 767px) {
+          width: 55px;
+        }
+
+        @media(max-width: 550px) {
+          width: 65px;
+        }
+
+        @media(max-width: 460px) {
+          width: 85px;
+        }
       }
 
       h3 {
@@ -1068,6 +1177,10 @@ body {
       border-radius: 5.68062px;
       background: transparent;
       padding-top: 3px;
+    }
+
+    @media(max-width: 767px) {
+      padding: 0 0 45px 0;
     }
   }
 
@@ -1437,6 +1550,10 @@ body {
             font-size: 24px;
             margin-top: 10px;
             font-weight: 400;
+
+            @media(max-width: 992px) {
+              font-size: 20px;
+            }
           }
         }
       }
@@ -1455,6 +1572,11 @@ body {
       font-weight: 600;
       font-size: 35px;
       line-height: 51px;
+
+      @media(max-width: 767px) {
+        font-size: 30px;
+        line-height: 45px;
+      }
     }
 
     h3 {
@@ -1534,6 +1656,11 @@ body {
           opacity: 1;
         }
       }
+    }
+
+    @media(max-width: 767px) {
+      margin: 0;
+      padding-bottom: 30px;
     }
   }
 
@@ -1852,13 +1979,14 @@ textarea {
 
 @keyframes anim1 {
   0% {
-    opacity: 0;
-  }
-
-  50% {
     transform: scale(2.2);
     opacity: 0.1;
   }
+
+  // 50% {
+  //   transform: scale(2.2);
+  //   opacity: 0.1;
+  // }
 
   100% {
     opacity: 0;

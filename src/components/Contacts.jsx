@@ -10,7 +10,7 @@ const Contacts = () => {
     const [form3, setForm3] = useState(false)
 
     const location = useLocation()
-    
+
     useEffect(() => {
         Aos.init({
             once: true,
@@ -28,56 +28,58 @@ const Contacts = () => {
                             <>
                                 <div data-aos='fade-right' className="col-lg-6">
                                     <div className="i">
-                                        <img src="/assets/image/location.png" alt="" className="w-100" />
+                                        <a target='_blank' rel="noreferrer" href="https://www.google.com/maps/place/ASKLEPIY+Group/@41.352567,69.260804,15z/data=!4m5!3m4!1s0x0:0xdcf85c2d56154ebd!8m2!3d41.3526523!4d69.2640899?hl=ru">
+                                            <img src="/assets/image/location.png" alt="" className="w-100" />
+                                        </a>
                                     </div>
                                 </div>
                             </>
                         ) : (
-                                <>
-                                    <div className="col-lg-6 ">
-                                        <h4>Let's Talk</h4>
-                                        <p>Fill up the form our team will get back to you within 24 Hours</p>
+                            <>
+                                <div className="col-lg-6 ">
+                                    <h4>Let's Talk</h4>
+                                    <p>Fill up the form our team will get back to you within 24 Hours</p>
 
-                                        <div className="row">
-                                            <div className="col-md-6 mb-5">
-                                                <div className="inputWrap">
-                                                    <input
-                                                        onClick={() => setForm(true)}
-                                                        type="text"
-                                                        className='form-control'
-                                                    />
-                                                    <h6 className={`${form ? 'active' : ''}`}>First Name*</h6>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6 mb-5">
-                                                <div className="inputWrap">
-                                                    <input onClick={() => setForm1(true)} type="text" className='form-control' />
-                                                    <h6 className={`${form1 ? 'active' : ''}`}>Phone number*</h6>
-                                                </div>
-                                            </div>
-
-                                            <div className="col-md-12 mb-5">
-                                                <div className="inputWrap">
-                                                    <input onClick={() => setForm2(true)} type="email" className='form-control' />
-                                                    <h6 className={`${form2 ? 'active' : ''}`}>Email Address*</h6>
-                                                </div>
-                                            </div>
-
-                                            <div className="col-md-12 mb-3">
-                                                <div className="inputWrap">
-                                                    <textarea onClick={() => setForm3(true)} className='form-control' />
-                                                    <h6 className={`last ${form3 ? 'actives' : ''}`}>Messages*</h6>
-                                                </div>
-                                            </div>
-
-                                            <div className="col-12">
-                                                <button className="btn myBtn d-block ml-auto">Send Messages</button>
+                                    <div className="row">
+                                        <div className="col-md-6 mb-5">
+                                            <div className="inputWrap">
+                                                <input
+                                                    onClick={() => setForm(true)}
+                                                    type="text"
+                                                    className='form-control'
+                                                />
+                                                <h6 className={`${form ? 'active' : ''}`}>First Name*</h6>
                                             </div>
                                         </div>
-                                    </div>
+                                        <div className="col-md-6 mb-5">
+                                            <div className="inputWrap">
+                                                <input onClick={() => setForm1(true)} type="text" className='form-control' />
+                                                <h6 className={`${form1 ? 'active' : ''}`}>Phone number*</h6>
+                                            </div>
+                                        </div>
 
-                                </>
-                            )}
+                                        <div className="col-md-12 mb-5">
+                                            <div className="inputWrap">
+                                                <input onClick={() => setForm2(true)} type="email" className='form-control' />
+                                                <h6 className={`${form2 ? 'active' : ''}`}>Email Address*</h6>
+                                            </div>
+                                        </div>
+
+                                        <div className="col-md-12 mb-3">
+                                            <div className="inputWrap">
+                                                <textarea onClick={() => setForm3(true)} className='form-control' />
+                                                <h6 className={`last ${form3 ? 'actives' : ''}`}>Messages*</h6>
+                                            </div>
+                                        </div>
+
+                                        <div className="col-12">
+                                            <button className="btn myBtn d-block ml-auto">Send Messages</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </>
+                        )}
                         <div className="col-lg-5 colWrap ml-auto">
                             <h1 data-aos='fade-left' >Адрес магазина и сервисного центра:</h1>
 

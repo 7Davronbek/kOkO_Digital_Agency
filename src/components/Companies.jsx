@@ -24,9 +24,15 @@ const Companies = () => {
                             //     items: 2
                             // },
                             0: {
+                                items: 1
+                            },
+                            370: {
                                 items: 2
                             },
-                            600: {
+                            550: {
+                                items: 3
+                            },
+                            767: {
                                 items: 4
                             },
                             1000: {

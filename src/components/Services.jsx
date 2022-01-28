@@ -19,7 +19,7 @@ const Services = () => {
                             <h4 data-aos='fade-right'>Our Services</h4>
                         </div>
                     </div>
-                    <div className="d-flex align-items-center">
+                    <div className="d-flex align-items-center flex-lg-nowrap flex-wrap">
                         <div className="card">
                             <Link to='/web-development'>
                                 <div  data-aos='fade-right' className="card-body position-relative">
