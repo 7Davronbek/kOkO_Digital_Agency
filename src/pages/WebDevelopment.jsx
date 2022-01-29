@@ -14,7 +14,7 @@ const WebDevelopment = () => {
         <>
         {isLoading ? (
           <div className="loader ">
-              <h5 className='mr-4'>Веб услуги</h5>
+              <h5 className='mr-4'>Web services</h5>
             <DotLoader color="#fff" size="35" loading={isLoading} />
           </div>
         ) : (
@@ -24,7 +24,7 @@ const WebDevelopment = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-12 text-center">
-                        <h1>Веб услуги</h1>
+                        <h1>Web services</h1>
                         <p>Разработка сайтов, ботов, интернет-магазинов.</p>
                         <button className="btn myBtn">Get Started</button>
                     </div>

@@ -1339,7 +1339,7 @@ body {
   }
 
   .webDevelopment {
-    background-image: url(../image/web.jpg);
+    background-image: url(../image/web2.jpg);
   }
 
   .internetMarketing {
@@ -1374,10 +1374,11 @@ body {
     }
 
     h1 {
-      margin-top: 29px;
+      margin-top: 50px;
       font-size: 111px;
       text-transform: uppercase;
       letter-spacing: -1px;
+      margin-bottom: 20px !important;
 
       @media(max-width: 767px) {
         font-size: 40px;

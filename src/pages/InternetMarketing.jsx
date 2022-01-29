@@ -23,7 +23,7 @@ const InternetMarketing = () => {
     <>
       {isLoading ? (
         <div className="loader ">
-          <h5 className='mr-4'>Интернет маркетинг</h5>
+          <h5 className='mr-4'>Internet marketing</h5>
           <DotLoader color="#fff" size="35" loading={isLoading} />
         </div>
       ) : (
@@ -33,7 +33,7 @@ const InternetMarketing = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 text-center">
-              <h1>Интернет маркетинг</h1>
+              <h1>Internet marketing</h1>
               <p>SMM, SEO, Контекстная реклама</p>
               <button className="btn myBtn">Get Started</button>
             </div>

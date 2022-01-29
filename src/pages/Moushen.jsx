@@ -23,7 +23,7 @@ const Moushen = () => {
     <>
       {isLoading ? (
         <div className="loader ">
-          <h5 className='mr-4'>Моушн</h5>
+          <h5 className='mr-4'>Motion</h5>
           <DotLoader color="#fff" size="35" loading={isLoading} />
         </div>
       ) : (
@@ -33,7 +33,7 @@ const Moushen = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 text-center">
-              <h1>Моушн</h1>
+              <h1>Motion</h1>
               <p>Создание моушн видео, создание анимационных видео роликов</p>
               <button className="btn myBtn">Get Started</button>
             </div>

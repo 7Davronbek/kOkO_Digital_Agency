@@ -23,7 +23,7 @@ const Design = () => {
         <>
         {isLoading ? (
           <div className="loader ">
-              <h5 className='mr-4'>Дизайн</h5>
+              <h5 className='mr-4'>Design</h5>
             <DotLoader color="#fff" size="35" loading={isLoading} />
           </div>
         ) : (
@@ -33,7 +33,7 @@ const Design = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-12 text-center">
-                        <h1>Дизайн</h1>
+                        <h1>Design</h1>
                         <p>Разработка брендбуков, Веб-дизайн, СММ-дизайн</p>
                         <button className="btn myBtn">Get Started</button>
                     </div>
