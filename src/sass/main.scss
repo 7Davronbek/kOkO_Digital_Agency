@@ -1339,7 +1339,7 @@ body {
   }
 
   .webDevelopment {
-    background-image: url(../image/web2.jpg);
+    background-image: url(../image/web.jpg);
   }
 
   .internetMarketing {
@@ -1351,11 +1351,12 @@ body {
   }
 
   .moushen {
-    background-image: url(../image/moushen.webp);
+    background-image: url(../image/web2.jpg);
   }
 
   .courses {
     width: 100%;
+    background-position-x: -150px;
     // background-size: cover;
     // object-fit: cover;
     height: 60vh;
@@ -1923,16 +1924,21 @@ body {
     padding: 50px 0;
 
     .card {
-      border-radius: 7px;
+        border: none;
 
       .card-header {
         height: 250px;
         overflow: hidden;
+        border: none;
+        border-radius: 7px 7px 0 0;
       }
 
       .card-body {
         background-color: #121212c9;
         backdrop-filter: blur(20px);
+        padding: 25px 15px !important;
+        border: none;
+        border-radius: 0 0 7px 7px;
 
         h3 {
           font-size: 25px;

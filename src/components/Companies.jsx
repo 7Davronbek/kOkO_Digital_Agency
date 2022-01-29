@@ -9,7 +9,8 @@ const Companies = () => {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-12">
-                            <h1>Trusted more than 150+ brand</h1>
+                            {/* <h1 style={{textTransform: 'uppercase'}}>Наши партнеры</h1> */}
+                            <h1 style={{textTransform: 'uppercase'}}>Нам доверяют</h1>
                         </div>
                     </div>
                     <div className="row flex-nowrap">
@@ -53,34 +54,34 @@ const Companies = () => {
 
 
                             <div className="carouselWrap ">
-                                <div><img src="/assets/image/header1.png" alt="" /></div>
+                                <div><img src="/assets/image/company/comp1.png" alt="" /></div>
                             </div>
                             <div className="carouselWrap">
-                                <div><img src="/assets/image/header2.png" alt="" /></div>
+                                <div><img src="/assets/image/company/comp2.png" alt="" /></div>
                             </div>
                             <div className="carouselWrap">
-                                <div><img src="/assets/image/header3.png" alt="" /></div>
+                                <div><img src="/assets/image/company/comp3.png" alt="" /></div>
                             </div>
                             <div className="carouselWrap">
-                                <div><img src="/assets/image/header4.png" alt="" /></div>
+                                <div><img src="/assets/image/company/comp4.png" alt="" /></div>
                             </div>
                             <div className="carouselWrap">
-                                <div><img src="/assets/image/header2.png" alt="" /></div>
+                                <div><img src="/assets/image/company/comp5.png" alt="" /></div>
                             </div>
                             <div className="carouselWrap">
-                                <div><img src="/assets/image/header1.png" alt="" /></div>
+                                <div><img src="/assets/image/company/comp6.png" alt="" /></div>
                             </div>
                             <div className="carouselWrap">
-                                <div><img src="/assets/image/header3.png" alt="" /></div>
+                                <div><img src="/assets/image/company/comp7.png" alt="" /></div>
                             </div>
                             <div className="carouselWrap">
-                                <div><img src="/assets/image/header1.png" alt="" /></div>
+                                <div><img src="/assets/image/company/comp8.png" alt="" /></div>
                             </div>
                             <div className="carouselWrap">
-                                <div><img src="/assets/image/header4.png" alt="" /></div>
+                                <div><img src="/assets/image/company/comp9.png" alt="" /></div>
                             </div>
                             <div className="carouselWrap">
-                                <div><img src="/assets/image/header2.png" alt="" /></div>
+                                <div><img src="/assets/image/company/comp10.png" alt="" /></div>
                             </div>
                         </AliceCarousel>
 
