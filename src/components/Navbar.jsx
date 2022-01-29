@@ -44,9 +44,10 @@ const Navbar = () => {
                         <div className={`mobileWrap pr-lg-0 col-lg-8 ${burger ? 'burgered' : ''}`}>
                             <div className="row">
 
-                            <div className="col-md-10 myNav d-lg-flex align-items-center pr-lg-5 justify-content-end">
+                            <div className="col-md-10 myNav d-lg-flex align-items-center justify-content-end">
                                     <ul className='d-flex align-items-center justify-content-center'>
                                         <li className={`mr-5 myLi`}><Link onClick={() => setBurger(false)} className={`myA  ${location.pathname === '/' ? 'navlinkActive' : ''}`} to='/'>{getText('home')}</Link></li>
+                                        <li className={`mr-5 myLi`}><Link onClick={() => setBurger(false)} className={`myA  ${location.pathname === '/blog' ? 'navlinkActive' : ''}`} to='/blog'>{getText('blog')}</Link></li>
                                         <li className="mr-4 myLi servicesLi d-flex align-items-center position-relative">
                                             {getText('services')} <i className='ml-2'><img className='arrow' src="/assets/icon/right.svg" alt="" /></i>
                                             <div className="servicesDiv position-absolute">

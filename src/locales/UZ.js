@@ -6,5 +6,6 @@ export const uz = {
     webService: "Web services",
     internetMarketing: "Internet marketing",
     design: "Design",
-    motion: "Motion"
+    motion: "Motion",
+    blog: 'Blog'
 }

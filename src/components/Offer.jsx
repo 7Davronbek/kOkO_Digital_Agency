@@ -16,7 +16,7 @@ const Offer = () => {
                         <h1 data-aos='fade-left' className='myText'>We are advantage prices for products</h1>
                         <h3 data-aos='fade-left'>Tools for the best Designers and Developersmost popularly used in the world</h3>
                     </div>
-                    <div data-aos='fade-right' className="col-lg-4 col-md-6 col-12 mt-3">
+                    <div data-aos='fade-right' className="col-lg-4 col-md-6 col-12 mt-5">
                         <div className="card h-100">
                             <div className="card-body">
                                 <div><i><img src="/assets/icon/offer2.svg" alt="" /></i></div>

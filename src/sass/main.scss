@@ -1,5 +1,6 @@
 @import "./secondary.scss";
 
+// blog +
 html {
   ::selection {
     background-color: $colorBlue;
@@ -14,11 +15,11 @@ html {
   }
 
   ::-webkit-scrollbar-track {
-    background: #000;
+    background: #222;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: $colorPink;
+    background: $colorBlue;
     border-radius: 15px;
   }
 }
@@ -29,7 +30,7 @@ body {
   overflow-x: hidden;
   background-color: $backgroundColor;
   font-family: "Poppins", sans-serif;
-  background: #24252d;
+  background: #000;
 
   .navbarLine {
     padding-top: 100px;
@@ -738,10 +739,10 @@ body {
     li {
 
       img {
-        background-color: $colorPink;
+        background-color: #fff;
         padding: 5px 10px;
         border-radius: 10px;
-        opacity: 0.3;
+        opacity: 0.7;
         transition: all 0.3s ease-in-out;
 
         &:hover {
@@ -1338,7 +1339,7 @@ body {
   }
 
   .webDevelopment {
-    background-image: url(../image/web.webp);
+    background-image: url(../image/web.jpg);
   }
 
   .internetMarketing {
@@ -1365,7 +1366,7 @@ body {
     background-repeat: no-repeat;
     // background-position-x: -150px;
     position: relative;
-    background-size: 100% 60vh;
+    background-size: auto 55vh;
 
     .container {
       z-index: 10;
@@ -1373,7 +1374,8 @@ body {
     }
 
     h1 {
-      font-size: 60px;
+      margin-top: 29px;
+      font-size: 111px;
       text-transform: uppercase;
       letter-spacing: -1px;
 
@@ -1386,6 +1388,7 @@ body {
     p {
       font-size: 24px;
       margin: 40px 0 20px 0 !important;
+      display: none;
 
       @media(max-width: 767px) {
         font-size: 18px;
@@ -1554,7 +1557,7 @@ body {
 
     .card {
       border: 0;
-      background: #1E252B;
+      background: #121212;
       border-radius: 15px;
       padding: 0;
       position: relative;
@@ -1915,6 +1918,35 @@ body {
 
   }
 
+  .blog {
+    padding: 50px 0;
+
+    .card {
+      border-radius: 7px;
+
+      .card-header {
+        height: 250px;
+        overflow: hidden;
+      }
+
+      .card-body {
+        background-color: #121212c9;
+        backdrop-filter: blur(20px);
+
+        h3 {
+          font-size: 25px;
+          transition: all .3s ease-in;
+        }
+      }
+
+      &:hover {
+          h3 {
+            color: $colorBlue;
+        }
+      }
+    }
+  }
+
   .phoneWrap {
     position: relative;
 
@@ -1965,7 +1997,7 @@ body {
   }
 
   .footer {
-    background-color: #111;
+    background-color: #121212;
     color: rgb(151, 151, 151);
     padding: 20px 0;
 

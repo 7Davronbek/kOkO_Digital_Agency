@@ -15,6 +15,7 @@ import InternetMarketing from './pages/InternetMarketing';
 import Design from './pages/Design';
 import Moushen from './pages/Moushen';
 import Phone from './components/Phone';
+import Blog from './pages/Blog';
 
 ReactDOM.render(
   <>
@@ -23,6 +24,7 @@ ReactDOM.render(
     <ScrollToTop />
     <Switch>
       <Route path='/' exact component={App} />
+      <Route path='/blog' exact component={Blog} />
       <Route path='/about-us' exact component={AboutUs} />
       <Route path='/projects' exact component={AllPortfolio} />
       <Route path='/contacts' exact component={ContactsPage} />

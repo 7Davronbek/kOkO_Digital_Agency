@@ -6,5 +6,6 @@ export const ru = {
     webService: "Веб услуги",
     internetMarketing: "Интернет маркетинг",
     design: "Дизайн",
-    motion: "Моушен"
+    motion: "Моушен",
+    blog: 'Блог'
 }

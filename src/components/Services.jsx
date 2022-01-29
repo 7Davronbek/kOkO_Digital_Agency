@@ -24,8 +24,7 @@ const Services = () => {
                             <Link to='/web-development'>
                                 <div  data-aos='fade-right' className="card-body position-relative">
                                     <i> <img src="/assets/image/card2.png" alt="" className="w-100" /></i>
-                                    <h5>Веб услуги</h5>
-                                    <p>Это  создание, продвижение и поддержание интернет-площадок в рабочем состоянию</p>
+                                    <h5>Web services</h5>
                                 </div>
                             </Link>
                         </div>
@@ -34,8 +33,7 @@ const Services = () => {
                             <Link to='/motion'>
                                 <div data-aos='fade-up' className="card-body position-relative">
                                     <i> <img src="/assets/image/card3.png" alt="" className="w-100" /></i>
-                                    <h5>Моушн</h5>
-                                    <p>Это создание динамической графики, которая представляет собой 2D и  3D графику в движении. Подобный графики создаются моушн-дизайнерами.</p>
+                                    <h5>Motion</h5>
                                 </div>
                             </Link>
                         </div>
@@ -44,8 +42,7 @@ const Services = () => {
                             <Link to='/internet-marketing'>
                                 <div data-aos='fade-up' className="card-body position-relative">
                                     <i> <img src="/assets/image/card1.png" alt="" className="w-100" /></i>
-                                    <h5>Интернет маркетинг</h5>
-                                    <p> Oбласть маркетинга, которая объединяет  все способы маркетинговой коммуникации, используемые с помощью Интернет-канала.</p>
+                                    <h5>Internet marketing</h5>
                                 </div>
                             </Link>
                         </div>
@@ -54,8 +51,7 @@ const Services = () => {
                             <Link to='/design'>
                                 <div data-aos='fade-left' className="card-body position-relative">
                                     <i> <img src="/assets/image/card4.png" alt="" className="w-100" /></i>
-                                    <h5>Дизайн</h5>
-                                    <p>Дизайн в себя включает SMM-дизайн, Веб-дизайн и Брендинг</p>
+                                    <h5>Design</h5>
                                 </div>
                             </Link>
                         </div>
