@@ -1,19 +1,44 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Aos from 'aos';
 
 const WeInNumber = () => {
+    const [hover1, setHover1] = useState(false)
+    const [hover2, setHover2] = useState(false)
+    const [hover3, setHover3] = useState(false)
+
+    const handleHover1 = () => {
+        setHover1(true)
+        setTimeout(() => {
+            setHover1(false)
+        }, 8000)
+    }
+    
+    const handleHover2 = () => {
+        setHover2(true)
+        setTimeout(() => {
+            setHover2(false)
+        }, 8000)
+    }
+
+    const handleHover3 = () => {
+        setHover3(true)
+        setTimeout(() => {
+            setHover3(false)
+        }, 8000)
+    }
     useEffect(() => {
         Aos.init({
             once: true,
             duration: 1700,
         })
     }, [])
+
     return (
         <div className='weInNumber'>
             <div className="container">
-            <div className="bg1"><img data-aos='fade-left' src="/assets/image/background/bg1.webp" alt=""/></div>
-            <div className="bg2"><img data-aos='fade-right' src="/assets/image/background/bg2.webp" alt=""/></div>
-            <div className="bg3"><img data-aos='fade-left' src="/assets/image/background/bg3.webp" alt=""/></div>
+            <div className={`bg1 ${hover1 ? 'hover' : ''}`}><img onMouseEnter={handleHover1} data-aos='fade-left' src="/assets/image/background/bg5.png" alt=""/></div>
+            <div className={`bg2 ${hover2 ? 'hover' : ''}`}><img onMouseEnter={handleHover2} data-aos='fade-right' src="/assets/image/background/bg2.png" alt=""/></div>
+            <div className={`bg3 ${hover3 ? 'hover' : ''}`}><img onMouseEnter={handleHover3} data-aos='fade-left' src="/assets/image/background/bg3.png" alt=""/></div>
                 <div className="row">
                     <div data-aos='fade-right' className="col-12">
                         <h1>We are in numbers</h1>

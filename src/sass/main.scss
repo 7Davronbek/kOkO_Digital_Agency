@@ -595,20 +595,26 @@ body {
             }
 
             .bg2 {
-                transform: rotate(86deg);
-                bottom: -161px;
+                // transform: scale(0.7);
+                right: -339px;
+                bottom: -209px;
                 z-index: 1;
-                right: -130px;
 
                 @media(max-width: 767px) {
                     z-index: -1;
                 }
+                &.hover {
+                    animation: animBg 5s ease-in-out;
+                }
             }
 
             .bg3 {
-                left: -100px;
-                bottom: -135px;
-                transform: rotate(45deg);
+                left: -200px;
+                bottom: -200px;
+                
+                &.hover {
+                    animation: animBg2 5s ease-in-out;
+                }
             }
         }
 
@@ -1387,17 +1393,6 @@ body {
             }
         }
 
-        p {
-            font-size: 24px;
-            margin: 40px 0 20px 0 !important;
-            display: none;
-
-            @media(max-width: 767px) {
-                font-size: 18px;
-                line-height: 30px;
-            }
-        }
-
         &::after {
             content: '';
             position: absolute;
@@ -1433,29 +1428,45 @@ body {
             }
 
             .bg2 {
-                left: -94px;
+                left: -404px;
                 top: 0;
-                transform: rotate(162deg);
+                // transform: translateX(-210px) rotate(33deg);
+
+                &.hover {
+                    animation: animBg2 7s ease-in-out;
+                }
             }
 
             .bg1 {
-                right: -200px;
+                right: -208px;
                 top: -175px;
                 z-index: 1;
+                transform: scale(0.5);
+            
 
                 @media(max-width: 992px) {
                     right: 0;
                     z-index: -1;
                 }
+
+                &.hover {
+                    animation: animBg3 7s ease-in-out;
+                }
             }
 
             .bg3 {
-                bottom: -118px;
-                right: -193px;
+                transform: scale(0.5);
+                right: -75px;
+                bottom: -64px;
+                z-index: 1;
 
-                @media(max-width: 992px) {
-                    right: 0;
-                    z-index: -1;
+                // @media(max-width: 992px) {
+                //     right: 0;
+                //     z-index: -1;
+                // }
+
+                &.hover {
+                    animation: animBg3 7s ease-in-out;
                 }
             }
 

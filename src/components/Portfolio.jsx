@@ -1,8 +1,24 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Aos from 'aos';
 import { Link } from 'react-router-dom'
 
 const Portfolio = () => {
+    const [hover1, setHover1] = useState(false)
+    const [hover2, setHover2] = useState(false)
+
+    const handleHover1 = () => {
+        setHover1(true)
+        setTimeout(() => {
+            setHover1(false)
+        }, 6000)
+    }
+    
+    const handleHover2 = () => {
+        setHover2(true)
+        setTimeout(() => {
+            setHover2(false)
+        }, 6000)
+    }
 
     useEffect(() => {
         Aos.init({
@@ -14,8 +30,8 @@ const Portfolio = () => {
         <>
             <div className="portfolio">
                 <div className="container">
-                    <div className="bg2"><img data-aos='fade-left' src="/assets/image/background/bg2.webp" alt="" /></div>
-                    <div className="bg3"><img data-aos='fade-right' src="/assets/image/background/bg3.webp" alt="" /></div>
+                    <div  className={`bg2 ${hover1 ? 'hover' : ''}`}><img onMouseEnter={handleHover1} data-aos='fade-left' src="/assets/image/background/bg1.png" alt="" /></div>
+                    <div className={`bg3 ${hover2 ? 'hover' : ''}`}><img onMouseEnter={handleHover2} data-aos='fade-right' src="/assets/image/background/bg4.png" alt="" /></div>
                     <div className="row">
                         <div data-aos='fade-right' className="col-12 text-center">
                             <h3>Portfolio</h3>

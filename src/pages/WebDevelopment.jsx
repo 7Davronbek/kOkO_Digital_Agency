@@ -29,7 +29,6 @@ const WebDevelopment = () => {
           <div className="row">
             <div className="col-12 text-center">
               <h1>Web services</h1>
-              <p>Разработка сайтов, ботов, интернет-магазинов.</p>
               <button className="btn myBtn">Get Started</button>
             </div>
           </div>
