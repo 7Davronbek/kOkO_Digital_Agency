@@ -739,7 +739,7 @@ body {
         li {
 
             img {
-                background-color: #fff;
+                // background-color: #fff;
                 padding: 5px 10px;
                 border-radius: 10px;
                 opacity: 0.7;
@@ -1356,18 +1356,18 @@ body {
 
     .courses {
         width: 100%;
-        background-position-x: -150px;
+        // background-position-x: -150px;
         // background-size: cover;
         // object-fit: cover;
         height: 60vh;
-        vertical-align: middle;
+        // vertical-align: middle;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-repeat: no-repeat;
+        background-repeat: repeat-x;
         // background-position-x: -150px;
         position: relative;
-        background-size: auto 55vh;
+        background-size: 100% 55vh;
 
         .container {
             z-index: 10;
@@ -1405,10 +1405,10 @@ body {
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: #000000ab;
+            background-color: #00000096;
         }
 
-        @media(max-width: 767px) {
+        @media(max-width: 1200px) {
             background-size: auto;
         }
     }

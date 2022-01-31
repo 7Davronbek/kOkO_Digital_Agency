@@ -9,21 +9,11 @@ const Companies = () => {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-12">
-                            {/* <h1 style={{textTransform: 'uppercase'}}>Наши партнеры</h1> */}
                             <h1 style={{textTransform: 'uppercase'}}>Нам доверяют</h1>
                         </div>
                     </div>
                     <div className="row flex-nowrap">
                         <AliceCarousel className='myCarousel' responsive={{
-                            // 450: {
-                            //     items: 1
-                            // },
-                            // 480: {
-                            //     items: 2
-                            // },
-                            // 800: {
-                            //     items: 2
-                            // },
                             0: {
                                 items: 1
                             },
@@ -82,6 +72,9 @@ const Companies = () => {
                             </div>
                             <div className="carouselWrap">
                                 <div><img src="/assets/image/company/comp10.png" alt="" /></div>
+                            </div>
+                            <div className="carouselWrap">
+                                <div><img src="/assets/image/company/comp11.png" alt="" /></div>
                             </div>
                         </AliceCarousel>
 

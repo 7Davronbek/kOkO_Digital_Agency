@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { getText } from '../locales';
 import Aos from 'aos';
 
 const Services = () => {
@@ -16,7 +17,7 @@ const Services = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12 text-center">
-                            <h4 data-aos='fade-right'>Our Services</h4>
+                            <h4 data-aos='fade-right'>{getText('ourServices')}</h4>
                         </div>
                     </div>
                     <div className="d-flex align-items-center flex-lg-nowrap flex-wrap">
