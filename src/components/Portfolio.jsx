@@ -147,9 +147,9 @@ const Portfolio = () => {
                     </div>
 
                     <div className="row">
-                        <div className="col-12">
+                        <div className="col-lg-4 text-center mx-auto">
                             <Link to='/projects'>
-                                <button data-aos='fade-right' className="btn myBtn d-block mx-auto">View more</button>
+                                <button data-aos='fade-right' className="btn myBtn d-block mx-auto">Посмомотреть все</button>
                             </Link>
                         </div>
                     </div>
