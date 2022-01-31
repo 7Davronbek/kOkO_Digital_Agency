@@ -7,5 +7,7 @@ export const ru = {
     internetMarketing: "Интернет маркетинг",
     design: "Дизайн",
     motion: "Моушен",
-    blog: 'Блог'
+    blog: 'Блог',
+
+    ourServices: 'Наши услуги'
 }

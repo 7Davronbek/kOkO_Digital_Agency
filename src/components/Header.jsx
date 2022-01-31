@@ -11,10 +11,10 @@ const Header = () => {
             </div>
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-10 mx-auto text-center">
-                        <h1 >Discover, collect, and sell NFTs</h1>
-                        <p className="secondary">Explore the upcoming NFT projects, get all the info you need project for you. Don’t forget to check the addition.</p>
-                        <button  className="btn myBtn">Get started</button>
+                    <div className="col-lg-12 mx-auto text-center">
+                        <h1 >Полное продвижение бизнеса в области интернет маркетинга</h1>
+                        <p className="secondary">Наша команда уже на протяжении нескольких лет занимается  услугами в сфере разработки сайтов и интернет магазинов любой сложности. </p>
+                        <button  className="btn myBtn">Оставить заявку</button>
                     </div>
                 </div>
             </div>

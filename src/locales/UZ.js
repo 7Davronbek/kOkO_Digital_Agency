@@ -7,5 +7,7 @@ export const uz = {
     internetMarketing: "Internet marketing",
     design: "Design",
     motion: "Motion",
-    blog: 'Blog'
+    blog: 'Blog',
+
+    ourServices: 'Bizning xizmatlar'
 }

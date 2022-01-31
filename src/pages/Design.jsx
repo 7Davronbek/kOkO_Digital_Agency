@@ -63,7 +63,7 @@ const Design = () => {
               <i><img src="/assets/image/card3.png" alt="" className="w-100" /></i>
             </div>
             <div data-aos='fade-left' className="col-lg-6 ml-auto">
-              <h1>Общее понятие о Дизайне</h1>
+              <h1>Наши услуги:</h1>
               <p>Веб дизайн</p>
               <p>Смм дизайн</p>
               <p>Разработка брендбуков</p>
