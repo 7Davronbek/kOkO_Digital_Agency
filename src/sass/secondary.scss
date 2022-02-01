@@ -201,26 +201,26 @@ li {
 
 @keyframes animBg2 {
   0% {
-    transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0) scale(0.6);
   }
   50% {
-    transform: translate(-500px, -250px) rotate(400deg);
+    transform: translate(-500px, -250px) rotate(400deg) scale(1.4);
   }
   100% {
-    transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0) scale(0.6);
   }
 }
 
 
 @keyframes animBg3 {
   0% {
-    transform: translateX(0) rotate(0) scale(0.5);
+    transform: translateX(0) rotate(0) scale(0.3);
   }
   50% {
     transform: translate(500px, -150px) rotate(400deg) scale(0.5);
   }
   100% {
-    transform: translateX(0) rotate(0) scale(0.5);
+    transform: translateX(0) rotate(0) scale(0.3);
   }
 }
 

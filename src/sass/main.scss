@@ -1397,7 +1397,7 @@ body {
         }
     }
 
-        .weInNumber {
+    .weInNumber {
         padding: 50px 0;
 
         .lastCard {
@@ -1419,6 +1419,7 @@ body {
             .bg2 {
                 left: -404px;
                 top: 0;
+                transform: scale(0.6);
                 // transform: translateX(-210px) rotate(33deg);
 
                 &.hover {
@@ -1444,7 +1445,7 @@ body {
             }
 
             .bg3 {
-                transform: scale(0.5);
+                transform: scale(0.3);
                 right: -75px;
                 bottom: -64px;
                 z-index: 1;
