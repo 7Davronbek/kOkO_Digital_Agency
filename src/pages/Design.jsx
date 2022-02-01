@@ -46,7 +46,7 @@ const Design = () => {
       <DesignHeader />
       <DesignConsist />
 
-      <WhyWe />
+      {/* <WhyWe /> */}
 
       <Support />
 

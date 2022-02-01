@@ -32,8 +32,8 @@ const Services = () => {
 
                         <div className="card">
                             <Link to='/motion'>
-                                <div data-aos='fade-up' className="card-body position-relative">
-                                    <i> <img src="/assets/image/card3.png" alt="" className="w-100" /></i>
+                                <div data-aos='fade-left' className="card-body position-relative">
+                                    <i> <img src="/assets/image/card4.png" alt="" className="w-100" /></i>
                                     <h5>Motion</h5>
                                 </div>
                             </Link>
@@ -41,7 +41,7 @@ const Services = () => {
 
                         <div className="card">
                             <Link to='/internet-marketing'>
-                                <div data-aos='fade-up' className="card-body position-relative">
+                                <div data-aos='fade-right' className="card-body position-relative">
                                     <i> <img src="/assets/image/card1.png" alt="" className="w-100" /></i>
                                     <h5>Internet marketing</h5>
                                 </div>
@@ -51,7 +51,7 @@ const Services = () => {
                         <div className="card">
                             <Link to='/design'>
                                 <div data-aos='fade-left' className="card-body position-relative">
-                                    <i> <img src="/assets/image/card4.png" alt="" className="w-100" /></i>
+                                    <i> <img src="/assets/image/card3.png" alt="" className="w-100" /></i>
                                     <h5>Design</h5>
                                 </div>
                             </Link>

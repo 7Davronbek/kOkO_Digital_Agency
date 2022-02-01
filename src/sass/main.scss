@@ -348,7 +348,7 @@ body {
     .header {
         position: relative;
         overflow: hidden;
-        height: 100vh;
+        height: 70vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -580,6 +580,7 @@ body {
             .bg2,
             .bg3 {
                 position: absolute;
+                transform: scale(0.6);
             }
 
             .bg2 {
@@ -593,13 +594,14 @@ body {
                 }
 
                 &.hover {
-                    animation: animBg 5s ease-in-out;
+                    animation: animBg6 5s ease-in-out;
                 }
             }
 
             .bg3 {
-                left: -200px;
-                bottom: -200px;
+                left: -250px;
+                bottom: -250px;
+                z-index: 1;
 
                 &.hover {
                     animation: animBg2 5s ease-in-out;
@@ -907,6 +909,31 @@ body {
 
     .contacts {
         padding: 50px 0 70px 0;
+
+        .bg1,
+        .bg2 {
+            position: absolute;
+        }
+
+        .bg1 {
+            left: -376px;
+            bottom: -250px;
+            transform: rotate(74deg) scale(0.5);
+
+            &.hover {
+                animation: animBg11 7s ease-in-out;
+            }
+        }
+
+        .bg2 {
+            right: -200px;
+            transform: scale(0.2);
+            top: -185px;
+
+            &.hover {
+                animation: animBg12 7s ease-in-out;
+            }
+        }
 
         .i {
             overflow: hidden;
@@ -1221,6 +1248,31 @@ body {
     .aboutMain {
         padding: 50px 0;
 
+        .bg1,
+        .bg2 {
+            position: absolute;
+        }
+
+        .bg1 {
+            left: -350px;
+            bottom: -200px;
+            transform: rotate(-8deg) scale(0.7);
+
+            &.hover {
+                animation: animBg13 7s ease-in-out;
+            }
+        }
+
+        .bg2 {
+            bottom: -370px;
+            right: -381px;
+            transform: scale(0.5) rotate(-184deg);
+
+            &.hover {
+                animation: animBg14 7s ease-in-out;
+            }
+        }
+
         h6 {
             text-align: center;
             margin-bottom: 40px !important;
@@ -1533,6 +1585,52 @@ body {
 
     .offer {
         margin: 30px 0;
+
+        .bg1,
+        .bg2,
+        .bg3,
+        .bg4 {
+            position: absolute;
+        }
+
+        .bg1 {
+            left: -200px;
+            transform: rotate(121deg) scale(0.8);
+            top: -72px;
+
+            &.hover {
+                animation: animBg7 7s ease-in-out;
+            }
+        }
+
+        .bg2 {
+            left: -200px;
+            transform: scale(0.3);
+            bottom: -147px;
+
+            &.hover {
+                animation: animBg8 7s ease-in-out;
+            }
+        }
+
+        .bg3 {
+            right: -346px;
+            transform: scale(0.5) rotate(98deg);
+
+            &.hover {
+                animation: animBg9 7s ease-in-out;
+            }
+        }
+
+        .bg4 {
+            transform: scale(0.2);
+            top: 363px;
+            right: -184px;
+
+            &.hover {
+                animation: animBg10 7s ease-in-out;
+            }
+        }
 
         h1 {
             color: $colorBlue;

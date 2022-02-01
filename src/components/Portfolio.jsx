@@ -10,14 +10,14 @@ const Portfolio = () => {
         setHover1(true)
         setTimeout(() => {
             setHover1(false)
-        }, 6000)
+        }, 8000)
     }
     
     const handleHover2 = () => {
         setHover2(true)
         setTimeout(() => {
             setHover2(false)
-        }, 6000)
+        }, 8000)
     }
 
     useEffect(() => {

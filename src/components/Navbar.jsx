@@ -8,10 +8,10 @@ const Navbar = () => {
     const [burger, setBurger] = useState(false)
     const location = useLocation();
 
-    const changeLanguage = (e) => {
-        localStorage.setItem(LANGUAGE, e);
-        document.location.reload(true);
-    }
+    // const changeLanguage = (e) => {
+    //     localStorage.setItem(LANGUAGE, e);
+    //     document.location.reload(true);
+    // }
 
     const changeNavbar = () => {
         if (window.scrollY >= 30) {

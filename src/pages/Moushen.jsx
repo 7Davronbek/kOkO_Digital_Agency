@@ -45,7 +45,7 @@ const Moushen = () => {
         </div>
       </div>
 
-      < WhyWe />
+      {/* < WhyWe /> */}
       <Support />
 
       <MotionDepends />

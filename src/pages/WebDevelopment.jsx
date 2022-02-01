@@ -38,7 +38,7 @@ const WebDevelopment = () => {
 
       <WebConsist />
 
-      <WhyWe />
+      {/* <WhyWe /> */}
       <Support />
 
       <WebDepends />

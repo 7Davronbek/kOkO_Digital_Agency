@@ -9,6 +9,24 @@ const Contacts = () => {
     const [form2, setForm2] = useState(false)
     const [form3, setForm3] = useState(false)
 
+    const [hover1, setHover1] = useState(false)
+    const [hover2, setHover2] = useState(false)
+    
+    const handleHover1 = () => {
+        setHover1(true)
+        setTimeout(() => {
+            setHover1(false)
+        }, 8000)
+    }
+    
+    const handleHover2 = () => {
+        setHover2(true)
+        setTimeout(() => {
+            setHover2(false)
+        }, 8000)
+    }
+    
+
     const location = useLocation()
 
     useEffect(() => {
@@ -21,7 +39,9 @@ const Contacts = () => {
     return (
         <div className='contacts'>
             <div className="form position-relative">
-                <div className="container">
+                <div className="container position-relative">
+                    <div className={`bg1 ${hover1 ? 'hover' : ''}`}><img onMouseEnter={handleHover1} data-aos='fade-right' src="/assets/image/background/1.png" alt="" /></div>
+                    <div className={`bg2 ${hover2 ? 'hover' : ''}`}><img onMouseEnter={handleHover2} data-aos='fade-left' src="/assets/image/background/bg6.png" alt="" /></div>
                     <div className="row align-items-center">
 
                         {location.pathname === '/' ? (
@@ -86,15 +106,15 @@ const Contacts = () => {
                             <div data-aos='fade-left' className="myDiv">
                                 <div className="img"><img src="/assets/icon/location.svg" alt="" /></div>
                                 <div>
-                                    <h3>Toshkent, Chilonzor tumani, Bunyodkor shoh ko'chasi, Nakkoshlik ko'ch., 41.</h3>
-                                    <h2>Пн-Сб 09:00 - 19:00</h2>
+                                    <h3>Адрес: Город Ташкент, Яшнабадский район, Улица Тараккиёт, 2.</h3>
+                                    <h2>Пн-Сб 09:00 - 18:00</h2>
                                 </div>
                             </div>
                             <div data-aos='fade-left' className="myDiv second">
                                 <div className="img"><img src="/assets/icon/phone.svg" alt="" /></div>
                                 <div>
-                                    <h2>Сервисный центр</h2>
-                                    <h3 className='mt-1'><a href="tel: +998943698058">+9989 (90) 777-77-77</a></h3>
+                                    <h2>Контакты: </h2>
+                                    <h3 className='mt-1'><a href="tel: +998908232838">+998 90 823 28 38</a></h3>
                                 </div>
                             </div>
                             <div data-aos='fade-left' className="myDiv">

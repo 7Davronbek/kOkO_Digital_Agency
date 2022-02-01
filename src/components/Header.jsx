@@ -7,7 +7,7 @@ const Header = () => {
                     className='' autoPlay loop muted src="/assets/image/bg3.mp4" 
                     type="video/mp4"
                 /> */}
-                <img src="/assets/image/web.webp" style={{height: '100vh', opacity: '0.3'}} alt="" />
+                <img src="/assets/image/web.webp" style={{height: '70vh', opacity: '0.3'}} alt="" />
             </div>
             <div className="container">
                 <div className="row">
