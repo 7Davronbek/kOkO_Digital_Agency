@@ -1028,7 +1028,19 @@ body {
                 color: #cdcdcd;
             }
 
+            &.first {
+                .img {
+                    width: 60px;
+                }
+            }
+
             &.second {
+                .img {
+                    width: 40px;
+                }
+            }
+
+            &.third {
                 .img {
                     width: 40px;
                 }

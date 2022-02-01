@@ -4,14 +4,16 @@ import Support from '../components/Support';
 import WebConsist from '../components/WebConsist';
 import WebDepends from '../components/WebDepends';
 import WebHeader from '../components/WebHeader';
-import WhyWe from '../components/WhyWe';
+// import WhyWe from '../components/WhyWe';
 
 const WebDevelopment = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const [load, setLoad] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
+      setLoad(true);
     }, 500);
   }, []);
   return (
@@ -28,8 +30,12 @@ const WebDevelopment = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 text-center">
-              <h1>Web services</h1>
-              <button className="btn myBtn">Get Started</button>
+              {load ? (
+                <>
+                <h1 data-aos='fade-right'>Web services</h1>
+                <button data-aos='fade-left' className="btn myBtn">Get Started</button>
+                </>
+              ) : null}
             </div>
           </div>
         </div>

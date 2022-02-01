@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Aos from 'aos';
 import { DotLoader } from "react-spinners";
-import WhyWe from '../components/WhyWe';
+// import WhyWe from '../components/WhyWe';
 import Support from '../components/Support';
 import InternetHeader from '../components/InternetHeader';
 import InternetConsist from '../components/InternetConsist';
@@ -9,10 +9,12 @@ import InternetDepend from '../components/InternetDepend';
 
 const InternetMarketing = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const [load, setLoad] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
+      setLoad(true);
     }, 500);
 
     Aos.init({
@@ -35,9 +37,12 @@ const InternetMarketing = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 text-center">
-              <h1>Internet marketing</h1>
-              {/* <p>SMM, SEO, Контекстная реклама</p> */}
-              <button className="btn myBtn">Get Started</button>
+              {load ? (
+                <>
+                  <h1 data-aos='fade-right'>Internet marketing</h1>
+                  <button data-aos='fade-left' className="btn myBtn">Get Started</button>
+                </>
+              ) : null}
             </div>
           </div>
         </div>

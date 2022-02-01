@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { DotLoader } from "react-spinners";
 import Aos from 'aos';
-import WhyWe from '../components/WhyWe';
+// import WhyWe from '../components/WhyWe';
 import Support from '../components/Support';
 import MotionDepends from '../components/MotionDepends';
 

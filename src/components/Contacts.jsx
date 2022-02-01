@@ -103,7 +103,7 @@ const Contacts = () => {
                         <div className="col-lg-5 colWrap ml-auto">
                             <h1 data-aos='fade-left' >Адрес магазина и сервисного центра:</h1>
 
-                            <div data-aos='fade-left' className="myDiv">
+                            <div data-aos='fade-left' className="myDiv first">
                                 <div className="img"><img src="/assets/icon/location.svg" alt="" /></div>
                                 <div>
                                     <h3>Адрес: Город Ташкент, Яшнабадский район, Улица Тараккиёт, 2.</h3>
@@ -117,10 +117,10 @@ const Contacts = () => {
                                     <h3 className='mt-1'><a href="tel: +998908232838">+998 90 823 28 38</a></h3>
                                 </div>
                             </div>
-                            <div data-aos='fade-left' className="myDiv">
+                            <div data-aos='fade-left' className="myDiv third">
                                 <div className="img"><img src="/assets/icon/warning.svg" alt="" /></div>
                                 <div>
-                                    <h3>Mo'ljal: Shahar bojxonasi, Singapur instituti (MDIS), Mevazor Mahalla, Fabienne.</h3>
+                                    <h3>Ориентир: улица Боткина</h3>
                                 </div>
                             </div>
                         </div>

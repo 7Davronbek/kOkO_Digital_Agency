@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 const Portfolio = () => {
     const [hover1, setHover1] = useState(false)
     const [hover2, setHover2] = useState(false)
+    const [hover3, setHover3] = useState(false)
+    const [hover4, setHover4] = useState(false)
 
     const handleHover1 = () => {
         setHover1(true)
@@ -17,6 +19,20 @@ const Portfolio = () => {
         setHover2(true)
         setTimeout(() => {
             setHover2(false)
+        }, 8000)
+    }
+    
+    const handleHover3 = () => {
+        setHover3(true)
+        setTimeout(() => {
+            setHover3(false)
+        }, 8000)
+    }
+    
+    const handleHover4 = () => {
+        setHover4(true)
+        setTimeout(() => {
+            setHover4(false)
         }, 8000)
     }
 
@@ -32,6 +48,8 @@ const Portfolio = () => {
                 <div className="container">
                     <div  className={`bg2 ${hover1 ? 'hover' : ''}`}><img onMouseEnter={handleHover1} data-aos='fade-left' src="/assets/image/background/bg1.png" alt="" /></div>
                     <div className={`bg3 ${hover2 ? 'hover' : ''}`}><img onMouseEnter={handleHover2} data-aos='fade-right' src="/assets/image/background/bg4.png" alt="" /></div>
+                    <div className={`bg4 ${hover3 ? 'hover' : ''}`}><img onMouseEnter={handleHover3} data-aos='fade-right' src="/assets/image/background/bg1.png" alt="" /></div>
+                    <div className={`bg5 ${hover4 ? 'hover' : ''}`}><img onMouseEnter={handleHover4} data-aos='fade-right' src="/assets/image/background/bg4.png" alt="" /></div>
                     <div className="row">
                         <div data-aos='fade-right' className="col-12 text-center">
                             <h3>Портфолио</h3>

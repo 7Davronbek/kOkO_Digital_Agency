@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Aos from 'aos';
 import { DotLoader } from "react-spinners";
-import WhyWe from '../components/WhyWe';
+// import WhyWe from '../components/WhyWe';
 import Support from '../components/Support';
 import DesignHeader from '../components/DesignHeader';
 import DesignConsist from '../components/DesignConsist';
@@ -9,10 +9,12 @@ import DesignDepends from '../components/DesignDepends';
 
 const Design = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const [load, setLoad] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
+      setLoad(true);
     }, 500);
 
     Aos.init({
@@ -35,9 +37,12 @@ const Design = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 text-center">
-              <h1>Design</h1>
-              {/* <p>Разработка брендбуков, Веб-дизайн, СММ-дизайн</p> */}
-              <button className="btn myBtn">Get Started</button>
+              {load ? (
+                <>
+                  <h1 data-aos='fade-right'>Design</h1>
+                  <button data-aos='fade-left' className="btn myBtn">Get Started</button>
+                </>
+              ) : null}
             </div>
           </div>
         </div>
