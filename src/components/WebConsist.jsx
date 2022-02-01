@@ -10,9 +10,9 @@ const WebConsist = () => {
                         <i><img src="/assets/image/card2.png" alt="" className="w-100" /></i>
                     </div>
                     <div data-aos='fade-left' className="col-lg-6 ml-auto">
-                        <h1>Разработка сайтов:</h1>
-                        <p>Интернет-магазин</p>
-                        <p>Landing Page</p>
+                        <h1>Создадим для вас:</h1>
+                        <p>Интернет магазин</p>
+                        <p>Сайт визитка</p>
                         <p>Корпоративные сайты</p>
                         <p>Сложные системы</p>
                         <p>Техническая поддержка</p>

@@ -13,7 +13,6 @@ const Header = () => {
                 <div className="row">
                     <div className="col-lg-12 mx-auto text-center">
                         <h1 >Полное продвижение бизнеса в области интернет маркетинга</h1>
-                        <p className="secondary">Наша команда уже на протяжении нескольких лет занимается  услугами в сфере разработки сайтов и интернет магазинов любой сложности. </p>
                         <button  className="btn myBtn">Оставить заявку</button>
                     </div>
                 </div>

@@ -34,7 +34,7 @@ const Portfolio = () => {
                     <div className={`bg3 ${hover2 ? 'hover' : ''}`}><img onMouseEnter={handleHover2} data-aos='fade-right' src="/assets/image/background/bg4.png" alt="" /></div>
                     <div className="row">
                         <div data-aos='fade-right' className="col-12 text-center">
-                            <h3>Portfolio</h3>
+                            <h3>Портфолио</h3>
                         </div>
 
                     </div>

@@ -11,7 +11,7 @@ const InternetMarketing = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setInterval(() => {
+    setTimeout(() => {
       setIsLoading(false);
     }, 500);
 
@@ -36,7 +36,7 @@ const InternetMarketing = () => {
           <div className="row">
             <div className="col-12 text-center">
               <h1>Internet marketing</h1>
-              <p>SMM, SEO, Контекстная реклама</p>
+              {/* <p>SMM, SEO, Контекстная реклама</p> */}
               <button className="btn myBtn">Get Started</button>
             </div>
           </div>
@@ -47,7 +47,7 @@ const InternetMarketing = () => {
 
       <InternetConsist />
 
-      <WhyWe />
+      {/* <WhyWe /> */}
       <Support />
 
       <InternetDepend />

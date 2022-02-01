@@ -11,7 +11,7 @@ const Design = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setInterval(() => {
+    setTimeout(() => {
       setIsLoading(false);
     }, 500);
 
@@ -36,7 +36,7 @@ const Design = () => {
           <div className="row">
             <div className="col-12 text-center">
               <h1>Design</h1>
-              <p>Разработка брендбуков, Веб-дизайн, СММ-дизайн</p>
+              {/* <p>Разработка брендбуков, Веб-дизайн, СММ-дизайн</p> */}
               <button className="btn myBtn">Get Started</button>
             </div>
           </div>

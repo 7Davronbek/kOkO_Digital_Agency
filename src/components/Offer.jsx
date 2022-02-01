@@ -13,7 +13,7 @@ const Offer = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-12 text-center">
-                        <h1 data-aos='fade-left' className='myText'>We are advantage prices for products</h1>
+                        <h1 data-aos='fade-left' className='myText'>У нас выгодные цены на продукцию</h1>
                         <h3 data-aos='fade-left'>Tools for the best Designers and Developersmost popularly used in the world</h3>
                     </div>
                     <div data-aos='fade-right' className="col-lg-4 col-md-6 col-12 mt-5">

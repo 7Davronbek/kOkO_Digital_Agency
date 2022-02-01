@@ -20,8 +20,9 @@ const App = () => {
   // })
 
   useEffect(() => {
-    setInterval(() => {
+    setTimeout(() => {
       setIsLoading(false);
+      // console.clear();
     }, 900);
   }, []);
 

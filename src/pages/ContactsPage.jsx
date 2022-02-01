@@ -7,7 +7,7 @@ import { DotLoader } from "react-spinners";
 const ContactsPage = () => {
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
-      setInterval(() => {
+      setTimeout(() => {
         setIsLoading(false);
       }, 500);
     }, []);

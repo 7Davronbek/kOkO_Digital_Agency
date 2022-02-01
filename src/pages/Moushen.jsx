@@ -7,17 +7,18 @@ import MotionDepends from '../components/MotionDepends';
 
 const Moushen = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const [load, setLoad] = useState(false);
 
   useEffect(() => {
-    setInterval(() => {
+    setTimeout(() => {
       setIsLoading(false);
-
-      Aos.init({
-        once: false,
-        duration: 1700,
-      })
-
+      setLoad(true);
     }, 500);
+
+    Aos.init({
+      once: false,
+      duration: 1700,
+    })
   }, []);
   return (
     <>
@@ -33,9 +34,12 @@ const Moushen = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 text-center">
-              <h1>Motion</h1>
-              <p>Создание моушн видео, создание анимационных видео роликов</p>
-              <button className="btn myBtn">Get Started</button>
+              {load ? (
+                <>
+                  <h1 data-aos='fade-right'>Motion</h1>
+                  <button data-aos='fade-left' className="btn myBtn">Get Started</button>
+                </>
+              ) : null}
             </div>
           </div>
         </div>

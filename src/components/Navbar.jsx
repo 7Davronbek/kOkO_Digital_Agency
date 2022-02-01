@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { getText } from '../locales';
+// import { getText } from '../locales';
 import { LANGUAGE } from '../tools/constans';
 
 const Navbar = () => {
@@ -44,46 +44,63 @@ const Navbar = () => {
                         <div className={`mobileWrap pr-lg-0 col-lg-8 ${burger ? 'burgered' : ''}`}>
                             <div className="row">
 
-                            <div className="col-md-10 myNav d-lg-flex align-items-center justify-content-end">
+                                <div className="col-md-10 myNav d-lg-flex align-items-center justify-content-end">
                                     <ul className='d-flex align-items-center justify-content-center'>
-                                        <li className={`mr-5 myLi`}><Link onClick={() => setBurger(false)} className={`myA  ${location.pathname === '/' ? 'navlinkActive' : ''}`} to='/'>{getText('home')}</Link></li>
-                                        <li className={`mr-5 myLi`}><Link onClick={() => setBurger(false)} className={`myA  ${location.pathname === '/blog' ? 'navlinkActive' : ''}`} to='/blog'>{getText('blog')}</Link></li>
+                                        <li className={`mr-5 myLi`}><Link onClick={() => setBurger(false)} className={`myA  ${location.pathname === '/' ? 'navlinkActive' : ''}`} to='/'>Главная</Link></li>
+                                        <li className={`mr-5 myLi`}><Link onClick={() => setBurger(false)} className={`myA  ${location.pathname === '/blog' ? 'navlinkActive' : ''}`} to='/blog'>Блог</Link></li>
                                         <li className="mr-4 myLi servicesLi d-flex align-items-center position-relative">
-                                            {getText('services')} <i className='ml-2'><img className='arrow' src="/assets/icon/right.svg" alt="" /></i>
+                                            Наши услуги 
+                                            <i className='ml-2'><img className='arrow' src="/assets/icon/right.svg" alt="" /></i>
                                             <div className="servicesDiv position-absolute">
-                                                <div className="myLi"><Link onClick={() => setBurger(false)} className={`${location.pathname === 'web-development' ? 'navlinkActive' : ''}`} to='/web-development'>{getText('webService')}</Link></div>
-                                                <div className="myLi"><Link onClick={() => setBurger(false)} to='/internet-marketing'>{getText('internetMarketing')}</Link></div>
-                                                <div className="myLi"><Link onClick={() => setBurger(false)} to='/design'>{getText('design')}</Link></div>
-                                                <div className="myLi "><Link onClick={() => setBurger(false)} className='mb-0' to='/motion'>{getText('motion')}</Link></div>
+                                                <div className="myLi"><Link onClick={() => setBurger(false)} className={`${location.pathname === 'web-development' ? 'navlinkActive' : ''}`} to='/web-development'>Веб услуги</Link></div>
+                                                <div className="myLi"><Link onClick={() => setBurger(false)} to='/internet-marketing'>Интернет маркетинг</Link></div>
+                                                <div className="myLi"><Link onClick={() => setBurger(false)} to='/design'>Дизайн</Link></div>
+                                                <div className="myLi "><Link onClick={() => setBurger(false)} className='mb-0' to='/motion'>Моушен</Link></div>
                                             </div>
                                         </li>
 
-                                        <li className={`mr-5 myLi`}><Link onClick={() => setBurger(false)} className={`myA ${location.pathname === '/about-us' ? 'navlinkActive' : ''}`} to='/about-us'>{getText('aboutUs')}</Link></li>
-                                        <li className={`mr-5 myLi`}><Link onClick={() => setBurger(false)} className={`myA ${location.pathname === '/contacts' ? 'navlinkActive' : ''}`} to='/contacts'>{getText('contacts')}</Link></li>
+                                        <li className={`mr-5 myLi`}><Link onClick={() => setBurger(false)} className={`myA ${location.pathname === '/about-us' ? 'navlinkActive' : ''}`} to='/about-us'>О нас</Link></li>
+                                        <li className={`mr-5 myLi`}><Link onClick={() => setBurger(false)} className={`myA ${location.pathname === '/contacts' ? 'navlinkActive' : ''}`} to='/contacts'>Контакты</Link></li>
                                     </ul>
                                 </div>
 
                                 <div className="col-md-2 d-lg-flex pr-lg-0 align-items-center justify-content-end langWrap">
-                                    {localStorage.getItem(LANGUAGE) === 'ru' ?
+                                    {localStorage.getItem(LANGUAGE) !== 'ru' ?
                                         <>
-                                            <div className='d-flex align-items-center uz1 justify-content-center' onClick={(e) => changeLanguage('uz')}>
+                                            <div className='d-flex align-items-center uz1 justify-content-center' 
+                                                // onClick={(e) => changeLanguage('uz')}
+                                                >
                                                 <i><img src="/assets/icon/uz.svg" alt="" /></i>
                                                 <b style={{ transform: 'translateY(4px)' }} className='mx-2 d-block'>UZ </b>
                                             </div>
-                                            <div className='d-flex align-items-center ru1 justify-content-center' onClick={(e) => changeLanguage('uz')}>
+                                            <div className='d-flex align-items-center ru1 justify-content-center' 
+                                                // onClick={(e) => changeLanguage('uz')}
+                                                >
                                                 <i><img src="/assets/icon/ru.svg" alt="" /></i>
-                                                <b style={{ transform: 'translateY(2px)' }} className='mx-2 d-block'>RU </b>
+                                                <b style={{ transform: 'translateY(2px)' }} className='mx-2 d-block'>РУ </b>
                                             </div>
                                         </> :
                                         <>
-                                            <div className='d-flex align-items-center uz justify-content-center' onClick={(e) => changeLanguage('ru')}>
+                                            <div className='d-flex align-items-center uz1 justify-content-center' 
+                                                // onClick={(e) => changeLanguage('uz')}
+                                                >
+                                                <i><img src="/assets/icon/uz.svg" alt="" /></i>
+                                                <b style={{ transform: 'translateY(4px)' }} className='mx-2 d-block'>UZ </b>
+                                            </div>
+                                            <div className='d-flex align-items-center ru1 justify-content-center' 
+                                                // onClick={(e) => changeLanguage('uz')}
+                                                >
+                                                <i><img src="/assets/icon/ru.svg" alt="" /></i>
+                                                <b style={{ transform: 'translateY(2px)' }} className='mx-2 d-block'>РУ </b>
+                                            </div>
+                                            {/* <div className='d-flex align-items-center uz justify-content-center' onClick={(e) => changeLanguage('ru')}>
                                                 <i><img src="/assets/icon/uz.svg" alt="" /></i>
                                                 <b style={{ transform: 'translateY(4px)' }} className='mx-2 d-block'>UZ </b>
                                             </div>
                                             <div className='d-flex align-items-center ru justify-content-center' onClick={(e) => changeLanguage('ru')}>
                                                 <i><img src="/assets/icon/ru.svg" alt="" /></i>
                                                 <b style={{ transform: 'translateY(2px)' }} className='mx-2 d-block'>RU </b>
-                                            </div>
+                                            </div> */}
                                         </>
                                     }
                                 </div>

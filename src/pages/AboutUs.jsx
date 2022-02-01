@@ -10,7 +10,7 @@ const AboutUs = () => {
     const [isLoading, setIsLoading] = useState(true);
   
     useEffect(() => {
-      setInterval(() => {
+      setTimeout(() => {
         setIsLoading(false);
       }, 500);
     }, []);
