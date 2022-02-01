@@ -12,7 +12,7 @@ const InternetHeader = () => {
           <p>Основной целью Интернет-маркетинга является превращение посетителя сайта в покупателя и увеличить прибыль компании.</p>
         </div>
         <div data-aos='fade-left' className="col-lg-6">
-          <i><img src="/assets/image/internetHeader.png" className='w-100' alt="" /></i>
+          <i><img src="/assets/image/instagram2.png" className='w-100' alt="" /></i>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ import Portfolio from "./components/Portfolio";
 import Companies from "./components/Companies";
 import Contacts from "./components/Contacts";
 // import Personal from "./components/Personal";
-import { DotLoader } from "react-spinners";
+import { RingLoader } from "react-spinners";
 
 import "aos/dist/aos.css";
 import "aos/dist/aos.js";
@@ -33,7 +33,7 @@ const App = () => {
           <span className="mr-4">
             <img src="/assets/icon/logoWhite.png" alt='Logo' />
           </span>
-          <DotLoader color="#fff" size="35" loading={isLoading} />
+          <RingLoader color="#fff" size="35" loading={isLoading} />
         </div>
       ) : (
         ""

@@ -48,8 +48,13 @@ const Portfolio = () => {
                 <div className="container">
                     <div  className={`bg2 ${hover1 ? 'hover' : ''}`}><img onMouseEnter={handleHover1} data-aos='fade-left' src="/assets/image/background/bg1.png" alt="" /></div>
                     <div className={`bg3 ${hover2 ? 'hover' : ''}`}><img onMouseEnter={handleHover2} data-aos='fade-right' src="/assets/image/background/bg4.png" alt="" /></div>
-                    <div className={`bg4 ${hover3 ? 'hover' : ''}`}><img onMouseEnter={handleHover3} data-aos='fade-right' src="/assets/image/background/bg1.png" alt="" /></div>
-                    <div className={`bg5 ${hover4 ? 'hover' : ''}`}><img onMouseEnter={handleHover4} data-aos='fade-right' src="/assets/image/background/bg4.png" alt="" /></div>
+                    {/* <div className={`bg4 ${hover3 ? 'hover' : ''}`}><img onMouseEnter={handleHover3} data-aos='fade-right' src="/assets/image/background/bg1.png" alt="" /></div> */}
+                    {/* <div className={`bg2 ${hover4 ? 'hover' : ''}`}><img onMouseEnter={handleHover4} data-aos='fade-right' src="/assets/image/background/bg4.png" alt="" /></div> */}
+                    
+    {/* transform: scale(0.3);
+    bottom: inherit;
+    top: -77px;
+    left: -350px; */}
                     <div className="row">
                         <div data-aos='fade-right' className="col-12 text-center">
                             <h3>Портфолио</h3>
