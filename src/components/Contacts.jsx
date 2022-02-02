@@ -6,7 +6,6 @@ const Contacts = () => {
 
     const [form, setForm] = useState(false)
     const [form1, setForm1] = useState(false)
-    // const [form2, setForm2] = useState(false)
     const [form3, setForm3] = useState(false)
 
     const [hover1, setHover1] = useState(false)
@@ -77,13 +76,6 @@ const Contacts = () => {
                                                 <h6 className={`${form1 ? 'active' : ''}`}>Phone number*</h6>
                                             </div>
                                         </div>
-
-                                        {/* <div className="col-md-12 mb-5">
-                                            <div className="inputWrap">
-                                                <input onClick={() => setForm2(true)} type="email" className='form-control' />
-                                                <h6 className={`${form2 ? 'active' : ''}`}>Email Address*</h6>
-                                            </div>
-                                        </div> */}
 
                                         <div className="col-md-12 mb-3">
                                             <div className="inputWrap">
