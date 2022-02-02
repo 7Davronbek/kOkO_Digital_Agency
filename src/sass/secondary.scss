@@ -186,6 +186,37 @@ li {
     }
 }
 
+.modal {
+  background-color: #000000d9;
+}
+
+.modal-dialog {
+  margin-top: 200px;
+
+  .modal-content {
+    background: #1c1e227a;
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    padding: 20px 30px;
+
+    input {
+      border-radius: 20px;
+      border-color: transparent;
+      background: #CACBC3;
+      color: #787571;
+    }
+
+    .myBtn {
+      font-size: 15px;
+      padding: 8px 22px;
+
+      &::before {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
 @keyframes animBg {
   0% {
     transform: translateX(0) rotate(0);

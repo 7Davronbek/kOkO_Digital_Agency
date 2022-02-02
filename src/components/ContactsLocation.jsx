@@ -5,11 +5,10 @@ const ContactsLocation = () => {
         <div className='contactsLocation'>
             <div className="container">
                 <div className="row">
-                    <div className="col-12 text-center">
-                        <h1>Our Location</h1>
-                        <h6>LOCATION</h6>
+                    <div className="col-12 text-center mb-5">
+                        <h1>Наш адрес</h1>
                     </div>
-                    <div className="row align-items-center">
+                    <div className="row align-items-center ">
                         <div className="col-lg-6 ml-auto">
                         </div>
                     </div>
