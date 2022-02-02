@@ -31,16 +31,16 @@ const InternetConsist = () => {
                         <p>Дизайн</p>
                         <p>Сбор аудитории</p>
                     </div>
-                    <div data-aos='fade-left' className="col-lg-5 ml-auto">
-                        <i><img src="/assets/image/card1.png" alt="" /></i>
+                    <div data-aos='fade-left' className="col-lg-6">
+                        <i><img src="/assets/image/instagram2.png" className='w-100' alt="" /></i>
                     </div>
                 </div>
 
                 <div className="row align-items-center mt-4 ">
-                    <div data-aos='fade-right' className="col-lg-5">
+                    <div data-aos='fade-right' className="col-lg-6">
                         <i><img src="/assets/image/card1.png" alt="" className="w-100" /></i>
                     </div>
-                    <div data-aos='fade-left' className="col-lg-6 ml-auto">
+                    <div data-aos='fade-left' className="col-lg-6">
                         <h1>SEO</h1>
                         <h5>SEO - это всестороннее развитие и продвижение сайта для его выхода на первые позиции в результатах выдачи поисковых систем по выбранным запросам с целью увеличения посещаемости и дальнейшего получения дохода. Благодаря нашим услугам SEO, мы выдвинем ваш сайт в топ первых мест в поисковых платформах и поможем реализовать ваши цели в реальность.</h5>
                         <p>анализ текущего спроса</p>

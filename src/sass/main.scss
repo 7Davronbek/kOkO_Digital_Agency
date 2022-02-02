@@ -4,6 +4,8 @@
 // email -
 // tabs
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 html {
     ::selection {
         background-color: $colorBlue;
@@ -33,6 +35,7 @@ body {
     overflow-x: hidden;
     background-color: $backgroundColor;
     font-family: "Poppins", sans-serif;
+    font-weight: 400;
     background: #000;
 
     .navbarLine {
@@ -350,12 +353,31 @@ body {
     }
 
     .header {
+        // margin-top: 100px;
         position: relative;
         overflow: hidden;
-        height: 70vh;
+        height: 60vh;
         display: flex;
         align-items: center;
         justify-content: center;
+        background-image: url(../image/cover4.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 60vh;
+
+        .container {
+            position: relative;
+            z-index: 10;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #000000be;
+        }
 
         .secondi {
             position: absolute;
@@ -407,7 +429,7 @@ body {
             font-size: 71px;
             line-height: 82px;
             color: #fff;
-            margin-bottom: 100px !important;
+            margin-bottom: 80px !important;
 
             @media(max-width: 992px) {
                 font-size: 40px;
@@ -445,7 +467,7 @@ body {
     }
 
     .services {
-        padding: 70px 0;
+        padding: 40px 0;
         position: relative;
 
         h4 {
@@ -1786,6 +1808,10 @@ body {
         }
     }
 
+    .internetHeader {
+        padding: 0;
+    }
+
     .myWebConsist {
         padding: 0px 0 50px 0;
 
@@ -2070,18 +2096,70 @@ body {
     }
 
     .pakets {
+        padding: 20px 0 50px;
+
+        .myRow {
+            padding: 30px;
+        }
+
+        .card {
+            .card-body {
+                padding: 30px 35px;
+            }
+        }
 
         .nav {
             border: 0;
+            border-radius: 10px 10px 0 0;
+
+
 
             .nav-item {
 
                 .nav-link {
                     border: 0;
                     border-radius: 0;
-                
+                    color: $colorBlue;
+                    font-size: 24px;
+                    font-weight: 900;
+                    line-height: 30px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    transition: all .2s ease-in-out;
+                    -webkit-backdrop-filter: blur(50px);
+                    backdrop-filter: blur(50px);
+                    user-select: none;
+
+                    &:hover {
+                        background-color: #111111b2;
+                    }
+
+                    h5 {
+                        color: #fff;
+                        font-size: 24px;
+                        line-height: 30px;
+                        margin-top: 8px;
+
+                        b {
+                            font-size: 12px;
+                            font-weight: 400;
+                        }
+                    }
+
                     &.active {
-                        background-color: red;
+                        background: #111;
+                    }
+                }
+
+                &:nth-child(1) {
+                    .nav-link {
+                        border-radius: 10px 0 0 0;
+                    }
+                }
+
+                &:nth-child(4) {
+                    .nav-link {
+                        border-radius: 0 10px 0 0;
                     }
                 }
             }
@@ -2093,7 +2171,9 @@ body {
             .tab-pane {
 
                 &.active {
-                    background-color: red;
+                    background: rgba(44, 53, 61, 0.2);
+                    -webkit-backdrop-filter: blur(50px);
+                    backdrop-filter: blur(50px);
                 }
             }
         }

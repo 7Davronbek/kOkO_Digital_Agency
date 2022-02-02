@@ -111,7 +111,8 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <div className={`${location.pathname === '/' ? '' : 'navbarLine'}`}></div>
+            {/* <div className={`${location.pathname === '/' ? '' : 'navbarLine'}`}></div> */}
+            <div className='navbarLine'></div>
         </>
     )
 }

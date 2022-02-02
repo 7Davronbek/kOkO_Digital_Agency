@@ -9,14 +9,9 @@ const Header = () => {
     }, [])
     return (
         <div className='header'>
-            <div className="video">
-                {/* <video 
-                    style={{ opacity: '0.5' }}
-                    className='' autoPlay loop muted src="/assets/image/bg3.mp4" 
-                    type="video/mp4"
-                /> */}
-                <img src="/assets/image/web.webp" style={{ height: '70vh', opacity: '0.3' }} alt="" />
-            </div>
+            {/* <div className="video">
+                <img src="/assets/image/mainCover.jpg" style={{ height: '70vh', opacity: '0.3' }} alt="" />
+            </div> */}
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12 mx-auto text-center">

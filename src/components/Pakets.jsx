@@ -21,6 +21,7 @@ const Pakets = () => {
                                     onClick={() => { toggle('1'); }}
                                 >
                                     START
+                                    <h5>2 400 000 <b>сум</b></h5>
                                 </NavLink>
                             </NavItem>
                             <NavItem>
@@ -29,6 +30,7 @@ const Pakets = () => {
                                     onClick={() => { toggle('2'); }}
                                 >
                                     SIMPLE
+                                    <h5>3 700 000 <b>сум</b></h5>
                                 </NavLink>
                             </NavItem>
                             <NavItem>
@@ -37,6 +39,7 @@ const Pakets = () => {
                                     onClick={() => { toggle('3'); }}
                                 >
                                     ACTIVE
+                                    <h5>5 500 000 <b>сум</b></h5>
                                 </NavLink>
                             </NavItem>
                             <NavItem>
@@ -45,296 +48,91 @@ const Pakets = () => {
                                     onClick={() => { toggle('4'); }}
                                 >
                                     PRO
+                                    <h5>6 900 000 <b>сум</b></h5>
                                 </NavLink>
                             </NavItem>
                         </Nav>
 
                         <TabContent activeTab={activeTab}>
                             <TabPane tabId="1" className=''>
-                                <Row>
-                                    <div data-aos='fade-right' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
+                                <Row className='myRow'>
+                                    <div data-aos='fade-right' className="col-md-6 col-lg-8 col-12 mb-2 px-2">
                                         <div className="card">
-                                            <div className="card-header">
-                                                <img src="/assets/image/port1.png" className='w-100' alt="" />
-                                            </div>
                                             <div className="card-body">
-                                                <h5>
-                                                    Spartan Art
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-aos='fade-up' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                        <div className="card">
-                                            <div className="card-header">
-                                                <img src="/assets/image/port2.png" className='w-100' alt="" />
-                                            </div>
-                                            <div className="card-body">
-                                                <h5>
-                                                    Spartan Art
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div data-aos='fade-left' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                        <div className="card">
-                                            <div className="card-header">
-                                                <img src="/assets/image/port3.png" className='w-100' alt="" />
-                                            </div>
-                                            <div className="card-body">
-                                                <h5>
-                                                    Spartan Art
-                                                </h5>
+                                                <p className='mt-3'>Lorem ipsum dolor sit amet consectetur officiis illo unde, totam molestias suscipit deleniti repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
+                                                <p className='mt-3'>Lorem ipsum dolor sit amet consectetur officiis illo unde, totam molestias suscipit deleniti repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
+                                                <p className='mt-3'>Lorem ipsum dolor sit amet consectetur officiis illo unde, totam molestias suscipit deleniti repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div data-aos='fade-right' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                        <div className="card">
-                                            <div className="card-header">
-                                                <img src="/assets/image/port4.png" className='w-100' alt="" />
-                                            </div>
+                                        <div className="card text-center">
                                             <div className="card-body">
-                                                <h5>
-                                                    Spartan Art
-                                                </h5>
+                                                <img src="/assets/image/port4.png" alt="" />
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div data-aos='fade-up' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                        <div className="card">
-                                            <div className="card-header">
-                                                <img src="/assets/image/port1.png" className='w-100' alt="" />
-                                            </div>
-                                            <div className="card-body">
-                                                <h5>
-                                                    Spartan Art
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-aos='fade-left' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                        <div className="card">
-                                            <div className="card-header">
-                                                <img src="/assets/image/port2.png" className='w-100' alt="" />
-                                            </div>
-                                            <div className="card-body">
-                                                <h5>
-                                                    Spartan Art
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                        <div className="card">
-                                            <div className="card-header">
-                                                <img src="/assets/image/port3.png" className='w-100' alt="" />
-                                            </div>
-                                            <div className="card-body">
-                                                <h5>
-                                                    Spartan Art
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                        <div className="card">
-                                            <div className="card-header">
-                                                <img src="/assets/image/port4.png" className='w-100' alt="" />
-                                            </div>
-                                            <div className="card-body">
-                                                <h5>
-                                                    Spartan Art
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                        <div className="card">
-                                            <div className="card-header">
-                                                <img src="/assets/image/port4.png" className='w-100' alt="" />
-                                            </div>
-                                            <div className="card-body">
-                                                <h5>
-                                                    Spartan Art
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                 </Row>
                             </TabPane>
                             <TabPane tabId="2" className='   '>
-                                <Row>
-                                    <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
+                                <Row className='myRow'>
+                                    <div data-aos='fade-right' className="col-md-6 col-lg-8 col-12 mb-2 px-2">
                                         <div className="card">
-                                            <div className="card-header">
-                                                <img src="/assets/image/port4.png" className='w-100' alt="" />
-                                            </div>
                                             <div className="card-body">
-                                                <h5>
-                                                    Spartan Art
-                                                </h5>
+                                                <p className='mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident  repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
+                                                <p className='mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident  repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
+                                                <p className='mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident  repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                        <div className="card">
-                                            <div className="card-header">
-                                                <img src="/assets/image/port4.png" className='w-100' alt="" />
-                                            </div>
+                                    <div data-aos='fade-right' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
+                                        <div className="card text-center">
                                             <div className="card-body">
-                                                <h5>
-                                                    Spartan Art
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                        <div className="card">
-                                            <div className="card-header">
-                                                <img src="/assets/image/port4.png" className='w-100' alt="" />
-                                            </div>
-                                            <div className="card-body">
-                                                <h5>
-                                                    Spartan Art
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                        <div className="card">
-                                            <div className="card-header">
-                                                <img src="/assets/image/port4.png" className='w-100' alt="" />
-                                            </div>
-                                            <div className="card-body">
-                                                <h5>
-                                                    Spartan Art
-                                                </h5>
+                                                <img src="/assets/image/port2.png" alt="" />
                                             </div>
                                         </div>
                                     </div>
                                 </Row>
                             </TabPane>
                             <TabPane tabId="3" className='   '>
-                                <Row>
-                                    <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
+                                <Row className='myRow'>
+                                    <div data-aos='fade-right' className="col-md-6 col-lg-8 col-12 mb-2 px-2">
                                         <div className="card">
-                                            <div className="card-header">
-                                                <img src="/assets/image/port3.png" className='w-100' alt="" />
-                                            </div>
                                             <div className="card-body">
-                                                <h5>
-                                                    Spartan Art
-                                                </h5>
+                                                <p className='mt-3'>Lornemo officia consequuntur officiis illo unde, totam molestias suscipit deleniti repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
+                                                <p className='mt-3'>Lornemo officia consequuntur officiis illo unde, totam molestias suscipit deleniti repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
+                                                <p className='mt-3'>Lornemo officia consequuntur officiis illo unde, totam molestias suscipit deleniti repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                        <div className="card">
-                                            <div className="card-header">
-                                                <img src="/assets/image/port4.png" className='w-100' alt="" />
-                                            </div>
+                                    <div data-aos='fade-right' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
+                                        <div className="card text-center">
                                             <div className="card-body">
-                                                <h5>
-                                                    Spartan Art
-                                                </h5>
+                                                <img src="/assets/image/port1.png" alt="" />
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                        <div className="card">
-                                            <div className="card-header">
-                                                <img src="/assets/image/port1.png" className='w-100' alt="" />
-                                            </div>
-                                            <div className="card-body">
-                                                <h5>
-                                                    Spartan Art
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                        <div className="card">
-                                            <div className="card-header">
-                                                <img src="/assets/image/port2.png" className='w-100' alt="" />
-                                            </div>
-                                            <div className="card-body">
-                                                <h5>
-                                                    Spartan Art
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
                                 </Row>
                             </TabPane>
 
                             <TabPane tabId="4" className='   '>
-                                <Row>  <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                    <div className="card">
-                                        <div className="card-header">
-                                            <img src="/assets/image/port4.png" className='w-100' alt="" />
-                                        </div>
-                                        <div className="card-body">
-                                            <h5>
-                                                Spartan Art
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                    <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
+                                <Row className='myRow'>
+                                    <div data-aos='fade-right' className="col-md-6 col-lg-8 col-12 mb-2 px-2">
                                         <div className="card">
-                                            <div className="card-header">
-                                                <img src="/assets/image/port1.png" className='w-100' alt="" />
-                                            </div>
                                             <div className="card-body">
-                                                <h5>
-                                                    Spartan Art
-                                                </h5>
+                                                <p className='mt-3'>Lorem ipsum dolor sit  totam molestias suscipit deleniti repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
+                                                <p className='mt-3'>Lorem ipsum dolor sit  totam molestias suscipit deleniti repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
+                                                <p className='mt-3'>Lorem ipsum dolor sit  totam molestias suscipit deleniti repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                        <div className="card">
-                                            <div className="card-header">
-                                                <img src="/assets/image/port2.png" className='w-100' alt="" />
-                                            </div>
+                                    <div data-aos='fade-right' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
+                                        <div className="card text-center">
                                             <div className="card-body">
-                                                <h5>
-                                                    Spartan Art
-                                                </h5>
+                                                <img src="/assets/image/port3.png" alt="" />
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                        <div className="card">
-                                            <div className="card-header">
-                                                <img src="/assets/image/port3.png" className='w-100' alt="" />
-                                            </div>
-                                            <div className="card-body">
-                                                <h5>
-                                                    Spartan Art
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                        <div className="card">
-                                            <div className="card-header">
-                                                <img src="/assets/image/port4.png" className='w-100' alt="" />
-                                            </div>
-                                            <div className="card-body">
-                                                <h5>
-                                                    Spartan Art
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                 </Row>
                             </TabPane>
 
