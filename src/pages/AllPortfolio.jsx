@@ -7,7 +7,6 @@ import Aos from 'aos';
 const AllPortfolio = () => {
     const [activeTab, setActiveTab] = useState('1');
     const [isLoading, setIsLoading] = useState(true);
-
     useEffect(() => {
         setTimeout(() => {
             setIsLoading(false)
@@ -23,14 +22,14 @@ const AllPortfolio = () => {
     }
     return (
         <>
-        {isLoading ? (
-          <div className="loader ">
-              <h5 className='mr-4'>Portfolio</h5>
-            <DotLoader color="#fff" size="35" loading={isLoading} />
-          </div>
-        ) : (
-          ""
-        )}
+            {isLoading ? (
+                <div className="loader ">
+                    <h5 className='mr-4'>Portfolio</h5>
+                    <DotLoader color="#fff" size="35" loading={isLoading} />
+                </div>
+            ) : (
+                ""
+            )}
 
             <div className="allPortfolio">
                 <div className="container">
@@ -46,7 +45,7 @@ const AllPortfolio = () => {
                                                     onClick={() => { toggle('1'); }}
                                                 >
                                                     All
-                                    </NavLink>
+                                                </NavLink>
                                             </NavItem>
                                             <NavItem>
                                                 <NavLink
@@ -54,7 +53,7 @@ const AllPortfolio = () => {
                                                     onClick={() => { toggle('2'); }}
                                                 >
                                                     LOREMIPSUM
-                                    </NavLink>
+                                                </NavLink>
                                             </NavItem>
                                             <NavItem>
                                                 <NavLink
@@ -62,7 +61,7 @@ const AllPortfolio = () => {
                                                     onClick={() => { toggle('3'); }}
                                                 >
                                                     WATERFRONT
-                                    </NavLink>
+                                                </NavLink>
                                             </NavItem>
                                             <NavItem>
                                                 <NavLink
@@ -70,13 +69,13 @@ const AllPortfolio = () => {
                                                     onClick={() => { toggle('4'); }}
                                                 >
                                                     CONTEMPORARY
-                                    </NavLink>
+                                                </NavLink>
                                             </NavItem>
                                         </Nav>
                                     </div>
                                 </div>
-                                <TabContent transition={true} activeTab={activeTab}>
-                                    <TabPane eventKey='first' tabId="1" className=''>
+                                <TabContent  activeTab={activeTab}>
+                                    <TabPane tabId="1" className=''>
                                         <Row>
                                             <div data-aos='fade-right' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
                                                 <div className="card">
@@ -102,7 +101,7 @@ const AllPortfolio = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            
+
                                             <div data-aos='fade-left' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
                                                 <div className="card">
                                                     <div className="card-header">
@@ -127,7 +126,7 @@ const AllPortfolio = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                        
+
                                             <div data-aos='fade-up' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
                                                 <div className="card">
                                                     <div className="card-header">
@@ -188,10 +187,10 @@ const AllPortfolio = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                        
+
                                         </Row>
                                     </TabPane>
-                                    <TabPane eventKey='second' tabId="2" className='   '>
+                                    <TabPane tabId="2" className='   '>
                                         <Row>
                                             <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
                                                 <div className="card">
@@ -243,7 +242,7 @@ const AllPortfolio = () => {
                                             </div>
                                         </Row>
                                     </TabPane>
-                                    <TabPane eventKey='third' tabId="3" className='   '>
+                                    <TabPane  tabId="3" className='   '>
                                         <Row>
                                             <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
                                                 <div className="card">
@@ -293,25 +292,25 @@ const AllPortfolio = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            
-                                        
+
+
                                         </Row>
                                     </TabPane>
 
-                                    <TabPane eventKey='four' tabId="4" className='   '>
+                                    <TabPane  tabId="4" className='   '>
                                         <Row>  <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                                <div className="card">
-                                                    <div className="card-header">
-                                                        <img src="/assets/image/port4.png" className='w-100' alt="" />
-                                                    </div>
-                                                    <div className="card-body">
-                                                        <h5>
-                                                            Spartan Art
-                                                        </h5>
-                                                    </div>
+                                            <div className="card">
+                                                <div className="card-header">
+                                                    <img src="/assets/image/port4.png" className='w-100' alt="" />
+                                                </div>
+                                                <div className="card-body">
+                                                    <h5>
+                                                        Spartan Art
+                                                    </h5>
                                                 </div>
                                             </div>
-                                        
+                                        </div>
+
                                             <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
                                                 <div className="card">
                                                     <div className="card-header">
@@ -360,7 +359,7 @@ const AllPortfolio = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                        
+
                                         </Row>
                                     </TabPane>
 

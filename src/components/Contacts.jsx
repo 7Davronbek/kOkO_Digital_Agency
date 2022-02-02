@@ -73,7 +73,7 @@ const Contacts = () => {
                                         </div>
                                         <div className="col-md-6 mb-5">
                                             <div className="inputWrap">
-                                                <input onClick={() => setForm1(true)} type="number" className='form-control' />
+                                                <input onClick={() => setForm1(true)} type="text" className='form-control' />
                                                 <h6 className={`${form1 ? 'active' : ''}`}>Phone number*</h6>
                                             </div>
                                         </div>
@@ -93,7 +93,7 @@ const Contacts = () => {
                                         </div>
 
                                         <div className="col-12">
-                                            <button className="btn myBtn d-block ml-auto">Send Messages</button>
+                                            <button className="btn myBtn d-block ml-auto">Оставить заявку</button>
                                         </div>
                                     </div>
                                 </div>

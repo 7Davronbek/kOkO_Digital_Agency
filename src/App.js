@@ -22,7 +22,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-      console.clear();
+      // console.clear();
     }, 900);
   }, []);
 
