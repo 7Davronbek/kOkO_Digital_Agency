@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { TabContent, TabPane, Nav, NavItem, NavLink, Row } from 'reactstrap';
-import classnames from 'classnames';
+// import { TabContent, TabPane, Nav, NavItem, NavLink, Row } from 'reactstrap';
+// import classnames from 'classnames';
 import { DotLoader } from 'react-spinners';
 import Aos from 'aos';
+import Companies from '../components/Companies';
 
 const AllPortfolio = () => {
-    const [activeTab, setActiveTab] = useState('1');
+    // const [activeTab, setActiveTab] = useState('1');
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
         setTimeout(() => {
@@ -17,9 +18,9 @@ const AllPortfolio = () => {
         })
     }, [])
 
-    const toggle = tab => {
-        if (activeTab !== tab) setActiveTab(tab);
-    }
+    // const toggle = tab => {
+    //     if (activeTab !== tab) setActiveTab(tab);
+    // }
     return (
         <>
             {isLoading ? (
@@ -34,7 +35,120 @@ const AllPortfolio = () => {
             <div className="allPortfolio">
                 <div className="container">
                     <div className="row">
-                        <div className="col-12 ">
+                        <>
+                            <div data-aos='fade-right' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
+                                <div className="card">
+                                    <div className="card-header">
+                                        <img src="/assets/image/port1.png" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            Spartan Art
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos='fade-up' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
+                                <div className="card">
+                                    <div className="card-header">
+                                        <img src="/assets/image/port2.png" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            Spartan Art
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-aos='fade-left' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
+                                <div className="card">
+                                    <div className="card-header">
+                                        <img src="/assets/image/port3.png" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            Spartan Art
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos='fade-right' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
+                                <div className="card">
+                                    <div className="card-header">
+                                        <img src="/assets/image/port4.png" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            Spartan Art
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-aos='fade-up' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
+                                <div className="card">
+                                    <div className="card-header">
+                                        <img src="/assets/image/port1.png" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            Spartan Art
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos='fade-left' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
+                                <div className="card">
+                                    <div className="card-header">
+                                        <img src="/assets/image/port2.png" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            Spartan Art
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
+                                <div className="card">
+                                    <div className="card-header">
+                                        <img src="/assets/image/port3.png" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            Spartan Art
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
+                                <div className="card">
+                                    <div className="card-header">
+                                        <img src="/assets/image/port4.png" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            Spartan Art
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-6 col-lg-4 col-12 mb-2 px-2">
+                                <div className="card">
+                                    <div className="card-header">
+                                        <img src="/assets/image/port3.png" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            Spartan Art
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </>
+                        {/* <div className="col-12 ">
                             <div>
                                 <div className="row">
                                     <div className="col-lg-7  mx-auto mb-4">
@@ -365,10 +479,12 @@ const AllPortfolio = () => {
 
                                 </TabContent>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
+
+            <Companies />
 
 
         </>

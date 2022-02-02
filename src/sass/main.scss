@@ -2069,6 +2069,36 @@ body {
         }
     }
 
+    .pakets {
+
+        .nav {
+            border: 0;
+
+            .nav-item {
+
+                .nav-link {
+                    border: 0;
+                    border-radius: 0;
+                
+                    &.active {
+                        background-color: red;
+                    }
+                }
+            }
+        }
+
+        .tab-content {
+            border: 0;
+
+            .tab-pane {
+
+                &.active {
+                    background-color: red;
+                }
+            }
+        }
+    }
+
     .phoneWrap {
         position: relative;
 
@@ -2174,7 +2204,7 @@ body {
 
         .social {
             padding-left: 30px;
-        
+
 
             // &::after,
             // &::before {

@@ -6,10 +6,10 @@ const WebConsist = () => {
         <div className="webConsist myWebConsist">
             <div className="container">
                 <div className="row align-items-center">
-                    <div data-aos='fade-right' className="col-lg-5">
-                        <i><img src="/assets/image/card2.png" alt="" className="w-100" /></i>
+                    <div data-aos='fade-right' className="col-lg-6">
+                        <i><img src="/assets/image/web4.png" alt="" className="w-100" /></i>
                     </div>
-                    <div data-aos='fade-left' className="col-lg-6 ml-auto">
+                    <div data-aos='fade-left' className="col-lg-5 ml-auto">
                         <h1>Создадим для вас:</h1>
                         <p>Интернет магазин</p>
                         <p>Сайт визитка</p>

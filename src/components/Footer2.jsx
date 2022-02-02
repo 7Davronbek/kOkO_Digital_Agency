@@ -54,32 +54,39 @@ const Footer2 = () => {
 
             <Modal isOpen={modal} toggle={() => setModal(false)}>
                 <ModalBody>
-                    <div className="inputWrap mb-4">
-                        <label className="pl-2" htmlFor="name">Имя*</label>
-                        <input
-                            type="text"
-                            className='form-control '
-                            id="name"
-                            required
-                        />
-                    </div>
-                    <div className="inputWrap mb-4">
-                        <label className="pl-2" htmlFor="phone">Номер телефона*</label>
-                        <input
-                            type="text"
-                            className='form-control mb-3'
-                            id="phone"
-                        />
-                    </div>
-                    <div className="inputWrap mb-4">
-                        <label className="pl-2" htmlFor="bussiness">Вид бизнеса/деятельность*</label>
-                        <input
-                            type="text"
-                            className='form-control mb-3'
-                            id="bussiness"
-                        />
-                    </div>
-                    <button className="btn myBtn d-block ml-auto">Оставить заявку</button>
+                    <form>
+                        <div className="inputWrap mb-4">
+                            <label className="pl-2" htmlFor="name">Имя*</label>
+                            <input
+                                type="text"
+                                className='form-control '
+                                id="name"
+                                required
+                                errorMessage="Это обязательное поле!"
+                            />
+                        </div>
+                        <div className="inputWrap mb-4">
+                            <label className="pl-2" htmlFor="phone">Номер телефона*</label>
+                            <input
+                                type="text"
+                                className='form-control mb-3'
+                                id="phone"
+                                required
+                                errorMessage="Это обязательное поле!"
+                            />
+                        </div>
+                        <div className="inputWrap mb-4">
+                            <label className="pl-2" htmlFor="bussiness">Вид бизнеса/деятельность*</label>
+                            <input
+                                type="text"
+                                className='form-control mb-3'
+                                id="bussiness"
+                                required
+                                errorMessage="Это обязательное поле!"
+                            />
+                        </div>
+                        <button className="btn myBtn d-block ml-auto">Оставить заявку</button>
+                    </form>
                 </ModalBody>
             </Modal>
 

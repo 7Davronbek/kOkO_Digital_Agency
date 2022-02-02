@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { DotLoader } from "react-spinners";
+import Pakets from '../components/Pakets';
 import Support from '../components/Support';
 import WebConsist from '../components/WebConsist';
 import WebDepends from '../components/WebDepends';
@@ -43,6 +44,7 @@ const WebDevelopment = () => {
       <WebHeader />
 
       <WebConsist />
+      <Pakets />
 
       {/* <WhyWe /> */}
       <Support />
