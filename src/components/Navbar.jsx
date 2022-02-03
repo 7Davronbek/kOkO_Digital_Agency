@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 // import { getText } from '../locales';
 import { LANGUAGE } from '../tools/constans';
-
+// 
+// margin-top: 37px;
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
     const [burger, setBurger] = useState(false)
@@ -55,7 +56,7 @@ const Navbar = () => {
                                                 <div className="myLi"><Link onClick={() => setBurger(false)} className={`${location.pathname === 'web-development' ? 'navlinkActive' : ''}`} to='/web-development'>Веб услуги</Link></div>
                                                 <div className="myLi"><Link onClick={() => setBurger(false)} to='/internet-marketing'>Интернет маркетинг</Link></div>
                                                 <div className="myLi"><Link onClick={() => setBurger(false)} to='/design'>Дизайн</Link></div>
-                                                <div className="myLi "><Link onClick={() => setBurger(false)} className='mb-0' to='/motion'>Моушен</Link></div>
+                                                <div className="myLi "><Link onClick={() => setBurger(false)} className='mb-0' to='/motion'>Моушн</Link></div>
                                             </div>
                                         </li>
 

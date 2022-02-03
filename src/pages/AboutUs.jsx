@@ -1,5 +1,5 @@
 import AboutMain from '../components/AboutMain'
-import Personal from '../components/Personal'
+// import Personal from '../components/Personal'
 import Portfolio from '../components/Portfolio'
 import React, {useState, useEffect} from 'react'
 import { DotLoader } from "react-spinners";
@@ -26,7 +26,7 @@ const AboutUs = () => {
         )}
          <AboutMain /> 
          <Portfolio />
-         <Personal />
+         {/* <Personal /> */}
          {/* <Questions /> */}
          <WeInNumber />
         </>

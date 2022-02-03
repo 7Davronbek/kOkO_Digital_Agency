@@ -1812,6 +1812,16 @@ body {
         padding: 0;
     }
 
+    .motionHeader {
+
+        .secondP {
+            &::before {
+                top: 10px;
+                transform: translateY(0);
+            }        
+        }
+    }
+
     .myWebConsist {
         padding: 0px 0 50px 0;
 
@@ -1881,6 +1891,17 @@ body {
                 width: 70%;
                 margin: 0 auto;
             }
+        }
+    }
+
+    .motionConsist {
+
+        h1 {
+            margin-bottom: 8px !important;
+        }
+
+        h5 {
+            margin-bottom: 40px !important;
         }
     }
 

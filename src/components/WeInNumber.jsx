@@ -1,10 +1,13 @@
 import { useEffect, useState } from 'react'
 import Aos from 'aos';
+import { useLocation } from 'react-router-dom';
 
 const WeInNumber = () => {
     const [hover1, setHover1] = useState(false)
     const [hover2, setHover2] = useState(false)
     const [hover3, setHover3] = useState(false)
+
+    const location = useLocation()
 
     const handleHover1 = () => {
         setHover1(true)
@@ -12,7 +15,7 @@ const WeInNumber = () => {
             setHover1(false)
         }, 8000)
     }
-    
+
     const handleHover2 = () => {
         setHover2(true)
         setTimeout(() => {
@@ -36,9 +39,11 @@ const WeInNumber = () => {
     return (
         <div className='weInNumber'>
             <div className="container">
-            <div className={`bg1 ${hover1 ? 'hover' : ''}`}><img onMouseEnter={handleHover1} data-aos='fade-right' src="/assets/image/background/bg4.png" alt=""/></div>
-            <div className={`bg2 ${hover2 ? 'hover' : ''}`}><img onMouseEnter={handleHover2} data-aos='fade-right' src="/assets/image/background/bg2.png" alt=""/></div>
-            <div className={`bg3 ${hover3 ? 'hover' : ''}`}><img onMouseEnter={handleHover3} data-aos='fade-left' src="/assets/image/background/bg3.png" alt=""/></div>
+                {location.pathname === '/about-us' ? null : (
+                    <div className={`bg1 ${hover1 ? 'hover' : ''}`}><img onMouseEnter={handleHover1} data-aos='fade-right' src="/assets/image/background/bg4.png" alt="" /></div>
+                )}
+                <div className={`bg2 ${hover2 ? 'hover' : ''}`}><img onMouseEnter={handleHover2} data-aos='fade-right' src="/assets/image/background/bg2.png" alt="" /></div>
+                <div className={`bg3 ${hover3 ? 'hover' : ''}`}><img onMouseEnter={handleHover3} data-aos='fade-left' src="/assets/image/background/bg3.png" alt="" /></div>
                 <div className="row">
                     <div data-aos='fade-right' className="col-12">
                         <h1>Мы в цифрах</h1>

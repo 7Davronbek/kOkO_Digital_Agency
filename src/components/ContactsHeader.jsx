@@ -17,12 +17,12 @@ const ContactsHeader = () => {
                     </div>
                     <div className="col-12 flex-column flex-lg-row d-flex align-items-center justify-content-center">
                         <div data-aos='fade-right' className="d-flex align-items-center flex-column mr-lg-5 mb-lg-0 mb-4">
-                            <a href="tel: +998943698058">+99897 777 77 07</a>
-                            <button className="btn myBtn first">Bepul Konsultatsiya</button>
+                            <a href="tel: +998908232838">+998 90 823 28 38</a>
+                            <a href='tel: +998908232838' className="btn myBtn first">Bepul Konsultatsiya</a>
                         </div>
                         <div data-aos='fade-left' className="d-flex align-items-center flex-column">
-                            <a href="tel: +998943698058">@k0k0_agency</a>
-                            <button className="btn myBtn">Telegramdan Yozish</button>
+                            <a target='_blank' rel="noreferrer" href="https://t.me/kOkOdigital">@kOkOdigital</a>
+                            <a target='_blank' rel="noreferrer" href="https://t.me/kOkOdigital" className="btn myBtn">Telegramdan Yozish</a>
                         </div>
                     </div>
 

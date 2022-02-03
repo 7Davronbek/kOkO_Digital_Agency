@@ -37,8 +37,8 @@ const Footer2 = () => {
                             <a href="#">Адрес: Город Ташкент, Яшнабадский район, Улица Тараккиёт, 2
                                 Пн-Сб 09:00 - 18:00
                             </a>
-                            <a className="d-flex mt-2 align-items-center justify-content-center" href="#">Контакты:</a>
-                            <a className="d-flex  align-items-center justify-content-center" href="#"> +998 90 823 28 38</a>
+                            <a className="d-flex mt-2 align-items-center justify-content-center" href="tel: +998908232838">Контакты:</a>
+                            <a className="d-flex  align-items-center justify-content-center" href="tel: +998908232838"> +998 90 823 28 38</a>
                         </div>
 
                     </div>
