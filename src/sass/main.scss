@@ -337,6 +337,10 @@ body {
                         }
                     }
                 }
+
+                @media(max-width: 1200px) {
+                    margin-right: 20px !important;
+                }
             }
         }
 
@@ -438,31 +442,13 @@ body {
             }
         }
 
-        .video {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-
-            @media(max-width: 1300px) {
-                width: auto;
-            }
-        }
-
-        video {
-            position: absolute;
-            z-index: -1;
-            top: 0;
-            left: 0;
-            height: 100vh;
-
-            @media(max-width: 992px) {
-                height: 100vh;
-            }
+        @media(max-width: 1350px) {
+            background-size: auto 60vh;
+            background-position-x: -23px;
         }
 
         @media(max-width: 992px) {
-            height: 100vh;
+            height: 60vh;
         }
     }
 

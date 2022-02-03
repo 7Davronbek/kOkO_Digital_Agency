@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Aos from 'aos';
-import { DotLoader } from "react-spinners";
+import { RingLoader } from "react-spinners";
 // import WhyWe from '../components/WhyWe';
 import Support from '../components/Support';
 import DesignHeader from '../components/DesignHeader';
@@ -28,7 +28,7 @@ const Design = () => {
       {isLoading ? (
         <div className="loader ">
           <h5 className='mr-4'>Design</h5>
-          <DotLoader color="#fff" size="35" loading={isLoading} />
+          <RingLoader color="#fff" size="35" loading={isLoading} />
         </div>
       ) : (
         ""

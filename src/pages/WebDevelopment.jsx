@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { DotLoader } from "react-spinners";
+import { RingLoader } from "react-spinners";
 import Pakets from '../components/Pakets';
 import Support from '../components/Support';
 import WebConsist from '../components/WebConsist';
@@ -22,7 +22,7 @@ const WebDevelopment = () => {
       {isLoading ? (
         <div className="loader ">
           <h5 className='mr-4'>Web services</h5>
-          <DotLoader color="#fff" size="35" loading={isLoading} />
+          <RingLoader color="#fff" size="35" loading={isLoading} />
         </div>
       ) : (
         ""

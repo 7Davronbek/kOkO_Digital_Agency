@@ -96,24 +96,24 @@ const Contacts = () => {
                             <h1 data-aos='fade-left' >Адрес магазина и сервисного центра:</h1>
 
                             <div data-aos='fade-left' className="myDiv first">
-                                {/* <div className="img"><img src="/assets/icon/location.svg" alt="" /></div> */}
-                                <i className='mr-3'><img style={{width: '40px'}} src="/assets/icon/location3.png" alt="" /></i>
+                                <div className="img"><img src="/assets/icon/location.svg" alt="" /></div>
+                                {/* <i className='mr-3'><img style={{width: '40px'}} src="/assets/icon/location3.png" alt="" /></i> */}
                                 <div>
                                     <h3>Адрес: Город Ташкент, Яшнабадский район, Улица Тараккиёт, 2.</h3>
                                     <h2>Пн-Сб 09:00 - 18:00</h2>
                                 </div>
                             </div>
                             <div data-aos='fade-left' className="myDiv second">
-                                {/* <div className="img"><img src="/assets/icon/phone.svg" alt="" /></div> */}
-                                <i className='mr-3'><img style={{width: '40px'}} src="/assets/icon/location2.png" alt="" /></i>
+                                <div className="img"><img src="/assets/icon/phone.svg" alt="" /></div>
+                                {/* <i className='mr-3'><img style={{width: '40px'}} src="/assets/icon/location2.png" alt="" /></i> */}
                                 <div>
                                     <h2>Контакты: </h2>
                                     <h3 className='mt-1'><a href="tel: +998908232838">+998 90 823 28 38</a></h3>
                                 </div>
                             </div>
                             <div data-aos='fade-left' className="myDiv third">
-                                {/* <div className="img"><img src="/assets/icon/warning.svg" alt="" /></div> */}
-                                <i className='mr-3'><img style={{width: '40px'}} src="/assets/icon/location1.png" alt="" /></i>
+                                <div className="img"><img src="/assets/icon/warning.svg" alt="" /></div>
+                                {/* <i className='mr-3'><img style={{width: '40px'}} src="/assets/icon/location1.png" alt="" /></i> */}
                                 <div>
                                     <h3>Ориентир: улица Боткина</h3>
                                 </div>

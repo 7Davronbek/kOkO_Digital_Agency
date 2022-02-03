@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 // import { TabContent, TabPane, Nav, NavItem, NavLink, Row } from 'reactstrap';
 // import classnames from 'classnames';
-import { DotLoader } from 'react-spinners';
+import { RingLoader } from 'react-spinners';
 import Aos from 'aos';
 import Companies from '../components/Companies';
 
@@ -26,7 +26,7 @@ const AllPortfolio = () => {
             {isLoading ? (
                 <div className="loader ">
                     <h5 className='mr-4'>Portfolio</h5>
-                    <DotLoader color="#fff" size="35" loading={isLoading} />
+                    <RingLoader color="#fff" size="35" loading={isLoading} />
                 </div>
             ) : (
                 ""

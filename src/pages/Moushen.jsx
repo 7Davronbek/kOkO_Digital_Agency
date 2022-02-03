@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { DotLoader } from "react-spinners";
+import { RingLoader } from "react-spinners";
 import Aos from 'aos';
 // import WhyWe from '../components/WhyWe';
 import Support from '../components/Support';
@@ -25,7 +25,7 @@ const Moushen = () => {
       {isLoading ? (
         <div className="loader ">
           <h5 className='mr-4'>Motion</h5>
-          <DotLoader color="#fff" size="35" loading={isLoading} />
+          <RingLoader color="#fff" size="35" loading={isLoading} />
         </div>
       ) : (
         ""
