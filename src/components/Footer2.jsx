@@ -28,13 +28,13 @@ const Footer2 = () => {
                         </div>
 
                         <div className="col-lg-3 d-flex align-items-center mx-auto social" >
-                            <i className='mr-4 cursor'><img src="/assets/icon/ins.svg" alt="" /></i>
-                            <i className='mr-4 cursor'><img src="/assets/icon/tg.svg" alt="" /></i>
+                            <i className=' cursor'><img src="/assets/icon/ins.svg" alt="" /></i>
+                            <i className=' cursor'><img src="/assets/icon/tg.svg" alt="" /></i>
                             <i className='cursor'><img src="/assets/image/facebook.png" alt="" /></i>
                         </div>
 
                         <div className="col-lg-4">
-                            <a href="#">Адрес: Город Ташкент, Яшнабадский район, Улица Тараккиёт, 2
+                            <a>Адрес: Город Ташкент, Яшнабадский район, Улица Тараккиёт, 2
                                 Пн-Сб 09:00 - 18:00
                             </a>
                             <a className="d-flex mt-2 align-items-center justify-content-center" href="tel: +998908232838">Контакты:</a>

@@ -38,5 +38,5 @@ ReactDOM.render(
     <Footer2 />
   </Router>
   </>,
-  document.getElementById('root')
+  document.getElementById('KOKO')
 );

@@ -6,6 +6,7 @@ import Support from '../components/Support';
 import InternetHeader from '../components/InternetHeader';
 import InternetConsist from '../components/InternetConsist';
 import InternetDepend from '../components/InternetDepend';
+import PaketsInternet from '../components/PaketsInternet';
 
 const InternetMarketing = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -51,6 +52,7 @@ const InternetMarketing = () => {
       <InternetHeader />
 
       <InternetConsist />
+      <PaketsInternet />
 
       {/* <WhyWe /> */}
       <Support />

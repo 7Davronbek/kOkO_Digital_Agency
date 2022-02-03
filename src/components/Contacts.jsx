@@ -10,21 +10,21 @@ const Contacts = () => {
 
     const [hover1, setHover1] = useState(false)
     const [hover2, setHover2] = useState(false)
-    
+
     const handleHover1 = () => {
         setHover1(true)
         setTimeout(() => {
             setHover1(false)
         }, 8000)
     }
-    
+
     const handleHover2 = () => {
         setHover2(true)
         setTimeout(() => {
             setHover2(false)
         }, 8000)
     }
-    
+
 
     const location = useLocation()
 
@@ -59,35 +59,52 @@ const Contacts = () => {
                                     <h4>Let's Talk</h4>
                                     <p>Fill up the form our team will get back to you within 24 Hours</p>
 
-                                    <div className="row">
-                                        <div className="col-md-6 mb-5">
-                                            <div className="inputWrap">
-                                                <input
-                                                    onClick={() => setForm(true)}
-                                                    type="text"
-                                                    className='form-control'
-                                                />
-                                                <h6 className={`${form ? 'active' : ''}`}>First Name*</h6>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-6 mb-5">
-                                            <div className="inputWrap">
-                                                <input onClick={() => setForm1(true)} type="text" className='form-control' />
-                                                <h6 className={`${form1 ? 'active' : ''}`}>Phone number*</h6>
-                                            </div>
-                                        </div>
+                                    <form action="./telegram.php" method='POST'>
 
-                                        <div className="col-md-12 mb-3">
-                                            <div className="inputWrap">
-                                                <textarea onClick={() => setForm3(true)} className='form-control' />
-                                                <h6 className={`last ${form3 ? 'actives' : ''}`}>Messages*</h6>
+                                        <div className="row">
+                                            <div className="col-md-6 mb-5">
+                                                <div className="inputWrap">
+                                                    <input
+                                                        onClick={() => setForm(true)}
+                                                        type="text"
+                                                        className='form-control'
+                                                        name='user_name'
+                                                        required
+                                                    />
+                                                    <h6 className={`${form ? 'active' : ''}`}>First Name*</h6>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 mb-5">
+                                                <div className="inputWrap">
+                                                    <input 
+                                                        onClick={() => setForm1(true)} 
+                                                        type="text" 
+                                                        className='form-control' 
+                                                        name='user_phone'
+                                                        required
+                                                        />
+                                                    <h6 className={`${form1 ? 'active' : ''}`}>Phone number*</h6>
+                                                </div>
+                                            </div>
+
+                                            <div className="col-md-12 mb-3">
+                                                <div className="inputWrap">
+                                                    <textarea 
+                                                        onClick={() => setForm3(true)} 
+                                                        className='form-control'
+                                                        name='user_message'
+                                                        required
+                                                    />
+                                                    <h6 className={`last ${form3 ? 'actives' : ''}`}>Messages*</h6>
+                                                </div>
+                                            </div>
+
+                                            <div className="col-12">
+                                                <button type='submit' className="btn myBtn d-block ml-auto">Оставить заявку</button>
                                             </div>
                                         </div>
-
-                                        <div className="col-12">
-                                            <button className="btn myBtn d-block ml-auto">Оставить заявку</button>
-                                        </div>
-                                    </div>
+                                    
+                                    </form>
                                 </div>
 
                             </>

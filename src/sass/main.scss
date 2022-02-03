@@ -1,9 +1,5 @@
 @import "./secondary.scss";
 
-// portfolio tegiga company +
-// email -
-// tabs
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 html {
@@ -651,14 +647,15 @@ body {
         }
 
         .card {
-            cursor: pointer;
             height: 300px;
-            // transition: all .5s ease-in-out;
+            position: relative;
 
             .card-header {
                 padding: 0;
                 overflow: hidden;
                 border-radius: 20px 0;
+                opacity: 0.6;
+                transition: all 0.5s ease-in-out;
 
                 img {
                     transition: all 0.5s ease-in-out;
@@ -667,16 +664,22 @@ body {
 
             .card-body {
                 padding: 0 10px;
+                position: absolute;
+                left: 0;
+                bottom: 50px;
+                z-index: 11;
 
                 h5 {
-                    color: $colorGreen;
+                    color: #fff;
                     transform: translateY(-50px);
                     transition: all 0.5s ease-in-out;
+                    text-align: center;
                 }
             }
 
             &:hover {
                 .card-header {
+                    opacity: 1;
                     img {
                         transform: scale(1.2);
                     }
@@ -1043,6 +1046,10 @@ body {
             &.first {
                 .img {
                     width: 60px;
+
+                    @media(max-width: 767px) {
+                        width: 50px;
+                    }
                 }
             }
 
@@ -1486,6 +1493,20 @@ body {
         .container {
             position: relative;
 
+            .my {
+                &:nth-child(1) {
+                    @media(max-width: 767px) {
+                        transform: scale(0.6) translate(363px, 10px);
+                    }
+                }
+
+                &:nth-child(2) {
+                    @media(max-width: 767px) {
+                        transform: scale(0.5) translate(-189px, 795px);
+                    }
+                }
+            }
+
             .bg1,
             .bg2,
             .bg3 {
@@ -1609,6 +1630,25 @@ body {
 
     .offer {
         margin: 30px 0;
+
+        .container {
+
+            .my {
+                &:nth-child(1) {
+
+                    @media(max-width: 767px) {
+                        transform: translate(-166px, -63px) scale(0.5);
+                    }
+                }
+
+                &:nth-child(2) {
+
+                    @media(max-width: 767px) {
+                        transform: scale(0.5) translate(185px, 180px);
+                    }
+                }
+            }
+        }
 
         .bg1,
         .bg2,
@@ -1804,7 +1844,7 @@ body {
             &::before {
                 top: 10px;
                 transform: translateY(0);
-            }        
+            }
         }
     }
 
@@ -2105,6 +2145,11 @@ body {
     .pakets {
         padding: 20px 0 50px;
 
+        h4 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
         .myRow {
             padding: 30px;
         }
@@ -2118,6 +2163,7 @@ body {
         .nav {
             border: 0;
             border-radius: 10px 10px 0 0;
+            align-items: flex-end;
 
 
 
@@ -2158,13 +2204,13 @@ body {
                     }
                 }
 
-                &:nth-child(1) {
+                &:first-child {
                     .nav-link {
                         border-radius: 10px 0 0 0;
                     }
                 }
 
-                &:nth-child(4) {
+                &:last-child {
                     .nav-link {
                         border-radius: 0 10px 0 0;
                     }
@@ -2263,6 +2309,10 @@ body {
             color: $colorBlue;
             font-weight: bold;
             margin-bottom: 8px !important;
+
+            @media(max-width: 992px) {
+                margin-top: 30px ;
+            }
         }
 
         .myBtn {
@@ -2292,51 +2342,25 @@ body {
         .social {
             padding-left: 30px;
 
+            i {
+                margin-right: 20px;
 
-            // &::after,
-            // &::before {
-            //     content: "";
-            //     position: absolute;
-            //     width: 150px;
-            //     height: 1px;
-            //     background-color: #fff;
-            //     top: 50%;
-            //     transform: translateY(-50%);
-            //     border-radius: 10px;
+                &:nth-child(2) {
+                    margin-right: 15px;
+                }
 
-            //     @media (max-width: 992px) {
-            //         width: 100px;
-            //     }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
 
-            //     @media (max-width: 420px) {
-            //         width: 70px;
-            //     }
-            // }
-
-            // &::after {
-            //     right: 20%;
-
-            //     @media (max-width: 767px) {
-            //         right: 0;
-            //     }
-            // }
-
-            // &::before {
-            //     left: 20%;
-
-            //     @media (max-width: 767px) {
-            //         left: 0;
-            //     }
-            // }
+            @media(max-width: 992px) {
+                justify-content: center;
+                margin: 25px 0 25px;
+            }
         }
 
         &.secondary {
-            // .footerLine {
-            //     width: 100%;
-            //     height: 2px;
-            //     background-color: $backgroundColor;
-            //     margin: 20px 0;
-            // }
 
             h6 {
                 padding-left: 30px;
