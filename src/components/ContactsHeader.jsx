@@ -13,7 +13,7 @@ const ContactsHeader = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-12 text-center">
-                        <h1 data-aos='fade-down'>Способ связи</h1>
+                        <h1 data-aos='fade-down'>Контакты</h1>
                     </div>
                     <div className="col-12 flex-column flex-lg-row d-flex align-items-center justify-content-center">
                         <div data-aos='fade-right' className="d-flex align-items-center flex-column mr-lg-5 mb-lg-0 mb-4">

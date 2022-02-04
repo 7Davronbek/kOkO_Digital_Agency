@@ -86,7 +86,7 @@ const Portfolio = () => {
                         <div data-aos='fade-left' className="col-lg-3 col-md-6 mb-4">
                             <div className="card">
                                 <div className="card-header">
-                                    <img src="/assets/image/portfolio/4.png" className='w-100' alt="" />
+                                    <img src="/assets/image/portfolio/port10.jpg" className='w-100' alt="" />
                                 </div>
                                 <div className="card-body">
                                     <h5>
@@ -142,7 +142,7 @@ const Portfolio = () => {
                                 </div>
                                 <div className="card-body">
                                     <h5>
-                                        Website graniinert.uz
+                                        Website granitinert.uz
                                     </h5>
                                 </div>
                             </div>

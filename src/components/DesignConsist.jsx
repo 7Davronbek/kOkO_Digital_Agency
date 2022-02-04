@@ -23,8 +23,8 @@ const DesignConsist = () => {
                         <h6>Веб-дизайн (от англ. Web design)  - это направление веб разработки и разные виды дизайна.  Основной целью веб-дизайна является проектирование пользовательских  веб-интерфейсов для сайтов или веб-приложений.</h6>
                         <p>Дизайн основной и типовых страниц сайта</p>
                     </div>
-                    <div data-aos='fade-left' className="col-lg-5 ml-auto">
-                        <i><img src="/assets/image/card3.png" alt="" /></i>
+                    <div data-aos='fade-left' className="col-lg-6 ml-auto">
+                        <i><img src="/assets/image/design/design.jpg" className='w-100' alt="" /></i>
                     </div>
                 </div>
 
@@ -58,8 +58,8 @@ const DesignConsist = () => {
                         <p>Коммуникационные материалы бренда</p>
                         <p>Дизайн упаковки бренда (при наличии)</p>
                     </div>
-                    <div data-aos='fade-left' className="col-lg-5">
-                        <i><img src="/assets/image/card3.png" alt="" className="w-100" /></i>
+                    <div data-aos='fade-left' className="col-lg-6">
+                        <i><img src="/assets/image/smm/smm3.jpg" alt="" className="w-100 myImg" /></i>
                     </div>
                 </div>
 

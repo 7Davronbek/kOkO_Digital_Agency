@@ -13,7 +13,7 @@ const Support = () => {
                         <p>Наш менеджер вас проконсультирует</p>
                         <a className='btn myBtn' href="tel: +998943698058">Позвонить</a>
                     </div>
-                    <div data-aos='fade-left' className="col-lg-2 mb-lg-0 mb-4">
+                    <div data-aos='fade-left' className="col-lg-2 mb-lg-0 d-none d-lg-flex mb-4">
                         <i><img src="/assets/image/contactBg.svg" alt="" /></i>
                     </div>
                 </div>

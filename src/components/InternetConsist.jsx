@@ -38,7 +38,7 @@ const InternetConsist = () => {
 
                 <div className="row align-items-center mt-4 ">
                     <div data-aos='fade-right' className="col-lg-6">
-                        <i><img src="/assets/image/card1.png" alt="" className="w-100" /></i>
+                        <i><img src="/assets/image/seo/seo2.jpg" alt="" className="w-100 myImg2" /></i>
                     </div>
                     <div data-aos='fade-left' className="col-lg-6">
                         <h1>SEO</h1>
@@ -53,7 +53,7 @@ const InternetConsist = () => {
 
                 <div className="row flex-lg-row flex-column-reverse align-items-center mt-4 myRow">
                     <div data-aos='fade-right' className="col-lg-6 ml-auto">
-                        <h1>Контестная реклама</h1>
+                        <h1>Контекстная реклама</h1>
                         <h5>Контекстная реклама — это различные объявления (текстовые, графические, видео), которые показываются пользователям в соответствии с их поисковыми запросами, интересами или поведением в интернете. Контекстная реклама показывается в поисковых системах, на различных сайтах, в мобильных приложениях и на других ресурсах.</h5>
                         <h5>Существует два сервиса размещения рекламы в интернете — Яндекс. Директа и Google Ads</h5>
                         <h5>Варианты контекстной рекламы:</h5>
@@ -63,8 +63,8 @@ const InternetConsist = () => {
                         <p>Видеореклама</p>
                         <p>Кампании для мобильных приложениях</p>
                     </div>
-                    <div data-aos='fade-left' className="col-lg-5">
-                        <i><img src="/assets/image/card1.png" alt="" className="w-100" /></i>
+                    <div data-aos='fade-left' className="col-lg-6">
+                        <i><img src="/assets/image/smm/smm4.jpg" alt="" className="w-100" /></i>
                     </div>
                 </div>
 

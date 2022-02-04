@@ -653,7 +653,7 @@ body {
         }
 
         .card {
-            height: 300px;
+            height: 100%;
             position: relative;
 
             .card-header {
@@ -674,6 +674,8 @@ body {
                 left: 0;
                 bottom: -8px;
                 z-index: 11;
+                width: 100%;
+                text-align: center;
 
                 h5 {
                     color: #fff;
@@ -685,6 +687,7 @@ body {
 
             &:hover {
                 z-index: 1;
+
                 .card-header {
                     opacity: 1;
                     transform: scale(1.15);
@@ -694,6 +697,10 @@ body {
                     transform: translate(-10px, -50px);
                     opacity: 0;
                 }
+            }
+
+            @media(max-width: 767px) {
+                height: 400px;
             }
         }
 
@@ -1206,16 +1213,22 @@ body {
             }
 
             &::before {
-                content: "Telegramdan yozish";
+                content: "Написать в телеграм";
                 font-size: 16px;
                 font-weight: 500;
             }
 
             &.first {
                 &::before {
-                    content: "Bepul konsultatsiya";
+                    content: "Бесплатная консультация";
                     font-size: 16px;
                     font-weight: 500;
+                }
+            }
+
+            &:hover {
+                &::after {
+                    transform: translateY(-14px) translateX(-20px) rotate(10deg);
                 }
             }
 
@@ -1880,6 +1893,15 @@ body {
     .myWebConsist {
         padding: 0px 0 50px 0;
 
+        .myImg {
+            transform: translate(60px, 45px);
+        }
+
+        .myImg2 {
+            transform: translateY(30px);
+        }
+
+
         i {
             img {
                 border-radius: 20px;
@@ -1950,6 +1972,22 @@ body {
     }
 
     .motionConsist {
+
+        .myH5 {
+            position: relative;
+            padding-left: 20px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 8px;
+                left: -3px;
+                background-color: $colorBlue;
+                border-radius: 50%;
+                width: 8px;
+                height: 8px;
+            }
+        }
 
         h1 {
             margin-bottom: 8px !important;
@@ -2174,18 +2212,38 @@ body {
     .pakets {
         padding: 20px 0 50px;
 
-        h4 {
-            font-size: 24px;
-            font-weight: 600;
-        }
-
         .myRow {
             padding: 30px;
+            align-items: center;
+
+            @media(max-width: 767px) {
+                padding: 0;
+            }
         }
 
         .card {
             .card-body {
-                padding: 30px 35px;
+                padding: 30px 35px 30px 60px;
+
+                p {
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 6px;
+                        height: 6px;
+                        background-color: $colorBlue;
+                        border-radius: 50%;
+                        left: -21px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                @media(max-width: 767px) {
+                    padding-left: 55px;
+                }
             }
         }
 
@@ -2239,16 +2297,30 @@ body {
                     }
                 }
 
+                &:nth-child(2n+1) {
+                    .nav-link {
+
+                        &.active {
+                            background: rgba(44, 53, 61, 0.5);
+                        }
+                    }
+                }
+
                 &:last-child {
                     .nav-link {
                         border-radius: 0 10px 0 0;
                     }
                 }
+
+                @media(max-width: 992px) {
+                    flex-basis: auto;
+                    flex-grow: initial;
+                    width: 50%;
+                }
             }
         }
 
         .tab-content {
-            border: 0;
 
             .tab-pane {
 
@@ -2257,6 +2329,22 @@ body {
                     -webkit-backdrop-filter: blur(50px);
                     backdrop-filter: blur(50px);
                 }
+
+                &:nth-child(2n+1) {
+                    &.active {
+                        background: rgba(44, 53, 61, 0.5);
+                    }
+                }
+            }
+        }
+    }
+
+    .paketsInternet {
+
+        .myItem {
+
+            .nav-link {
+                padding: 19px 0 41px;
             }
         }
     }
@@ -2340,7 +2428,7 @@ body {
             margin-bottom: 8px !important;
 
             @media(max-width: 992px) {
-                margin-top: 30px ;
+                margin-top: 30px;
             }
         }
 

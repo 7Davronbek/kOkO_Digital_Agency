@@ -29,7 +29,7 @@ const WebConsist = () => {
                         <p>API Программирование</p>
                     </div>
                     <div data-aos='fade-left' className="col-lg-5 ml-auto">
-                        <i><img src="/assets/image/web/web2.png" className='w-100' alt="" /></i>
+                        <i><img src="/assets/image/web/web1.png" className='w-100' alt="" /></i>
                     </div>
                 </div>
 
