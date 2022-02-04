@@ -1,8 +1,24 @@
 import React, { useState, useEffect } from 'react'
 import Aos from 'aos';
 import { useLocation } from 'react-router-dom'
+import emailjs from 'emailjs-com'
 
 const Contacts = () => {
+
+    const sendEmail = (e) => {
+        e.preventDefault()
+
+        emailjs.sendForm(
+            'service_ivag8pl',
+            'template_lvaik5b',
+            e.target,
+            'user_JzbFquvGQOfWi32hHD37D'
+        ).then((res) => {
+            console.log(res);
+        }).catch((err) => {
+            console.log(err );
+        })
+    }
 
     const [form, setForm] = useState(false)
     const [form1, setForm1] = useState(false)
@@ -59,7 +75,7 @@ const Contacts = () => {
                                     <h4>Всё еще остались у вас вопросы?</h4>
                                     <p>Оставьте заявку и получите ответы!</p>
 
-                                    <form action="./telegram.php" method='POST'>
+                                    <form onSubmit={sendEmail}>
 
                                         <div className="row">
                                             <div className="col-md-6 mb-5">
@@ -68,7 +84,7 @@ const Contacts = () => {
                                                         onClick={() => setForm(true)}
                                                         type="text"
                                                         className='form-control'
-                                                        name='user_name'
+                                                        name='name'
                                                         required
                                                     />
                                                     <h6 className={`${form ? 'active' : ''}`}>Имя*</h6>
@@ -80,7 +96,7 @@ const Contacts = () => {
                                                         onClick={() => setForm1(true)} 
                                                         type="text" 
                                                         className='form-control' 
-                                                        name='user_phone'
+                                                        name='phone'
                                                         required
                                                         />
                                                     <h6 className={`${form1 ? 'active' : ''}`}>Номер телефона*</h6>
@@ -92,7 +108,7 @@ const Contacts = () => {
                                                     <textarea 
                                                         onClick={() => setForm3(true)} 
                                                         className='form-control'
-                                                        name='user_message'
+                                                        name='message'
                                                         required
                                                     />
                                                     <h6 className={`last ${form3 ? 'actives' : ''}`}>Сообщение*</h6>

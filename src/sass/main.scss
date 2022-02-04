@@ -672,7 +672,7 @@ body {
                 padding: 0 10px;
                 position: absolute;
                 left: 0;
-                bottom: 50px;
+                bottom: -8px;
                 z-index: 11;
 
                 h5 {
@@ -684,9 +684,10 @@ body {
             }
 
             &:hover {
+                z-index: 1;
                 .card-header {
                     opacity: 1;
-                    transform: scale(1.2);
+                    transform: scale(1.15);
                 }
 
                 h5 {

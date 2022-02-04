@@ -46,11 +46,11 @@ const Portfolio = () => {
                         <div data-aos='fade-right' className="col-lg-3 col-md-6 mb-4">
                             <div className="card h-100">
                                 <div className="card-header">
-                                    <img src="/assets/image/portfolio/port1.png" className='w-100' alt="" />
+                                    <img src="/assets/image/portfolio/1.png" className='w-100' alt="" />
                                 </div>
                                 <div className="card-body">
                                     <h5>
-                                    Смм продвижение проекта по производству  нерудных материалов
+                                        SMM RKA Online Shop 
                                     </h5>
                                 </div>
                             </div>
@@ -59,11 +59,11 @@ const Portfolio = () => {
                         <div data-aos='fade-up' className="col-lg-3 col-md-6 mb-4">
                             <div className="card h-100">
                                 <div className="card-header">
-                                    <img src="/assets/image/portfolio/port2.jpg" className='w-100' alt="" />
+                                    <img src="/assets/image/portfolio/3.png" className='w-100' alt="" />
                                 </div>
                                 <div className="card-body">
                                     <h5>
-                                    Смм продвижение интернет магазина
+                                    SMM CGB
                                     </h5>
                                 </div>
                             </div>
@@ -73,11 +73,11 @@ const Portfolio = () => {
                         <div data-aos='fade-up' className="col-lg-3 col-md-6 mb-4">
                             <div className="card h-100">
                                 <div className="card-header">
-                                    <img src="/assets/image/portfolio/port5.jpg" className='w-100' alt="" />
+                                    <img src="/assets/image/portfolio/2.png" className='w-100' alt="" />
                                 </div>
                                 <div className="card-body">
                                     <h5>
-                                    Смм продвижение интернет магазина
+                                        SMM RKA Online Shop 
                                     </h5>
                                 </div>
                             </div>
@@ -86,11 +86,11 @@ const Portfolio = () => {
                         <div data-aos='fade-left' className="col-lg-3 col-md-6 mb-4">
                             <div className="card">
                                 <div className="card-header">
-                                    <img src="/assets/image/portfolio/port4.png" className='w-100' alt="" />
+                                    <img src="/assets/image/portfolio/4.png" className='w-100' alt="" />
                                 </div>
                                 <div className="card-body">
                                     <h5>
-                                    Смм продвижение итальянского ресторана
+                                        SMM IL Patio
                                     </h5>
                                 </div>
                             </div>
@@ -99,11 +99,11 @@ const Portfolio = () => {
                         <div data-aos='fade-right' className="col-lg-3 col-md-6 mb-4">
                             <div className="card">
                                 <div className="card-header">
-                                    <img src="/assets/image/portfolio/port10.jpg" className='w-100' alt="" />
+                                    <img src="/assets/image/portfolio/5.png" className='w-100' alt="" />
                                 </div>
                                 <div className="card-body">
                                     <h5>
-                                        Фотосессия для итальянского ресторана
+                                        Website agrom.uz
                                     </h5>
                                 </div>
                             </div>
@@ -112,11 +112,11 @@ const Portfolio = () => {
                         <div data-aos='fade-up' className="col-lg-3 col-md-6 mb-4">
                             <div className="card  h-100">
                                 <div className="card-header">
-                                    <img src="/assets/image/portfolio/port6.jpg" className='w-100' alt="" />
+                                    <img src="/assets/image/portfolio/6.png" className='w-100' alt="" />
                                 </div>
                                 <div className="card-body">
                                     <h5>
-                                        Смм дизайн для интернет магазина
+                                        Website smartpackprint.uz
                                     </h5>
                                 </div>
                             </div>
@@ -125,11 +125,11 @@ const Portfolio = () => {
                         <div data-aos='fade-up' className="col-lg-3 col-md-6 mb-4">
                             <div className="card  h-100">
                                 <div className="card-header">
-                                    <img src="/assets/image/portfolio/port9.jpg" className='w-100' alt="" />
+                                    <img src="/assets/image/portfolio/7.png" className='w-100' alt="" />
                                 </div>
                                 <div className="card-body">
                                     <h5>
-                                    Фотосессия для итальянского ресторана
+                                        Website trustedexpressllc.com
                                     </h5>
                                 </div>
                             </div>
@@ -138,11 +138,11 @@ const Portfolio = () => {
                         <div data-aos='fade-left' className="col-lg-3 col-md-6 mb-4">
                             <div className="card  h-100">
                                 <div className="card-header">
-                                    <img src="/assets/image/portfolio/port8.jpg" className='w-100' alt="" />
+                                    <img src="/assets/image/portfolio/8.png" className='w-100' alt="" />
                                 </div>
                                 <div className="card-body">
                                     <h5>
-                                        Смм дизайн для проекта по производству  нерудных материалов
+                                        Website graniinert.uz
                                     </h5>
                                 </div>
                             </div>

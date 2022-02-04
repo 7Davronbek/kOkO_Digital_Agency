@@ -48,6 +48,7 @@ const Navbar = () => {
                                 <div className="col-md-10 myNav d-lg-flex align-items-center justify-content-end">
                                     <ul className='d-flex align-items-center justify-content-center'>
                                         <li className={`mr-5 myLi`}><Link onClick={() => setBurger(false)} className={`myA  ${location.pathname === '/' ? 'navlinkActive' : ''}`} to='/'>Главная</Link></li>
+                                        <li className={`mr-5 myLi`}><Link onClick={() => setBurger(false)} className={`myA ${location.pathname === '/about-us' ? 'navlinkActive' : ''}`} to='/about-us'>О нас</Link></li>
                                         <li className={`mr-5 myLi`}><Link onClick={() => setBurger(false)} className={`myA  ${location.pathname === '/blog' ? 'navlinkActive' : ''}`} to='/blog'>Блог</Link></li>
                                         <li className="mr-4 myLi servicesLi d-flex align-items-center position-relative">
                                             Наши услуги 
@@ -60,7 +61,6 @@ const Navbar = () => {
                                             </div>
                                         </li>
 
-                                        <li className={`mr-5 myLi`}><Link onClick={() => setBurger(false)} className={`myA ${location.pathname === '/about-us' ? 'navlinkActive' : ''}`} to='/about-us'>О нас</Link></li>
                                         <li className={`mr-5 myLi`}><Link onClick={() => setBurger(false)} className={`myA ${location.pathname === '/contacts' ? 'navlinkActive' : ''}`} to='/contacts'>Контакты</Link></li>
                                     </ul>
                                 </div>

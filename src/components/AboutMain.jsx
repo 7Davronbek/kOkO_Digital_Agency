@@ -46,10 +46,9 @@ const AboutMain = () => {
                     </div>
                     <div className="col-lg-6 ml-auto">
                         <h1 data-aos='fade-left' >Работая с нами вы получите:</h1>
+                        <p data-aos='fade-left' className='mt-5'><b>Полный цикл услуг;</b></p>
                         <p data-aos='fade-left' className='mt-5'><b>Наша команда уже на протяжении нескольких лет занимается  услугами в сфере разработки сайтов и интернет магазинов любой сложности. Полное продвижение в области SEO и СММ для вашего бизнеса.</b></p>
                         <p data-aos='fade-left' className='mt-4'><b>Опытные специалисты нашей компании готовы указать вам услуги по разработке брендбуков ( логотипов ) и разработке телеграм ботов. Более того, у нас отдельная команда для контекстной и других видов реклам. Если вы ищете тех, кому можно доверить WEB, SMM и Digital услуги, то обращайтесь в нашу компанию «kOkO». </b></p>
-                        {/* <p data-aos='fade-right' className='mt-4'><b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, velit cumque facilis dolorem blanditiis sapiente sunt eius suscipit? Aliquid, deleniti?</b></p>
-                        <p data-aos='fade-right' className='mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe velit dolorum quas repudiandae recusandae distinctio facere dignissimos nam autem perspiciatis. Quidem mollitia odio nemo nesciunt magni eius repellat ullam enim.</p> */}
                     </div>
                 </div>
             </div>

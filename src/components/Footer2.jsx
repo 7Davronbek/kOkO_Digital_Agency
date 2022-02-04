@@ -62,7 +62,6 @@ const Footer2 = () => {
                                 className='form-control '
                                 id="name"
                                 required
-                                errorMessage="Это обязательное поле!"
                             />
                         </div>
                         <div className="inputWrap mb-4">
@@ -72,7 +71,6 @@ const Footer2 = () => {
                                 className='form-control mb-3'
                                 id="phone"
                                 required
-                                errorMessage="Это обязательное поле!"
                             />
                         </div>
                         <div className="inputWrap mb-4">
@@ -82,7 +80,6 @@ const Footer2 = () => {
                                 className='form-control mb-3'
                                 id="bussiness"
                                 required
-                                errorMessage="Это обязательное поле!"
                             />
                         </div>
                         <button className="btn myBtn d-block ml-auto">Оставить заявку</button>

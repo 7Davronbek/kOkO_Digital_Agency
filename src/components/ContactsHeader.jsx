@@ -13,16 +13,16 @@ const ContactsHeader = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-12 text-center">
-                        <h1 data-aos='fade-down'>Contacts</h1>
+                        <h1 data-aos='fade-down'>Способ связи</h1>
                     </div>
                     <div className="col-12 flex-column flex-lg-row d-flex align-items-center justify-content-center">
                         <div data-aos='fade-right' className="d-flex align-items-center flex-column mr-lg-5 mb-lg-0 mb-4">
                             <a href="tel: +998908232838">+998 90 823 28 38</a>
-                            <a href='tel: +998908232838' className="btn myBtn first">Bepul Konsultatsiya</a>
+                            <a href='tel: +998908232838' className="btn myBtn first">Бесплатная консультация</a>
                         </div>
                         <div data-aos='fade-left' className="d-flex align-items-center flex-column">
                             <a target='_blank' rel="noreferrer" href="https://t.me/kOkOdigital">@kOkOdigital</a>
-                            <a target='_blank' rel="noreferrer" href="https://t.me/kOkOdigital" className="btn myBtn">Telegramdan Yozish</a>
+                            <a target='_blank' rel="noreferrer" href="https://t.me/kOkOdigital" className="btn myBtn">Написать в телеграм</a>
                         </div>
                     </div>
 
