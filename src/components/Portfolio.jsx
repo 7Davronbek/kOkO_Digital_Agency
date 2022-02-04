@@ -73,11 +73,11 @@ const Portfolio = () => {
                         <div data-aos='fade-up' className="col-lg-3 col-md-6 mb-4">
                             <div className="card h-100">
                                 <div className="card-header">
-                                    <img src="/assets/image/portfolio/port1.png" className='w-100' alt="" />
+                                    <img src="/assets/image/portfolio/port5.jpg" className='w-100' alt="" />
                                 </div>
                                 <div className="card-body">
                                     <h5>
-                                        Balance Stone
+                                    Смм продвижение интернет магазина
                                     </h5>
                                 </div>
                             </div>
@@ -90,7 +90,7 @@ const Portfolio = () => {
                                 </div>
                                 <div className="card-body">
                                     <h5>
-                                        Ghost Art
+                                    Смм продвижение итальянского ресторана
                                     </h5>
                                 </div>
                             </div>
@@ -99,50 +99,50 @@ const Portfolio = () => {
                         <div data-aos='fade-right' className="col-lg-3 col-md-6 mb-4">
                             <div className="card">
                                 <div className="card-header">
-                                    <img src="/assets/image/port5.png" className='w-100' alt="" />
+                                    <img src="/assets/image/portfolio/port10.jpg" className='w-100' alt="" />
                                 </div>
                                 <div className="card-body">
                                     <h5>
-                                        Astronous Art
+                                        Фотосессия для итальянского ресторана
                                     </h5>
                                 </div>
                             </div>
                         </div>
 
                         <div data-aos='fade-up' className="col-lg-3 col-md-6 mb-4">
-                            <div className="card">
+                            <div className="card  h-100">
                                 <div className="card-header">
-                                    <img src="/assets/image/port4.png" className='w-100' alt="" />
+                                    <img src="/assets/image/portfolio/port6.jpg" className='w-100' alt="" />
                                 </div>
                                 <div className="card-body">
                                     <h5>
-                                        David Art
+                                        Смм дизайн для интернет магазина
                                     </h5>
                                 </div>
                             </div>
                         </div>
 
                         <div data-aos='fade-up' className="col-lg-3 col-md-6 mb-4">
-                            <div className="card">
+                            <div className="card  h-100">
                                 <div className="card-header">
-                                    <img src="/assets/image/port1.png" className='w-100' alt="" />
+                                    <img src="/assets/image/portfolio/port9.jpg" className='w-100' alt="" />
                                 </div>
                                 <div className="card-body">
                                     <h5>
-                                        Blood Face
+                                    Фотосессия для итальянского ресторана
                                     </h5>
                                 </div>
                             </div>
                         </div>
 
                         <div data-aos='fade-left' className="col-lg-3 col-md-6 mb-4">
-                            <div className="card">
+                            <div className="card  h-100">
                                 <div className="card-header">
-                                    <img src="/assets/image/port3.png" className='w-100' alt="" />
+                                    <img src="/assets/image/portfolio/port8.jpg" className='w-100' alt="" />
                                 </div>
                                 <div className="card-body">
                                     <h5>
-                                        David Art
+                                        Смм дизайн для проекта по производству  нерудных материалов
                                     </h5>
                                 </div>
                             </div>

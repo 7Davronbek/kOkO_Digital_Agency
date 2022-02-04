@@ -56,8 +56,8 @@ const Contacts = () => {
                         ) : (
                             <>
                                 <div className="col-lg-6 ">
-                                    <h4>Let's Talk</h4>
-                                    <p>Fill up the form our team will get back to you within 24 Hours</p>
+                                    <h4>Всё еще остались у вас вопросы?</h4>
+                                    <p>Оставьте заявку и получите ответы!</p>
 
                                     <form action="./telegram.php" method='POST'>
 
@@ -71,7 +71,7 @@ const Contacts = () => {
                                                         name='user_name'
                                                         required
                                                     />
-                                                    <h6 className={`${form ? 'active' : ''}`}>First Name*</h6>
+                                                    <h6 className={`${form ? 'active' : ''}`}>Имя*</h6>
                                                 </div>
                                             </div>
                                             <div className="col-md-6 mb-5">
@@ -83,7 +83,7 @@ const Contacts = () => {
                                                         name='user_phone'
                                                         required
                                                         />
-                                                    <h6 className={`${form1 ? 'active' : ''}`}>Phone number*</h6>
+                                                    <h6 className={`${form1 ? 'active' : ''}`}>Номер телефона*</h6>
                                                 </div>
                                             </div>
 
@@ -95,7 +95,7 @@ const Contacts = () => {
                                                         name='user_message'
                                                         required
                                                     />
-                                                    <h6 className={`last ${form3 ? 'actives' : ''}`}>Messages*</h6>
+                                                    <h6 className={`last ${form3 ? 'actives' : ''}`}>Сообщение*</h6>
                                                 </div>
                                             </div>
 
@@ -110,13 +110,13 @@ const Contacts = () => {
                             </>
                         )}
                         <div className="col-lg-5 colWrap ml-auto">
-                            <h1 data-aos='fade-left' >Адрес магазина и сервисного центра:</h1>
+                            <h1 data-aos='fade-left' >Наш адрес:</h1>
 
                             <div data-aos='fade-left' className="myDiv first">
                                 <div className="img"><img src="/assets/icon/location.svg" alt="" /></div>
                                 {/* <i className='mr-3'><img style={{width: '40px'}} src="/assets/icon/location3.png" alt="" /></i> */}
                                 <div>
-                                    <h3>Адрес: Город Ташкент, Яшнабадский район, Улица Тараккиёт, 2.</h3>
+                                    <h3>Город Ташкент, Яшнабадский район, Улица Тараккиёт, 2.</h3>
                                     <h2>Пн-Сб 09:00 - 18:00</h2>
                                 </div>
                             </div>

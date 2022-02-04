@@ -424,12 +424,18 @@ body {
             }
         }
 
+        .lastH1 {
+            margin-bottom: 80px !important;
+        }
+
         h1 {
             font-weight: 600;
             font-size: 71px;
-            line-height: 82px;
             color: #fff;
-            margin-bottom: 80px !important;
+
+            &:last-child {
+                margin-bottom: 80px !important;
+            }
 
             @media(max-width: 992px) {
                 font-size: 40px;
@@ -654,7 +660,7 @@ body {
                 padding: 0;
                 overflow: hidden;
                 border-radius: 20px 0;
-                opacity: 0.6;
+                opacity: 0.4;
                 transition: all 0.5s ease-in-out;
 
                 img {
@@ -680,9 +686,7 @@ body {
             &:hover {
                 .card-header {
                     opacity: 1;
-                    img {
-                        transform: scale(1.2);
-                    }
+                    transform: scale(1.2);
                 }
 
                 h5 {
@@ -925,6 +929,11 @@ body {
     .contacts {
         padding: 50px 0 70px 0;
 
+        h4 {
+            color: $colorBlue;
+            font-weight: 600;
+        }
+
         .bg1,
         .bg2 {
             position: absolute;
@@ -990,6 +999,8 @@ body {
             font-size: 20px;
             line-height: 24px;
             color: $colorBlue;
+            margin-left: 56px;
+            font-weight: bold;
         }
 
         .myDiv {
@@ -1228,6 +1239,14 @@ body {
     .contactsLocation {
         padding: 50px 0;
 
+        .map {
+            iframe {
+                height: 520px;
+                border: 0;
+                border-radius: 20px;
+            }
+        }
+
         h1 {
             color: $colorBlue;
 
@@ -1279,6 +1298,10 @@ body {
     .aboutMain {
         padding: 50px 0;
 
+        .myRow {
+            margin-top: 50px;
+        }
+
         .bg1,
         .bg2 {
             position: absolute;
@@ -1316,6 +1339,8 @@ body {
 
         h1 {
             font-size: 48px;
+            color: $colorBlue;
+            font-weight: 600;
 
             @media(max-width: 767px) {
                 font-size: 38px;
@@ -1331,6 +1356,9 @@ body {
 
             b {
                 color: #fff;
+                line-height: 29px;
+                font-size: 21px;
+                font-weight: 400;
             }
         }
 

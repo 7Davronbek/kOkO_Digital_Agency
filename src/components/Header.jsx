@@ -17,7 +17,8 @@ const Header = () => {
                     <div className="col-lg-12 mx-auto text-center">
                         {load ? (
                             <>
-                                <h1 data-aos='fade-right'>Полное продвижение бизнеса в области интернет маркетинга</h1>
+                                <h1 data-aos='fade-right'>Полное продвижение бизнеса</h1>
+                                <h1 className="lastH1" data-aos='fade-right'> в области интернет маркетинга</h1>
                                 <button data-aos='fade-left' className="btn myBtn">Оставить заявку</button>
                             </>
                         ) : null}

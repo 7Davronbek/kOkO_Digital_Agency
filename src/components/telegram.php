@@ -11,7 +11,7 @@ $chat_id = "-645514759";
 $arr = array(
   'Имя пользователя: ' => $name,
   'Телефон: ' => $phone,
-  'Собшение' => $message
+  'Собшение:' => $message
 );
 
 foreach($arr as $key => $value) {
