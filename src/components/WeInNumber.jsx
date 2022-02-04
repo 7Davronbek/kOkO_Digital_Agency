@@ -39,15 +39,10 @@ const WeInNumber = () => {
     return (
         <div className='weInNumber'>
             <div className="container">
-                {location.pathname === '/about-us' ? null : (
-                    <div className="my">
-                        <div className={`bg1 ${hover1 ? 'hover' : ''}`}><img onMouseEnter={handleHover1} data-aos='fade-right' src="/assets/image/background/bg4.png" alt="" /></div>
-                    </div>
-                )}
                 <div className="my">
                     <div className={`bg2 ${hover2 ? 'hover' : ''}`}><img onMouseEnter={handleHover2} data-aos='fade-right' src="/assets/image/background/bg2.png" alt="" /></div>
                 </div>
-                <div className={`bg3 ${hover3 ? 'hover' : ''}`}><img onMouseEnter={handleHover3} data-aos='fade-left' src="/assets/image/background/bg3.png" alt="" /></div>
+                <div className={`bg3 ${hover3 ? 'hover' : ''}`}><img onMouseEnter={handleHover3} data-aos='fade-left' src="/assets/image/background/bg5.png" alt="" /></div>
                 <div className="row">
                     <div data-aos='fade-right' className="col-12">
                         <h1>Мы в цифрах</h1>

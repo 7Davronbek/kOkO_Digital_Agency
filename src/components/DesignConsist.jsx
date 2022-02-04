@@ -30,7 +30,7 @@ const DesignConsist = () => {
 
                 <div className="row align-items-center mt-4 ">
                     <div data-aos='fade-right' className="col-lg-5">
-                        <i><img src="/assets/image/card3.png" alt="" className="w-100" /></i>
+                        <i><img src="/assets/image/design/design2.jpg" alt="" className="w-100" /></i>
                     </div>
                     <div data-aos='fade-left' className="col-lg-6 ml-auto">
                         <h1>Смм дизайн</h1>

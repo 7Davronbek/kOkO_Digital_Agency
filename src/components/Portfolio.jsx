@@ -30,12 +30,12 @@ const Portfolio = () => {
         <>
             <div className="portfolio">
                 <div className="container">
-                    <div className="my">
+                    {/* <div className="my">
                         <div className={`bg2 ${hover1 ? 'hover' : ''}`}><img onMouseEnter={handleHover1} data-aos='fade-left' src="/assets/image/background/bg1.png" alt="" /></div>
                     </div>
                     <div className="my">
                         <div className={`bg3 ${hover2 ? 'hover' : ''}`}><img onMouseEnter={handleHover2} data-aos='fade-right' src="/assets/image/background/bg4.png" alt="" /></div>
-                    </div>
+                    </div> */}
                     <div className="row">
                         <div data-aos='fade-right' className="col-12 text-center">
                             <h3>Портфолио</h3>
@@ -150,13 +150,13 @@ const Portfolio = () => {
 
                     </div>
 
-                    <div className="row">
+                    {/* <div className="row">
                         <div className="col-lg-4 text-center mx-auto">
                             <Link to='/projects'>
                                 <button data-aos='fade-right' className="btn myBtn d-block mx-auto">Посмомотреть все</button>
                             </Link>
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>

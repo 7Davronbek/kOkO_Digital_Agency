@@ -47,7 +47,7 @@ const PaketsInternet = () => {
                                     className={classnames({ active: activeTab === '4' })}
                                     onClick={() => { toggle('4'); }}
                                 >
-                                    Special
+                                    kOkO Special
                                 </NavLink>
                             </NavItem>
                         </Nav>

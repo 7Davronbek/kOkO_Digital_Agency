@@ -46,7 +46,7 @@ const Offer = () => {
         <div className='offer'>
             <div className="container position-relative">
                 <div className="my">
-                    <div className={`bg1 ${hover1 ? 'hover' : ''}`}><img onMouseEnter={handleHover1} data-aos='fade-right' src="/assets/image/background/3.png" alt="" /></div>
+                    <div className={`bg1 ${hover1 ? 'hover' : ''}`}><img onMouseEnter={handleHover1} data-aos='fade-right' src="/assets/image/3dLogo.png" alt="" /></div>
                 </div>
                 <div className="my">
                     <div className={`bg2 ${hover2 ? 'hover' : ''}`}><img onMouseEnter={handleHover2} data-aos='fade-left' src="/assets/image/background/bg5.png" alt="" /></div>
