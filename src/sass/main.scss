@@ -2182,7 +2182,7 @@ body {
         .card {
             border: none;
             cursor: pointer;
-            
+
             span {
                 color: $colorBlue;
             }
@@ -2345,12 +2345,66 @@ body {
         }
     }
 
+    .paketMini {
+
+        .card {
+            padding: 15px 10px;
+
+            .card-header {
+                background-color: $colorBlue;
+                text-align: center;
+                border-radius: 15px 15px 0 0;
+                text-transform: uppercase;
+            }
+
+            .card-body {
+                background-color: rgba(19, 19, 19, 0.507);
+                border-radius: 0 0 20px 20px;
+                padding: 15px 10px;
+
+                h6 {
+                    background: #222;
+                    border-radius: 30px;
+                    padding: 5px 9px;
+                    font-size: 12px;
+                }
+
+                .myBtn {
+                    border-radius: 40px;
+                    font-size: 16px;
+                }
+
+                h4 {
+                    font-size: 26px;
+                    text-align: center;
+                    padding: 10px 0 20px;
+
+                    span {
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
     .paketsInternet {
 
         .myItem {
 
             .nav-link {
                 padding: 19px 0 41px;
+            }
+        }
+    }
+
+    .paketsWeb {
+        .myNavs {
+            .nav-item {
+
+                .nav-link {
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -2429,7 +2483,7 @@ body {
 
         h6 {
             font-size: 20px;
-            padding-bottom: 10px ;
+            padding-bottom: 10px;
         }
 
         p {

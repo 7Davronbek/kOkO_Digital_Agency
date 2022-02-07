@@ -20,8 +20,8 @@ const PaketsWeb = () => {
                                     className={classnames({ active: activeTab === '1' })}
                                     onClick={() => { toggle('1'); }}
                                 >
-                                    START
-                                    <h5>2 400 000 <b>сум</b></h5>
+                                    Малый бизнес
+                                    <h5><b>от </b> 4.000.000 <b>сум</b></h5>
                                 </NavLink>
                             </NavItem>
                             <NavItem>
@@ -29,8 +29,8 @@ const PaketsWeb = () => {
                                     className={classnames({ active: activeTab === '2' })}
                                     onClick={() => { toggle('2'); }}
                                 >
-                                    SIMPLE
-                                    <h5>3 700 000 <b>сум</b></h5>
+                                    Сайт каталог
+                                    <h5><b>от </b> 4.900.000<b>сум</b></h5>
                                 </NavLink>
                             </NavItem>
                             <NavItem>
@@ -38,8 +38,8 @@ const PaketsWeb = () => {
                                     className={classnames({ active: activeTab === '3' })}
                                     onClick={() => { toggle('3'); }}
                                 >
-                                    ACTIVE
-                                    <h5>5 500 000 <b>сум</b></h5>
+                                    Корпоративный сайт
+                                    <h5><b>от </b>  9.500.000 <b>сум</b></h5>
                                 </NavLink>
                             </NavItem>
                             <NavItem>
@@ -47,8 +47,8 @@ const PaketsWeb = () => {
                                     className={classnames({ active: activeTab === '4' })}
                                     onClick={() => { toggle('4'); }}
                                 >
-                                    PRO
-                                    <h5>6 900 000 <b>сум</b></h5>
+                                    Уникальные проекты
+                                    <h5><b>от </b>  25.000.000  <b>сум</b></h5>
                                 </NavLink>
                             </NavItem>
                         </Nav>
@@ -141,6 +141,99 @@ const PaketsWeb = () => {
                 </div>
             </div>
         </div>
+
+        <div className="paketMini">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-3">
+
+                        <div className="card">
+                            <div className="card-header">
+                                <h5>Landing page</h5>
+                            </div>
+                            <div className="card-body">
+                                <h4><span>от</span> 3.800.000 <span>сум</span> </h4>
+                                <div className="d-flex align-items-center justify-content-between">
+                                    <p>Srok sozdaniya</p>
+                                    <h6>4-6 day</h6>
+                                </div>
+                                <button className="btn myBtn">Get Started</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className="col-lg-3">
+
+                        <div className="card">
+                            <div className="card-header">
+                                <h5>Landing page</h5>
+                            </div>
+                            <div className="card-body">
+                                <h4><span>от</span> 3.800.000 <span>сум</span> </h4>
+                                <div className="d-flex align-items-center justify-content-between">
+                                    <p>Srok sozdaniya</p>
+                                    <h6>4-6 day</h6>
+                                </div>
+                                <button className="btn myBtn">Get Started</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div className="col-lg-3">
+
+                        <div className="card">
+                            <div className="card-header">
+                                <h5>Landing page</h5>
+                            </div>
+                            <div className="card-body">
+                                <h4><span>от</span> 3.800.000 <span>сум</span> </h4>
+                                <div className="d-flex align-items-center justify-content-between">
+                                    <p>Srok sozdaniya</p>
+                                    <h6>4-6 day</h6>
+                                </div>
+                                <button className="btn myBtn">Get Started</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div className="col-lg-3">
+
+                        <div className="card">
+                            <div className="card-header">
+                                <h5>Landing page</h5>
+                            </div>
+                            <div className="card-body">
+                                <h4><span>от</span> 3.800.000 <span>сум</span> </h4>
+                                <div className="d-flex align-items-center justify-content-between">
+                                    <p>Srok sozdaniya</p>
+                                    <h6>4-6 day</h6>
+                                </div>
+                                <button className="btn myBtn">Get Started</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div className="col-lg-3">
+
+                        <div className="card">
+                            <div className="card-header">
+                                <h5>Landing page</h5>
+                            </div>
+                            <div className="card-body">
+                                <h4><span>от</span> 3.800.000 <span>сум</span> </h4>
+                                <div className="d-flex align-items-center justify-content-between">
+                                    <p>Srok sozdaniya</p>
+                                    <h6>4-6 day</h6>
+                                </div>
+                                <button className="btn myBtn">Get Started</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </>;
 };
 
