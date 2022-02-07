@@ -1,0 +1,2 @@
+
+export const UPDATESTATE = 'EMAIL_UPDATE_STATE'

@@ -4,13 +4,13 @@ import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Companies from "./components/Companies";
 import Contacts from "./components/Contacts";
+import WeInNumber from "./components/WeInNumber";
+import Offer from "./components/Offer";
 // import Personal from "./components/Personal";
 import { RingLoader } from "react-spinners";
 
 import "aos/dist/aos.css";
 import "aos/dist/aos.js";
-import WeInNumber from "./components/WeInNumber";
-import Offer from "./components/Offer";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);

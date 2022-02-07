@@ -1,9 +1,8 @@
-import { useState } from "react"
 import { Link } from "react-router-dom"
-import { Modal, ModalBody } from "reactstrap"
+import { connect } from "react-redux"
+import { updateState } from '../redux/actions/emailAction'
 
-const Footer2 = () => {
-    const [modal, setModal] = useState(false)
+const Footer2 = (props) => {
     return (
         <>
             <div className="footer">
@@ -23,19 +22,22 @@ const Footer2 = () => {
                             <p>Оставьте заявку и получите ответы!</p>
                             <button
                                 className="btn myBtn"
-                                onClick={() => setModal(true)}
-                            >Оставить заявку</button>
+                                onClick={() => props.updateState({ isOpen: true })}
+                            // onClick={() => setModal(true)}
+                            >
+                                Оставить заявку
+                            </button>
                         </div>
 
                         <div className="col-lg-3 d-flex align-items-center mx-auto social" >
-                            <i className=' cursor'><img src="/assets/icon/ins.svg" alt="" /></i>
-                            <i className=' cursor'><img src="/assets/icon/tg.svg" alt="" /></i>
-                            <i className='cursor'><img src="/assets/image/facebook.png" alt="" /></i>
+                            <a href="https://instagram.com/k0k0digital/" className=' cursor'><img src="/assets/icon/ins.svg" alt="" /></a>
+                            <a href="https://t.me/kOkOdigital/" className='cursor'><img src="/assets/icon/tg.svg" alt="" /></a>
+                            <a href="https://www.facebook.com/kokoagency.uz/?ref=pages_you_manage" className='cursor'><img src="/assets/image/facebook.png" alt="" /></a>
                         </div>
 
                         <div className="col-lg-4">
-                            <a>Адрес: Город Ташкент, Яшнабадский район, Улица Тараккиёт, 2
-                                Пн-Сб 09:00 - 18:00
+                            <a href="https://goo.gl/maps/Jxrt3TgQmxYQtSCAA">Адрес: Город Ташкент, Яшнабадский район, Улица Тараккиёт, 2
+                            Пн-Сб 09:00 - 18:00
                             </a>
                             <a className="d-flex mt-2 align-items-center justify-content-center" href="tel: +998908232838">Контакты:</a>
                             <a className="d-flex  align-items-center justify-content-center" href="tel: +998908232838"> +998 90 823 28 38</a>
@@ -51,44 +53,14 @@ const Footer2 = () => {
                     </div>
                 </div>
             </div>
-
-            <Modal isOpen={modal} toggle={() => setModal(false)}>
-                <ModalBody>
-                    <form>
-                        <div className="inputWrap mb-4">
-                            <label className="pl-2" htmlFor="name">Имя*</label>
-                            <input
-                                type="text"
-                                className='form-control '
-                                id="name"
-                                required
-                            />
-                        </div>
-                        <div className="inputWrap mb-4">
-                            <label className="pl-2" htmlFor="phone">Номер телефона*</label>
-                            <input
-                                type="text"
-                                className='form-control mb-3'
-                                id="phone"
-                                required
-                            />
-                        </div>
-                        <div className="inputWrap mb-4">
-                            <label className="pl-2" htmlFor="bussiness">Вид бизнеса/деятельность*</label>
-                            <input
-                                type="text"
-                                className='form-control mb-3'
-                                id="bussiness"
-                                required
-                            />
-                        </div>
-                        <button className="btn myBtn d-block ml-auto">Оставить заявку</button>
-                    </form>
-                </ModalBody>
-            </Modal>
-
         </>
     )
 }
 
-export default Footer2
+const mapStateToProps = state => {
+    return {
+        isOpen: state.email.isOpen
+    }
+}
+
+export default connect(mapStateToProps, { updateState })(Footer2)

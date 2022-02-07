@@ -40,6 +40,48 @@ $colorWhite: #fff;
 
 // ********************** DEFAULT *****************************
 
+.myToast {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  background: #000000de;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(30px);
+  opacity: 0;
+  z-index: -1;
+  transition: all .3s ease;
+
+  .card {
+    text-align: center;
+    padding: 80px 50px;
+    background: #000;
+    border-radius: 20px;
+
+    .card-body {
+
+      h5 {
+        margin-top: 10px;
+        font-size: 18px;
+      }
+      
+      h2 {
+        font-size: 28px;
+        color: $colorBlue
+      }
+    }
+  }
+
+  &.active {
+    opacity: 1;
+    z-index: 77;
+  }
+}
+
 ul,
 li {
   list-style: none;

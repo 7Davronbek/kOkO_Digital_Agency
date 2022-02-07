@@ -1015,6 +1015,7 @@ body {
             display: flex;
             align-items: center;
             margin-top: 25px;
+            padding-left: 40px;
 
             .img {
                 background: #F4F7FB;
@@ -1023,29 +1024,31 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 70px;
+                width: 40px;
                 height: 40px;
                 border-radius: 50%;
+                position: absolute;
+                left: -9px;
 
-                @media(max-width: 1200px) {
-                    width: 85px;
-                }
+                // @media(max-width: 1200px) {
+                //     width: 85px;
+                // }
 
-                @media(max-width: 992px) {
-                    width: 45px;
-                }
+                // @media(max-width: 992px) {
+                //     width: 45px;
+                // }
 
-                @media(max-width: 767px) {
-                    width: 55px;
-                }
+                // @media(max-width: 767px) {
+                //     width: 55px;
+                // }
 
-                @media(max-width: 550px) {
-                    width: 65px;
-                }
+                // @media(max-width: 550px) {
+                //     width: 65px;
+                // }
 
-                @media(max-width: 460px) {
-                    width: 85px;
-                }
+                // @media(max-width: 460px) {
+                //     width: 85px;
+                // }
             }
 
             h3 {
@@ -1062,26 +1065,24 @@ body {
                 color: #cdcdcd;
             }
 
-            &.first {
-                .img {
-                    width: 60px;
+            // &.first {
+            //     .img {
+            //         width: 60px;
 
-                    @media(max-width: 767px) {
-                        width: 50px;
-                    }
-                }
-            }
+            //         @media(max-width: 767px) {
+            //             width: 50px;
+            //         }
+            //     }
+            // }
 
-            &.second {
-                .img {
-                    width: 40px;
-                }
-            }
+            // &.second {
+            //     .img {
+            //         width: 40px;
+            //     }
+            // }
 
             &.third {
-                .img {
-                    width: 40px;
-                }
+                padding-bottom: 20px;
             }
         }
 
@@ -1172,7 +1173,7 @@ body {
 
     .contactsHeader {
         padding: 100px 0 50px;
-        background-image: url(../image/contactsBg.webp);
+        background-image: url(../image/contactsBg.jpg);
         width: 100%;
         height: 100%;
         background-size: cover;
@@ -2180,6 +2181,11 @@ body {
 
         .card {
             border: none;
+            cursor: pointer;
+            
+            span {
+                color: $colorBlue;
+            }
 
             .card-header {
                 height: 250px;
@@ -2398,6 +2404,59 @@ body {
         }
     }
 
+    .blogModal {
+
+        .modal-body {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .imgWrap {
+            width: 40%;
+            padding-left: 20px;
+            margin-left: auto;
+        }
+
+        h3 {
+            color: $colorBlue
+        }
+
+        h5 {
+            font-size: 20px;
+            margin: 12px 0 20px 0 !important;
+            line-height: 28px;
+        }
+
+        h6 {
+            font-size: 20px;
+            padding-bottom: 10px ;
+        }
+
+        p {
+            position: relative;
+            padding-left: 20px;
+            margin-top: 8px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: -1px;
+                top: 8px;
+                border-radius: 50%;
+                background-color: $colorBlue;
+                width: 6px;
+                height: 6px;
+            }
+        }
+
+        i {
+            img {
+                width: 100%;
+                border-radius: 10px
+            }
+        }
+    }
+
     .footer {
         background-color: #121212;
         color: rgb(151, 151, 151);
@@ -2459,7 +2518,7 @@ body {
         .social {
             padding-left: 30px;
 
-            i {
+            a {
                 margin-right: 20px;
 
                 &:nth-child(2) {
