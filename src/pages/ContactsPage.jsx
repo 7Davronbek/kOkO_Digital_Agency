@@ -9,7 +9,7 @@ const ContactsPage = () => {
     useEffect(() => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 500);
+      }, 1500);
     }, []);
     return (
         <>
@@ -21,9 +21,8 @@ const ContactsPage = () => {
             <RingLoader color="#fff" size="35" loading={isLoading} />
           </div>
         ) : (
-          ""
+          <ContactsHeader />
         )}
-            <ContactsHeader />
             <ContactsLocation />
             <Contacts />
         </>

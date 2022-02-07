@@ -16,7 +16,7 @@ const Moushen = (props) => {
     setTimeout(() => {
       setIsLoading(false);
       setLoad(true);
-    }, 500);
+    }, 1500);
 
     Aos.init({
       once: false,
@@ -52,7 +52,7 @@ const Moushen = (props) => {
 
       <div className='motionHeader myWebHeader myWebConsist'>
         <div className="container">
-          <div className="row align-items-center">
+          <div className="row align-items-center flex-column-reverse flex-lg-row">
             <div data-aos='fade-right' className="col-lg-6">
               <h1>Моушн</h1>
               <p>Моушн-дизайн — это процесс создания анимационной графики</p>

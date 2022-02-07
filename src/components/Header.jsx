@@ -7,7 +7,7 @@ const Header = (props) => {
     useEffect(() => {
         setTimeout(() => {
             setLoad(true)
-        }, 700)
+        }, 1500)
     }, [])
     return (
         <div className='header'>

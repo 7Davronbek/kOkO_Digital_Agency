@@ -15,7 +15,7 @@ const WebHeader = () => {
 
             <div className='webHeader myWebHeader'>
                 <div className="container">
-                    <div className="row align-items-center">
+                    <div className="row align-items-center flex-wrap-reverse">
                         <div data-aos='fade-right' className="col-lg-6">
                             <h1>Разработка сайтов</h1>
                             <p>Разработка сайтов – это создания веб-сайта где основными этапами этого процесса являются веб-дизайн, верстка страниц и  конфигурирование.</p>

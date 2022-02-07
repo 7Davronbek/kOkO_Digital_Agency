@@ -16,7 +16,7 @@ const Blog = () => {
     useEffect(() => {
         setTimeout(() => {
             setIsLoading(false)
-        }, 700);
+        }, 1700);
         Aos.init({
             once: true,
             duration: 1700,
@@ -30,85 +30,86 @@ const Blog = () => {
                 <RingLoader color="#fff" size="35" loading={isLoading} />
             </div>
         ) : (
-            ""
-        )}
-
-        <div className="blog">
-            <div className="container">
-                <div className="row">
-                    <div data-aos='fade-right' className="col-lg-4 col-md-6 h-100 mb-4">
-                        <div onClick={() => setModal1(true)} className="card">
-                            <div className="card-header p-0">
-                                <img src="/assets/image/card2.png" alt="" className="w-100" />
+            <>
+                <div className="blog">
+                    <div className="container">
+                        <div className="row">
+                            <div data-aos='fade-right' className="col-lg-4 col-md-6 h-100 mb-4">
+                                <div onClick={() => setModal1(true)} className="card">
+                                    <div className="card-header p-0">
+                                        <img src="/assets/image/card2.png" alt="" className="w-100" />
+                                    </div>
+                                    <div className="card-body p-3">
+                                        <h3>Веб услуги</h3>
+                                        <p className="mt-3">Веб услуги – это создание, продвижение<span>...подробнее</span></p>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="card-body p-3">
-                                <h3>Веб услуги</h3>
-                                <p className="mt-3">Веб услуги – это создание, продвижение<span>...подробнее</span></p>
+                            <div data-aos='fade-up' className="col-lg-4 col-md-6 h-100 mb-4">
+                                <div onClick={() => setModal2(true)} className="card">
+                                    <div className="card-header p-0">
+                                        <img src="/assets/image/card1.png" alt="" className="w-100" />
+                                    </div>
+                                    <div className="card-body p-3">
+                                        <h3>Интернет-маркетинг </h3>
+                                        <p className='mt-3'>Интернет-маркетинг — область маркетинга, которая <span>...подробнее</span></p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div data-aos='fade-up' className="col-lg-4 col-md-6 h-100 mb-4">
-                        <div onClick={() => setModal2(true)} className="card">
-                            <div className="card-header p-0">
-                                <img src="/assets/image/card1.png" alt="" className="w-100" />
+                            <div data-aos='fade-left' className="col-lg-4 col-md-6 h-100 mb-4">
+                                <div onClick={() => setModal3(true)} className="card">
+                                    <div className="card-header p-0">
+                                        <img src="/assets/image/card4.png" alt="" className="w-100" />
+                                    </div>
+                                    <div className="card-body p-3">
+                                        <h3>Создание моушн видео</h3>
+                                        <p className='mt-3'> Приведем
+                                            несколько примеров из списка навыков<span>...подробнее</span></p>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="card-body p-3">
-                                <h3>Интернет-маркетинг </h3>
-                                <p className='mt-3'>Интернет-маркетинг — область маркетинга, которая <span>...подробнее</span></p>
+                            <div data-aos='fade-right' className="col-lg-4 col-md-6 h-100 mb-4">
+                                <div onClick={() => setModal4(true)} className="card">
+                                    <div className="card-header p-0">
+                                        <img src="/assets/image/smm/smm3.jpg" alt="" className="h-100 w-100" />
+                                    </div>
+                                    <div className="card-body p-3">
+                                        <h3>Разработка брендбуков</h3>
+                                        <p className='mt-3'>Разработка брендбука (brand book) – это совмещение
+                                            работ по формированию<span>...подробнее</span></p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div data-aos='fade-left' className="col-lg-4 col-md-6 h-100 mb-4">
-                        <div onClick={() => setModal3(true)} className="card">
-                            <div className="card-header p-0">
-                                <img src="/assets/image/card4.png" alt="" className="w-100" />
+                            <div data-aos='fade-up' className="col-lg-4 col-md-6 h-100 mb-4">
+                                <div onClick={() => setModal5(true)} className="card">
+                                    <div className="card-header p-0">
+                                        <img src="/assets/image/card4.png" alt="" className="w-100" />
+                                    </div>
+                                    <div className="card-body p-3">
+                                        <h3>Анимационные ролики</h3>
+                                        <p className='mt-3'>Анимационный видео ролик - оригинальный инструмент
+                                            для рекламного продвижения товаров<span>...подробнее</span></p>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="card-body p-3">
-                                <h3>Создание моушн видео</h3>
-                                <p className='mt-3'> Приведем
-                                    несколько примеров из списка навыков<span>...подробнее</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos='fade-right' className="col-lg-4 col-md-6 h-100 mb-4">
-                        <div onClick={() => setModal4(true)} className="card">
-                            <div className="card-header p-0">
-                                <img src="/assets/image/smm/smm3.jpg" alt="" className="h-100 w-100" />
-                            </div>
-                            <div className="card-body p-3">
-                                <h3>Разработка брендбуков</h3>
-                                <p className='mt-3'>Разработка брендбука (brand book) – это совмещение
-                                    работ по формированию<span>...подробнее</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos='fade-up' className="col-lg-4 col-md-6 h-100 mb-4">
-                        <div onClick={() => setModal5(true)} className="card">
-                            <div className="card-header p-0">
-                                <img src="/assets/image/card4.png" alt="" className="w-100" />
-                            </div>
-                            <div className="card-body p-3">
-                                <h3>Анимационные ролики</h3>
-                                <p className='mt-3'>Анимационный видео ролик - оригинальный инструмент
-                                    для рекламного продвижения товаров<span>...подробнее</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos='fade-left' className="col-lg-4 col-md-6 h-100 mb-4">
-                        <div onClick={() => setModal6(true)} className="card">
-                            <div className="card-header p-0">
-                                <img src="/assets/image/card1.png" alt="" className="w-100" />
-                            </div>
-                            <div className="card-body p-3">
-                                <h3>Контестная реклама</h3>
-                                <p className='mt-3'>Контекстная реклама — это различные объявления (текстовые,
-                                    графические, видео), которые показываются<span>...подробнее</span></p>
+                            <div data-aos='fade-left' className="col-lg-4 col-md-6 h-100 mb-4">
+                                <div onClick={() => setModal6(true)} className="card">
+                                    <div className="card-header p-0">
+                                        <img src="/assets/image/card1.png" alt="" className="w-100" />
+                                    </div>
+                                    <div className="card-body p-3">
+                                        <h3>Контестная реклама</h3>
+                                        <p className='mt-3'>Контекстная реклама — это различные объявления (текстовые,
+                                            графические, видео), которые показываются<span>...подробнее</span></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </>
+        )}
+
 
 
 
@@ -118,6 +119,7 @@ const Blog = () => {
             className='modal-lg blogModal'
         >
             <ModalBody>
+                <i onClick={() => setModal1(false)} className="i">x</i>
                 <h3>Понятие о веб услугах</h3>
                 <h5>
                     Веб услуги – это создание, продвижение и поддержание
@@ -127,7 +129,7 @@ const Blog = () => {
                 </h5>
 
                 <h6>Веб-услуги:</h6>
-                <div className="d-flex align-items-center">
+                <div className="d-flex align-items-center myFlex">
                     <div>
                         <p>Создание корпоративных сайтов;</p>
                         <p>Разработка посадочных страниц (лендингов);</p>
@@ -151,6 +153,7 @@ const Blog = () => {
             className='modal-lg blogModal'
         >
             <ModalBody>
+                <i onClick={() => setModal2(false)} className="i">x</i>
                 <h3>Понятие об интернет маркетинге</h3>
                 <h5>Интернет-маркетинг — область маркетинга, которая
                     объединяет все способы маркетинговой коммуникации,
@@ -185,6 +188,7 @@ const Blog = () => {
             className='modal-lg blogModal'
         >
             <ModalBody>
+                <i onClick={() => setModal3(false)} className="i">x</i>
                 <h3>Создание моушн видео</h3>
 
 
@@ -220,6 +224,7 @@ const Blog = () => {
             className='modal-lg blogModal'
         >
             <ModalBody>
+                <i onClick={() => setModal4(false)} className="i">x</i>
                 <h3>Разработка брендбуков</h3>
                 <h5>Разработка брендбука (brand book) – это совмещение
                     работ по формированию основного документа, который
@@ -248,6 +253,7 @@ const Blog = () => {
             className='modal-lg blogModal'
         >
             <ModalBody>
+                <i onClick={() => setModal5(false)} className="i">x</i>
                 <h3>Создание анимационных видео роликов</h3>
                 <h5>Анимационный видео ролик - оригинальный инструмент
                     для рекламного продвижения товаров и услуг. Считается
@@ -275,6 +281,7 @@ const Blog = () => {
             className='modal-lg blogModal'
         >
             <ModalBody>
+                <i onClick={() => setModal6(false)} className="i">x</i>
                 <h3>Контестная реклама</h3>
                 <h5>Контекстная реклама — это различные объявления (текстовые,
                     графические, видео), которые показываются пользователям

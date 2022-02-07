@@ -278,6 +278,11 @@ body {
                     opacity: 1;
                     transform: scale(1);
                     z-index: 11;
+
+                    @media(max-width: 767px) {
+                        left: -107px;
+                        background-color: #202020;
+                    }
                 }
             }
         }
@@ -666,6 +671,10 @@ body {
                 img {
                     transition: all 0.5s ease-in-out;
                 }
+
+                @media(max-width: 767px) {
+                    opacity: 0.8;
+                }
             }
 
             .card-body {
@@ -691,6 +700,10 @@ body {
                 .card-header {
                     opacity: 1;
                     transform: scale(1.15);
+
+                    @media(max-width: 767px) {
+                        transform: scale(1);
+                    }
                 }
 
                 h5 {
@@ -1029,26 +1042,6 @@ body {
                 border-radius: 50%;
                 position: absolute;
                 left: -9px;
-
-                // @media(max-width: 1200px) {
-                //     width: 85px;
-                // }
-
-                // @media(max-width: 992px) {
-                //     width: 45px;
-                // }
-
-                // @media(max-width: 767px) {
-                //     width: 55px;
-                // }
-
-                // @media(max-width: 550px) {
-                //     width: 65px;
-                // }
-
-                // @media(max-width: 460px) {
-                //     width: 85px;
-                // }
             }
 
             h3 {
@@ -1374,6 +1367,10 @@ body {
                 line-height: 29px;
                 font-size: 21px;
                 font-weight: 400;
+
+                @media(max-width: 767px) {
+                    font-size: 18px;
+                }
             }
         }
 
@@ -1877,7 +1874,7 @@ body {
         }
 
         @media(max-width: 767px) {
-            padding: 20px 0;
+            padding: 0;
         }
     }
 
@@ -1911,12 +1908,7 @@ body {
             img {
                 border-radius: 20px;
 
-                @media(max-width: 767px) {
-                    height: 400px;
-                    display: flex;
-                    margin: 10px auto;
-                    width: auto !important;
-                }
+             
             }
         }
 
@@ -1970,7 +1962,7 @@ body {
             }
 
             @media(max-width: 767px) {
-                width: 70%;
+                width: 100%;
                 margin: 0 auto;
             }
         }
@@ -2383,8 +2375,8 @@ body {
                 .myBtn {
                     border-radius: 40px;
                     font-size: 16px;
-                    padding-left: 45px;
-                    padding-right: 45px;
+                    padding-left: 30px;
+                    padding-right: 30px;
 
                     &::before {
                         font-size: 16px;
@@ -2487,6 +2479,12 @@ body {
             width: 40%;
             padding-left: 20px;
             margin-left: auto;
+
+            @media(max-width: 992px) {
+                width: 100%;
+                padding: 0;
+                padding-top: 20px;
+            }
         }
 
         h3 {

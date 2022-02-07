@@ -5,7 +5,7 @@ const InternetHeader = () => {
 
   <div className='internetHeader myWebHeader'>
     <div className="container">
-      <div className="row align-items-center">
+      <div className="row align-items-center flex-wrap-reverse">
         <div data-aos='fade-right' className="col-lg-6">
           <h1>Интернет маркетинг.</h1>
           <p>Интернет-маркетинг — область маркетинга, которая объединяет  все способы маркетинговой коммуникации.</p>

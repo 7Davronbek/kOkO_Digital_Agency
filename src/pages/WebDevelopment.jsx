@@ -18,7 +18,7 @@ const WebDevelopment = (props) => {
     setTimeout(() => {
       setIsLoading(false);
       setLoad(true);
-    }, 500);
+    }, 1500);
   }, []);
   return (
     <>

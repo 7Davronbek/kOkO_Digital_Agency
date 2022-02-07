@@ -18,7 +18,7 @@ const Design = (props) => {
     setTimeout(() => {
       setIsLoading(false);
       setLoad(true);
-    }, 500);
+    }, 1500);
 
     Aos.init({
       once: false,
