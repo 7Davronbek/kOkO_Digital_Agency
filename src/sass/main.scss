@@ -1490,6 +1490,10 @@ body {
         position: relative;
         background-size: 100% 55vh;
 
+        .myBtn {
+            transition: all .5s ease;
+        }
+
         .container {
             z-index: 10;
             transform: translateY(-50px);

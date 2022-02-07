@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
+import { connect } from "react-redux";
+import { updateState } from '../redux/actions/emailAction'
 
-const Header = () => {
+const Header = (props) => {
     const [load, setLoad] = useState(false);
     useEffect(() => {
         setTimeout(() => {
@@ -20,7 +22,12 @@ const Header = () => {
                                 {/* <h1 data-aos='fade-right'>Полное продвижение бизнеса</h1>
                                 <h1 className="lastH1" data-aos='fade-right'> в области интернет маркетинга</h1> */}
                                 <h1 className="lastH1" data-aos='fade-right'>We are great OWLS</h1>
-                                <button data-aos='fade-left' className="btn myBtn">Оставить заявку</button>
+                                <button
+                                    data-aos='fade-left'
+                                    className="btn myBtn"
+                                    onClick={() => props.updateState({isOpen: true})}
+                                >
+                                    Оставить заявку</button>
                             </>
                         ) : null}
                     </div>
@@ -31,4 +38,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default connect(null, { updateState })(Header)

@@ -7,7 +7,10 @@ import DesignHeader from '../components/DesignHeader';
 import DesignConsist from '../components/DesignConsist';
 import DesignDepends from '../components/DesignDepends';
 
-const Design = () => {
+import { connect } from "react-redux";
+import { updateState } from '../redux/actions/emailAction'
+
+const Design = (props) => {
   const [isLoading, setIsLoading] = useState(true);
   const [load, setLoad] = useState(false);
 
@@ -40,7 +43,7 @@ const Design = () => {
               {load ? (
                 <>
                   <h1 data-aos='fade-right'>Design</h1>
-                  <button data-aos='fade-left' className="btn myBtn">Get Started</button>
+                  <button data-aos='fade-left' className="btn myBtn" onClick={() => props.updateState({isOpen: true})}>Оставить заявку</button>
                 </>
               ) : null}
             </div>
@@ -61,4 +64,4 @@ const Design = () => {
   )
 }
 
-export default Design
+export default connect(null, { updateState })(Design)

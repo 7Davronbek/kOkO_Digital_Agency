@@ -5,9 +5,12 @@ import Support from '../components/Support';
 import WebConsist from '../components/WebConsist';
 import WebDepends from '../components/WebDepends';
 import WebHeader from '../components/WebHeader';
+
+import { connect } from "react-redux";
+import { updateState } from '../redux/actions/emailAction'
 // import WhyWe from '../components/WhyWe';
 
-const WebDevelopment = () => {
+const WebDevelopment = (props) => {
   const [isLoading, setIsLoading] = useState(true);
   const [load, setLoad] = useState(false);
 
@@ -34,7 +37,7 @@ const WebDevelopment = () => {
               {load ? (
                 <>
                 <h1 data-aos='fade-right'>Web services</h1>
-                <button data-aos='fade-left' className="btn myBtn">Get Started</button>
+                <button data-aos='fade-left' className="btn myBtn"onClick={() => props.updateState({isOpen: true})}>Оставить заявку</button>
                 </>
               ) : null}
             </div>
@@ -54,4 +57,5 @@ const WebDevelopment = () => {
   )
 }
 
-export default WebDevelopment
+export default connect(null, { updateState })(WebDevelopment)
+

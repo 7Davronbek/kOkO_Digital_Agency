@@ -5,7 +5,10 @@ import Aos from 'aos';
 import Support from '../components/Support';
 import MotionDepends from '../components/MotionDepends';
 
-const Moushen = () => {
+import { connect } from "react-redux";
+import { updateState } from '../redux/actions/emailAction'
+
+const Moushen = (props) => {
   const [isLoading, setIsLoading] = useState(true);
   const [load, setLoad] = useState(false);
 
@@ -37,7 +40,7 @@ const Moushen = () => {
               {load ? (
                 <>
                   <h1 data-aos='fade-right'>Motion</h1>
-                  <button data-aos='fade-left' className="btn myBtn">Get Started</button>
+                  <button data-aos='fade-left' className="btn myBtn"onClick={() => props.updateState({isOpen: true})}>Оставить заявку</button>
                 </>
               ) : null}
             </div>
@@ -102,4 +105,4 @@ const Moushen = () => {
   )
 }
 
-export default Moushen
+export default connect(null, { updateState })(Moushen)

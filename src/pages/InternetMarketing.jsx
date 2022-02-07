@@ -8,7 +8,10 @@ import InternetConsist from '../components/InternetConsist';
 import InternetDepend from '../components/InternetDepend';
 import PaketsInternet from '../components/PaketsInternet';
 
-const InternetMarketing = () => {
+import { connect } from "react-redux";
+import { updateState } from '../redux/actions/emailAction'
+
+const InternetMarketing = (props) => {
   const [isLoading, setIsLoading] = useState(true);
   const [load, setLoad] = useState(false);
 
@@ -41,7 +44,7 @@ const InternetMarketing = () => {
               {load ? (
                 <>
                   <h1 data-aos='fade-right'>Internet marketing</h1>
-                  <button data-aos='fade-left' className="btn myBtn">Get Started</button>
+                  <button data-aos='fade-left' className="btn myBtn"onClick={() => props.updateState({isOpen: true})}>Оставить заявку</button>
                 </>
               ) : null}
             </div>
@@ -63,4 +66,4 @@ const InternetMarketing = () => {
   )
 }
 
-export default InternetMarketing
+export default connect(null, { updateState })(InternetMarketing)
