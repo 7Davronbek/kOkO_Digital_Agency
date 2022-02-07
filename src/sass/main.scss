@@ -1892,7 +1892,7 @@ body {
     }
 
     .myWebConsist {
-        padding: 0px 0 50px 0;
+        padding: 0px 0 40px 0;
 
         .myImg {
             transform: translate(60px, 45px);
@@ -2346,15 +2346,22 @@ body {
     }
 
     .paketMini {
+        padding-bottom: 20px;
 
         .card {
-            padding: 15px 10px;
+            margin-bottom: 30px;
+            text-align: center;
 
             .card-header {
                 background-color: $colorBlue;
                 text-align: center;
                 border-radius: 15px 15px 0 0;
                 text-transform: uppercase;
+
+                h5 {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
             }
 
             .card-body {
@@ -2372,10 +2379,17 @@ body {
                 .myBtn {
                     border-radius: 40px;
                     font-size: 16px;
+                    padding-left: 45px;
+                    padding-right: 45px;
+
+                    &::before {
+                        font-size: 16px;
+                    }
                 }
 
                 h4 {
-                    font-size: 26px;
+                    font-size: 24px;
+                    line-height: 30px;
                     text-align: center;
                     padding: 10px 0 20px;
 

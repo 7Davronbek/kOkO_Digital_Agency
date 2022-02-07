@@ -1,16 +1,18 @@
-import React, { useState } from 'react'
-import { TabContent, TabPane, Nav, NavItem, NavLink, Row } from 'reactstrap';
-import classnames from 'classnames';
+import React from 'react'
+import { connect } from 'react-redux';
+import { sendEmail } from '../redux/actions/emailAction';
+// import { TabContent, TabPane, Nav, NavItem, NavLink, Row } from 'reactstrap';
+// import classnames from 'classnames';
 
-const PaketsWeb = () => {
-    const [activeTab, setActiveTab] = useState('1');
+const PaketsWeb = (props) => {
+    // const [activeTab, setActiveTab] = useState('1');
 
-    const toggle = tab => {
-        if (activeTab !== tab) setActiveTab(tab);
-    }
+    // const toggle = tab => {
+    //     if (activeTab !== tab) setActiveTab(tab);
+    // }
 
     return <>
-        <div className="pakets paketsWeb">
+        {/* <div className="pakets paketsWeb">
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -140,7 +142,7 @@ const PaketsWeb = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
 
         <div className="paketMini">
             <div className="container">
@@ -166,10 +168,27 @@ const PaketsWeb = () => {
 
                         <div className="card">
                             <div className="card-header">
-                                <h5>Landing page</h5>
+                                <h5>Малый бизнес</h5>
                             </div>
                             <div className="card-body">
-                                <h4><span>от</span> 3.800.000 <span>сум</span> </h4>
+                                <h4><span>от</span> 4.000.000 <span>сум</span> </h4>
+                                <div className="d-flex align-items-center justify-content-between">
+                                    <p>Srok sozdaniya</p>
+                                    <h6>4-6 day</h6>
+                                </div>
+                                <button onClick={props.sendEmail} className="btn myBtn">Get Started</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div className="col-lg-3">
+
+                        <div className="card">
+                            <div className="card-header">
+                                <h5>Сайт каталог</h5>
+                            </div>
+                            <div className="card-body">
+                                <h4><span>от</span> 4.900.000 <span>сум</span> </h4>
                                 <div className="d-flex align-items-center justify-content-between">
                                     <p>Srok sozdaniya</p>
                                     <h6>4-6 day</h6>
@@ -183,10 +202,10 @@ const PaketsWeb = () => {
 
                         <div className="card">
                             <div className="card-header">
-                                <h5>Landing page</h5>
+                                <h5>Интернет-магазин</h5>
                             </div>
                             <div className="card-body">
-                                <h4><span>от</span> 3.800.000 <span>сум</span> </h4>
+                                <h4><span>от</span> 12.400.000 <span>сум</span> </h4>
                                 <div className="d-flex align-items-center justify-content-between">
                                     <p>Srok sozdaniya</p>
                                     <h6>4-6 day</h6>
@@ -200,10 +219,10 @@ const PaketsWeb = () => {
 
                         <div className="card">
                             <div className="card-header">
-                                <h5>Landing page</h5>
+                                <h5>Корпоративный сайт</h5>
                             </div>
                             <div className="card-body">
-                                <h4><span>от</span> 3.800.000 <span>сум</span> </h4>
+                                <h4><span>от</span> 9.500.000 <span>сум</span> </h4>
                                 <div className="d-flex align-items-center justify-content-between">
                                     <p>Srok sozdaniya</p>
                                     <h6>4-6 day</h6>
@@ -213,14 +232,15 @@ const PaketsWeb = () => {
                         </div>
                         
                     </div>
+
                     <div className="col-lg-3">
 
                         <div className="card">
                             <div className="card-header">
-                                <h5>Landing page</h5>
+                                <h5>Уникальные проекты</h5>
                             </div>
                             <div className="card-body">
-                                <h4><span>от</span> 3.800.000 <span>сум</span> </h4>
+                                <h4><span>от</span> 25.000.000 <span>сум</span> </h4>
                                 <div className="d-flex align-items-center justify-content-between">
                                     <p>Srok sozdaniya</p>
                                     <h6>4-6 day</h6>
@@ -237,4 +257,4 @@ const PaketsWeb = () => {
     </>;
 };
 
-export default PaketsWeb;
+export default connect(null, {sendEmail})(PaketsWeb);

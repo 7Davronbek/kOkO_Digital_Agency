@@ -50,7 +50,7 @@ const Contacts = (props) => {
                             <>
                                 <div data-aos='fade-right' className="col-lg-6">
                                     <div className="i">
-                                        <a target='_blank' rel="noreferrer" href="https://www.google.com/maps/place/ASKLEPIY+Group/@41.352567,69.260804,15z/data=!4m5!3m4!1s0x0:0xdcf85c2d56154ebd!8m2!3d41.3526523!4d69.2640899?hl=ru">
+                                        <a target='_blank' rel="noreferrer" href="https://www.google.com/maps/place/Koko+Digital+Agency/@41.3102038,69.3078109,15z/data=!4m5!3m4!1s0x0:0xa193c5c2e7c5a340!8m2!3d41.3101982!4d69.3078267">
                                             <img src="/assets/image/location.png" alt="" className="w-100" />
                                         </a>
                                     </div>
