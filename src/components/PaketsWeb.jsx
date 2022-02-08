@@ -1,148 +1,10 @@
 import React from 'react'
 import { connect } from 'react-redux';
-import { sendEmail } from '../redux/actions/emailAction';
-// import { TabContent, TabPane, Nav, NavItem, NavLink, Row } from 'reactstrap';
-// import classnames from 'classnames';
+import { updateState } from '../redux/actions/emailAction';
 
 const PaketsWeb = (props) => {
-    // const [activeTab, setActiveTab] = useState('1');
-
-    // const toggle = tab => {
-    //     if (activeTab !== tab) setActiveTab(tab);
-    // }
 
     return <>
-        {/* <div className="pakets paketsWeb">
-            <div className="container">
-                <div className="row">
-                    <div className="col-12">
-                        <Nav tabs className='justify-content-end myNavs nav-pills nav-justified'>
-                            <NavItem>
-                                <NavLink
-                                    className={classnames({ active: activeTab === '1' })}
-                                    onClick={() => { toggle('1'); }}
-                                >
-                                    Малый бизнес
-                                    <h5><b>от </b> 4.000.000 <b>сум</b></h5>
-                                </NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink
-                                    className={classnames({ active: activeTab === '2' })}
-                                    onClick={() => { toggle('2'); }}
-                                >
-                                    Сайт каталог
-                                    <h5><b>от </b> 4.900.000<b>сум</b></h5>
-                                </NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink
-                                    className={classnames({ active: activeTab === '3' })}
-                                    onClick={() => { toggle('3'); }}
-                                >
-                                    Корпоративный сайт
-                                    <h5><b>от </b>  9.500.000 <b>сум</b></h5>
-                                </NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink
-                                    className={classnames({ active: activeTab === '4' })}
-                                    onClick={() => { toggle('4'); }}
-                                >
-                                    Уникальные проекты
-                                    <h5><b>от </b>  25.000.000  <b>сум</b></h5>
-                                </NavLink>
-                            </NavItem>
-                        </Nav>
-
-                        <TabContent activeTab={activeTab}>
-                            <TabPane tabId="1" className=''>
-                                <Row className='myRow'>
-                                    <div data-aos='fade-right' className="col-md-6 col-lg-8 col-12 mb-2 px-2">
-                                        <div className="card">
-                                            <div className="card-body">
-                                                <p className='mt-3'>Lorem ipsum dolor sit amet consectetur officiis illo unde, totam molestias suscipit deleniti repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
-                                                <p className='mt-3'>Lorem ipsum dolor sit amet consectetur officiis illo unde, totam molestias suscipit deleniti repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
-                                                <p className='mt-3'>Lorem ipsum dolor sit amet consectetur officiis illo unde, totam molestias suscipit deleniti repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-aos='fade-right' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                        <div className="card text-center">
-                                            <div className="card-body">
-                                                <img src="/assets/image/port4.png" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Row>
-                            </TabPane>
-                            <TabPane tabId="2" className='   '>
-                                <Row className='myRow'>
-                                    <div data-aos='fade-right' className="col-md-6 col-lg-8 col-12 mb-2 px-2">
-                                        <div className="card">
-                                            <div className="card-body">
-                                                <p className='mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident  repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
-                                                <p className='mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident  repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
-                                                <p className='mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident  repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-aos='fade-right' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                        <div className="card text-center">
-                                            <div className="card-body">
-                                                <img src="/assets/image/port2.png" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Row>
-                            </TabPane>
-                            <TabPane tabId="3" className='   '>
-                                <Row className='myRow'>
-                                    <div data-aos='fade-right' className="col-md-6 col-lg-8 col-12 mb-2 px-2">
-                                        <div className="card">
-                                            <div className="card-body">
-                                                <p className='mt-3'>Lornemo officia consequuntur officiis illo unde, totam molestias suscipit deleniti repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
-                                                <p className='mt-3'>Lornemo officia consequuntur officiis illo unde, totam molestias suscipit deleniti repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
-                                                <p className='mt-3'>Lornemo officia consequuntur officiis illo unde, totam molestias suscipit deleniti repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-aos='fade-right' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                        <div className="card text-center">
-                                            <div className="card-body">
-                                                <img src="/assets/image/port1.png" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Row>
-                            </TabPane>
-
-                            <TabPane tabId="4" className='   '>
-                                <Row className='myRow'>
-                                    <div data-aos='fade-right' className="col-md-6 col-lg-8 col-12 mb-2 px-2">
-                                        <div className="card">
-                                            <div className="card-body">
-                                                <p className='mt-3'>Lorem ipsum dolor sit  totam molestias suscipit deleniti repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
-                                                <p className='mt-3'>Lorem ipsum dolor sit  totam molestias suscipit deleniti repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
-                                                <p className='mt-3'>Lorem ipsum dolor sit  totam molestias suscipit deleniti repellat quis similique, aspernatur, nisi eligendi a aliquid quod minus nulla.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-aos='fade-right' className="col-md-6 col-lg-4 col-12 mb-2 px-2">
-                                        <div className="card text-center">
-                                            <div className="card-body">
-                                                <img src="/assets/image/port3.png" alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Row>
-                            </TabPane>
-
-                        </TabContent>
-                    </div>
-                </div>
-            </div>
-        </div> */}
 
         <div className="paketMini">
             <div className="container">
@@ -156,10 +18,10 @@ const PaketsWeb = (props) => {
                             <div className="card-body">
                                 <h4><span>от</span> 3.800.000 <span>сум</span> </h4>
                                 <div className="d-flex align-items-center justify-content-between">
-                                    <p>Srok sozdaniya</p>
-                                    <h6>4-6 day</h6>
+                                    <p>Срок создания</p>
+                                    <h6>4-10 дней</h6>
                                 </div>
-                                <button className="btn myBtn">Оставить заявку</button>
+                                <button onClick={() => props.updateState({isOpen: true})} className="btn myBtn">Оставить заявку</button>
                             </div>
                         </div>
 
@@ -173,10 +35,10 @@ const PaketsWeb = (props) => {
                             <div className="card-body">
                                 <h4><span>от</span> 4.000.000 <span>сум</span> </h4>
                                 <div className="d-flex align-items-center justify-content-between">
-                                    <p>Srok sozdaniya</p>
-                                    <h6>4-6 day</h6>
+                                    <p>Срок создания</p>
+                                    <h6>7-14 дней</h6>
                                 </div>
-                                <button onClick={props.sendEmail} className="btn myBtn">Оставить заявку</button>
+                                <button onClick={() => props.updateState({isOpen: true})}className="btn myBtn">Оставить заявку</button>
                             </div>
                         </div>
                         
@@ -190,10 +52,10 @@ const PaketsWeb = (props) => {
                             <div className="card-body">
                                 <h4><span>от</span> 4.900.000 <span>сум</span> </h4>
                                 <div className="d-flex align-items-center justify-content-between">
-                                    <p>Srok sozdaniya</p>
-                                    <h6>4-6 day</h6>
+                                    <p>Срок создания</p>
+                                    <h6>10-20 дней</h6>
                                 </div>
-                                <button className="btn myBtn">Оставить заявку</button>
+                                <button onClick={() => props.updateState({isOpen: true})} className="btn myBtn">Оставить заявку</button>
                             </div>
                         </div>
                         
@@ -207,10 +69,10 @@ const PaketsWeb = (props) => {
                             <div className="card-body">
                                 <h4><span>от</span> 12.400.000 <span>сум</span> </h4>
                                 <div className="d-flex align-items-center justify-content-between">
-                                    <p>Srok sozdaniya</p>
-                                    <h6>4-6 day</h6>
+                                    <p>Срок создания</p>
+                                    <h6>21-49 дней</h6>
                                 </div>
-                                <button className="btn myBtn">Оставить заявку</button>
+                                <button onClick={() => props.updateState({isOpen: true})} className="btn myBtn">Оставить заявку</button>
                             </div>
                         </div>
                         
@@ -224,10 +86,10 @@ const PaketsWeb = (props) => {
                             <div className="card-body">
                                 <h4><span>от</span> 9.500.000 <span>сум</span> </h4>
                                 <div className="d-flex align-items-center justify-content-between">
-                                    <p>Srok sozdaniya</p>
-                                    <h6>4-6 day</h6>
+                                    <p>Срок создания</p>
+                                    <h6>20-25 дней</h6>
                                 </div>
-                                <button className="btn myBtn">Оставить заявку</button>
+                                <button onClick={() => props.updateState({isOpen: true})} className="btn myBtn">Оставить заявку</button>
                             </div>
                         </div>
                         
@@ -242,10 +104,10 @@ const PaketsWeb = (props) => {
                             <div className="card-body">
                                 <h4><span>от</span> 25.000.000 <span>сум</span> </h4>
                                 <div className="d-flex align-items-center justify-content-between">
-                                    <p>Srok sozdaniya</p>
-                                    <h6>4-6 day</h6>
+                                    <p>Срок создания</p>
+                                    <h6>30-45 дней</h6>
                                 </div>
-                                <button className="btn myBtn">Оставить заявку</button>
+                                <button onClick={() => props.updateState({isOpen: true})} className="btn myBtn">Оставить заявку</button>
                             </div>
                         </div>
                         
@@ -257,4 +119,4 @@ const PaketsWeb = (props) => {
     </>;
 };
 
-export default connect(null, {sendEmail})(PaketsWeb);
+export default connect(null, {updateState})(PaketsWeb);

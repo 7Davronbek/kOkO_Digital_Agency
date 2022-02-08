@@ -21,7 +21,7 @@ const Header = (props) => {
                             <>
                                 {/* <h1 data-aos='fade-right'>Полное продвижение бизнеса</h1>
                                 <h1 className="lastH1" data-aos='fade-right'> в области интернет маркетинга</h1> */}
-                                <h1 className="lastH1" data-aos='fade-right'>We are great OWLS</h1>
+                                <h1 className="lastH1" data-aos='fade-right'>We are the great OWLS</h1>
                                 <button
                                     data-aos='fade-left'
                                     className="btn myBtn"

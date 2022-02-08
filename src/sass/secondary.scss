@@ -59,7 +59,10 @@ $colorWhite: #fff;
   .card {
     text-align: center;
     padding: 80px 50px;
-    background: #000;
+    // background: #3c3c3c;
+    background: #1c1e227a;
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
     border-radius: 20px;
 
     .card-body {
