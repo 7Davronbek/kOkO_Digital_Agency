@@ -16,7 +16,7 @@ const ContactsPage = () => {
         {isLoading ? (
           <div className="loader ">
             <span className="mr-4">
-              <h5>CONTACTS</h5>
+              <h5>Контакты</h5>
             </span>
             <RingLoader color="#fff" size="35" loading={isLoading} />
           </div>

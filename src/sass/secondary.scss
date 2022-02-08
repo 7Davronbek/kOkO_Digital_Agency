@@ -104,6 +104,10 @@ li {
   }
 }
 
+.cursor {
+  cursor: pointer;
+}
+
 .myBtn {
   transition: all 0.7s ease-in-out;
   cursor: pointer;
@@ -270,6 +274,7 @@ li {
       font-size: 20px;
       top: -23px;
       right: -10px;
+      cursor: pointer;
   
     }
 

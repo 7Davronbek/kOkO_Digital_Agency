@@ -1203,7 +1203,7 @@ body {
             font-weight: 500;
 
             &::after {
-                height: 230%;
+                height: 240%;
             }
 
             &::before {
@@ -1213,6 +1213,11 @@ body {
             }
 
             &.first {
+
+                &::after {
+                    transform: translateY(129px) rotate(10deg);
+                }
+
                 &::before {
                     content: "Бесплатная консультация";
                     font-size: 16px;
@@ -1222,7 +1227,7 @@ body {
 
             &:hover {
                 &::after {
-                    transform: translateY(-14px) translateX(-20px) rotate(10deg);
+                    transform: translateY(-13px) translateX(-20px) rotate(10deg);
                 }
             }
 
@@ -1908,7 +1913,7 @@ body {
             img {
                 border-radius: 20px;
 
-             
+
             }
         }
 

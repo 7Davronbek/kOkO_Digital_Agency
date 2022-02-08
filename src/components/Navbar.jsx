@@ -30,9 +30,9 @@ const Navbar = () => {
                 <div className="container">
                     <div className="row align-items-center">
 
-                        <div className="col-lg-2 col-6">
+                        <div className="col-lg-2 col-5">
                             <Link to='/' className="logo d-flex align-items-center">
-                                <i><img className='w-100' src="/assets/icon/logoWhite.png" alt="" /></i>
+                                <i><img className='w-100' src="/assets/icon/logo.png" alt="" /></i>
                             </Link>
                         </div>
 
@@ -45,7 +45,7 @@ const Navbar = () => {
                         <div className={`mobileWrap pr-lg-0 col-lg-8 ${burger ? 'burgered' : ''}`}>
                             <div className="row">
 
-                                <div className="col-md-10 myNav d-lg-flex align-items-center justify-content-end">
+                                <div className="col-lg-10 myNav d-lg-flex align-items-center justify-content-end">
                                     <ul className='d-flex align-items-center justify-content-center'>
                                         <li className={`mr-5 myLi`}><Link onClick={() => setBurger(false)} className={`myA  ${location.pathname === '/' ? 'navlinkActive' : ''}`} to='/'>Главная</Link></li>
                                         <li className={`mr-5 myLi`}><Link onClick={() => setBurger(false)} className={`myA ${location.pathname === '/about-us' ? 'navlinkActive' : ''}`} to='/about-us'>О нас</Link></li>
@@ -65,7 +65,7 @@ const Navbar = () => {
                                     </ul>
                                 </div>
 
-                                <div className="col-md-2 d-lg-flex pr-lg-0 align-items-center justify-content-end langWrap">
+                                <div className="col-lg-2 d-lg-flex pr-lg-0 align-items-center justify-content-end langWrap">
                                     {localStorage.getItem(LANGUAGE) !== 'ru' ?
                                         <>
                                             <div className='d-flex align-items-center uz1 justify-content-center' 

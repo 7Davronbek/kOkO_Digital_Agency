@@ -26,7 +26,7 @@ const Blog = () => {
     return <>
         {isLoading ? (
             <div className="loader ">
-                <h5 className='mr-4'>Blog</h5>
+                <h5 className='mr-4'>Блог</h5>
                 <RingLoader color="#fff" size="35" loading={isLoading} />
             </div>
         ) : (

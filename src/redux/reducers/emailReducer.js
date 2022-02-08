@@ -3,7 +3,11 @@ import {UPDATESTATE} from '../types/emailTypes'
 const initialState = {
     load: false,
     isOpen: false,
-    toast: false
+    toast: false,
+    send: false,
+    name: '',
+    phone: '',
+    message: ''
 }
 
 export const emailReducer = (state = initialState, action) => {

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Aos from 'aos';
 import { useLocation } from 'react-router-dom'
 import { connect } from 'react-redux';
-import { sendEmail } from '../redux/actions/emailAction'
+import { sendEmail, sendEmail2 } from '../redux/actions/emailAction'
 
 const Contacts = (props) => {
 
@@ -57,61 +57,61 @@ const Contacts = (props) => {
                                 </div>
                             </>
                         ) : (
-                                <>
-                                    <div className="col-lg-6 ">
-                                        <h4>Всё еще остались у вас вопросы?</h4>
-                                        <p>Оставьте заявку и получите ответы!</p>
+                            <>
+                                <div className="col-lg-6 ">
+                                    <h4>Всё еще остались у вас вопросы?</h4>
+                                    <p>Оставьте заявку и получите ответы!</p>
 
-                                        <form onSubmit={props.sendEmail}>
+                                    <form onSubmit={props.sendEmail2}>
 
-                                            <div className="row">
-                                                <div className="col-md-6 mb-5">
-                                                    <div className="inputWrap">
-                                                        <input
-                                                            onClick={() => setForm(true)}
-                                                            type="text"
-                                                            className='form-control'
-                                                            name='name'
-                                                            required
-                                                        />
-                                                        <h6 className={`${form ? 'active' : ''}`}>Имя*</h6>
-                                                    </div>
+                                        <div className="row">
+                                            <div className="col-md-6 mb-5">
+                                                <div className="inputWrap">
+                                                    <input
+                                                        onClick={() => setForm(true)}
+                                                        type="text"
+                                                        className='form-control'
+                                                        name='name'
+                                                        required
+                                                    />
+                                                    <h6 className={`${form ? 'active' : ''}`}>Имя*</h6>
                                                 </div>
-                                                <div className="col-md-6 mb-5">
-                                                    <div className="inputWrap">
-                                                        <input
-                                                            onClick={() => setForm1(true)}
-                                                            type="text"
-                                                            className='form-control'
-                                                            name='phone'
-                                                            required
-                                                        />
-                                                        <h6 className={`${form1 ? 'active' : ''}`}>Номер телефона*</h6>
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-md-12 mb-3">
-                                                    <div className="inputWrap">
-                                                        <textarea
-                                                            onClick={() => setForm3(true)}
-                                                            className='form-control'
-                                                            name='message'
-                                                            required
-                                                        />
-                                                        <h6 className={`last ${form3 ? 'actives' : ''}`}>Сообщение*</h6>
-                                                    </div>
-                                                </div>
-
-                                                <div className="col-12">
-                                                    <button type='submit' className="btn myBtn d-block ml-auto">Оставить заявку</button>
+                                            </div>
+                                            <div className="col-md-6 mb-5">
+                                                <div className="inputWrap">
+                                                    <input
+                                                        onClick={() => setForm1(true)}
+                                                        type="text"
+                                                        className='form-control'
+                                                        name='phone'
+                                                        required
+                                                    />
+                                                    <h6 className={`${form1 ? 'active' : ''}`}>Номер телефона*</h6>
                                                 </div>
                                             </div>
 
-                                        </form>
-                                    </div>
+                                            <div className="col-md-12 mb-3">
+                                                <div className="inputWrap">
+                                                    <textarea
+                                                        onClick={() => setForm3(true)}
+                                                        className='form-control'
+                                                        name='message'
+                                                        required
+                                                    />
+                                                    <h6 className={`last ${form3 ? 'actives' : ''}`}>Сообщение*</h6>
+                                                </div>
+                                            </div>
 
-                                </>
-                            )}
+                                            <div className="col-12">
+                                                <button type='submit' className="btn myBtn d-block ml-auto">{props.load ? <span className="spinner-border spinner-border-sm"/> : ""} Оставить заявку</button>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+
+                            </>
+                        )}
                         <div className="col-lg-5 colWrap ml-auto">
                             <h1 data-aos='fade-left' >Наш адрес:</h1>
 
@@ -149,8 +149,9 @@ const Contacts = (props) => {
 
 const mapStateToProps = (state) => {
     return {
-        load: state.email.load
+        load: state.email.load,
+        send: state.email.send,
     }
 }
 
-export default connect(mapStateToProps, { sendEmail })(Contacts)
+export default connect(mapStateToProps, { sendEmail, sendEmail2 })(Contacts)

@@ -31,7 +31,7 @@ const App = () => {
       {isLoading ? (
         <div className="loader ">
           <span className="mr-4">
-            <img src="/assets/icon/logoWhite.png" alt='Logo' />
+            <img style={{width: '140px'}} src="/assets/icon/logo.png" alt='Logo' />
           </span>
           <RingLoader color="#fff" size="35" loading={isLoading} />
         </div>

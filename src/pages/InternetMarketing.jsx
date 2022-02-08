@@ -31,7 +31,7 @@ const InternetMarketing = (props) => {
     <>
       {isLoading ? (
         <div className="loader ">
-          <h5 className='mr-4'>Internet marketing</h5>
+          <h5 className='mr-4'>Интернет маркетинг</h5>
           <RingLoader color="#fff" size="35" loading={isLoading} />
         </div>
       ) : (

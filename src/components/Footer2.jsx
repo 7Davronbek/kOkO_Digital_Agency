@@ -10,7 +10,7 @@ const Footer2 = (props) => {
                     <div className="row">
                         <div className="col-12 text-center d-flex align-items-center justify-content-center">
                             <Link to='/'>
-                                <i><img src="/assets/icon/logoWhite.png" alt="" /></i>
+                                <i><img style={{width: '160px'}} src="/assets/icon/logo.png" alt="" /></i>
                             </Link>
                         </div>
                     </div>

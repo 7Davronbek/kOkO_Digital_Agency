@@ -27,7 +27,7 @@ const Moushen = (props) => {
     <>
       {isLoading ? (
         <div className="loader ">
-          <h5 className='mr-4'>Motion</h5>
+          <h5 className='mr-4'>Моушн</h5>
           <RingLoader color="#fff" size="35" loading={isLoading} />
         </div>
       ) : (
