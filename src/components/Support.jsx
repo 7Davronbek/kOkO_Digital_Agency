@@ -11,7 +11,7 @@ const Support = () => {
                     <div data-aos='fade-up' className="col-lg-4 text-center">
                         <h1>Звоните прямо сейчас </h1>
                         <p>Наш менеджер вас проконсультирует</p>
-                        <a className='btn myBtn' href="tel: +998943698058">Позвонить</a>
+                        <a className='btn myBtn' href="tel: +998908232838">Позвонить</a>
                     </div>
                     <div data-aos='fade-left' className="col-lg-2 mb-lg-0 d-none d-lg-flex mb-4">
                         <i><img src="/assets/image/contactBg.svg" alt="" /></i>
