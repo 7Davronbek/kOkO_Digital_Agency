@@ -8,6 +8,7 @@ import WebHeader from '../components/WebHeader';
 
 import { connect } from "react-redux";
 import { updateState } from '../redux/actions/emailAction'
+import { Helmet } from 'react-helmet';
 // import WhyWe from '../components/WhyWe';
 
 const WebDevelopment = (props) => {
@@ -22,6 +23,11 @@ const WebDevelopment = (props) => {
   }, []);
   return (
     <>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>kOkO Agency | Web Development | Tashkent | KOKO | koko</title>
+        <link rel="canonical" href="https://www.kokoagency.uz/" />
+    </Helmet>
       {isLoading ? (
         <div className="loader ">
           <h5 className='mr-4'>Веб услуги</h5>

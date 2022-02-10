@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { RingLoader } from 'react-spinners';
 import Aos from 'aos';
 import { Modal, ModalBody } from "reactstrap"
+import { Helmet } from 'react-helmet';
 
 const Blog = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -24,6 +25,13 @@ const Blog = () => {
     }, [])
 
     return <>
+
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>kOkO Agency | Blog | Tashkent | KOKO | koko</title>
+        <link rel="canonical" href="https://www.kokoagency.uz/" />
+    </Helmet>
+
         {isLoading ? (
             <div className="loader ">
                 <h5 className='mr-4'>Блог</h5>

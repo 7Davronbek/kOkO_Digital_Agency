@@ -10,6 +10,7 @@ import PaketsInternet from '../components/PaketsInternet';
 
 import { connect } from "react-redux";
 import { updateState } from '../redux/actions/emailAction'
+import { Helmet } from 'react-helmet';
 
 const InternetMarketing = (props) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,6 +30,12 @@ const InternetMarketing = (props) => {
   }, []);
   return (
     <>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>kOkO Agency | Internet Marketing | Tashkent | KOKO | koko</title>
+        <link rel="canonical" href="https://www.kokoagency.uz/" />
+    </Helmet>
+
       {isLoading ? (
         <div className="loader ">
           <h5 className='mr-4'>Интернет маркетинг</h5>

@@ -7,6 +7,7 @@ import MotionDepends from '../components/MotionDepends';
 
 import { connect } from "react-redux";
 import { updateState } from '../redux/actions/emailAction'
+import { Helmet } from 'react-helmet';
 
 const Moushen = (props) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,6 +26,11 @@ const Moushen = (props) => {
   }, []);
   return (
     <>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>kOkO Agency | Motion | Tashkent | KOKO | koko</title>
+        <link rel="canonical" href="https://www.kokoagency.uz/" />
+    </Helmet>
       {isLoading ? (
         <div className="loader ">
           <h5 className='mr-4'>Моушн</h5>

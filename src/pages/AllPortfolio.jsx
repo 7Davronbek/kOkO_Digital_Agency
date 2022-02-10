@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { RingLoader } from 'react-spinners';
 import Aos from 'aos';
 import Companies from '../components/Companies';
+import { Helmet } from 'react-helmet';
 
 const AllPortfolio = () => {
     // const [activeTab, setActiveTab] = useState('1');
@@ -23,6 +24,12 @@ const AllPortfolio = () => {
     // }
     return (
         <>
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>kOkO Agency | Portfolio | Tashkent | KOKO | koko</title>
+            <link rel="canonical" href="https://www.kokoagency.uz/" />
+        </Helmet>
+
             {isLoading ? (
                 <div className="loader ">
                     <h5 className='mr-4'>Portfolio</h5>

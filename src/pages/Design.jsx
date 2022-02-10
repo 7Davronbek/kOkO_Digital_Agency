@@ -9,6 +9,7 @@ import DesignDepends from '../components/DesignDepends';
 
 import { connect } from "react-redux";
 import { updateState } from '../redux/actions/emailAction'
+import { Helmet } from 'react-helmet';
 
 const Design = (props) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,6 +29,12 @@ const Design = (props) => {
   }, []);
   return (
     <>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>kOkO Agency | Design | Tashkent | KOKO | koko</title>
+        <link rel="canonical" href="https://www.kokoagency.uz/" />
+    </Helmet>
+
       {isLoading ? (
         <div className="loader ">
           <h5 className='mr-4'>Дизайн</h5>

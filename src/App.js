@@ -12,6 +12,8 @@ import { RingLoader } from "react-spinners";
 import "aos/dist/aos.css";
 import "aos/dist/aos.js";
 
+import {Helmet} from "react-helmet";
+
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -28,6 +30,12 @@ const App = () => {
 
   return (
     <>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>kOkO Agency | Branding | Tashkent | KOKO | koko</title>
+        <link rel="canonical" href="https://www.kokoagency.uz/" />
+    </Helmet>
+
       {isLoading ? (
         <div className="loader ">
           <span className="mr-4">

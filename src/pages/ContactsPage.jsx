@@ -3,6 +3,7 @@ import Contacts from '../components/Contacts'
 import ContactsHeader from '../components/ContactsHeader'
 import ContactsLocation from '../components/ContactsLocation'
 import { RingLoader } from "react-spinners";
+import { Helmet } from "react-helmet";
 
 const ContactsPage = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -13,6 +14,12 @@ const ContactsPage = () => {
     }, []);
     return (
         <>
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>kOkO Agency | Contacts | Tashkent | KOKO | koko</title>
+            <link rel="canonical" href="https://www.kokoagency.uz/" />
+        </Helmet>
+
         {isLoading ? (
           <div className="loader ">
             <span className="mr-4">

@@ -5,6 +5,7 @@ import React, {useState, useEffect} from 'react'
 import { RingLoader } from "react-spinners";
 // import Questions from '../components/Questions'
 import WeInNumber from '../components/WeInNumber';
+import { Helmet } from 'react-helmet';
 
 const AboutUs = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -16,6 +17,11 @@ const AboutUs = () => {
     }, []);
     return (
         <>
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>kOkO Agency | About Us | Tashkent | KOKO | koko</title>
+            <link rel="canonical" href="https://www.kokoagency.uz/" />
+        </Helmet>
         {isLoading ? (
           <div className="loader ">
               <h5 className='mr-4'>О нас</h5>
