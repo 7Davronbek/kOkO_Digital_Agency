@@ -1,24 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Aos from 'aos';
-import { Link } from 'react-router-dom'
 
 const Portfolio = () => {
-    const [hover1, setHover1] = useState(false)
-    const [hover2, setHover2] = useState(false)
-    
-    const handleHover1 = () => {
-        setHover1(true)
-        setTimeout(() => {
-            setHover1(false)
-        }, 8000)
-    }
-
-    const handleHover2 = () => {
-        setHover2(true)
-        setTimeout(() => {
-            setHover2(false)
-        }, 8000)
-    }
 
     useEffect(() => {
         Aos.init({
@@ -98,6 +81,7 @@ const Portfolio = () => {
 
                         <div data-aos='fade-right' className="col-lg-3 col-md-6 mb-4">
                             <div className="card">
+                                <a target='_blank' rel="noreferrer" href="https://agrom.uz/">
                                 <div className="card-header">
                                     <img src="/assets/image/portfolio/5.png" className='w-100' alt="" />
                                 </div>
@@ -106,11 +90,13 @@ const Portfolio = () => {
                                         Website agrom.uz
                                     </h5>
                                 </div>
+                                </a>
                             </div>
                         </div>
 
                         <div data-aos='fade-up' className="col-lg-3 col-md-6 mb-4">
                             <div className="card  h-100">
+                                <a target='_blank' rel="noreferrer" href="https://smartpackprint.uz/">
                                 <div className="card-header">
                                     <img src="/assets/image/portfolio/6.png" className='w-100' alt="" />
                                 </div>
@@ -119,11 +105,13 @@ const Portfolio = () => {
                                         Website smartpackprint.uz
                                     </h5>
                                 </div>
+                                </a>
                             </div>
                         </div>
 
                         <div data-aos='fade-up' className="col-lg-3 col-md-6 mb-4">
                             <div className="card  h-100">
+                                <a target='_blank' rel="noreferrer" href="https://trustedexpressllc.com/">
                                 <div className="card-header">
                                     <img src="/assets/image/portfolio/7.png" className='w-100' alt="" />
                                 </div>
@@ -132,11 +120,13 @@ const Portfolio = () => {
                                         Website trustedexpressllc.com
                                     </h5>
                                 </div>
+                                </a>
                             </div>
                         </div>
 
                         <div data-aos='fade-left' className="col-lg-3 col-md-6 mb-4">
                             <div className="card  h-100">
+                                <a target='_blank' rel="noreferrer" href="https://granitinert.uz/">
                                 <div className="card-header">
                                     <img src="/assets/image/portfolio/8.png" className='w-100' alt="" />
                                 </div>
@@ -145,6 +135,7 @@ const Portfolio = () => {
                                         Website granitinert.uz
                                     </h5>
                                 </div>
+                                </a>
                             </div>
                         </div>
 
