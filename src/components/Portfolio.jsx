@@ -27,46 +27,52 @@ const Portfolio = () => {
                     </div>
                     <div className="row">
                         <div data-aos='fade-right' className="col-lg-3 col-md-6 mb-4">
-                            <div className="card h-100">
-                                <div className="card-header">
-                                    <img src="/assets/image/portfolio/1.png" className='w-100' alt="" />
+                            <a target='_blank' rel="noreferrer" href="https://instagram.com/rkaonlineshopuz?utm_medium=copy_link">
+                                <div className="card h-100">
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/1.png" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM RKA Online Shop
+                                        </h5>
+                                    </div>
                                 </div>
-                                <div className="card-body">
-                                    <h5>
-                                        SMM RKA Online Shop 
-                                    </h5>
-                                </div>
-                            </div>
+                            </a>
                         </div>
 
                         <div data-aos='fade-up' className="col-lg-3 col-md-6 mb-4">
-                            <div className="card h-100">
-                                <div className="card-header">
-                                    <img src="/assets/image/portfolio/3.png" className='w-100' alt="" />
+                            <a target='_blank' rel="noreferrer" href="https://instagram.com/classicgrandbuild?utm_medium=copy_link">
+                                <div className="card h-100">
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/3.png" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM CGB
+                                        </h5>
+                                    </div>
                                 </div>
-                                <div className="card-body">
-                                    <h5>
-                                    SMM CGB
-                                    </h5>
-                                </div>
-                            </div>
-
+                            </a>
                         </div>
 
                         <div data-aos='fade-up' className="col-lg-3 col-md-6 mb-4">
-                            <div className="card h-100">
-                                <div className="card-header">
-                                    <img src="/assets/image/portfolio/2.png" className='w-100' alt="" />
+                            <a target='_blank' rel="noreferrer" href="https://instagram.com/rkaonlineshopuz?utm_medium=copy_link">
+                                <div className="card h-100">
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/2.png" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM RKA Online Shop
+                                        </h5>
+                                    </div>
                                 </div>
-                                <div className="card-body">
-                                    <h5>
-                                        SMM RKA Online Shop 
-                                    </h5>
-                                </div>
-                            </div>
+                                </a>
                         </div>
 
                         <div data-aos='fade-left' className="col-lg-3 col-md-6 mb-4">
+                            <a target='_blank' rel="noreferrer" href="https://instagram.com/ilpatio_tashkent?utm_medium=copy_link">
                             <div className="card">
                                 <div className="card-header">
                                     <img src="/assets/image/portfolio/port10.jpg" className='w-100' alt="" />
@@ -77,19 +83,20 @@ const Portfolio = () => {
                                     </h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
 
                         <div data-aos='fade-right' className="col-lg-3 col-md-6 mb-4">
                             <div className="card">
                                 <a target='_blank' rel="noreferrer" href="https://agrom.uz/">
-                                <div className="card-header">
-                                    <img src="/assets/image/portfolio/5.png" className='w-100' alt="" />
-                                </div>
-                                <div className="card-body">
-                                    <h5>
-                                        Website agrom.uz
-                                    </h5>
-                                </div>
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/5.png" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            Website agrom.uz
+                                        </h5>
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -97,14 +104,14 @@ const Portfolio = () => {
                         <div data-aos='fade-up' className="col-lg-3 col-md-6 mb-4">
                             <div className="card  h-100">
                                 <a target='_blank' rel="noreferrer" href="https://smartpackprint.uz/">
-                                <div className="card-header">
-                                    <img src="/assets/image/portfolio/6.png" className='w-100' alt="" />
-                                </div>
-                                <div className="card-body">
-                                    <h5>
-                                        Website smartpackprint.uz
-                                    </h5>
-                                </div>
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/6.png" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            Website smartpackprint.uz
+                                        </h5>
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -112,14 +119,14 @@ const Portfolio = () => {
                         <div data-aos='fade-up' className="col-lg-3 col-md-6 mb-4">
                             <div className="card  h-100">
                                 <a target='_blank' rel="noreferrer" href="https://trustedexpressllc.com/">
-                                <div className="card-header">
-                                    <img src="/assets/image/portfolio/7.png" className='w-100' alt="" />
-                                </div>
-                                <div className="card-body">
-                                    <h5>
-                                        Website trustedexpressllc.com
-                                    </h5>
-                                </div>
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/7.png" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            Website trustedexpressllc.com
+                                        </h5>
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -127,14 +134,14 @@ const Portfolio = () => {
                         <div data-aos='fade-left' className="col-lg-3 col-md-6 mb-4">
                             <div className="card  h-100">
                                 <a target='_blank' rel="noreferrer" href="https://granitinert.uz/">
-                                <div className="card-header">
-                                    <img src="/assets/image/portfolio/8.png" className='w-100' alt="" />
-                                </div>
-                                <div className="card-body">
-                                    <h5>
-                                        Website granitinert.uz
-                                    </h5>
-                                </div>
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/8.png" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            Website granitinert.uz
+                                        </h5>
+                                    </div>
                                 </a>
                             </div>
                         </div>

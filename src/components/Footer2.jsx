@@ -48,7 +48,7 @@ const Footer2 = (props) => {
                     <div className="row">
                         <div className="col-12 text-center  mt-4 text-secondary">
                             <h6 className='d-flex align-items-center justify-content-center'>
-                                <i className="mr-1"><img src="/assets/icon/g.svg" alt="" /></i> KOKO AGENCY 2019</h6>
+                                <i className="mr-1"><img src="/assets/icon/g.svg" alt="" /></i> kOkO Agency 2019</h6>
                         </div>
                     </div>
                 </div>
