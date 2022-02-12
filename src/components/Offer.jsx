@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
 import Aos from 'aos';
+import Tilt from 'react-vanilla-tilt'
 
 const Offer = () => {
+
     const [hover1, setHover1] = useState(false)
     const [hover2, setHover2] = useState(false)
     const [hover3, setHover3] = useState(false)
@@ -62,38 +64,47 @@ const Offer = () => {
                         <h1 data-aos='fade-left' className='myText'>У нас выгодные цены на все услуги</h1>
                         <h3 data-aos='fade-left'>Работая с нами вы получите</h3>
                     </div>
+
+
                     <div data-aos='fade-right' className="col-lg-4 col-md-6 col-12 mt-5">
-                        <div className="card h-100">
-                            <div className="card-body">
-                                <div><i><img src="/assets/icon/offer2.svg" alt="" /></i></div>
-                                <h2>Cпособ оплаты</h2>
-                                <p>Вы можете оплатить услугу наличными, картой или перечеслением.</p>
+                        <Tilt options={{ glare: true, 'max-glare': 0.5 }} className='tilt h-100'>
+                            <div className="card h-100">
+                                <div className="card-body">
+                                    <div><i><img src="/assets/icon/offer2.svg" alt="" /></i></div>
+                                    <h2>Cпособ оплаты</h2>
+                                    <p>Вы можете оплатить услугу наличными, картой или перечеслением.</p>
+                                </div>
                             </div>
-                        </div>
+                        </Tilt>
                     </div>
                     <div data-aos='fade-up' className="col-lg-4 col-md-6 col-12 mt-5">
-                        <div className="card h-100">
-                            <div className="card-body">
-                                <div><i><img src="/assets/icon/offer1.svg" alt="" /></i></div>
-                                <h2>Почему мы?</h2>
-                                <p>Наша команда уже на протяжении нескольких лет занимается  услугами в сфере разработки сайтов и интернет магазинов любой сложности. Полное продвижение в области SEO и СММ для вашего бизнеса.  </p>
+                        <Tilt className='tilt h-100'>
+                            <div className="card h-100">
+                                <div className="card-body">
+                                    <div><i><img src="/assets/icon/offer1.svg" alt="" /></i></div>
+                                    <h2>Почему мы?</h2>
+                                    <p>Наша команда уже на протяжении нескольких лет занимается  услугами в сфере разработки сайтов и интернет магазинов любой сложности. Полное продвижение в области SEO и СММ для вашего бизнеса.  </p>
+                                </div>
                             </div>
-                        </div>
+                        </Tilt>
                     </div>
                     <div data-aos='fade-left' className="col-lg-4 col-md-6 col-12 mt-5">
-                        <div className="card h-100">
-                            <div className="card-body">
-                                <div><i><img src="/assets/icon/offer3.svg" alt="" /></i></div>
-                                <h2>Гарантия</h2>
-                                <p>Наша команда выполняет проекты с нуля и «под ключ». Мы полностью даём гарантию на все наши услуги</p>
+                        <Tilt className='tilt h-100'>
+                            <div className="card ">
+                                <div className="card-body">
+                                    <div><i><img src="/assets/icon/offer3.svg" alt="" /></i></div>
+                                    <h2>Гарантия</h2>
+                                    <p>Наша команда выполняет проекты с нуля и «под ключ». Мы полностью даём гарантию на все наши услуги</p>
+                                </div>
                             </div>
-                        </div>
+                        </Tilt>
                     </div>
 
-               
+
 
                 </div>
             </div>
+
         </div>
     )
 }

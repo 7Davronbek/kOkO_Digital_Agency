@@ -239,6 +239,15 @@ li {
   background-color: #000000d9;
 }
 
+.tilt {
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: auto !important;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
 .modal-dialog {
   margin-top: 200px;
 
