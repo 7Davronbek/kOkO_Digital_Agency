@@ -10,7 +10,7 @@ const ContactsPage = () => {
     useEffect(() => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 1500);
+      }, 1800);
     }, []);
     return (
         <>

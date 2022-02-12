@@ -17,7 +17,7 @@ const Blog = () => {
     useEffect(() => {
         setTimeout(() => {
             setIsLoading(false)
-        }, 1700);
+        }, 1800);
         Aos.init({
             once: true,
             duration: 1700,
