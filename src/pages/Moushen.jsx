@@ -87,7 +87,6 @@ const Moushen = (props) => {
               <p>2D и 3D Анимация;</p>
             </div>
           </div>
-          
 
           <div className="row flex-lg-row flex-column-reverse align-items-center mt-4">
             <div data-aos='fade-right' className="col-lg-6">
