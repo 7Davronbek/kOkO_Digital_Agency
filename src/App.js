@@ -44,16 +44,16 @@ const App = () => {
           <RingLoader color="#fff" size="35" loading={isLoading} />
         </div>
       ) : (
-        ""
+        <>
+        <Header />
+        <Services />
+        <Offer />
+        <WeInNumber />
+        <Portfolio />
+        <Companies />
+        <Contacts />
+        </>
       )}
-      <Header />
-      <Services />
-      <Offer />
-      <WeInNumber />
-      <Portfolio />
-      <Companies />
-      {/* <Personal /> */}
-      <Contacts />
     </>
   );
 };

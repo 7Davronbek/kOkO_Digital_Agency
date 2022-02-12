@@ -1,14 +1,7 @@
-import { useEffect, useState } from "react"
 import { connect } from "react-redux";
 import { updateState } from '../redux/actions/emailAction'
 
 const Header = (props) => {
-    const [load, setLoad] = useState(false);
-    useEffect(() => {
-        setTimeout(() => {
-            setLoad(true)
-        }, 1500)
-    }, [])
     return (
         <div className='header'>
             {/* <div className="video">
@@ -17,7 +10,7 @@ const Header = (props) => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12 mx-auto text-center">
-                        {load ? (
+                        {/* {load ? ( */}
                             <>
                                 {/* <h1 data-aos='fade-right'>Полное продвижение бизнеса</h1>
                                 <h1 className="lastH1" data-aos='fade-right'> в области интернет маркетинга</h1> */}
@@ -29,7 +22,7 @@ const Header = (props) => {
                                 >
                                     Оставить заявку</button>
                             </>
-                        ) : null}
+                        {/* ) : null} */}
                     </div>
                 </div>
             </div>

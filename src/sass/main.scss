@@ -1,6 +1,7 @@
 @import "./secondary.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 html {
     ::selection {
@@ -30,7 +31,8 @@ body {
     width: 100%;
     overflow-x: hidden;
     background-color: $backgroundColor;
-    font-family: "Poppins", sans-serif;
+    // font-family: "Poppins", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     background: #000;
 
@@ -404,9 +406,12 @@ body {
             border: 2px solid $colorBlue;
             background: transparent;
             transition: all 0.5s linear;
+            font-family: 'Inter', sans-serif;
+        
 
             &::before {
                 font-size: 18px;
+                font-family: 'Inter', sans-serif;
 
                 @media(max-width: 992px) {
                     font-size: 15px;
@@ -438,6 +443,9 @@ body {
             font-weight: 600;
             font-size: 71px;
             color: #fff;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 1px;
+        
 
             &:last-child {
                 margin-bottom: 80px !important;
@@ -661,12 +669,13 @@ body {
         .card {
             height: 100%;
             position: relative;
+            overflow: hidden;
+            border: 2px solid #000;
 
             .card-header {
                 padding: 0;
                 overflow: hidden;
-                border-radius: 20px 0;
-                opacity: 0.4;
+                opacity: 0.7;
                 transition: all 0.5s ease-in-out;
 
                 img {
@@ -700,7 +709,7 @@ body {
 
                 .card-header {
                     opacity: 1;
-                    transform: scale(1.15);
+                    transform: scale(1.11);
 
                     @media(max-width: 767px) {
                         transform: scale(1);
