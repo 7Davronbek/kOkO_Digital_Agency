@@ -28,13 +28,14 @@ const AboutUs = () => {
             <RingLoader color="#fff" size="35" loading={isLoading} />
           </div>
         ) : (
-          ""
+          <>
+          <AboutMain /> 
+          <Portfolio />
+          <WeInNumber />
+          </>
         )}
-         <AboutMain /> 
-         <Portfolio />
          {/* <Personal /> */}
          {/* <Questions /> */}
-         <WeInNumber />
         </>
     )
 }

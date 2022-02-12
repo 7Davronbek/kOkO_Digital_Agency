@@ -127,7 +127,7 @@ const Blog = () => {
             className='modal-lg blogModal'
         >
             <ModalBody>
-                <i onClick={() => setModal1(false)} className="i">x</i>
+                <i onClick={() => setModal1(false)} className="i icon icon-close"></i>
                 <h3>Понятие о веб услугах</h3>
                 <h5>
                     Веб услуги – это создание, продвижение и поддержание
@@ -161,7 +161,7 @@ const Blog = () => {
             className='modal-lg blogModal'
         >
             <ModalBody>
-                <i onClick={() => setModal2(false)} className="i">x</i>
+                <i onClick={() => setModal2(false)} className="i icon icon-close"></i>
                 <h3>Понятие об интернет маркетинге</h3>
                 <h5>Интернет-маркетинг — область маркетинга, которая
                     объединяет все способы маркетинговой коммуникации,
@@ -196,7 +196,7 @@ const Blog = () => {
             className='modal-lg blogModal'
         >
             <ModalBody>
-                <i onClick={() => setModal3(false)} className="i">x</i>
+                <i onClick={() => setModal3(false)} className="i icon icon-close"></i>
                 <h3>Создание моушн видео</h3>
 
 
@@ -232,7 +232,7 @@ const Blog = () => {
             className='modal-lg blogModal'
         >
             <ModalBody>
-                <i onClick={() => setModal4(false)} className="i">x</i>
+                <i onClick={() => setModal4(false)} className="i icon icon-close"></i>
                 <h3>Разработка брендбуков</h3>
                 <h5>Разработка брендбука (brand book) – это совмещение
                     работ по формированию основного документа, который
@@ -261,7 +261,7 @@ const Blog = () => {
             className='modal-lg blogModal'
         >
             <ModalBody>
-                <i onClick={() => setModal5(false)} className="i">x</i>
+                <i onClick={() => setModal5(false)} className="i icon icon-close"></i>
                 <h3>Создание анимационных видео роликов</h3>
                 <h5>Анимационный видео ролик - оригинальный инструмент
                     для рекламного продвижения товаров и услуг. Считается
@@ -289,7 +289,7 @@ const Blog = () => {
             className='modal-lg blogModal'
         >
             <ModalBody>
-                <i onClick={() => setModal6(false)} className="i">x</i>
+                <i onClick={() => setModal6(false)} className="i icon icon-close"></i>
                 <h3>Контестная реклама</h3>
                 <h5>Контекстная реклама — это различные объявления (текстовые,
                     графические, видео), которые показываются пользователям

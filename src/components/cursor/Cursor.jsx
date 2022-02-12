@@ -41,10 +41,10 @@ const Cursor = () => {
                 positionRef.current.destinationX = mouseX
                 positionRef.current.destinationY = mouseY
             } else {
-                positionRef.current.distanceX = (mouseX - destinationX) * 0.1 
-                positionRef.current.distanceY = (mouseY - destinationY) * 0.1 
+                positionRef.current.distanceX = (mouseX - destinationX) * 0.3 
+                positionRef.current.distanceY = (mouseY - destinationY) * 0.3
 
-                if(Math.abs(positionRef.current.distanceX) + Math.abs(positionRef.current.distanceY) < 0.1) {
+                if(Math.abs(positionRef.current.distanceX) + Math.abs(positionRef.current.distanceY) < 0.3) {
                     positionRef.current.destinationX = mouseX
                     positionRef.current.destinationY = mouseY
                 } else {
@@ -61,7 +61,7 @@ const Cursor = () => {
     }, [])
 
     return (
-        <div className="cursor">
+        <div className="myCursor">
             <div className='main' ref={mainCursor}>
                 <div className="secondary" ref={secondaryCursor} ></div>
             </div>

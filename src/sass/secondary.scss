@@ -36,6 +36,22 @@ $colorWhite: #fff;
       mask-image: url("../image/facebook.png");
       -webkit-mask-image: url("../image/facebook.png");
     }
+  
+    &.icon-up {
+      mask-image: url("../image/up.png");
+      -webkit-mask-image: url("../image/up.png");
+      width: 15px;
+      height: 15px;
+      background-color: #fff;
+    }
+  
+    &.icon-close {
+      mask-image: url("../image/close.png");
+      -webkit-mask-image: url("../image/close.png");
+      width: 15px;
+      height: 15px;
+      background-color: $colorBlue;
+    }
 }
 
 // ********************** DEFAULT *****************************
@@ -264,27 +280,11 @@ li {
       }
     }
 
-    .i {
+    .i {  
       position: absolute;
       top: 0;
       right: 0;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 13px;
-      z-index: 1;
-      top: 6px;
-      font-weight: 600;
-      font-family: cursive;
-      font-style: normal;
-      right: 3px;
-      color: $colorBlue;
-      font-size: 20px;
-      top: -23px;
-      right: -10px;
       cursor: pointer;
-  
     }
 
     input {

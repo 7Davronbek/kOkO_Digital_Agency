@@ -31,6 +31,8 @@ import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 import Cursor from "./components/cursor/Cursor";
 import CustomCursor from "./components/cursor/CustomCursor";
+import SocialFixed from "./components/SocialFixed";
+import Up from "./components/Up";
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
@@ -77,6 +79,9 @@ ReactDOM.render(
           pauseOnHover
           style={{ zIndex: "999999999" }}
         />
+
+        <SocialFixed />
+        <Up />
 
       </Router>
     </Provider>

@@ -9,7 +9,7 @@ html {
         color: #fff;
     }
 
-    // scroll-behavior: smooth;
+    scroll-behavior: smooth;
     overflow-x: hidden;
 
     ::-webkit-scrollbar {
@@ -37,10 +37,10 @@ body {
     background: #000;
 
     .app-cursor {
-        z-index: -1;
-        width: 80px;
-        height: 80px;
-        border: 1px solid #fff;
+        z-index: 0;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $colorBlue;
         border-radius: 50%;
         background-color: transparent;
         overflow: hidden;
@@ -50,16 +50,20 @@ body {
         left: 0;
     }
 
-    .cursor { 
+    .myCursor { 
         // position: absolute;
-        z-index: -1;
+        z-index: 0;
 
         .secondary {
-            width: 30px;
-            height: 30px;
+            width: 7px;
+            cursor: auto;
+            height: 7px;
             border-radius: 50%;
-            background-color: #fff;
+            background-color: $colorBlue;
             position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 0;
         }
     }
 
@@ -220,7 +224,7 @@ body {
                 cursor: pointer;
             }
 
-            &:hover {
+            &:hover { z-index: 2;
 
                 .uz,
                 .ru1 {
@@ -247,7 +251,7 @@ body {
                 top: 25px;
                 background: #000000d9;
                 padding: 25px 25px;
-                width: 200px;
+                width: 255px;
                 left: -25px;
                 border-radius: 10px;
                 backdrop-filter: blur(15px);
@@ -280,7 +284,7 @@ body {
                         }
                     }
 
-                    &:hover {
+                    &:hover { z-index: 2;
                         &::after {
                             transform: scaleX(1);
                             transform-origin: right;
@@ -298,7 +302,7 @@ body {
                 }
             }
 
-            &:hover {
+            &:hover { z-index: 2;
                 .arrow {
                     transform: rotate(270deg);
                 }
@@ -350,7 +354,7 @@ body {
                         transition: all 0.5s ease;
                     }
 
-                    &:hover {
+                    &:hover { z-index: 2;
                         &::after {
                             transform: scaleX(1);
                             transform-origin: right;
@@ -445,7 +449,7 @@ body {
                 }
             }
 
-            &:hover {
+            &:hover { z-index: 2;
                 border-color: transparent;
                 color: $colorBlue;
             }
@@ -573,7 +577,7 @@ body {
                 transform: translateY(0) !important;
             }
 
-            &:hover {
+            &:hover { z-index: 2;
                 width: 35%;
                 transform: translateY(-60px);
                 z-index: 2;
@@ -648,7 +652,7 @@ body {
                     z-index: -1;
                 }
 
-                &.hover {
+                &.hover { z-index: 2;
                     animation: animBg6 5s ease-in-out;
                 }
             }
@@ -658,7 +662,7 @@ body {
                 bottom: -250px;
                 z-index: 1;
 
-                &.hover {
+                &.hover { z-index: 2;
                     animation: animBg2 5s ease-in-out;
                 }
             }
@@ -731,7 +735,7 @@ body {
                 }
             }
 
-            &:hover {
+            &:hover { z-index: 2;
                 z-index: 1;
 
                 .card-header {
@@ -820,7 +824,7 @@ body {
                 opacity: 0.7;
                 transition: all 0.3s ease-in-out;
 
-                &:hover {
+                &:hover { z-index: 2;
                     opacity: 1;
                 }
             }
@@ -1004,7 +1008,7 @@ body {
             bottom: -250px;
             transform: rotate(74deg) scale(0.5);
 
-            &.hover {
+            &.hover { z-index: 2;
                 animation: animBg11 7s ease-in-out;
             }
         }
@@ -1014,7 +1018,7 @@ body {
             transform: scale(0.2);
             top: -185px;
 
-            &.hover {
+            &.hover { z-index: 2;
                 animation: animBg12 7s ease-in-out;
             }
         }
@@ -1027,7 +1031,7 @@ body {
                 transition: all .5s ease;
             }
 
-            &:hover {
+            &:hover { z-index: 2;
                 img {
                     transform: scale(1.5) translateY(20px);
                 }
@@ -1264,7 +1268,7 @@ body {
                 }
             }
 
-            &:hover {
+            &:hover { z-index: 2;
                 &::after {
                     transform: translateY(-13px) translateX(-20px) rotate(10deg);
                 }
@@ -1364,7 +1368,7 @@ body {
             bottom: -200px;
             transform: rotate(-8deg) scale(0.7);
 
-            &.hover {
+            &.hover { z-index: 2;
                 animation: animBg13 7s ease-in-out;
             }
         }
@@ -1374,7 +1378,7 @@ body {
             right: -381px;
             transform: scale(0.5) rotate(-184deg);
 
-            &.hover {
+            &.hover { z-index: 2;
                 animation: animBg14 7s ease-in-out;
             }
         }
@@ -1485,7 +1489,7 @@ body {
                 }
             }
 
-            &:hover {
+            &:hover { z-index: 2;
                 .card-header {
                     img {
                         transform: scale(1.2);
@@ -1607,7 +1611,7 @@ body {
                 transform: scale(0.6);
                 // transform: translateX(-210px) rotate(33deg);
 
-                &.hover {
+                &.hover { z-index: 2;
                     animation: animBg2 7s ease-in-out;
                 }
             }
@@ -1624,7 +1628,7 @@ body {
                     z-index: -1;
                 }
 
-                &.hover {
+                &.hover { z-index: 2;
                     animation: animBg5 7s ease-in-out;
                 }
             }
@@ -1640,7 +1644,7 @@ body {
                 //     z-index: -1;
                 // }
 
-                &.hover {
+                &.hover { z-index: 2;
                     animation: animBg3 7s ease-in-out;
                 }
             }
@@ -1751,7 +1755,7 @@ body {
             left: -649px;
             top: -392px;
 
-            &.hover {
+            &.hover { z-index: 2;
                 animation: animBg15 7s ease-in-out;
             }
         }
@@ -1761,7 +1765,7 @@ body {
             transform: scale(0.3);
             bottom: -147px;
 
-            &.hover {
+            &.hover { z-index: 2;
                 animation: animBg8 7s ease-in-out;
             }
         }
@@ -1770,7 +1774,7 @@ body {
             right: -346px;
             transform: scale(0.5) rotate(98deg);
 
-            &.hover {
+            &.hover { z-index: 2;
                 animation: animBg9 7s ease-in-out;
             }
         }
@@ -1780,7 +1784,7 @@ body {
             top: 363px;
             right: -184px;
 
-            &.hover {
+            &.hover { z-index: 2;
                 animation: animBg10 7s ease-in-out;
             }
         }
@@ -1868,7 +1872,7 @@ body {
                 -webkit-backdrop-filter: blur(50px);
             }
 
-            &:hover {
+            &:hover { z-index: 2;
                 transform: scale(1.05);
                 background: rgba(40, 48, 54, 0.6);
                 backdrop-filter: blur(50px);
@@ -2200,7 +2204,7 @@ body {
                     }
                 }
 
-                &:hover {
+                &:hover { z-index: 2;
 
                     h5 {
                         transform: translateY(150px);
@@ -2254,7 +2258,7 @@ body {
                 }
             }
 
-            &:hover {
+            &:hover { z-index: 2;
                 h3 {
                     color: $colorBlue;
                 }
@@ -2323,7 +2327,7 @@ body {
                     backdrop-filter: blur(50px);
                     user-select: none;
 
-                    &:hover {
+                    &:hover { z-index: 2;
                         background-color: #111111b2;
                     }
 
@@ -2575,6 +2579,136 @@ body {
                 width: 100%;
                 border-radius: 10px
             }
+        }
+    }
+
+    .socialFixed {
+        position: fixed;
+        top: 47%;
+        right: 30px;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(-50%);
+
+        a {
+            display: flex;
+            margin-bottom: 45px;
+            animation: social 6s ease-in-out infinite;
+
+            &:nth-child(2) {
+                animation-delay: 2s ;
+            }
+
+            &:nth-child(3) {
+                animation-delay: 4s ;
+            }
+        }
+
+        h6 {
+            font-size: 15px;
+            font-weight: 400;
+            transform: translate(-5px, 50px) rotate(-90deg);
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 35px;
+                height: 1px;
+                background-color: #fff;
+                top: 9px;
+                right: -48px;
+            }
+        }
+
+        @keyframes social {
+
+            0% {
+                transform: translateX(0);
+            }
+
+            10% {
+                transform: translateX(-8px);
+            }
+            
+            100% {
+                transform: translateX(0);
+            }
+        }
+    }
+
+    .UP {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        background: red;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 50px;
+        left: 50px;
+        background: #55636e33;
+        -webkit-backdrop-filter: blur(50px);
+        backdrop-filter: blur(50px);
+        animation: up2 2s ease-in-out infinite;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+
+        &.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .icon-up {
+            transform: translateY(-1px);
+        }
+
+        @keyframes up {
+            0% {
+                transform: translateY(0);
+            }
+
+            20% {
+                transform: translateY(0);
+            }
+            
+            40% {
+                transform: translateY(-30px);
+            }
+
+            50% {
+                transform: translateY(0);
+            }
+
+            60% {
+                transform: translateY(15px);
+            }
+
+            80% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes up2 {
+            0%, 100%, 20%, 50%, 80% {
+            transform: translateY(0);
+        }
+        
+        40% {
+            transform: translateY(-30px);
+        }
+        60% {
+            transform: translateY(-15px);
+        }
         }
     }
 
