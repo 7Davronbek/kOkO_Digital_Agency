@@ -29,51 +29,57 @@ import { rootReducer } from "./redux/reducers/rootReducer";
 import thunk from "redux-thunk";
 import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
+import Cursor from "./components/cursor/Cursor";
+import CustomCursor from "./components/cursor/CustomCursor";
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
+ReactDOM.render(
+  <>
+    <Provider store={store}>
+      <Router>
+      <Cursor />
 
-ReactDOM.render(<>
-  <Provider store={store}>
-    <Router>
-      <Navbar />
-      <ScrollToTop />
-      <Switch>
-        <Route path="/" exact component={App} />
-        <Route path="/blog" exact component={Blog} />
-        <Route path="/about-us" exact component={AboutUs} />
-        {/* <Route path="/projects" exact component={AllPortfolio} /> */}
-        <Route path="/contacts" exact component={ContactsPage} />
-        <Route path="/web-development" exact component={WebDevelopment} />
-        <Route
-          path="/internet-marketing"
-          exact
-          component={InternetMarketing}
+      <CustomCursor />
+
+        <Navbar />
+        <ScrollToTop />
+        <Switch>
+          <Route path="/" exact component={App} />
+          <Route path="/blog" exact component={Blog} />
+          <Route path="/about-us" exact component={AboutUs} />
+          {/* <Route path="/projects" exact component={AllPortfolio} /> */}
+          <Route path="/contacts" exact component={ContactsPage} />
+          <Route path="/web-development" exact component={WebDevelopment} />
+          <Route
+            path="/internet-marketing"
+            exact
+            component={InternetMarketing}
+          />
+          <Route path="/design" exact component={Design} />
+          <Route path="/motion" exact component={Moushen} />
+          {/* <Route path='/services' exact component={Services} /> */}
+        </Switch>
+
+        <Phone />
+        <Footer2 />
+        <MyModal />
+        <ToastContainer
+          position="top-left"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          theme="dark"
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          style={{ zIndex: "999999999" }}
         />
-        <Route path="/design" exact component={Design} />
-        <Route path="/motion" exact component={Moushen} />
-        {/* <Route path='/services' exact component={Services} /> */}
-      </Switch>
 
-      <Phone />
-      <Footer2 />
-      <MyModal />
-      <ToastContainer
-        position="top-left"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        theme='dark'
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        style={{zIndex: '999999999'}}
-      />
-    </Router>
-  </Provider>
-</>
-  ,
+      </Router>
+    </Provider>
+  </>,
   document.getElementById("KOKO")
 );
