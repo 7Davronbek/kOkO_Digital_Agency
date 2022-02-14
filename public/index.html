@@ -32,10 +32,10 @@
     <noscript>KOKO AGENCY need to enable JavaScript to run this app.</noscript>
     <div class="mainBody" id="KOKO"></div>
 
-    <div class="fixedTheme">
+    <!-- <div class="fixedTheme">
       <h6 id="black" class="active">Dark</h6>
       <h6 id="white">Light</h6>
-    </div>
+    </div> -->
   </body>
 
   <script>
@@ -44,32 +44,17 @@
     const white = document.querySelector("#white");
     let currentTheme = localStorage.getItem("currentTheme");
 
-      if (currentTheme) {
-        theme.classList.add("whiteTheme");
-      } else {
-        theme.classList.remove('whiteTheme')
-      }
 
     white.addEventListener("click", () => {
       white.classList.add("actives");
       black.classList.remove("active");
-      // theme.classList.add('whiteTheme')
-      localStorage.setItem("currentTheme", "themeActive");
-
-      // if (currentTheme) {
-      //   theme.classList.add("whiteTheme");
-      // }
+      theme.classList.add('whiteTheme')
     });
 
     black.addEventListener("click", () => {
       white.classList.remove("actives");
       black.classList.add("active");
-      // theme.classList.remove('whiteTheme')
-      localStorage.removeItem("currentTheme");
-
-      // if (!currentTheme) {
-      //   theme.classList.remove("whiteTheme");
-      // }
+      theme.classList.remove('whiteTheme')
     });
   </script>
 </html>

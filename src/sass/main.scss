@@ -2828,10 +2828,23 @@ body {
 }
 
 .mainBody {
-    transition: all .4s ease-in-out;
-
+    transition: all .3s ease-in-out;
+    
     &.whiteTheme {
         background-color: #fff;
+        color: #000;
+
+        .navBar {
+            background-color: #fff;
+
+            ul {
+                li {
+                    a {
+                        color: #000 !important;
+                    }
+                }
+            }
+        }
     }
 }
 
