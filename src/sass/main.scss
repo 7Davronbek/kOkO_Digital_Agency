@@ -2612,10 +2612,6 @@ body {
             &:nth-child(3) {
                 animation-delay: 4s ;
             }
-
-            @media(max-width: 767px) {
-                display: none;
-            }
         }
 
         h6 {
@@ -2649,6 +2645,10 @@ body {
                 transform: translateX(0);
             }
         }
+        
+        @media(max-width: 767px) {
+            display: none;
+        }
     }
 
     .UP {
@@ -2680,36 +2680,6 @@ body {
             transform: translateY(-1px);
         }
 
-        @keyframes up {
-            0% {
-                transform: translateY(0);
-            }
-
-            20% {
-                transform: translateY(0);
-            }
-            
-            40% {
-                transform: translateY(-30px);
-            }
-
-            50% {
-                transform: translateY(0);
-            }
-
-            60% {
-                transform: translateY(15px);
-            }
-
-            80% {
-                transform: translateY(0);
-            }
-
-            100% {
-                transform: translateY(0);
-            }
-        }
-
         @keyframes up2 {
             0%, 100%, 20%, 50%, 80% {
             transform: translateY(0);
@@ -2721,6 +2691,11 @@ body {
         60% {
             transform: translateY(-15px);
         }
+        }
+
+        @media(max-width: 767px) {
+            left: 20px;
+            bottom: 20px;
         }
     }
 

@@ -40,7 +40,7 @@ const store = createStore(rootReducer, applyMiddleware(thunk));
 ReactDOM.render(
   <>
     <Provider store={store}>
-      <HashRouter hashType="noslash">
+      <HashRouter>
       <Cursor />
 
       <CustomCursor />

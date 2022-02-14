@@ -13,8 +13,12 @@ const Up = () => {
 
     window.addEventListener('scroll', changeup);
 
+    const top = () => {
+        window.scrollTo(0,0);
+    }
+    
   return (
-    <a href='#'  className={`UP ${up ? 'active' : ''}`}>
+    <a onClick={top} className={`UP ${up ? 'active' : ''}`}>
         <i className="icon icon-up"></i>
     </a>
   )
