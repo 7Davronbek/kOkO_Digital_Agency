@@ -4,10 +4,11 @@ import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./sass/main.scss";
 import {
-  BrowserRouter as Router,
+  // BrowserRouter as Router,
   Route,
   Switch,
-} from "react-router-dom/cjs/react-router-dom.min";
+  HashRouter
+} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer2 from "./components/Footer2";
 import ScrollToTop from "./components/ScrollToTop";
@@ -39,7 +40,7 @@ const store = createStore(rootReducer, applyMiddleware(thunk));
 ReactDOM.render(
   <>
     <Provider store={store}>
-      <Router>
+      <HashRouter hashType="noslash">
       <Cursor />
 
       <CustomCursor />
@@ -83,7 +84,7 @@ ReactDOM.render(
         <SocialFixed />
         <Up />
 
-      </Router>
+      </HashRouter>
     </Provider>
   </>,
   document.getElementById("KOKO")

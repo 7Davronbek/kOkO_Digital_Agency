@@ -48,6 +48,10 @@ body {
         transform: translate3d(0, 0, 0);
         top: 0;
         left: 0;
+
+        @media(max-width: 767px) {
+            display: none;
+        }
     }
 
     .myCursor { 
@@ -64,6 +68,10 @@ body {
             top: 0;
             left: 0;
             z-index: 0;
+        }
+
+        @media(max-width: 767px) {
+            display: none;
         }
     }
 
@@ -2603,6 +2611,10 @@ body {
 
             &:nth-child(3) {
                 animation-delay: 4s ;
+            }
+
+            @media(max-width: 767px) {
+                display: none;
             }
         }
 

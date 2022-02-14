@@ -57,7 +57,7 @@ const Navbar = () => {
                                                 <div className="myLi"><Link onClick={() => setBurger(false)} className={`${location.pathname === 'web-development' ? 'navlinkActive' : ''}`} to='/web-development'>Веб услуги</Link></div>
                                                 <div className="myLi"><Link onClick={() => setBurger(false)} to='/internet-marketing'>Интернет маркетинг</Link></div>
                                                 <div className="myLi"><Link onClick={() => setBurger(false)} to='/design'>Дизайн</Link></div>
-                                                <div className="myLi "><Link onClick={() => setBurger(false)} className='mb-0' to='/motion'>Моушн</Link></div>
+                                                <div className="myLi "><Link onClick={() => setBurger(false)} className='mb-0' to='/#/motion'>Моушн</Link></div>
                                             </div>
                                         </li>
 
