@@ -24,7 +24,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-      // console.clear();
+      console.clear();
     }, 1800);
   }, []);
 
@@ -32,7 +32,7 @@ const App = () => {
     <>
     <Helmet>
         <meta charSet="utf-8" />
-        <title>kOkO Agency | Branding | Tashkent | KOKO | koko</title>
+        <title>kOkO Agency uz | Tashkent | KOKO | koko</title>
         <link rel="canonical" href="https://www.kokoagency.uz/" />
     </Helmet>
 

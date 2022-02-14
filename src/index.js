@@ -51,7 +51,6 @@ ReactDOM.render(
           <Route path="/" exact component={App} />
           <Route path="/blog" exact component={Blog} />
           <Route path="/about-us" exact component={AboutUs} />
-          {/* <Route path="/projects" exact component={AllPortfolio} /> */}
           <Route path="/contacts" exact component={ContactsPage} />
           <Route path="/web-development" exact component={WebDevelopment} />
           <Route
@@ -61,12 +60,12 @@ ReactDOM.render(
           />
           <Route path="/design" exact component={Design} />
           <Route path="/motion" exact component={Moushen} />
-          {/* <Route path='/services' exact component={Services} /> */}
         </Switch>
 
         <Phone />
         <Footer2 />
         <MyModal />
+        
         <ToastContainer
           position="top-left"
           autoClose={5000}

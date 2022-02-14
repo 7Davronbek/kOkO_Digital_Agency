@@ -1,6 +1,5 @@
 @import "./secondary.scss";
 
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 html {
@@ -54,7 +53,7 @@ body {
         }
     }
 
-    .myCursor { 
+    .myCursor {
         // position: absolute;
         z-index: 0;
 
@@ -232,7 +231,8 @@ body {
                 cursor: pointer;
             }
 
-            &:hover { z-index: 2;
+            &:hover {
+                z-index: 2;
 
                 .uz,
                 .ru1 {
@@ -292,7 +292,9 @@ body {
                         }
                     }
 
-                    &:hover { z-index: 2;
+                    &:hover {
+                        z-index: 2;
+
                         &::after {
                             transform: scaleX(1);
                             transform-origin: right;
@@ -310,7 +312,9 @@ body {
                 }
             }
 
-            &:hover { z-index: 2;
+            &:hover {
+                z-index: 2;
+
                 .arrow {
                     transform: rotate(270deg);
                 }
@@ -362,7 +366,9 @@ body {
                         transition: all 0.5s ease;
                     }
 
-                    &:hover { z-index: 2;
+                    &:hover {
+                        z-index: 2;
+
                         &::after {
                             transform: scaleX(1);
                             transform-origin: right;
@@ -446,7 +452,7 @@ body {
             background: transparent;
             transition: all 0.7s linear 1s;
             font-family: 'Inter', sans-serif;
-        
+
 
             &::before {
                 font-size: 18px;
@@ -457,7 +463,8 @@ body {
                 }
             }
 
-            &:hover { z-index: 2;
+            &:hover {
+                z-index: 2;
                 border-color: transparent;
                 color: $colorBlue;
             }
@@ -484,7 +491,7 @@ body {
             color: #fff;
             font-family: 'Inter', sans-serif;
             letter-spacing: 1px;
-        
+
 
             &:last-child {
                 margin-bottom: 80px !important;
@@ -585,7 +592,8 @@ body {
                 transform: translateY(0) !important;
             }
 
-            &:hover { z-index: 2;
+            &:hover {
+                z-index: 2;
                 width: 35%;
                 transform: translateY(-60px);
                 z-index: 2;
@@ -660,7 +668,8 @@ body {
                     z-index: -1;
                 }
 
-                &.hover { z-index: 2;
+                &.hover {
+                    z-index: 2;
                     animation: animBg6 5s ease-in-out;
                 }
             }
@@ -670,7 +679,8 @@ body {
                 bottom: -250px;
                 z-index: 1;
 
-                &.hover { z-index: 2;
+                &.hover {
+                    z-index: 2;
                     animation: animBg2 5s ease-in-out;
                 }
             }
@@ -743,7 +753,8 @@ body {
                 }
             }
 
-            &:hover { z-index: 2;
+            &:hover {
+                z-index: 2;
                 z-index: 1;
 
                 .card-header {
@@ -832,7 +843,8 @@ body {
                 opacity: 0.7;
                 transition: all 0.3s ease-in-out;
 
-                &:hover { z-index: 2;
+                &:hover {
+                    z-index: 2;
                     opacity: 1;
                 }
             }
@@ -1016,7 +1028,8 @@ body {
             bottom: -250px;
             transform: rotate(74deg) scale(0.5);
 
-            &.hover { z-index: 2;
+            &.hover {
+                z-index: 2;
                 animation: animBg11 7s ease-in-out;
             }
         }
@@ -1026,7 +1039,8 @@ body {
             transform: scale(0.2);
             top: -185px;
 
-            &.hover { z-index: 2;
+            &.hover {
+                z-index: 2;
                 animation: animBg12 7s ease-in-out;
             }
         }
@@ -1039,7 +1053,9 @@ body {
                 transition: all .5s ease;
             }
 
-            &:hover { z-index: 2;
+            &:hover {
+                z-index: 2;
+
                 img {
                     transform: scale(1.5) translateY(20px);
                 }
@@ -1276,7 +1292,9 @@ body {
                 }
             }
 
-            &:hover { z-index: 2;
+            &:hover {
+                z-index: 2;
+
                 &::after {
                     transform: translateY(-13px) translateX(-20px) rotate(10deg);
                 }
@@ -1376,7 +1394,8 @@ body {
             bottom: -200px;
             transform: rotate(-8deg) scale(0.7);
 
-            &.hover { z-index: 2;
+            &.hover {
+                z-index: 2;
                 animation: animBg13 7s ease-in-out;
             }
         }
@@ -1386,7 +1405,8 @@ body {
             right: -381px;
             transform: scale(0.5) rotate(-184deg);
 
-            &.hover { z-index: 2;
+            &.hover {
+                z-index: 2;
                 animation: animBg14 7s ease-in-out;
             }
         }
@@ -1497,7 +1517,9 @@ body {
                 }
             }
 
-            &:hover { z-index: 2;
+            &:hover {
+                z-index: 2;
+
                 .card-header {
                     img {
                         transform: scale(1.2);
@@ -1619,7 +1641,8 @@ body {
                 transform: scale(0.6);
                 // transform: translateX(-210px) rotate(33deg);
 
-                &.hover { z-index: 2;
+                &.hover {
+                    z-index: 2;
                     animation: animBg2 7s ease-in-out;
                 }
             }
@@ -1636,7 +1659,8 @@ body {
                     z-index: -1;
                 }
 
-                &.hover { z-index: 2;
+                &.hover {
+                    z-index: 2;
                     animation: animBg5 7s ease-in-out;
                 }
             }
@@ -1652,7 +1676,8 @@ body {
                 //     z-index: -1;
                 // }
 
-                &.hover { z-index: 2;
+                &.hover {
+                    z-index: 2;
                     animation: animBg3 7s ease-in-out;
                 }
             }
@@ -1763,7 +1788,8 @@ body {
             left: -649px;
             top: -392px;
 
-            &.hover { z-index: 2;
+            &.hover {
+                z-index: 2;
                 animation: animBg15 7s ease-in-out;
             }
         }
@@ -1773,7 +1799,8 @@ body {
             transform: scale(0.3);
             bottom: -147px;
 
-            &.hover { z-index: 2;
+            &.hover {
+                z-index: 2;
                 animation: animBg8 7s ease-in-out;
             }
         }
@@ -1782,7 +1809,8 @@ body {
             right: -346px;
             transform: scale(0.5) rotate(98deg);
 
-            &.hover { z-index: 2;
+            &.hover {
+                z-index: 2;
                 animation: animBg9 7s ease-in-out;
             }
         }
@@ -1792,7 +1820,8 @@ body {
             top: 363px;
             right: -184px;
 
-            &.hover { z-index: 2;
+            &.hover {
+                z-index: 2;
                 animation: animBg10 7s ease-in-out;
             }
         }
@@ -1880,7 +1909,8 @@ body {
                 -webkit-backdrop-filter: blur(50px);
             }
 
-            &:hover { z-index: 2;
+            &:hover {
+                z-index: 2;
                 transform: scale(1.05);
                 background: rgba(40, 48, 54, 0.6);
                 backdrop-filter: blur(50px);
@@ -2212,7 +2242,8 @@ body {
                     }
                 }
 
-                &:hover { z-index: 2;
+                &:hover {
+                    z-index: 2;
 
                     h5 {
                         transform: translateY(150px);
@@ -2266,7 +2297,9 @@ body {
                 }
             }
 
-            &:hover { z-index: 2;
+            &:hover {
+                z-index: 2;
+
                 h3 {
                     color: $colorBlue;
                 }
@@ -2335,7 +2368,8 @@ body {
                     backdrop-filter: blur(50px);
                     user-select: none;
 
-                    &:hover { z-index: 2;
+                    &:hover {
+                        z-index: 2;
                         background-color: #111111b2;
                     }
 
@@ -2606,11 +2640,11 @@ body {
             animation: social 6s ease-in-out infinite;
 
             &:nth-child(2) {
-                animation-delay: 2s ;
+                animation-delay: 2s;
             }
 
             &:nth-child(3) {
-                animation-delay: 4s ;
+                animation-delay: 4s;
             }
         }
 
@@ -2623,11 +2657,11 @@ body {
             &::after {
                 position: absolute;
                 content: '';
-                width: 35px;
+                width: 15px;
                 height: 1px;
                 background-color: #fff;
                 top: 9px;
-                right: -48px;
+                right: -34px;
             }
         }
 
@@ -2640,12 +2674,12 @@ body {
             10% {
                 transform: translateX(-8px);
             }
-            
+
             100% {
                 transform: translateX(0);
             }
         }
-        
+
         @media(max-width: 767px) {
             display: none;
         }
@@ -2681,16 +2715,22 @@ body {
         }
 
         @keyframes up2 {
-            0%, 100%, 20%, 50%, 80% {
-            transform: translateY(0);
-        }
-        
-        40% {
-            transform: translateY(-30px);
-        }
-        60% {
-            transform: translateY(-15px);
-        }
+
+            0%,
+            100%,
+            20%,
+            50%,
+            80% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-30px);
+            }
+
+            60% {
+                transform: translateY(-15px);
+            }
         }
 
         @media(max-width: 767px) {
@@ -2783,6 +2823,53 @@ body {
             h6 {
                 padding-left: 30px;
             }
+        }
+    }
+}
+
+.mainBody {
+    transition: all .4s ease-in-out;
+
+    &.whiteTheme {
+        background-color: #fff;
+    }
+}
+
+.fixedTheme {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    transform: translateY(-50%) rotate(-90deg);
+    width: 200px;
+    align-items: center;
+    justify-content: space-around;
+    width: 136px;
+    background-color: #c9c9c9;
+    border-radius: 15px;
+
+
+    h6 {
+        color: rgb(29, 29, 29);
+        border-radius: 30px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+        line-height: 1.4;
+        padding: 7px 17px;
+        border-radius: 15px;
+        user-select: none;
+
+        &.active {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        &.actives {
+            background-color: #fff;
+            color: #000;
+            box-shadow: 0 0 10px rgba(192, 192, 192, 0.616);
         }
     }
 }

@@ -54,7 +54,7 @@ const Navbar = () => {
                                             Наши услуги 
                                             <i className='ml-2'><img className='arrow' src="/assets/icon/right.svg" alt="" /></i>
                                             <div className="servicesDiv position-absolute">
-                                                <div className="myLi"><Link onClick={() => setBurger(false)} className={`${location.pathname === 'web-development' ? 'navlinkActive' : ''}`} to='/web-development'>Веб услуги</Link></div>
+                                                <div className="myLi"><Link onClick={() => setBurger(false)} className={`${location.pathname === 'web-development' ? 'navlinkActive' : ''}`} to='/web-development'>Разработка сайтов</Link></div>
                                                 <div className="myLi"><Link onClick={() => setBurger(false)} to='/internet-marketing'>Интернет маркетинг</Link></div>
                                                 <div className="myLi"><Link onClick={() => setBurger(false)} to='/design'>Дизайн</Link></div>
                                                 <div className="myLi "><Link onClick={() => setBurger(false)} className='mb-0' to='/#/motion'>Моушн</Link></div>

@@ -31,7 +31,7 @@ const WebDevelopment = (props) => {
     </Helmet>
       {isLoading ? (
         <div className="loader ">
-          <h5 className='mr-4'>Веб услуги</h5>
+          <h5 className='mr-4'>Разработка сайтов</h5>
           <RingLoader color="#fff" size="35" loading={isLoading} />
         </div>
       ) : (

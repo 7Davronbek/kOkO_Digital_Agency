@@ -23,7 +23,6 @@ const Cursor = () => {
 
             positionRef.current.mouseX = mouseX - secondaryCursor.current.clientWidth / 2
             positionRef.current.mouseY = mouseY - secondaryCursor.current.clientHeight / 2
-            console.log(mouseY - secondaryCursor.current.clientHeight / 2);
 
             mainCursor.current.style.transform = `translate3d(${(mouseX - mainCursor.current.clientWidth / 2)}px, ${mouseY - mainCursor.clientHeight / 2}px, 0)`
         })
