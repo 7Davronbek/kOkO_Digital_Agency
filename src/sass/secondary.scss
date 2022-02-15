@@ -21,20 +21,45 @@ $colorWhite: #fff;
   
     background-color: #fff;
   
+    &.icon-support {
+      mask-image: url("../image/contactBg.svg");
+      -webkit-mask-image: url("../image/contactBg.svg");
+      width: 140px;
+      height: 120px;
+
+      &.black {
+        background-color: #000;
+      }
+    }
+  
     &.icon-telegram {
       mask-image: url("../image/tg.svg");
       -webkit-mask-image: url("../image/tg.svg");
       width: 29px;
+
+      &.black {
+        background-color: #000;
+      }
     }
   
     &.icon-instagram {
       mask-image: url("../image/ins.svg");
       -webkit-mask-image: url("../image/ins.svg");
+
+      &.black {
+        background-color: #000;
+      }
     }
   
     &.icon-facebook {
       mask-image: url("../image/facebook.png");
       -webkit-mask-image: url("../image/facebook.png");
+      height: 34px;
+      width: 32px;
+
+      &.black {
+        background-color: #000;
+      }
     }
   
     &.icon-up {

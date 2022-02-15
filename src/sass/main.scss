@@ -3011,6 +3011,61 @@ body {
             }
         }
 
+        .socialFixed {
+
+            h6 {
+                &::after {
+                    background-color: #000;
+                }
+            }
+        }
+
+        .pakets {
+
+            .tab-pane {
+
+                &.active {
+                    background: #ffffff;
+                    box-shadow: 8px 6px 10px silver;
+                }
+
+                &:nth-child(2n+1) {
+
+                    &.active {
+                        background: #efefef;
+                        box-shadow: 8px 6px 10px silver;
+                    } 
+                }
+            }
+
+            .myNavs {
+
+                .nav-item {
+
+                    .nav-link {
+    
+                        h5 {
+                            color: #000;
+                        }
+                        
+                        &.active, &:hover {
+                            background-color: #fff;
+                        }
+                    }
+
+                    &:nth-child(2n+1) {
+
+                        .nav-link {
+
+                            &.active, &:hover {
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         .myWebDepends {
 
             .card {
