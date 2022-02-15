@@ -21,34 +21,106 @@ $colorWhite: #fff;
   
     background-color: #fff;
   
+    &.icon-comp1 {
+      mask-image: url("../image/comp1.png");
+      -webkit-mask-image: url("../image/comp1.png");
+      width: 200px;
+      height: 104px;
+    }
+  
+    &.icon-comp2 {
+      mask-image: url("../image/comp2.png");
+      -webkit-mask-image: url("../image/comp2.png");
+      width: 200px;
+      height: 104px;
+    }
+  
+    &.icon-comp3 {
+      mask-image: url("../image/comp3.png");
+      -webkit-mask-image: url("../image/comp3.png");
+      width: 200px;
+      height: 104px;
+    }
+  
+    &.icon-comp4 {
+      mask-image: url("../image/comp4.png");
+      -webkit-mask-image: url("../image/comp4.png");
+      width: 200px;
+      height: 104px;
+    }
+  
+    &.icon-comp5 {
+      mask-image: url("../image/comp5.png");
+      -webkit-mask-image: url("../image/comp5.png");
+      width: 200px;
+      height: 104px;
+    }
+  
+    &.icon-comp6 {
+      mask-image: url("../image/comp6.png");
+      -webkit-mask-image: url("../image/comp6.png");
+      width: 200px;
+      height: 104px;
+    }
+  
+    &.icon-comp7 {
+      mask-image: url("../image/comp7.png");
+      -webkit-mask-image: url("../image/comp7.png");
+      width: 200px;
+      height: 104px;
+    }
+  
+    &.icon-comp8 {
+      mask-image: url("../image/comp8.png");
+      -webkit-mask-image: url("../image/comp8.png");
+      width: 200px;
+      height: 104px;
+    }
+  
+    &.icon-comp9 {
+      mask-image: url("../image/comp9.png");
+      -webkit-mask-image: url("../image/comp9.png");
+      width: 200px;
+      height: 104px;
+    }
+  
+    &.icon-comp10 {
+      mask-image: url("../image/comp10.png");
+      -webkit-mask-image: url("../image/comp10.png");
+      width: 200px;
+      height: 104px;
+    }
+  
+    &.icon-comp11 {
+      mask-image: url("../image/comp11.png");
+      -webkit-mask-image: url("../image/comp11.png");
+      width: 200px;
+      height: 104px;
+    }
+  
     &.icon-support {
       mask-image: url("../image/contactBg.svg");
       -webkit-mask-image: url("../image/contactBg.svg");
       width: 140px;
       height: 120px;
-
-      &.black {
-        background-color: #000;
-      }
+    }
+  
+    &.icon-logo {
+      mask-image: url("../image/logo.png");
+      -webkit-mask-image: url("../image/logo.png");
+      width: 160px;
+      height: 53px;
     }
   
     &.icon-telegram {
       mask-image: url("../image/tg.svg");
       -webkit-mask-image: url("../image/tg.svg");
       width: 29px;
-
-      &.black {
-        background-color: #000;
-      }
     }
   
     &.icon-instagram {
       mask-image: url("../image/ins.svg");
       -webkit-mask-image: url("../image/ins.svg");
-
-      &.black {
-        background-color: #000;
-      }
     }
   
     &.icon-facebook {
@@ -56,10 +128,6 @@ $colorWhite: #fff;
       -webkit-mask-image: url("../image/facebook.png");
       height: 34px;
       width: 32px;
-
-      &.black {
-        background-color: #000;
-      }
     }
   
     &.icon-up {
@@ -67,7 +135,6 @@ $colorWhite: #fff;
       -webkit-mask-image: url("../image/up.png");
       width: 15px;
       height: 15px;
-      background-color: #fff;
     }
   
     &.icon-close {
@@ -76,6 +143,10 @@ $colorWhite: #fff;
       width: 15px;
       height: 15px;
       background-color: $colorBlue;
+    }
+
+    &.black {
+      background-color: #000;
     }
 }
 

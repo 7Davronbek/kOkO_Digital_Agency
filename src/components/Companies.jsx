@@ -44,9 +44,39 @@ const Companies = () => {
 
 
                             <div className="carouselWrap ">
-                                <div><img src="/assets/image/company/comp1.png" alt="" /></div>
+                                <i className={`icon icon-comp1 ${localStorage.getItem('theme') === 'white' ? 'black' : ''}`}></i>
                             </div>
-                            <div className="carouselWrap">
+                            <div className="carouselWrap ">
+                                <i className={`icon icon-comp2 ${localStorage.getItem('theme') === 'white' ? 'black' : ''}`}></i>
+                            </div>
+                            <div className="carouselWrap ">
+                                <i className={`icon icon-comp3 ${localStorage.getItem('theme') === 'white' ? 'black' : ''}`}></i>
+                            </div>
+                            <div className="carouselWrap ">
+                                <i className={`icon icon-comp4 ${localStorage.getItem('theme') === 'white' ? 'black' : ''}`}></i>
+                            </div>
+                            <div className="carouselWrap ">
+                                <i className={`icon icon-comp5 ${localStorage.getItem('theme') === 'white' ? 'black' : ''}`}></i>
+                            </div>
+                            <div className="carouselWrap ">
+                                <i className={`icon icon-comp6 ${localStorage.getItem('theme') === 'white' ? 'black' : ''}`}></i>
+                            </div>
+                            <div className="carouselWrap ">
+                                <i className={`icon icon-comp7 ${localStorage.getItem('theme') === 'white' ? 'black' : ''}`}></i>
+                            </div>
+                            <div className="carouselWrap ">
+                                <i className={`icon icon-comp8 ${localStorage.getItem('theme') === 'white' ? 'black' : ''}`}></i>
+                            </div>
+                            <div className="carouselWrap ">
+                                <i className={`icon icon-comp9 ${localStorage.getItem('theme') === 'white' ? 'black' : ''}`}></i>
+                            </div>
+                            <div className="carouselWrap ">
+                                <i className={`icon icon-comp10 ${localStorage.getItem('theme') === 'white' ? 'black' : ''}`}></i>
+                            </div>
+                            <div className="carouselWrap ">
+                                <i className={`icon icon-comp11 ${localStorage.getItem('theme') === 'white' ? 'black' : ''}`}></i>
+                            </div>
+                            {/* <div className="carouselWrap">
                                 <div><img src="/assets/image/company/comp2.png" alt="" /></div>
                             </div>
                             <div className="carouselWrap">
@@ -75,7 +105,7 @@ const Companies = () => {
                             </div>
                             <div className="carouselWrap">
                                 <div><img src="/assets/image/company/comp11.png" alt="" /></div>
-                            </div>
+                            </div> */}
                         </AliceCarousel>
 
                     </div>

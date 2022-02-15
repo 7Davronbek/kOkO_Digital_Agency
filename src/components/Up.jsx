@@ -19,7 +19,7 @@ const Up = () => {
     
   return (
     <a onClick={top} className={`UP ${up ? 'active' : ''}`}>
-        <i className="icon icon-up"></i>
+        <i className={`icon icon-up ${localStorage.getItem('theme') === 'white' ? 'black' : ''}`}></i>
     </a>
   )
 }

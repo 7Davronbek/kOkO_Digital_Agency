@@ -42,14 +42,14 @@ const Portfolio = () => {
                         </div>
 
                         <div style={{height: 500}} data-aos='fade-left' className="col-lg-6 p-0 col-md-6 ">
-                            <a target='_blank' rel="noreferrer" href="https://instagram.com/classicgrandbuild?utm_medium=copy_link">
+                            <a target='_blank' rel="noreferrer" href="https://www.instagram.com/ksil.uz/">
                                 <div className="card h-100">
                                     <div className="card-header">
-                                        <img src="/assets/image/portfolio/3.png" className='w-100' alt="" />
+                                        <img src="/assets/image/portfolio/port12.jpg" className='w-100' alt="" />
                                     </div>
                                     <div className="card-body">
                                         <h5>
-                                            SMM CGB
+                                            SMM KSIL UZ
                                         </h5>
                                     </div>
                                 </div>
@@ -87,14 +87,14 @@ const Portfolio = () => {
                         </div>
 
                         <div data-aos='fade-left' className="col-lg-4 p-0 col-md-6 ">
-                            <a target='_blank' rel="noreferrer" href="https://instagram.com/rkaonlineshopuz?utm_medium=copy_link">
+                            <a target='_blank' rel="noreferrer" href="https://instagram.com/classicgrandbuild?utm_medium=copy_link">
                                 <div className="card h-100">
                                     <div className="card-header">
-                                        <img src="/assets/image/portfolio/1.png" className='w-100' alt="" />
+                                        <img src="/assets/image/portfolio/3.png" className='w-100' alt="" />
                                     </div>
                                     <div className="card-body">
                                         <h5>
-                                            SMM RKA Online Shop
+                                            SMM CGB
                                         </h5>
                                     </div>
                                 </div>

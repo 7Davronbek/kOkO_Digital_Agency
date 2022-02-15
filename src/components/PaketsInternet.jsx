@@ -64,8 +64,8 @@ const PaketsInternet = () => {
                                                 <p className='mt-3'>12 (+3) стартовых постов;</p>
                                                 <p className='mt-3'>12 (+3)   сторис + иконки актуальных;</p>
                                                 <p className='mt-3'>Настройка и запуск таргетинга;</p>
-                                                <p className='mt-3'>Ведение социальных сетей в Instagram, Facebook, Telegram + видео контент Tik Tok, You Tube;</p>
-                                                <p className='mt-3'>2 Анимированный дизайн для публикаций (Instagram, Facebook, Tik Tok, You Tube) или монтаж видео;</p>
+                                                <p className='mt-3'>Ведение социальных сетей в Instagram, Facebook, Telegram;</p>
+                                                <p className='mt-3'>Анимированный дизайн для публикаций (Instagram, Facebook) или монтаж видео;</p>
                                                 <p className='mt-3'>Копирайтинг (написание текстов для постов);</p>
                                                 <p className='mt-3'>
                                                     Работа с сообщениями и комментариями

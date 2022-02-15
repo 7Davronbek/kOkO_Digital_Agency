@@ -32,7 +32,7 @@ const Navbar = () => {
 
                         <div className="col-lg-2 col-5">
                             <Link to='/' className="logo d-flex align-items-center">
-                                <i><img className='w-100' src="/assets/icon/logo.png" alt="" /></i>
+                                <i className={`icon icon-logo ${localStorage.getItem('theme') === 'white' ? 'black' : ''}`}></i>
                             </Link>
                         </div>
 
