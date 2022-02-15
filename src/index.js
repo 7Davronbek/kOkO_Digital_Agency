@@ -48,17 +48,14 @@ ReactDOM.render(
 
         <Navbar />
         <ScrollToTop />
+        
         <Switch>
           <Route path="/" exact component={App} />
           <Route path="/blog" exact component={Blog} />
           <Route path="/about-us" exact component={AboutUs} />
           <Route path="/contacts" exact component={ContactsPage} />
           <Route path="/web-development" exact component={WebDevelopment} />
-          <Route
-            path="/internet-marketing"
-            exact
-            component={InternetMarketing}
-          />
+          <Route path="/internet-marketing" exact component={InternetMarketing}/>
           <Route path="/design" exact component={Design} />
           <Route path="/motion" exact component={Moushen} />
         </Switch>

@@ -2838,6 +2838,11 @@ body {
         background-color: #EBEBEB;
         color: #000;
 
+        .btn {
+            color: #fff;
+            border-color: #fff;
+        }
+
         .navBar {
             background-color: #fff;
 
@@ -2967,6 +2972,67 @@ body {
                 box-shadow: 15px 25px 56px 6px #0000000f;
             }
         }
+        
+        .courses {
+
+            h1 {
+                color: #fff;
+            }
+
+            &::after {
+                bottom: 58px;
+            }
+        }
+
+        .myWebSupport {
+            box-shadow: 15px 25px 56px 6px #0000000f;
+            background-color: #fff;
+
+            .btn {
+                color: $colorBlue;
+                border-color: #000;
+
+                &::after {
+                    background-color: #000;
+                }
+
+                &:hover {
+                    border-color: transparent;
+
+                    &::before {
+                        color: #fff;
+                        content: 'Позвонить';
+                    }
+                }
+            }
+
+            p {
+                color: #000;
+            }
+        }
+
+        .myWebDepends {
+
+            .card {
+
+                h5 {
+                    color: #000;
+                }
+
+                i {
+                    opacity: 0.85;
+                }
+
+                .card-body {
+
+                    &:hover {
+                        i {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        } 
 
         .aboutMain {
 
