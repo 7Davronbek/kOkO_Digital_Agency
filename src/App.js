@@ -42,10 +42,9 @@ const App = (props) => {
 
       {isLoading ? (
         <div className="loader ">
-          <span className="mr-4">
-            <img style={{width: '140px'}} src="/assets/icon/logo.png" alt='Logo' />
+          <span className={`mr-4 icon icon-logo ${localStorage.getItem('theme') === 'white' ? 'black' : ''}`}>
           </span>
-          <RingLoader color="#fff" size="35" loading={isLoading} />
+          <RingLoader color={`${localStorage.getItem('theme') === 'white' ? '#000' : '#fff'}`} size="35" loading={isLoading} />
         </div>
       ) : (
         <>

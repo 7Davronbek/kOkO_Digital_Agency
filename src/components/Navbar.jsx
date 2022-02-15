@@ -52,7 +52,7 @@ const Navbar = () => {
                                         <li className={`mr-5 myLi`}><Link onClick={() => setBurger(false)} className={`myA  ${location.pathname === '/blog' ? 'navlinkActive' : ''}`} to='/blog'>Блог</Link></li>
                                         <li className="mr-4 myLi servicesLi d-flex align-items-center position-relative">
                                             Наши услуги 
-                                            <i className='ml-2'><img className='arrow' src="/assets/icon/right.svg" alt="" /></i>
+                                            <i className='ml-2'><i className={`icon icon-up ${localStorage.getItem('theme') === 'white' ? 'black' : ''}`}></i></i>
                                             <div className="servicesDiv position-absolute">
                                                 <div className="myLi"><Link onClick={() => setBurger(false)} className={`${location.pathname === 'web-development' ? 'navlinkActive' : ''}`} to='/web-development'>Разработка сайтов</Link></div>
                                                 <div className="myLi"><Link onClick={() => setBurger(false)} to='/internet-marketing'>Интернет маркетинг</Link></div>

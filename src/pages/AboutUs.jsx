@@ -25,7 +25,7 @@ const AboutUs = () => {
         {isLoading ? (
           <div className="loader ">
               <h5 className='mr-4'>О нас</h5>
-            <RingLoader color="#fff" size="35" loading={isLoading} />
+            <RingLoader color={`${localStorage.getItem('theme') === 'white' ? '#000' : '#fff'}`} size="35" loading={isLoading} />
           </div>
         ) : (
           <>

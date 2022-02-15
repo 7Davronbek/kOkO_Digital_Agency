@@ -25,7 +25,7 @@ const ContactsPage = () => {
             <span className="mr-4">
               <h5>Контакты</h5>
             </span>
-            <RingLoader color="#fff" size="35" loading={isLoading} />
+            <RingLoader color={`${localStorage.getItem('theme') === 'white' ? '#000' : '#fff'}`} size="35" loading={isLoading} />
           </div>
         ) : (
           <ContactsHeader />

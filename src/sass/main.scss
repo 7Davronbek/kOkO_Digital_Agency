@@ -92,7 +92,11 @@ body {
         backdrop-filter: blur(15px);
         -webkit-backdrop-filter: blur(15px);
         user-select: none;
-        // opacity: 0;
+
+        .icon-up {
+            width: 12px;
+            height: 12px;
+        }
 
         .mobileWrap {
             z-index: 9999;
@@ -247,8 +251,8 @@ body {
             }
         }
 
-        .arrow {
-            transform: rotate(90deg);
+        .icon-up {
+            transform: rotate(180deg);
             transition: all .4s ease-in-out;
         }
 
@@ -319,8 +323,8 @@ body {
             &:hover {
                 z-index: 2;
 
-                .arrow {
-                    transform: rotate(270deg);
+                .icon-up {
+                    transform: rotate(0deg);
                 }
 
                 .servicesDiv {
@@ -2833,12 +2837,18 @@ body {
 
 // 040644
 
+
+
 .MAIN {
     transition: all .3s ease-in-out;
 
     &.active {
         background-color: #EBEBEB;
         color: #000;
+
+        .loader {
+            background-color: #EBEBEB;
+        }
 
         .btn {
             color: #fff;
@@ -2936,13 +2946,24 @@ body {
 
         .contacts {
 
+            .btn {
+                color: #000;
+                border-color: #000;
+            }
+
+            .img {
+                background-color: #fff;
+                box-shadow: 0 0 10px sivler;
+            }
+
             .inputWrap {
 
                 h6 {
                     color: #000;
                 }
-                
-                input, textarea {
+
+                input,
+                textarea {
                     border-color: #000;
                     color: #000;
 
@@ -2962,7 +2983,8 @@ body {
                 border-radius: 20px;
             }
 
-            h2, a {
+            h2,
+            a {
                 color: #000;
             }
         }
@@ -2974,7 +2996,7 @@ body {
                 box-shadow: 15px 25px 56px 6px #0000000f;
             }
         }
-        
+
         .courses {
 
             h1 {
@@ -3036,7 +3058,7 @@ body {
                     &.active {
                         background: #efefef;
                         box-shadow: 8px 6px 10px silver;
-                    } 
+                    }
                 }
             }
 
@@ -3045,12 +3067,13 @@ body {
                 .nav-item {
 
                     .nav-link {
-    
+
                         h5 {
                             color: #000;
                         }
-                        
-                        &.active, &:hover {
+
+                        &.active,
+                        &:hover {
                             background-color: #fff;
                         }
                     }
@@ -3059,9 +3082,41 @@ body {
 
                         .nav-link {
 
-                            &.active, &:hover {
+                            &.active,
+                            &:hover {
                                 background-color: #fff;
                             }
+                        }
+                    }
+                }
+            }
+        }
+
+        .paketMini {
+
+            .card {
+
+                .card-header {
+
+                    h5 {
+                        color: #fff;
+                    }
+                }
+
+                .card-body {
+                    background-color: #fff;
+                    box-shadow: 15px 25px 56px 6px #0000000f;
+
+                    h6 {
+                        color: #fff;
+                    }
+
+                    .btn {
+                        color: #000;
+                        border-color: #000;
+
+                        &::after, &::before {
+                            display: none;
                         }
                     }
                 }
@@ -3089,11 +3144,12 @@ body {
                     }
                 }
             }
-        } 
+        }
 
         .aboutMain {
 
-            b, p {
+            b,
+            p {
                 color: #000;
             }
         }
