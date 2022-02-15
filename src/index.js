@@ -39,7 +39,7 @@ import Theme from "./components/Theme";
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
 ReactDOM.render(
-  <div className={`MAIN ${localStorage.getItem('theme') === 'black' ? '' : 'active'} `}>
+  <div className={`MAIN ${localStorage.getItem('theme') !== 'white' ? '' : 'active'} `}>
     <Provider store={store}>
       <HashRouter>
         <Cursor />

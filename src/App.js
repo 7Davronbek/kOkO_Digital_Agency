@@ -27,7 +27,7 @@ const App = (props) => {
 
     setTimeout(() => {
       setIsLoading(false);
-      // console.clear();
+      console.clear();
     }, 1800);
   }, []);
 

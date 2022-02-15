@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 // import { getText } from '../locales';
 import { LANGUAGE } from '../tools/constans';
+import Theme from './Theme';
 // 
 // margin-top: 37px;
 const Navbar = () => {
@@ -66,6 +67,8 @@ const Navbar = () => {
                                         <li className={`mr-5 myLi`}><Link onClick={() => setBurger(false)} className={`myA ${location.pathname === '/contacts' ? 'navlinkActive' : ''}`} to='/contacts'>Контакты</Link></li>
                                     </ul>
                                 </div>
+
+                                <Theme />
 
                                 <div className="col-lg-2 d-lg-flex pr-lg-0 align-items-center justify-content-end langWrap">
                                     {localStorage.getItem(LANGUAGE) !== 'ru' ?
