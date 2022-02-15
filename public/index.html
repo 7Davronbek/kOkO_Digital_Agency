@@ -11,8 +11,8 @@
     <link rel="apple-touch-icon" href="logo.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <link rel="alternate" hreflang="x-default" href="https://kokoagency.uz/" />
-    <link rel="canonical" href="https://kokoagency.uz/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.kokoagency.uz/" />
+    <link rel="canonical" href="https://www.kokoagency.uz/" />
 
     <meta
       name="keywords"
@@ -31,30 +31,36 @@
   <body>
     <noscript>KOKO AGENCY need to enable JavaScript to run this app.</noscript>
     <div class="mainBody" id="KOKO"></div>
-
-    <!-- <div class="fixedTheme">
-      <h6 id="black" class="active">Dark</h6>
-      <h6 id="white">Light</h6>
-    </div> -->
   </body>
 
   <script>
-    const theme = document.querySelector(".mainBody");
-    const black = document.querySelector("#black");
-    const white = document.querySelector("#white");
-    let currentTheme = localStorage.getItem("currentTheme");
+    // const theme = document.querySelector(".mainBody");
+    // const black = document.querySelector("#black");
+    // const white = document.querySelector("#white");
+    // let WHITE_THEME = 'WHITE';
 
+    // if(localStorage.getItem('THEME')) {
+    //   theme.classList.add('whiteTheme')
+    //   white.classList.add("actives");
+    //   black.classList.remove("active");
+    // } else {
+    //   theme.classList.add('whiteTheme')
+    //   white.classList.remove("actives");
+    //   black.classList.add("active");
+    // }
 
-    white.addEventListener("click", () => {
-      white.classList.add("actives");
-      black.classList.remove("active");
-      theme.classList.add('whiteTheme')
-    });
+    // white.addEventListener("click", () => {
+    //   white.classList.add("actives");
+    //   black.classList.remove("active");
+    //   theme.classList.add('whiteTheme')
+    //   localStorage.setItem('THEME', WHITE_THEME)
+    // });
 
-    black.addEventListener("click", () => {
-      white.classList.remove("actives");
-      black.classList.add("active");
-      theme.classList.remove('whiteTheme')
-    });
+    // black.addEventListener("click", () => {
+    //   white.classList.remove("actives");
+    //   black.classList.add("active");
+    //   theme.classList.remove('whiteTheme')
+    //   localStorage.removeItem('THEME')
+    // });
   </script>
 </html>

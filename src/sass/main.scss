@@ -254,6 +254,7 @@ body {
 
         .servicesLi {
             cursor: pointer;
+            transition: all 1s ease-in-out;
 
             .servicesDiv {
                 top: 25px;
@@ -264,10 +265,13 @@ body {
                 border-radius: 10px;
                 backdrop-filter: blur(15px);
                 -webkit-backdrop-filter: blur(15px);
-                transition: all 0.3s ease-in-out;
+                transition: all 0.5s ease;
                 opacity: 0;
                 transform: scale(0);
-                // z-index: -111;
+
+                .servicesLi {
+                    transition: all 1s ease-in-out;
+                }
 
                 a {
                     color: #fff;
@@ -2827,22 +2831,126 @@ body {
     }
 }
 
-.mainBody {
+.MAIN {
     transition: all .3s ease-in-out;
-    
-    &.whiteTheme {
-        background-color: #fff;
+
+    &.active {
+        background-color: #EBEBEB;
         color: #000;
 
         .navBar {
             background-color: #fff;
 
+            b {
+                color: #000;
+            }
+
+            .servicesDiv {
+                background-color: #fff;
+                box-shadow: 0 0 10px #9d9d9d8f;
+            }
+
             ul {
                 li {
-                    a {
+                    color: #000 !important;
+
+                    a,
+                    .servicesLi,
+                    .myLi {
                         color: #000 !important;
                     }
                 }
+            }
+
+            &.navbarActive {
+                background-color: #ffffff75;
+            }
+        }
+
+        .services {
+
+            .card {
+
+                h5 {
+                    color: #fff;
+                }
+
+                img {
+                    opacity: 0.8;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+
+                &:hover {
+                    h5 {
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+        .offer {
+
+            .card {
+                background: #fff;
+                box-shadow: 15px 25px 56px 6px #0000000f;
+
+                p {
+                    color: #000;
+                }
+            }
+        }
+
+        .weInNumber {
+
+            .row {
+                background: #fff;
+                box-shadow: 15px 25px 56px 6px #0000000f;
+            }
+        }
+
+        .portfolio {
+
+            .card {
+                border-color: #fff;
+
+
+                .card-header {
+                    opacity: 0.9;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .contacts {
+
+            .i {
+                box-shadow: 15px 25px 56px 6px #0000000f;
+                border-radius: 20px;
+            }
+
+            h2, a {
+                color: #000;
+            }
+        }
+
+        .companies {
+
+            .container-fluid {
+                background-color: #fff;
+                box-shadow: 15px 25px 56px 6px #0000000f;
+            }
+        }
+
+        .aboutMain {
+
+            b, p {
+                color: #000;
             }
         }
     }

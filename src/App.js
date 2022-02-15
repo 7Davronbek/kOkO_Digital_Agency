@@ -13,8 +13,10 @@ import "aos/dist/aos.css";
 import "aos/dist/aos.js";
 
 import {Helmet} from "react-helmet";
+import { connect } from "react-redux";
 
-const App = () => {
+
+const App = (props) => {
   const [isLoading, setIsLoading] = useState(true);
 
   // window.addEventListener('load', () => {
@@ -22,6 +24,7 @@ const App = () => {
   // })
 
   useEffect(() => {
+
     setTimeout(() => {
       setIsLoading(false);
       // console.clear();
@@ -29,7 +32,8 @@ const App = () => {
   }, []);
 
   return (
-    <>
+    <div className={`${props.white ? 'themeActive' : ''}`}>
+
     <Helmet>
         <meta charSet="utf-8" />
         <title>kOkO Agency uz | Tashkent | KOKO | koko</title>
@@ -45,7 +49,7 @@ const App = () => {
         </div>
       ) : (
         <>
-        <Header />
+        <Header /> 
         <Services />
         <Offer />
         <WeInNumber />
@@ -54,8 +58,14 @@ const App = () => {
         <Contacts />
         </>
       )}
-    </>
+    </div>
   );
 };
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    white: state.email.white
+  }
+}
+
+export default connect(mapStateToProps, null)(App)

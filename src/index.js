@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -7,7 +7,7 @@ import {
   // BrowserRouter as Router,
   Route,
   Switch,
-  HashRouter
+  HashRouter,
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer2 from "./components/Footer2";
@@ -34,16 +34,17 @@ import Cursor from "./components/cursor/Cursor";
 import CustomCursor from "./components/cursor/CustomCursor";
 import SocialFixed from "./components/SocialFixed";
 import Up from "./components/Up";
+import Theme from "./components/Theme";
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
 ReactDOM.render(
-  <>
+  <div className={`MAIN ${localStorage.getItem('theme') === 'black' ? 'active' : ''} `}>
     <Provider store={store}>
       <HashRouter>
-      <Cursor />
+        <Cursor />
 
-      <CustomCursor />
+        <CustomCursor />
 
         <Navbar />
         <ScrollToTop />
@@ -65,7 +66,7 @@ ReactDOM.render(
         <Phone />
         <Footer2 />
         <MyModal />
-        
+
         <ToastContainer
           position="top-left"
           autoClose={5000}
@@ -82,9 +83,9 @@ ReactDOM.render(
 
         <SocialFixed />
         <Up />
-
+        <Theme />
       </HashRouter>
     </Provider>
-  </>,
+  </div>,
   document.getElementById("KOKO")
 );

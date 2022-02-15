@@ -7,7 +7,8 @@ const initialState = {
     send: false,
     name: '',
     phone: '',
-    message: ''
+    message: '',
+    white: false
 }
 
 export const emailReducer = (state = initialState, action) => {
