@@ -16,14 +16,14 @@ const Theme = (props) => {
 
             <div className="fixedTheme">
                 <h6
-                    className={` ${props.white ? '' : 'active'}`}
+                    className={`${localStorage.getItem('theme') === 'black' ? 'active' : ''}`}
                     onClick={blackHandler}
                     // onClick={() => localStorage.setItem('theme', 'black')}
                 // onClick={() => props.updateState({white: false})}
                 >
                     Dark</h6>
                 <h6
-                    className={`${props.white ? 'actives' : ''}`}
+                    className={`${localStorage.getItem('theme') === 'white' ? 'actives' : ''}`}
                     onClick={whiteHandler}
                     // onClick={() => localStorage.setItem('theme', 'white')}
                 // onClick={() => props.updateState({white: true})}

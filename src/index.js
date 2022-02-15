@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -39,7 +39,7 @@ import Theme from "./components/Theme";
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
 ReactDOM.render(
-  <div className={`MAIN ${localStorage.getItem('theme') === 'black' ? 'active' : ''} `}>
+  <div className={`MAIN ${localStorage.getItem('theme') === 'black' ? '' : 'active'} `}>
     <Provider store={store}>
       <HashRouter>
         <Cursor />

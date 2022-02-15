@@ -2699,7 +2699,7 @@ body {
         align-items: center;
         justify-content: center;
         bottom: 50px;
-        left: 50px;
+        left: 7.5vh;
         background: #55636e33;
         -webkit-backdrop-filter: blur(50px);
         backdrop-filter: blur(50px);
@@ -2929,6 +2929,27 @@ body {
 
         .contacts {
 
+            .inputWrap {
+
+                h6 {
+                    color: #000;
+                }
+                
+                input, textarea {
+                    border-color: #000;
+                    color: #000;
+
+                    &:focus,
+                    &:focus-within {
+                        color: #000 !important;
+                        background-color: transparent !important;
+                        box-shadow: 0 0 10px $colorBlue;
+                        outline: none;
+                        border-color: $colorBlue;
+                    }
+                }
+            }
+
             .i {
                 box-shadow: 15px 25px 56px 6px #0000000f;
                 border-radius: 20px;
@@ -2959,7 +2980,7 @@ body {
 .fixedTheme {
     position: fixed;
     top: 50%;
-    left: 0;
+    left: 4.4vh;
     z-index: 999;
     display: flex;
     transform: translateY(-50%) rotate(-90deg);

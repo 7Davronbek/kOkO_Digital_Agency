@@ -28,7 +28,7 @@ const ContactsHeader = () => {
 
                     <div data-aos='fade-up' className="col-12 text-center mt-5 pt-5">
                         <i>
-                            <a target='_blank'  rel="noreferrer"  href="https://instagram.com/k0k0digital/" className=' cursor mr-3'><img src="/assets/icon/ins.svg" alt="" /></a></i>
+                            <a target='_blank'  rel="noreferrer"  href="https://www.instagram.com/kokoagency.uz/" className=' cursor mr-3'><img src="/assets/icon/ins.svg" alt="" /></a></i>
                             <a target='_blank' rel="noreferrer"  href="https://t.me/kOkOdigital/" className='cursor mr-3'><img src="/assets/icon/tg.svg" alt="" /></a>
                             <a target='_blank'   rel="noreferrer" href="https://www.facebook.com/kokoagency.uz/?ref=pages_you_manage" className='cursor mb-1'><img src="/assets/image/facebook.png" alt="" /></a>
                     </div>
