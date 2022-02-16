@@ -57,21 +57,6 @@ const Portfolio = () => {
                         </div>
 
                         <div data-aos='fade-right' className="col-lg-4 p-0 col-md-6 ">
-                            <a target='_blank' rel="noreferrer" href="https://instagram.com/rkaonlineshopuz?utm_medium=copy_link">
-                                <div className="card h-100">
-                                    <div className="card-header">
-                                        <img src="/assets/image/portfolio/2.png" className='w-100' alt="" />
-                                    </div>
-                                    <div className="card-body">
-                                        <h5>
-                                            SMM RKA Online Shop
-                                        </h5>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div data-aos='fade-up' className="col-lg-4 p-0 col-md-6 ">
                             <a target='_blank' rel="noreferrer" href="https://instagram.com/ilpatio_tashkent?utm_medium=copy_link">
                                 <div className="card">
                                     <div className="card-header h-100">
@@ -80,6 +65,21 @@ const Portfolio = () => {
                                     <div className="card-body">
                                         <h5>
                                             SMM IL Patio
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-aos='fade-up' className="col-lg-4 p-0 col-md-6 ">
+                            <a target='_blank' rel="noreferrer" href="https://instagram.com/rkaonlineshopuz?utm_medium=copy_link">
+                                <div className="card h-100">
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/2.png" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM RKA Online Shop
                                         </h5>
                                     </div>
                                 </div>
