@@ -26,7 +26,7 @@ const Portfolio = () => {
 
                     </div>
                     <div className="row">
-                        <div style={{height: 500}} data-aos='fade-right' className="col-lg-6 p-0 col-md-6 ">
+                        <div style={{ height: 500 }} data-aos='fade-right' className="col-lg-6 p-0 col-md-6 ">
                             <a target='_blank' rel="noreferrer" href="https://instagram.com/rkaonlineshopuz?utm_medium=copy_link">
                                 <div className="card h-100">
                                     <div className="card-header">
@@ -41,7 +41,7 @@ const Portfolio = () => {
                             </a>
                         </div>
 
-                        <div style={{height: 500}} data-aos='fade-left' className="col-lg-6 p-0 col-md-6 ">
+                        <div style={{ height: 500 }} data-aos='fade-left' className="col-lg-6 p-0 col-md-6 ">
                             <a target='_blank' rel="noreferrer" href="https://www.instagram.com/ksil.uz/">
                                 <div className="card h-100">
                                     <div className="card-header">
@@ -91,6 +91,51 @@ const Portfolio = () => {
                                 <div className="card h-100">
                                     <div className="card-header">
                                         <img src="/assets/image/portfolio/3.png" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM CGB
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-aos='fade-right' className="col-lg-4 p-0 col-md-6 ">
+                            <a target='_blank' rel="noreferrer" href="https://instagram.com/rkaonlineshopuz?utm_medium=copy_link">
+                                <div className="card h-100">
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/port13.jpg" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM RKA Online Shop
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-aos='fade-up' className="col-lg-4 p-0 col-md-6 ">
+                            <a target='_blank' rel="noreferrer" href="https://instagram.com/ilpatio_tashkent?utm_medium=copy_link">
+                                <div className="card">
+                                    <div className="card-header h-100">
+                                        <img src="/assets/image/portfolio/port14.jpg" className='w-100 h-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM IL Patio
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-aos='fade-left' className="col-lg-4 p-0 col-md-6 ">
+                            <a target='_blank' rel="noreferrer" href="https://instagram.com/classicgrandbuild?utm_medium=copy_link">
+                                <div className="card h-100">
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/port15.jpg" className='w-100' alt="" />
                                     </div>
                                     <div className="card-body">
                                         <h5>
