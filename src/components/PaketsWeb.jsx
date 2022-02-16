@@ -8,6 +8,18 @@ const PaketsWeb = (props) => {
 
         <div className="paketMini">
             <div className="container">
+                    <div className="row pb-5">
+                        <div className="col-12 d-flex flex-column  align-items-center justify-content-center">
+                            <div className="d-flex mb-2">
+                                <i className='mr-2'><img src="/assets/icon/offer3.svg" alt="" /></i>
+                                <h6>Домен в зоне .uz в ПОДАРОК</h6>
+                            </div>
+                            <div className="d-flex">
+                                <i className='mr-2'><img src="/assets/icon/offer3.svg" alt="" /></i>
+                                <h6>Хостинг на 1 год в ПОДАРОК</h6>
+                            </div>
+                        </div>
+                    </div>
                 <div className="row">
                     <div className="col-lg-3">
 
