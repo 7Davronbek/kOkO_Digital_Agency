@@ -57,7 +57,7 @@ const Portfolio = () => {
                             </a>
                         </div>
 
-                        <div  className="col-lg-4 p-0 col-md-6 "> 
+                        <div  className=" col-lg-4 p-0 col-md-6 "> 
                             <a target='_blank' rel="noreferrer" href="https://instagram.com/ilpatio_tashkent?utm_medium=copy_link">
                                 <div className="card">
                                     <div data-aos='fade-right' className="card-header h-100">
@@ -72,7 +72,7 @@ const Portfolio = () => {
                             </a>
                         </div>
 
-                        <div  className="col-lg-4 p-0 col-md-6 "> 
+                        <div  className=" col-lg-4 p-0 col-md-6 "> 
                             <a target='_blank' rel="noreferrer" href="https://instagram.com/rkaonlineshopuz?utm_medium=copy_link">
                                 <div className="card h-100">
                                     <div data-aos='fade-up' className="card-header">
@@ -87,7 +87,7 @@ const Portfolio = () => {
                             </a>
                         </div>
 
-                        <div  className="col-lg-4 p-0 col-md-6 "> 
+                        <div  className=" col-lg-4 p-0 col-md-6 "> 
                             <a target='_blank' rel="noreferrer" href="https://instagram.com/classicgrandbuild?utm_medium=copy_link">
                                 <div className="card h-100">
                                     <div data-aos='fade-left' className="card-header">
@@ -102,7 +102,7 @@ const Portfolio = () => {
                             </a>
                         </div>
 
-                        <div  className="col-lg-4 p-0 col-md-6 "> 
+                        <div  className=" col-lg-4 p-0 col-md-6 "> 
                             <a target='_blank' rel="noreferrer" href="https://www.instagram.com/biostep.organica/">
                                 <div className="card h-100">
                                     <div data-aos='fade-right' className="card-header">
@@ -117,7 +117,7 @@ const Portfolio = () => {
                             </a>
                         </div>
 
-                        <div  className="col-lg-4 p-0 col-md-6 "> 
+                        <div  className=" col-lg-4 p-0 col-md-6 "> 
                             <a target='_blank' rel="noreferrer" href="https://www.instagram.com/biostep.organica/">
                                 <div className="card">
                                     <div data-aos='fade-up' className="card-header h-100">
@@ -132,7 +132,7 @@ const Portfolio = () => {
                             </a>
                         </div>
 
-                        <div  className="col-lg-4 p-0 col-md-6 "> 
+                        <div  className=" col-lg-4 p-0 col-md-6 "> 
                             <a target='_blank' rel="noreferrer" href="https://www.instagram.com/biostep.organica/">
                                 <div className="card h-100">
                                     <div data-aos='fade-left' className="card-header">
@@ -147,7 +147,7 @@ const Portfolio = () => {
                             </a>
                         </div>
 
-                        <div  className="col-lg-3 p-0 col-md-6 "> 
+                        <div  className=" col-lg-3 p-0 col-md-6 "> 
                             <div className="card  h-100">
                                 <a target='_blank' rel="noreferrer" href="https://smartpackprint.uz/">
                                     <div data-aos='fade-right' className="card-header">
@@ -162,7 +162,7 @@ const Portfolio = () => {
                             </div>
                         </div>
 
-                        <div  className="col-lg-3 p-0 col-md-6 "> 
+                        <div  className=" col-lg-3 p-0 col-md-6 "> 
                             <div className="card">
                                 <a target='_blank' rel="noreferrer" href="https://agrom.uz/">
                                     <div data-aos='fade-up' className="card-header">
@@ -177,7 +177,7 @@ const Portfolio = () => {
                             </div>
                         </div>
 
-                        <div  className="col-lg-3 p-0 col-md-6 "> 
+                        <div  className=" col-lg-3 p-0 col-md-6 "> 
                             <div className="card  h-100">
                                 <a target='_blank' rel="noreferrer" href="https://granitinert.uz/">
                                     <div data-aos='fade-down' className="card-header">
@@ -192,7 +192,7 @@ const Portfolio = () => {
                             </div>
                         </div>
 
-                        <div  className="col-lg-3 p-0 col-md-6 "> 
+                        <div  className=" col-lg-3 p-0 col-md-6 "> 
                             <div className="card  h-100">
                                 <a target='_blank' rel="noreferrer" href="https://trustedexpressllc.com/">
                                     <div data-aos='fade-left' className="card-header">
