@@ -15,6 +15,7 @@ const Header = (props) => {
                             onClick={() => props.updateState({ isOpen: true })}
                         >
                             Оставить заявку
+                            <div className="click"></div>
                         </button>
                     </div>
                 </div>

@@ -92,7 +92,7 @@ body {
         backdrop-filter: blur(15px);
         -webkit-backdrop-filter: blur(15px);
         user-select: none;
-        
+
 
         .fixedTheme {
             display: none;
@@ -484,8 +484,35 @@ body {
             padding: 12px 45px;
             border: 2px solid $colorBlue;
             background: transparent;
-            transition: all 0.7s linear 1s;
+            transition: all 0.7s linear;
             font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            // background-color: $colorBlue;
+
+            .click {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                width: 45px;
+                transform: skewX(45deg);
+                left: -150%;
+                background: #ffffff94;
+                animation: click 4s infinite linear 2s;
+            }
+
+            @keyframes click {
+                0% {
+                    left: -150%;
+                }
+
+                60% {
+                    left: 130%;
+                }
+
+                100% {
+                    left: 150%;
+                }
+            }
 
 
             &::before {
@@ -501,6 +528,7 @@ body {
                 z-index: 2;
                 border-color: transparent;
                 color: $colorBlue;
+                background-color: transparent;
             }
 
             @media(max-width: 992px) {
@@ -2873,8 +2901,8 @@ body {
         width: 136px;
         background-color: #c9c9c9;
         border-radius: 15px;
-    
-    
+
+
         h6 {
             color: rgb(29, 29, 29);
             border-radius: 30px;
@@ -2885,24 +2913,24 @@ body {
             padding: 7px 17px;
             border-radius: 15px;
             user-select: none;
-    
+
             &.active {
                 background-color: rgb(0, 0, 0);
                 color: rgb(255, 255, 255);
             }
-    
+
             &.actives {
                 background-color: #fff;
                 color: #000;
                 box-shadow: 0 0 10px rgba(192, 192, 192, 0.616);
             }
         }
-    
+
         @media(max-width: 767px) {
             left: -100%;
         }
     }
-    
+
 }
 
 // 040644
@@ -2928,7 +2956,9 @@ body {
         .navBar {
             background-color: #fff;
 
-            .burger1, .burger2, .burger3 {
+            .burger1,
+            .burger2,
+            .burger3 {
                 background-color: #000;
             }
 
@@ -3205,7 +3235,8 @@ body {
                         color: #000;
                         border-color: #000;
 
-                        &::after, &::before {
+                        &::after,
+                        &::before {
                             display: none;
                         }
                     }
@@ -3256,6 +3287,7 @@ body {
         }
     }
 }
+
 input,
 textarea {
     color: #fff;

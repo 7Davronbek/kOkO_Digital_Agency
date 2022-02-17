@@ -33,7 +33,7 @@ const Portfolio = () => {
                             </a>
                         </div>
 
-                        <div data-aos='fade-left' className="col-lg-6 p-0 col-md-6 ">
+                        <div data-aos='fade-up' className="col-lg-6 p-0 col-md-6 ">
                             <a target='_blank' rel="noreferrer" href="https://www.instagram.com/ksil.uz/">
                                 <div className="card h-100">
                                     <div className="card-header">
@@ -51,7 +51,7 @@ const Portfolio = () => {
                         <div className=" col-lg-4 p-0 col-md-6 ">
                             <a target='_blank' rel="noreferrer" href="https://instagram.com/ilpatio_tashkent?utm_medium=copy_link">
                                 <div style={{ height: '377px' }} className="card">
-                                    <div data-aos='fade-right' className="card-header">
+                                    <div data-aos='fade-left' className="card-header">
                                         <img src="/assets/image/portfolio/port10.jpg" className='w-100 ' alt="" />
                                     </div>
                                     <div className="card-body">
