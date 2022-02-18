@@ -2503,6 +2503,17 @@ body {
     .paketMini {
         padding-bottom: 20px;
 
+        h6 {
+            font-size: 25px;
+            line-height: 25px;
+        }
+
+        i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .card {
             margin-bottom: 30px;
             text-align: center;
@@ -2942,7 +2953,7 @@ body {
 
     &.active {
         background-color: #EBEBEB;
-        color: #000;
+        color: #040644;
 
         .loader {
             background-color: #EBEBEB;
