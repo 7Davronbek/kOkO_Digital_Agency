@@ -35,6 +35,8 @@ import CustomCursor from "./components/cursor/CustomCursor";
 import SocialFixed from "./components/SocialFixed";
 import Up from "./components/Up";
 import Theme from "./components/Theme";
+import ThreeD from "./pages/ThreeD";
+import BotDevelopment from "./pages/BotDevelopment";
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
@@ -58,6 +60,8 @@ ReactDOM.render(
           <Route path="/internet-marketing" exact component={InternetMarketing}/>
           <Route path="/design" exact component={Design} />
           <Route path="/motion" exact component={Moushen} />
+          <Route path="/motion-3d" exact component={ThreeD} />
+          <Route path="/bot-development" exact component={BotDevelopment} />
         </Switch>
 
         <Phone />

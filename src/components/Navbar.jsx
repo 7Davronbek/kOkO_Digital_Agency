@@ -59,8 +59,8 @@ const Navbar = () => {
                                                 <div className="myLi"><Link onClick={() => setBurger(false)} to='/internet-marketing'>Интернет маркетинг</Link></div>
                                                 <div className="myLi"><Link onClick={() => setBurger(false)} to='/design'>Дизайн</Link></div>
                                                 <div className="myLi "><Link onClick={() => setBurger(false)} to='/motion'>Моушн</Link></div>
-                                                <div className="myLi "><a onClick={() => setBurger(false)} >3D Моделирование</a></div>
-                                                <div className="myLi "><a onClick={() => setBurger(false)} className='mb-0'>Телеграм-боты</a></div>
+                                                <div className="myLi "><Link to='motion-3d' onClick={() => setBurger(false)} >3D Моделирование</Link></div>
+                                                <div className="myLi "><Link to='bot-development' onClick={() => setBurger(false)} className='mb-0'>Телеграм-боты</Link></div>
                                             </div>
                                         </li>
 
