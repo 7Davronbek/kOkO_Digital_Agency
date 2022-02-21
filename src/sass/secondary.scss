@@ -237,6 +237,31 @@ li {
   background: transparent;
   transition: all 0.5s ease-in-out;
 
+  .click {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 45px;
+      transform: skewX(45deg);
+      left: -150%;
+      background: #ffffff94;
+      animation: click 4s infinite linear 2s;
+  }
+
+  @keyframes click {
+      0% {
+          left: -150%;
+      }
+
+      60% {
+          left: 130%;
+      }
+
+      100% {
+          left: 150%;
+      }
+  }
+
   &::after {
     content: "";
     position: absolute;

@@ -25,6 +25,7 @@ const Footer2 = (props) => {
                                 onClick={() => props.updateState({ isOpen: true })}
                             // onClick={() => setModal(true)}
                             >
+                                <div className="click"></div>
                                 Оставить заявку
                             </button>
                         </div>

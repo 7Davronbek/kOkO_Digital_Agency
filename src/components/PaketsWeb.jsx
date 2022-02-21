@@ -8,20 +8,20 @@ const PaketsWeb = (props) => {
 
         <div className="paketMini">
             <div className="container">
-                    <div className="row pb-5">
-                        <div className="col-12 d-flex flex-column  align-items-center justify-content-center">
-                            <div data-aos='fade-right' className="d-flex mb-2">
-                                <i className='mr-2'><img src="/assets/icon/offer3.svg" alt="" /></i>
-                                <h6 style={{lineHeight: 1.5}}>Домен в зоне .uz в ПОДАРОК</h6>
-                            </div>
-                            <div data-aos='fade-left' className="d-flex">
-                                <i className='mr-2'><img src="/assets/icon/offer3.svg" alt="" /></i>
-                                <h6 style={{lineHeight: 1.5}}>Хостинг на 1 год в ПОДАРОК</h6>
-                            </div>
+                <div className="row pb-5">
+                    <div className="col-12 d-flex flex-column  align-items-center justify-content-center">
+                        <div data-aos='fade-right' className="d-flex mb-2">
+                            <i className='mr-2'><img src="/assets/icon/offer3.svg" alt="" /></i>
+                            <h6 style={{ lineHeight: 1.5 }}>Домен в зоне .uz в ПОДАРОК</h6>
+                        </div>
+                        <div data-aos='fade-left' className="d-flex">
+                            <i className='mr-2'><img src="/assets/icon/offer3.svg" alt="" /></i>
+                            <h6 style={{ lineHeight: 1.5 }}>Хостинг на 1 год в ПОДАРОК</h6>
                         </div>
                     </div>
+                </div>
                 <div className="row">
-                    <div className="col-lg-3">
+                    <div className="col-lg-3 col-md-6 col-12">
 
                         <div data-aos='fade-right' className="card">
                             <div className="card-header">
@@ -33,12 +33,12 @@ const PaketsWeb = (props) => {
                                     <p>Срок создания</p>
                                     <h6>4-10 дней</h6>
                                 </div>
-                                <button onClick={() => props.updateState({isOpen: true})} className="btn myBtn">Оставить заявку</button>
+                                <button onClick={() => props.updateState({ isOpen: true })} className="btn myBtn">Оставить заявку<div className="click"></div></button>
                             </div>
                         </div>
 
                     </div>
-                    <div className="col-lg-3">
+                    <div className="col-lg-3 col-md-6 col-12">
 
                         <div data-aos='fade-right' className="card">
                             <div className="card-header">
@@ -50,12 +50,12 @@ const PaketsWeb = (props) => {
                                     <p>Срок создания</p>
                                     <h6>7-14 дней</h6>
                                 </div>
-                                <button onClick={() => props.updateState({isOpen: true})}className="btn myBtn">Оставить заявку</button>
+                                <button onClick={() => props.updateState({ isOpen: true })} className="btn myBtn">Оставить заявку<div className="click"></div></button>
                             </div>
                         </div>
-                        
+
                     </div>
-                    <div className="col-lg-3">
+                    <div className="col-lg-3 col-md-6 col-12">
 
                         <div data-aos='fade-right' className="card">
                             <div className="card-header">
@@ -67,29 +67,14 @@ const PaketsWeb = (props) => {
                                     <p>Срок создания</p>
                                     <h6>10-20 дней</h6>
                                 </div>
-                                <button onClick={() => props.updateState({isOpen: true})} className="btn myBtn">Оставить заявку</button>
+                                <button onClick={() => props.updateState({ isOpen: true })} className="btn myBtn">Оставить заявку
+                                    <div className="click"></div>
+                                </button>
                             </div>
                         </div>
-                        
-                    </div>
-                    <div className="col-lg-3">
 
-                        <div data-aos='fade-right' className="card">
-                            <div className="card-header">
-                                <h5>Интернет-магазин</h5>
-                            </div>
-                            <div className="card-body">
-                                <h4><span>от</span> 12.400.000 <span>сум</span> </h4>
-                                <div className="d-flex align-items-center justify-content-between">
-                                    <p>Срок создания</p>
-                                    <h6>21-49 дней</h6>
-                                </div>
-                                <button onClick={() => props.updateState({isOpen: true})} className="btn myBtn">Оставить заявку</button>
-                            </div>
-                        </div>
-                        
                     </div>
-                    <div className="col-lg-3">
+                    <div className="col-lg-3 col-md-6 col-12">
 
                         <div data-aos='fade-right' className="card">
                             <div className="card-header">
@@ -101,13 +86,30 @@ const PaketsWeb = (props) => {
                                     <p>Срок создания</p>
                                     <h6>20-25 дней</h6>
                                 </div>
-                                <button onClick={() => props.updateState({isOpen: true})} className="btn myBtn">Оставить заявку</button>
+                                <button onClick={() => props.updateState({ isOpen: true })} className="btn myBtn">Оставить заявку<div className="click"></div></button>
                             </div>
                         </div>
-                        
+
+                    </div>
+                    <div className="col-lg-3 col-md-6 col-12">
+
+                        <div data-aos='fade-right' className="card">
+                            <div className="card-header">
+                                <h5>Интернет-магазин</h5>
+                            </div>
+                            <div className="card-body">
+                                <h4><span>от</span> 12.400.000 <span>сум</span> </h4>
+                                <div className="d-flex align-items-center justify-content-between">
+                                    <p>Срок создания</p>
+                                    <h6>21-49 дней</h6>
+                                </div>
+                                <button onClick={() => props.updateState({ isOpen: true })} className="btn myBtn">Оставить заявку <div className="click"></div></button>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div className="col-lg-3">
+                    <div className="col-lg-4 col-md-6 col-12">
 
                         <div data-aos='fade-right' className="card">
                             <div className="card-header">
@@ -119,10 +121,10 @@ const PaketsWeb = (props) => {
                                     <p>Срок создания</p>
                                     <h6>30-45 дней</h6>
                                 </div>
-                                <button onClick={() => props.updateState({isOpen: true})} className="btn myBtn">Оставить заявку</button>
+                                <button onClick={() => props.updateState({ isOpen: true })} className="btn myBtn">Оставить заявку<div className="click"></div></button>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -131,4 +133,4 @@ const PaketsWeb = (props) => {
     </>;
 };
 
-export default connect(null, {updateState})(PaketsWeb);
+export default connect(null, { updateState })(PaketsWeb);

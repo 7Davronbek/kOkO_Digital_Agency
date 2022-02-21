@@ -489,31 +489,6 @@ body {
             overflow-x: hidden;
             // background-color: $colorBlue;
 
-            .click {
-                position: absolute;
-                top: 0;
-                height: 100%;
-                width: 45px;
-                transform: skewX(45deg);
-                left: -150%;
-                background: #ffffff94;
-                animation: click 4s infinite linear 2s;
-            }
-
-            @keyframes click {
-                0% {
-                    left: -150%;
-                }
-
-                60% {
-                    left: 130%;
-                }
-
-                100% {
-                    left: 150%;
-                }
-            }
-
 
             &::before {
                 font-size: 18px;
@@ -573,6 +548,10 @@ body {
 
         @media(max-width: 992px) {
             height: 60vh;
+        }
+
+        @media(max-width: 767px) {
+            background-position-x: -1251px;
         }
     }
 
@@ -2213,7 +2192,7 @@ body {
             margin-top: 40px;
 
             &::before {
-                content: 'CALL US';
+                content: 'Позвонить';
             }
         }
 
