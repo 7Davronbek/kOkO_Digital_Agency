@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 // import { getText } from '../locales';
 import Aos from 'aos';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Services = () => {
 
@@ -24,7 +25,7 @@ const Services = () => {
                         <div className="card">
                             <Link to='/web-development'>
                                 <div  data-aos='fade-right' className="card-body position-relative">
-                                    <i className='w-100'> <img src="/assets/image/card2.png" alt="" className="w-100" /></i>
+                                    <i className='w-100'> <LazyLoadImage effect='blur' width='100%' height='100%' src="/assets/image/card2.png" alt="" className="w-100" /></i>
                                     <h5>Web services</h5>
                                 </div>
                             </Link>
@@ -33,7 +34,7 @@ const Services = () => {
                         <div className="card">
                             <Link to='/motion'>
                                 <div data-aos='fade-up' className="card-body position-relative">
-                                    <i className='w-100'> <img src="/assets/image/card4.png" alt="" className="w-100" /></i>
+                                    <i className='w-100'> <LazyLoadImage effect='blur' width='100%' height='100%' src="/assets/image/card4.png" alt="" className="w-100" /></i>
                                     <h5>Motion</h5>
                                 </div>
                             </Link>
@@ -42,7 +43,7 @@ const Services = () => {
                         <div className="card">
                             <Link to='/internet-marketing'>
                                 <div data-aos='fade-down' className="card-body position-relative">
-                                    <i className='w-100'> <img src="/assets/image/card1.png" alt="" className="w-100" /></i>
+                                    <i className='w-100'> <LazyLoadImage effect='blur' width='100%' height='100%' src="/assets/image/card1.png" alt="" className="w-100" /></i>
                                     <h5>Internet marketing</h5>
                                 </div>
                             </Link>
@@ -51,7 +52,7 @@ const Services = () => {
                         <div className="card">
                             <Link to='/design'>
                                 <div data-aos='fade-left' className="card-body position-relative">
-                                    <i className='w-100'> <img src="/assets/image/card3.png" alt="" className="w-100" /></i>
+                                    <i className='w-100'> <LazyLoadImage effect='blur' width='100%' height='100%' src="/assets/image/card3.png" alt="" className="w-100" /></i>
                                     <h5>Design</h5>
                                 </div>
                             </Link>
