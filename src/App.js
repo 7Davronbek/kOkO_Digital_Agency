@@ -12,7 +12,7 @@ import { RingLoader } from "react-spinners";
 import "aos/dist/aos.css";
 import "aos/dist/aos.js";
 
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 import { connect } from "react-redux";
 
 
@@ -34,11 +34,11 @@ const App = (props) => {
   return (
     <div className={`${props.white ? 'themeActive' : ''}`}>
 
-    <Helmet>
+      <Helmet>
         <meta charSet="utf-8" />
         <title>kOkO Agency uz | Tashkent | KOKO | koko</title>
         <link rel="canonical" href="https://www.kokoagency.uz/" />
-    </Helmet>
+      </Helmet>
 
       {isLoading ? (
         <div className="loader ">
@@ -47,16 +47,26 @@ const App = (props) => {
           <RingLoader color={`${localStorage.getItem('theme') === 'white' ? '#000' : '#fff'}`} size="35" loading={isLoading} />
         </div>
       ) : (
-        <>
-        <Header /> 
-        <Services />
-        <Offer />
-        <WeInNumber />
-        <Portfolio />
-        <Companies />
-        <Contacts />
-        </>
-      )}
+          <>
+            <Header />
+            <div className="desktop">
+              <Services />
+            </div>
+            <div className="mobilePortfolio">
+              <Portfolio />
+            </div>
+            <Offer />
+            <WeInNumber />
+            <div className="mobileServices">
+              <Services />
+            </div>
+            <div className="desktop">
+              <Portfolio />
+            </div>
+            <Companies />
+            <Contacts />
+          </>
+        )}
     </div>
   );
 };

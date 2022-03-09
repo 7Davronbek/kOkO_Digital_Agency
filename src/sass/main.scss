@@ -3339,3 +3339,20 @@ textarea {
         transform: rotate(0);
     }
 }
+
+.desktop {
+    display: block;
+
+    @media(max-width: 992px) {
+        display: none;
+    }
+}
+
+.mobilePortfolio,
+.mobileServices {
+    display: none;
+
+    @media(max-width: 992px) {
+        display: block;
+    }
+}
