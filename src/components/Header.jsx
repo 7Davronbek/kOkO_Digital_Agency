@@ -3,6 +3,7 @@ import { updateState } from '../redux/actions/emailAction'
 
 const Header = (props) => {
     return (
+        <>
         <div  className='header'>
             <div className="container">
                 <div className="row">
@@ -22,6 +23,9 @@ const Header = (props) => {
             </div>
 
         </div>
+
+        {/* <video autoplay="true" loop="true" src="/assets/video/qwe.mp4" type="video/mp4"></video> */}
+        </>
     )
 }
 
