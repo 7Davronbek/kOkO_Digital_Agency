@@ -103,7 +103,7 @@ body {
         }
 
         .logo {
-            transform: translateX(-200px);
+            // transform: translateX(-200px);
 
             @media(max-width: 1550px) {
                 transform: translateX(0);
@@ -539,6 +539,10 @@ body {
                 line-height: 55px;
                 margin-bottom: 25px !important;
             }
+
+            @media(max-width: 767px) {
+                font-size: 38px;
+            }
         }
 
         @media(max-width: 1350px) {
@@ -680,6 +684,10 @@ body {
 
         @media(max-width: 992px) {
             padding: 30px 0;
+        }
+
+        @media(max-width: 767px) {
+            padding: 0;
         }
     }
 
@@ -905,6 +913,10 @@ body {
             @media(max-width: 500px) {
                 width: 150px;
             }
+        }
+
+        @media(max-width: 767px) {
+            padding-top: 0;
         }
     }
 
@@ -1600,6 +1612,17 @@ body {
                 background-color: #00000047 !important;
             }
         }
+
+        @media(max-width: 767px) {
+            background-position-x: -650px;
+        }
+    }
+
+    .botConsist {
+
+        .row {
+            margin-top: 0 !important;
+        }
     }
 
     .threeDevelopment {
@@ -1617,6 +1640,17 @@ body {
             span {
                 color: #6f73ee;
             }
+        }
+
+        @media(max-width: 767px) {
+            background-position-x: -375px;
+        }
+    }
+
+    .thereeConsist {
+
+        .row {
+            margin-top: 15px !important;
         }
     }
 
@@ -1821,6 +1855,10 @@ body {
             @media(max-width: 992px) {
                 padding: 50px 15px 30px;
             }
+        }
+
+        @media(max-width: 767px) {
+            padding-bottom: 25px;
         }
     }
 
@@ -2295,6 +2333,7 @@ body {
                     @media(max-width: 767px) {
                         transform: translateY(180px);
                         opacity: 1;
+                        width: 90%;
                     }
                 }
 
@@ -2628,8 +2667,10 @@ body {
             animation: anim1 3s linear infinite reverse;
 
             @media(max-width: 676px) {
-                right: 35px;
-                bottom: 45px;
+                right: 25px;
+                bottom: 20px;
+                width: 60px;
+                height: 60px;
             }
         }
 
@@ -2651,11 +2692,17 @@ body {
 
             img {
                 transform: rotate(270deg) scale(1.5);
+
+                @media(max-width: 767px) {
+                    transform: rotate(270deg) scale(1.2);
+                }
             }
 
             @media(max-width: 676px) {
-                right: 35px;
-                bottom: 45px;
+                right: 25px;
+                bottom: 20px;
+                width: 60px;
+                height: 60px;
             }
         }
     }
@@ -2846,6 +2893,10 @@ body {
 
         .footerLogo {
             transform: translateY(35px);
+
+            @media(max-width: 992px) {
+                transform: translateY(0px);
+            }
         }
 
         h5 {
@@ -2920,6 +2971,7 @@ body {
             @media(max-width: 992px) {
                 justify-content: center;
                 margin: 25px 0 25px;
+                transform: translate(0, 0);
             }
         }
 
@@ -3408,4 +3460,8 @@ textarea {
     @media(max-width: 992px) {
         display: block;
     }
+}
+
+.mobilePortfolio {
+    padding-top: 50px;
 }

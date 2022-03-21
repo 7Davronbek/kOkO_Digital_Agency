@@ -65,7 +65,7 @@ const WeInNumber = () => {
                     <div data-aos='fade-up' className="col-lg-4 d-flex align-items-center justify-content-center text-center text-lg-left mb-4 mb-lg-0 d-lg-block">
                         <div className="card">
                             <div className="card-body">
-                                <h2>15+</h2>
+                                <h2>21+</h2>
                                 <h3>сотрудника</h3>
                             </div>
                         </div>
@@ -73,7 +73,7 @@ const WeInNumber = () => {
                     <div data-aos='fade-up' className="col-lg-4 d-flex align-items-center justify-content-center text-center text-lg-left mb-4 mb-lg-0 d-lg-block">
                         <div className="card">
                             <div className="card-body text-center">
-                                <h2>44+</h2>
+                                <h2>205+</h2>
                                 <h3>довольные клиенты</h3>
                             </div>
                         </div>
@@ -81,7 +81,7 @@ const WeInNumber = () => {
                     <div data-aos='fade-up' className="col-lg-4 d-flex align-items-center mb-4 mb-lg-0 d-flex justify-content-end lastCard">
                         <div className="card">
                             <div className="card-body text-center">
-                                <h2>32+</h2>
+                                <h2>302+</h2>
                                 <h3>успешных кейсов</h3>
                             </div>
                         </div>

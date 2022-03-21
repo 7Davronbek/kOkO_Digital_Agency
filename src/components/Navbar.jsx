@@ -58,8 +58,8 @@ const Navbar = () => {
                             </ul>
                         </div> */}
 
-                        <div className={`mobileWrap pr-lg-0 col-lg-8 ${burger ? 'burgered' : ''}`}>
-                            <div className="row">
+                        <div className={`mobileWrap pr-lg-0 col-lg-10  ${burger ? 'burgered' : ''}`}>
+                            <div className="row ">
 
                                 <div className="col-lg-10 myNav d-lg-flex align-items-center justify-content-end">
                                     <ul className='d-flex align-items-center justify-content-center'>
