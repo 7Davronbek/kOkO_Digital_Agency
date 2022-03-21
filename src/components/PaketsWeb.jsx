@@ -21,7 +21,7 @@ const PaketsWeb = (props) => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-3 col-md-6 col-12">
+                    <div className="col-lg-4 col-md-6 col-12">
 
                         <div data-aos='fade-right' className="card">
                             <div className="card-header">
@@ -33,12 +33,13 @@ const PaketsWeb = (props) => {
                                     <p>Срок создания</p>
                                     <h6>4-10 дней</h6>
                                 </div>
-                                <button onClick={() => props.updateState({ isOpen: true })} className="btn myBtn">Оставить заявку<div className="click"></div></button>
+
+                                <a href="https://t.me/kOkOdigital" target='_blank' rel="noreferrer" className="btn myBtn"> <div className="click"></div> Написать в телеграм</a>
                             </div>
                         </div>
 
                     </div>
-                    <div className="col-lg-3 col-md-6 col-12">
+                    <div className="col-lg-4 col-md-6 col-12">
 
                         <div data-aos='fade-right' className="card">
                             <div className="card-header">
@@ -50,12 +51,13 @@ const PaketsWeb = (props) => {
                                     <p>Срок создания</p>
                                     <h6>7-14 дней</h6>
                                 </div>
-                                <button onClick={() => props.updateState({ isOpen: true })} className="btn myBtn">Оставить заявку<div className="click"></div></button>
+                                
+                                <a href="https://t.me/kOkOdigital" target='_blank' rel="noreferrer" className="btn myBtn"> <div className="click"></div> Написать в телеграм</a>
                             </div>
                         </div>
 
                     </div>
-                    <div className="col-lg-3 col-md-6 col-12">
+                    <div className="col-lg-4 col-md-6 col-12">
 
                         <div data-aos='fade-right' className="card">
                             <div className="card-header">
@@ -67,14 +69,12 @@ const PaketsWeb = (props) => {
                                     <p>Срок создания</p>
                                     <h6>10-20 дней</h6>
                                 </div>
-                                <button onClick={() => props.updateState({ isOpen: true })} className="btn myBtn">Оставить заявку
-                                    <div className="click"></div>
-                                </button>
+                                <a href="https://t.me/kOkOdigital" target='_blank' rel="noreferrer" className="btn myBtn"> <div className="click"></div> Написать в телеграм</a>
                             </div>
                         </div>
 
                     </div>
-                    <div className="col-lg-3 col-md-6 col-12">
+                    <div className="col-lg-4 col-md-6 col-12">
 
                         <div data-aos='fade-right' className="card">
                             <div className="card-header">
@@ -86,12 +86,12 @@ const PaketsWeb = (props) => {
                                     <p>Срок создания</p>
                                     <h6>20-25 дней</h6>
                                 </div>
-                                <button onClick={() => props.updateState({ isOpen: true })} className="btn myBtn">Оставить заявку<div className="click"></div></button>
+                                <a href="https://t.me/kOkOdigital" target='_blank' rel="noreferrer" className="btn myBtn"> <div className="click"></div> Написать в телеграм</a>
                             </div>
                         </div>
 
                     </div>
-                    <div className="col-lg-3 col-md-6 col-12">
+                    <div className="col-lg-4 col-md-6 col-12">
 
                         <div data-aos='fade-right' className="card">
                             <div className="card-header">
@@ -103,13 +103,13 @@ const PaketsWeb = (props) => {
                                     <p>Срок создания</p>
                                     <h6>21-49 дней</h6>
                                 </div>
-                                <button onClick={() => props.updateState({ isOpen: true })} className="btn myBtn">Оставить заявку <div className="click"></div></button>
+                                <a href="https://t.me/kOkOdigital" target='_blank' rel="noreferrer" className="btn myBtn"> <div className="click"></div> Написать в телеграм</a>
                             </div>
                         </div>
 
                     </div>
 
-                    <div className="col-lg-4 col-md-6 col-12">
+                    <div className="col-lg-4 col-md-6 col-12 last">
 
                         <div data-aos='fade-right' className="card">
                             <div className="card-header">
@@ -121,7 +121,7 @@ const PaketsWeb = (props) => {
                                     <p>Срок создания</p>
                                     <h6>30-45 дней</h6>
                                 </div>
-                                <button onClick={() => props.updateState({ isOpen: true })} className="btn myBtn">Оставить заявку<div className="click"></div></button>
+                                <a href="https://t.me/kOkOdigital" target='_blank' rel="noreferrer" className="btn myBtn"> <div className="click"></div> Написать в телеграм</a>
                             </div>
                         </div>
 

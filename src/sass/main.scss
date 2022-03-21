@@ -2511,6 +2511,13 @@ body {
     .paketMini {
         padding-bottom: 20px;
 
+        .last {
+
+            .card-header {
+                background-color: #cc2fff !important;
+            }
+        }
+
         h6 {
             font-size: 25px;
             line-height: 25px;
@@ -2525,6 +2532,13 @@ body {
         .card {
             margin-bottom: 30px;
             text-align: center;
+
+            .myBtn {
+
+                &::before {
+                    content: 'Написать в телеграм'
+                }
+            }
 
             .card-header {
                 background-color: $colorBlue;
