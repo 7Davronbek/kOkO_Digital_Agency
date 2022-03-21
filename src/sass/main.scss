@@ -133,7 +133,7 @@ body {
                         z-index: 99;
 
                         @media(max-width: 992px) {
-                            transform: translateX(58px);
+                            transform: translateX(9px);
                         }
                     }
 
@@ -476,17 +476,17 @@ body {
         .myBtn {
             color: $colorWhite;
             text-transform: uppercase;
-            padding: 10px 30px;
             margin-top: 10px;
             font-size: 18px;
             font-weight: 500;
             letter-spacing: 1px;
-            padding: 12px 45px;
+            // padding: 12px 45px;
             border: 2px solid $colorBlue;
             background: transparent;
             transition: all 0.7s linear;
             font-family: 'Inter', sans-serif;
             overflow-x: hidden;
+            padding: 12px 27px;
             // background-color: $colorBlue;
 
 
@@ -524,7 +524,7 @@ body {
 
         h1 {
             font-weight: 600;
-            font-size: 71px;
+            font-size: 88px;
             color: #fff;
             font-family: 'Inter', sans-serif;
             letter-spacing: 1px;
@@ -1199,7 +1199,7 @@ body {
 
         .myBtn {
             &::before {
-                content: "Оставить заявку";
+                content: "Бесплатная консультация";
             }
         }
 
@@ -1592,21 +1592,24 @@ body {
     }
 
     .botDevelopment {
-        background-image: url(../image/bot.jpg);
+        background-image: url(../image/telegram.png);
 
         &.courses {
 
             &::after {
-                background-color: #000000cc !important;
+                background-color: #00000047 !important;
             }
         }
     }
 
     .threeDevelopment {
-        background-image: url(../image/three.webp);
+        background-image: url(../image/three2.jpg);
 
         &.courses {
-            background-size: 100% 65vh;
+
+            &::after {
+                background-color: #0000006b !important;
+            }
         }
 
         h1 {
@@ -2827,6 +2830,10 @@ body {
             text-align: center;
         }
 
+        .footerLogo {
+            transform: translateY(35px);
+        }
+
         h5 {
             font-weight: 600;
             letter-spacing: 1px;
@@ -2840,8 +2847,12 @@ body {
             font-size: 15px;
         }
 
+        p {
+            font-size: 15px;
+        }
+
         h4 {
-            font-size: 20px;
+            font-size: 16px;
             color: $colorBlue;
             font-weight: bold;
             margin-bottom: 8px !important;
@@ -2877,6 +2888,8 @@ body {
 
         .social {
             padding-left: 30px;
+            transform: translateX(10px) translateY(33px);
+        
 
             a {
                 margin-right: 20px;

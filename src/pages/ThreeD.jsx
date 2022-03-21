@@ -31,7 +31,19 @@ const ThreeD = (props) => {
             <div className="row">
               <div className="col-12">
                 <h1 data-aos='fade-right'>3<span>D</span> Моделирование</h1>
-                <button data-aos='fade-left' className="btn myBtn"onClick={() => props.updateState({isOpen: true})}>Оставить заявку</button>
+
+                <a
+                  href="https://t.me/kOkOdigital"
+                  target='_blank' rel="noreferrer"
+                  className="btn myBtn"
+                  data-aos='fade-left'
+                // onClick={() => props.updateState({ isOpen: true })}
+                // onClick={() => setModal(true)}
+                >
+                  <div className="click"></div>
+                  Бесплатная консультация
+                </a>
+                
               </div>
             </div>
           </div>

@@ -10,7 +10,7 @@ const InternetConsist = () => {
                     </div>
                     <div data-aos='fade-left' className="col-lg-6 ml-auto">
                         <h1>Услуги интернет маркетинга:</h1>
-                        <p>СММ продвижение;</p>
+                        <p>SMM продвижение;</p>
                         <p>Таргетированная реклама;</p>
                         <p>Контекстная реклама;</p>
                         <p>SEO продвижение;</p>

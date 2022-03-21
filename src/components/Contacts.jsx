@@ -119,7 +119,7 @@ const Contacts = (props) => {
                                 <div className="img"><img src="/assets/icon/location.svg" alt="" /></div>
                                 {/* <i className='mr-3'><img style={{width: '40px'}} src="/assets/icon/location3.png" alt="" /></i> */}
                                 <div>
-                                    <h3>Город Ташкент, Яшнабадский район, Улица Тараккиёт, 2.</h3>
+                                    <h3>Город Ташкент, Яшнабадский район, Улица Ташсельмаш 8.</h3>
                                     <h2>Пн-Сб 09:00 - 18:00</h2>
                                 </div>
                             </div>

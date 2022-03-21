@@ -23,12 +23,12 @@ const WebDevelopment = (props) => {
   }, []);
   return (
     <>
-    
-    <Helmet>
+
+      <Helmet>
         <meta charSet="utf-8" />
         <title>kOkO Agency | Web Development | Tashkent | KOKO | koko</title>
         <link rel="canonical" href="https://www.kokoagency.uz/" />
-    </Helmet>
+      </Helmet>
       {isLoading ? (
         <div className="loader ">
           <h5 className='mr-4'>Разработка сайтов</h5>
@@ -43,8 +43,19 @@ const WebDevelopment = (props) => {
             <div className="col-12 text-center">
               {load ? (
                 <>
-                <h1 data-aos='fade-right'>Web services</h1>
-                <button data-aos='fade-left' className="btn myBtn"onClick={() => props.updateState({isOpen: true})}>Оставить заявку</button>
+                  <h1 data-aos='fade-right'>web developing</h1>
+
+                  <a
+                    href="https://t.me/kOkOdigital"
+                    target='_blank' rel="noreferrer"
+                    className="btn myBtn"
+                    data-aos='fade-left'
+                  // onClick={() => props.updateState({ isOpen: true })}
+                  // onClick={() => setModal(true)}
+                  >
+                    <div className="click"></div>
+                    Бесплатная консультация
+                  </a>
                 </>
               ) : null}
             </div>

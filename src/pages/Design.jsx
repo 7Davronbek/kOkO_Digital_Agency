@@ -29,11 +29,11 @@ const Design = (props) => {
   }, []);
   return (
     <>
-    <Helmet>
+      <Helmet>
         <meta charSet="utf-8" />
         <title>kOkO Agency | Design | Tashkent | KOKO | koko</title>
         <link rel="canonical" href="https://www.kokoagency.uz/" />
-    </Helmet>
+      </Helmet>
 
       {isLoading ? (
         <div className="loader ">
@@ -50,7 +50,18 @@ const Design = (props) => {
               {load ? (
                 <>
                   <h1 data-aos='fade-right'>Design</h1>
-                  <button data-aos='fade-left' className="btn myBtn" onClick={() => props.updateState({isOpen: true})}>Оставить заявку</button>
+
+                  <a
+                    href="https://t.me/kOkOdigital"
+                    target='_blank' rel="noreferrer"
+                    className="btn myBtn"
+                    data-aos='fade-left'
+                  // onClick={() => props.updateState({ isOpen: true })}
+                  // onClick={() => setModal(true)}
+                  >
+                    <div className="click"></div>
+                    Бесплатная консультация
+                  </a>
                 </>
               ) : null}
             </div>
