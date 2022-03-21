@@ -9,7 +9,7 @@ const Header = (props) => {
                 <div className="row">
                     <div className="col-lg-12 mx-auto text-center">
 
-                        <h1 data-aos='fade-right' className="lastH1" >We are the great OWLS</h1>
+                        <h1 data-aos='fade-right' className="lastH1" >Нам важны ваши цели.</h1>
 
                         <button data-aos='fade-left'
                             className="btn myBtn"

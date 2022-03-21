@@ -30,7 +30,7 @@ const ThreeD = (props) => {
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <h1>3<span>D</span> Моделирование</h1>
+                <h1 data-aos='fade-right'>3<span>D</span> Моделирование</h1>
                 <button data-aos='fade-left' className="btn myBtn"onClick={() => props.updateState({isOpen: true})}>Оставить заявку</button>
               </div>
             </div>

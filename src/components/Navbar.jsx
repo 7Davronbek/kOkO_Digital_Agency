@@ -42,6 +42,21 @@ const Navbar = () => {
                             <div className="burger2"></div>
                             <div className="burger3"></div>
                         </div>
+                        
+            {/* 
+<div className="col-lg-10">
+                            <ul className='d-flex align-items-center justify-content-between'>
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Блог</a></li>
+                                <li><a href="#">Разработка сайтов</a></li>
+                                <li><a href="#">Интернет маркетинг</a></li>
+                                <li><a href="#">Дизайн</a></li>
+                                <li><a href="#">Моушн</a></li>
+                                <li><a href="#">3D Моделирование</a></li>
+                                <li><a href="#">Телеграм-боты</a></li>
+                            </ul>
+                        </div> */}
 
                         <div className={`mobileWrap pr-lg-0 col-lg-8 ${burger ? 'burgered' : ''}`}>
                             <div className="row">
@@ -52,7 +67,7 @@ const Navbar = () => {
                                         <li className={`mr-5 myLi`}><Link onClick={() => setBurger(false)} className={`myA ${location.pathname === '/about-us' ? 'navlinkActive' : ''}`} to='/about-us'>О нас</Link></li>
                                         <li className={`mr-5 myLi`}><Link onClick={() => setBurger(false)} className={`myA  ${location.pathname === '/blog' ? 'navlinkActive' : ''}`} to='/blog'>Блог</Link></li>
                                         <li className="mr-4 myLi servicesLi d-flex align-items-center position-relative">
-                                            Наши услуги 
+                                            Наши услуги
                                             <i className='ml-2'><i className={`icon icon-up ${localStorage.getItem('theme') === 'white' ? 'black' : ''}`}></i></i>
                                             <div className="servicesDiv position-absolute">
                                                 <div className="myLi"><Link onClick={() => setBurger(false)} className={`${location.pathname === 'web-development' ? 'navlinkActive' : ''}`} to='/web-development'>Разработка сайтов</Link></div>
@@ -113,7 +128,8 @@ const Navbar = () => {
             <div className='navbarLine'></div>
 
 
-{/* <div className='d-flex align-items-center uz justify-content-center' onClick={(e) => changeLanguage('ru')}>
+
+            {/* <div className='d-flex align-items-center uz justify-content-center' onClick={(e) => changeLanguage('ru')}>
     <i><img src="/assets/icon/uz.svg" alt="" /></i>
     <b style={{ transform: 'translateY(4px)' }} className='mx-2 d-block'>UZ </b>
 </div>
