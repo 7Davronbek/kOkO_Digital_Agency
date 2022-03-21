@@ -1591,6 +1591,14 @@ body {
         background-image: url(../image/web2.jpg);
     }
 
+    .botDevelopment {
+        background-image: url(../image/bot.jpg);
+
+        &.courses {
+            background-color: #000000cc !important;
+        }
+    }
+
     .courses {
         width: 100%;
         // background-position-x: -150px;

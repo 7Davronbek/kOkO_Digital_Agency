@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 // import { getText } from '../locales';
-import { LANGUAGE } from '../tools/constans';
+// import { LANGUAGE } from '../tools/constans';
 import Theme from './Theme';
 // 
 // margin-top: 37px;
@@ -70,7 +70,7 @@ const Navbar = () => {
 
                                 <Theme />
 
-                                <div className="col-lg-2 d-lg-flex pr-lg-0 align-items-center justify-content-end langWrap">
+                                {/* <div className="col-lg-2 d-lg-flex pr-lg-0 align-items-center justify-content-end langWrap">
                                     {localStorage.getItem(LANGUAGE) !== 'ru' ?
                                         <>
                                             <div className='d-flex align-items-center uz1 justify-content-center' 
@@ -101,7 +101,7 @@ const Navbar = () => {
                                             </div>
                                         </>
                                     }
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 
