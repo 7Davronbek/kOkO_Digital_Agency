@@ -99,14 +99,6 @@ const Navbar = () => {
                                                 <i><img src="/assets/icon/ru.svg" alt="" /></i>
                                                 <b style={{ transform: 'translateY(2px)' }} className='mx-2 d-block'>РУ </b>
                                             </div>
-                                            {/* <div className='d-flex align-items-center uz justify-content-center' onClick={(e) => changeLanguage('ru')}>
-                                                <i><img src="/assets/icon/uz.svg" alt="" /></i>
-                                                <b style={{ transform: 'translateY(4px)' }} className='mx-2 d-block'>UZ </b>
-                                            </div>
-                                            <div className='d-flex align-items-center ru justify-content-center' onClick={(e) => changeLanguage('ru')}>
-                                                <i><img src="/assets/icon/ru.svg" alt="" /></i>
-                                                <b style={{ transform: 'translateY(2px)' }} className='mx-2 d-block'>RU </b>
-                                            </div> */}
                                         </>
                                     }
                                 </div>
@@ -119,6 +111,16 @@ const Navbar = () => {
 
             {/* <div className={`${location.pathname === '/' ? '' : 'navbarLine'}`}></div> */}
             <div className='navbarLine'></div>
+
+
+{/* <div className='d-flex align-items-center uz justify-content-center' onClick={(e) => changeLanguage('ru')}>
+    <i><img src="/assets/icon/uz.svg" alt="" /></i>
+    <b style={{ transform: 'translateY(4px)' }} className='mx-2 d-block'>UZ </b>
+</div>
+<div className='d-flex align-items-center ru justify-content-center' onClick={(e) => changeLanguage('ru')}>
+    <i><img src="/assets/icon/ru.svg" alt="" /></i>
+    <b style={{ transform: 'translateY(2px)' }} className='mx-2 d-block'>RU </b>
+</div> */}
         </>
     )
 }
