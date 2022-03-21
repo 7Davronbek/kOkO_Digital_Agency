@@ -1595,7 +1595,25 @@ body {
         background-image: url(../image/bot.jpg);
 
         &.courses {
-            background-color: #000000cc !important;
+
+            &::after {
+                background-color: #000000cc !important;
+            }
+        }
+    }
+
+    .threeDevelopment {
+        background-image: url(../image/three.webp);
+
+        &.courses {
+            background-size: 100% 65vh;
+        }
+
+        h1 {
+
+            span {
+                color: #6f73ee;
+            }
         }
     }
 

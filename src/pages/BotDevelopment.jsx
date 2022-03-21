@@ -3,6 +3,8 @@ import { RingLoader } from 'react-spinners';
 import Aos from 'aos';
 import { connect } from "react-redux";
 import { updateState } from '../redux/actions/emailAction'
+import Support from '../components/Support';
+import DesignDepends from '../components/DesignDepends';
 
 const BotDevelopment = (props) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -55,6 +57,9 @@ const BotDevelopment = (props) => {
 
           </div>
         </div>
+
+        <Support />
+        <DesignDepends />
       </>)}
 
     </>
