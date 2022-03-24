@@ -2555,6 +2555,11 @@ body {
             .card-header {
                 background-color: #cc2fff !important;
             }
+
+            h6 {
+                font-size: 47px !important;
+                padding: 5px 12px !important;
+            }
         }
 
         h6 {
@@ -2628,6 +2633,24 @@ body {
             }
         }
     }
+    
+    .paketMiniH2 {
+        font-size: 18px;
+        position: absolute;
+        background: linear-gradient(-60deg, #6f73ee, #cc2fff );
+        background: #cc2fff;
+        width: 100%;
+        transform: rotate(42deg);
+        right: -144px;
+        top: 16px;
+        padding: 5px 0;
+
+        &.last {
+            background-color: red;
+            right: -146px;
+            top: 14px;
+        }
+    }
 
     .paketsInternet {
 
@@ -2640,6 +2663,11 @@ body {
     }
 
     .paketsWeb {
+
+        .card {
+            position: relative;
+        }
+        
         .myNavs {
             .nav-item {
 
