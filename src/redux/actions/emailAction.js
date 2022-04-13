@@ -1,6 +1,7 @@
 import { UPDATESTATE } from "../types/emailTypes";
 import emailjs from 'emailjs-com'
 import {toast} from 'react-toastify'
+import axios from "axios";
 
 export const updateState = (state) => {
   return {
@@ -21,7 +22,7 @@ export const sendEmail = (e) => (dispatch) => {
         'user_JzbFquvGQOfWi32hHD37D'
     )
     .then((res) => {
-      dispatch(updateState({toast: true, isOpen: false}))
+      // dispatch(updateState({toast: true, isOpen: false}))
       setTimeout(() => {
         dispatch(updateState({toast: false, message: '', phone: '', name: ''}))
       }, 5000)
@@ -45,10 +46,31 @@ export const sendEmail2 = (e) => (dispatch) => {
         'user_JzbFquvGQOfWi32hHD37D'
     )
     .then((res) => {
-      dispatch(updateState({toast: true, isOpen: false}))
+      // dispatch(updateState({toast: true, isOpen: false}))
       setTimeout(() => {
         // dispatch(updateState({toast: false, message: '', phone: '', name: ''}))
         document.location.reload(true);
+      }, 5000)
+    })
+    .catch((err) => {
+      toast.error('Ошибка! Проверьте подключение к интернету')
+    })
+    .finally(() => {
+      dispatch(updateState({load: false}))
+    })
+}
+
+export const sendEmail3 = (e, name, number, message) => (dispatch) => {
+  dispatch(updateState({load: true}))
+  e.preventDefault()
+
+    axios.post('https://kokoagency.uz/manager', {name, number, message})
+    .then((res) => {
+      console.log(res);
+      // dispatch(updateState({toast: true, isOpen: false}))
+      setTimeout(() => {
+        // dispatch(updateState({toast: false, message: '', phone: '', name: ''}))
+        // document.location.reload(true);
       }, 5000)
     })
     .catch((err) => {

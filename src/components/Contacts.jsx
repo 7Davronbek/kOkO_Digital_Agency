@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react'
 import Aos from 'aos';
 import { useLocation } from 'react-router-dom'
 import { connect } from 'react-redux';
-import { sendEmail, sendEmail2 } from '../redux/actions/emailAction'
+import { sendEmail, sendEmail2, sendEmail3 } from '../redux/actions/emailAction'
+import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const Contacts = (props) => {
 
@@ -13,6 +15,11 @@ const Contacts = (props) => {
 
     const [hover1, setHover1] = useState(false)
     const [hover2, setHover2] = useState(false)
+
+    const [name, setName] = useState('')
+    const [number, setNumber] = useState('')
+    const [message, setMessage] = useState('')
+    console.log(name, number, message);
 
     const handleHover1 = () => {
         setHover1(true)
@@ -38,6 +45,23 @@ const Contacts = (props) => {
         })
     }, [])
 
+    const sendForm = (e) => {
+        e.preventDefault()
+
+        axios.post('https://kokoagency.uz/manager', { name, number, message })
+            .then((res) => {
+                console.log(res);
+                // dispatch(updateState({toast: true, isOpen: false}))
+                setTimeout(() => {
+                    // dispatch(updateState({toast: false, message: '', phone: '', name: ''}))
+                    // document.location.reload(true);
+                }, 5000)
+            })
+            .catch((err) => {
+                toast.error('Ошибка! Проверьте подключение к интернету')
+            })
+    }
+
     return (
         <div className='contacts'>
             <div className="form position-relative">
@@ -62,7 +86,7 @@ const Contacts = (props) => {
                                     <h4>Всё еще остались у вас вопросы?</h4>
                                     <p>Оставьте заявку и получите ответы!</p>
 
-                                    <form onSubmit={props.sendEmail2}>
+                                    <form onSubmit={sendForm}>
 
                                         <div className="row">
                                             <div className="col-md-6 mb-5">
@@ -73,6 +97,8 @@ const Contacts = (props) => {
                                                         className='form-control'
                                                         name='name'
                                                         required
+                                                        value={name}
+                                                        onChange={(e) => setName(e.target.value)}
                                                     />
                                                     <h6 className={`${form ? 'active' : ''}`}>Имя*</h6>
                                                 </div>
@@ -83,8 +109,10 @@ const Contacts = (props) => {
                                                         onClick={() => setForm1(true)}
                                                         type="text"
                                                         className='form-control'
-                                                        name='phone'
+                                                        name='phone_number'
                                                         required
+                                                        value={number}
+                                                        onChange={(e) => setNumber(e.target.value)}
                                                     />
                                                     <h6 className={`${form1 ? 'active' : ''}`}>Номер телефона*</h6>
                                                 </div>
@@ -97,13 +125,15 @@ const Contacts = (props) => {
                                                         className='form-control'
                                                         name='message'
                                                         required
+                                                        value={message}
+                                                        onChange={(e) => setMessage(e.target.value)}
                                                     />
                                                     <h6 className={`last ${form3 ? 'actives' : ''}`}>Сообщение*</h6>
                                                 </div>
                                             </div>
 
                                             <div className="col-12">
-                                                <button type='submit' className="btn myBtn d-block ml-auto">{props.load ? <span className="spinner-border spinner-border-sm"/> : ""} Оставить заявку</button>
+                                                <button type='submit' className="btn myBtn d-block ml-auto">{props.load ? <span className="spinner-border spinner-border-sm" /> : ""} Оставить заявку</button>
                                             </div>
                                         </div>
 
@@ -154,4 +184,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps, { sendEmail, sendEmail2 })(Contacts)
+export default connect(mapStateToProps, { sendEmail, sendEmail2, sendEmail3 })(Contacts)
