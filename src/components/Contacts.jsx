@@ -17,9 +17,8 @@ const Contacts = (props) => {
     const [hover2, setHover2] = useState(false)
 
     const [name, setName] = useState('')
-    const [number, setNumber] = useState('')
+    const [phone_number, setPhoneNumber] = useState('')
     const [message, setMessage] = useState('')
-    console.log(name, number, message);
 
     const handleHover1 = () => {
         setHover1(true)
@@ -48,14 +47,12 @@ const Contacts = (props) => {
     const sendForm = (e) => {
         e.preventDefault()
 
-        axios.post('https://kokoagency.uz/manager', { name, number, message })
+        axios.post('https://kokoagency.uz/manager', { name, phone_number, message })
             .then((res) => {
-                console.log(res);
-                // dispatch(updateState({toast: true, isOpen: false}))
-                setTimeout(() => {
-                    // dispatch(updateState({toast: false, message: '', phone: '', name: ''}))
-                    // document.location.reload(true);
-                }, 5000)
+                toast.success('Success')
+                setName('')
+                setPhoneNumber('')
+                setMessage('')
             })
             .catch((err) => {
                 toast.error('Ошибка! Проверьте подключение к интернету')
@@ -111,8 +108,8 @@ const Contacts = (props) => {
                                                         className='form-control'
                                                         name='phone_number'
                                                         required
-                                                        value={number}
-                                                        onChange={(e) => setNumber(e.target.value)}
+                                                        value={phone_number}
+                                                        onChange={(e) => setPhoneNumber(e.target.value)}
                                                     />
                                                     <h6 className={`${form1 ? 'active' : ''}`}>Номер телефона*</h6>
                                                 </div>
