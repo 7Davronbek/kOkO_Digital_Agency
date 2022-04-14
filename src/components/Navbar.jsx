@@ -42,6 +42,7 @@ const Navbar = () => {
                             <div className="burger2"></div>
                             <div className="burger3"></div>
                         </div>
+
                         
             {/* 
 <div className="col-lg-10">

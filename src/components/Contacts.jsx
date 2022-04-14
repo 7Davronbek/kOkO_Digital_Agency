@@ -47,7 +47,7 @@ const Contacts = (props) => {
     const sendForm = (e) => {
         e.preventDefault()
 
-        axios.post('https://kokoagency.uz/manager', { name, phone_number, message })
+        axios.post('https://koko-manager.herokuapp.com/api/', { name, phone_number, message })
             .then((res) => {
                 toast.success('Success')
                 setName('')
