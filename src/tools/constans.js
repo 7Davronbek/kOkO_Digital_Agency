@@ -1,1 +1,1 @@
-export const LANGUAGE = "app-koko-language"
+export const LANGUAGE = "app-koko-language";
