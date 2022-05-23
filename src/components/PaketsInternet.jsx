@@ -84,7 +84,7 @@ const PaketsInternet = () => {
                                     </div>
                                 </Row>
                             </TabPane>
-                            <TabPane tabId="2" className='   '>
+                            <TabPane tabId="2" className=''>
                                 <Row className='myRow'>
                                     <div data-aos='fade-right' className=" col-lg-8 col-12 mb-2 px-2">
                                         <div className="card">
@@ -157,10 +157,10 @@ const PaketsInternet = () => {
                                                 <p className="mt-3">Работа с блоггерами   от 1.000.000 сум</p>
                                                 <p className="mt-3">Организация фото и видео съёмок   от 1.000.000 сум</p>
                                                 <p className="mt-3">Создание  бренда (логобук, брендбук)    от 700.000</p>
-                                                <p className="mt-3">Настройка таргетированной рекламы      от 500.000 сум</p>
-                                                <p className="mt-3">Настройка контекстной рекламы     от  500.000 сум</p>
-                                                <p className="mt-3">Разработка контент плана на 1 месяц     от  300.000 сум</p>
-                                                <p className="mt-3">Анализ компании и ее конкурентов    от  500.000 сум</p>
+                                                <p className="mt-3">Настройка таргетированной рекламы      от 500.000 сум(по соглашению)</p>
+                                                <p className="mt-3">Настройка контекстной рекламы     от  500.000 сум(по соглашению)</p>
+                                                <p className="mt-3">Разработка контент плана на 1 месяц     от  300.000 сум(по соглашению)</p>
+                                                <p className="mt-3">Анализ компании и ее конкурентов    от  500.000 сум(по соглашению)</p>
                                             </div>
                                         </div>
                                     </div>
