@@ -3,6 +3,8 @@ import Helmet from 'react-helmet'
 import { RingLoader } from 'react-spinners'
 import MobileConsist from '../components/MobileConsist'
 import MobileHeader from '../components/MobileHeader'
+import Support from '../components/Support'
+import WebDepends from '../components/WebDepends'
 
 const MobileDevelopment = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -57,6 +59,9 @@ const MobileDevelopment = () => {
             </div>
             <MobileHeader />
             <MobileConsist />
+            <Support />
+
+            <WebDepends />
         </>
     )
 }
