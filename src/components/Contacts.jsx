@@ -34,7 +34,6 @@ const Contacts = (props) => {
         }, 8000)
     }
 
-
     const location = useLocation()
 
     useEffect(() => {
