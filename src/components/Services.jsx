@@ -24,6 +24,15 @@ const Services = () => {
                     <div className="d-flex align-items-center flex-lg-nowrap flex-wrap">
 
                         <div className="card">
+                            <Link to='/mobile-development'>
+                                <div data-aos='fade-left' className="card-body position-relative">
+                                    <i className='w-100'> <LazyLoadImage effect='blur' width='100%' height='100%' src="/assets/image/app/4.jpg" alt="" className="w-100" /></i>
+                                    <h5>Mobile Services</h5>
+                                </div>
+                            </Link>
+                        </div>
+
+                        <div className="card">
                             <Link to='/internet-marketing'>
                                 <div data-aos='fade-right' className="card-body position-relative">
                                     <i className='w-100'> <LazyLoadImage effect='blur' width='100%' height='100%' src="/assets/image/card1.png" alt="" className="w-100" /></i>
@@ -34,7 +43,7 @@ const Services = () => {
 
                         <div className="card">
                             <Link to='/web-development'>
-                                <div  data-aos='fade-up' className="card-body position-relative">
+                                <div data-aos='fade-up' className="card-body position-relative">
                                     <i className='w-100'> <LazyLoadImage effect='blur' width='100%' height='100%' src="/assets/image/card2.png" alt="" className="w-100" /></i>
                                     <h5>Web services</h5>
                                 </div>
@@ -60,7 +69,7 @@ const Services = () => {
                         </div>
 
 
-                    
+
                     </div>
                 </div>
             </div>

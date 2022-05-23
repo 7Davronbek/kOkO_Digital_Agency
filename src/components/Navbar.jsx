@@ -43,9 +43,9 @@ const Navbar = () => {
                             <div className="burger3"></div>
                         </div>
 
-                        
-            {/* 
-<div className="col-lg-10">
+
+                        {/* 
+                            <div className="col-lg-10">
                             <ul className='d-flex align-items-center justify-content-between'>
                                 <li><a href="#">Главная</a></li>
                                 <li><a href="#">О нас</a></li>
@@ -72,6 +72,7 @@ const Navbar = () => {
                                             <i className='ml-2'><i className={`icon icon-up ${localStorage.getItem('theme') === 'white' ? 'black' : ''}`}></i></i>
                                             <div className="servicesDiv position-absolute">
                                                 <div className="myLi"><Link onClick={() => setBurger(false)} className={`${location.pathname === 'web-development' ? 'navlinkActive' : ''}`} to='/web-development'>Разработка сайтов</Link></div>
+                                                <div className="myLi"><Link onClick={() => setBurger(false)} to='/internet-marketing'>Мобил</Link></div>
                                                 <div className="myLi"><Link onClick={() => setBurger(false)} to='/internet-marketing'>Интернет маркетинг</Link></div>
                                                 <div className="myLi"><Link onClick={() => setBurger(false)} to='/design'>Дизайн</Link></div>
                                                 <div className="myLi "><Link onClick={() => setBurger(false)} to='/motion'>Моушн</Link></div>
