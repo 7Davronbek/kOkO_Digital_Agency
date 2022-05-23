@@ -48,6 +48,54 @@ const Portfolio = () => {
                             </a>
                         </div>
 
+
+                        <div data-aos='fade-right' className=" col-lg-4 p-0 col-md-6 ">
+                            <a target='_blank' rel="noreferrer" href="https://www.instagram.com/nls_arenda.uz/">
+                                <div style={{ height: '377px' }} className="card">
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/22.jpg" className='w-100 ' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM NLS 
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-aos='fade-up' className=" col-lg-4 p-0 col-md-6 ">
+                            <a target='_blank' rel="noreferrer" href="https://www.instagram.com/ilpatio_tashkent/">
+                                <div className="card h-100">
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/23.jpg" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM IL Patio
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-aos='fade-left' className=" col-lg-4 p-0 col-md-6 ">
+                            <a target='_blank' rel="noreferrer" href="https://www.instagram.com/midea.brand.uz/">
+                                <div className="card">
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/24.jpg" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM Midea 
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+
                         <div data-aos='fade-right' className=" col-lg-4 p-0 col-md-6 ">
                             <a target='_blank' rel="noreferrer" href="https://instagram.com/ilpatio_tashkent?utm_medium=copy_link">
                                 <div style={{ height: '377px' }} className="card">
@@ -92,6 +140,55 @@ const Portfolio = () => {
                                 </div>
                             </a>
                         </div>
+
+
+
+                        <div data-aos='fade-right' className=" col-lg-4 p-0 col-md-6 ">
+                            <a target='_blank' rel="noreferrer" href="https://www.instagram.com/midea.brand.uz/">
+                                <div style={{ height: '377px' }} className="card">
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/25.jpg" className='w-100 ' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM Midea 
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-aos='fade-up' className=" col-lg-4 p-0 col-md-6 ">
+                            <a target='_blank' rel="noreferrer" href="https://www.instagram.com/nls_arenda.uz/">
+                                <div className="card h-100">
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/26.jpg" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM NLS 
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-aos='fade-left' className=" col-lg-4 p-0 col-md-6 ">
+                            <a target='_blank' rel="noreferrer" href="https://www.instagram.com/ilpatio_tashkent/">
+                                <div className="card">
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/27.jpg" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM Midea Brand
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
 
                         <div data-aos='fade-right' className=" col-lg-4 p-0 col-md-6 ">
                             <a target='_blank' rel="noreferrer" href="https://www.instagram.com/biostep.organica/">
