@@ -37,6 +37,7 @@ import Up from "./components/Up";
 import Theme from "./components/Theme";
 import ThreeD from "./pages/ThreeD";
 import BotDevelopment from "./pages/BotDevelopment";
+import MobileDevelopment from "./pages/MobileDevelopment";
 
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
@@ -62,6 +63,7 @@ ReactDOM.render(
           <Route path="/about-us" exact component={AboutUs} />
           <Route path="/contacts" exact component={ContactsPage} />
           <Route path="/web-development" exact component={WebDevelopment} />
+          <Route path="/mobile-development" exact component={MobileDevelopment} />
           <Route
             path="/internet-marketing"
             exact
