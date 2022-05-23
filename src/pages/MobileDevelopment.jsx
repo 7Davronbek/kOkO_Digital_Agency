@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import Helmet from 'react-helmet'
 import { RingLoader } from 'react-spinners'
+import MobileConsist from '../components/MobileConsist'
 import MobileHeader from '../components/MobileHeader'
 
 const MobileDevelopment = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [load, setLoad] = useState(false);
-  
+
     useEffect(() => {
-      setTimeout(() => {
-        setIsLoading(false);
-        setLoad(true);
-      }, 1800);
+        setTimeout(() => {
+            setIsLoading(false);
+            setLoad(true);
+        }, 1800);
     }, []);
     return (
         <>
@@ -35,7 +36,7 @@ const MobileDevelopment = () => {
                         <div className="col-12 text-center">
                             {load ? (
                                 <>
-                                    <h1 data-aos='fade-right'>Mobile developing</h1>
+                                    <h1 data-aos='fade-right'>App developing</h1>
 
                                     <a
                                         href="https://t.me/kOkOdigital"
@@ -55,6 +56,7 @@ const MobileDevelopment = () => {
                 </div>
             </div>
             <MobileHeader />
+            <MobileConsist />
         </>
     )
 }
