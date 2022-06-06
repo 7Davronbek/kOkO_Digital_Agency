@@ -34,6 +34,23 @@ const Portfolio = () => {
                         </div>
 
                         <div data-aos='fade-left' className="col-lg-6 p-0 col-md-6 ">
+                            <a target='_blank' rel="noreferrer" href="https://www.instagram.com/hayotwater.uz/">
+                                <div className="card h-100">
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/portfolio1.jpg" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM Hayotwater
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+
+                        <div data-aos='fade-right' className=" col-lg-4 p-0 col-md-6 ">
                             <a target='_blank' rel="noreferrer" href="https://www.instagram.com/ksil.uz/">
                                 <div className="card h-100">
                                     <div className="card-header">
@@ -42,6 +59,82 @@ const Portfolio = () => {
                                     <div className="card-body">
                                         <h5>
                                             SMM KSIL UZ
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-aos='fade-up' className=" col-lg-4 p-0 col-md-6 ">
+                            <a target='_blank' rel="noreferrer" href="https://www.instagram.com/moneybek.uz/">
+                                <div className="card h-100">
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/portfolio2.jpg" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM MoneyBek
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-aos='fade-left' className=" col-lg-4 p-0 col-md-6 ">
+                            <a target='_blank' rel="noreferrer" href="https://www.instagram.com/uzbek_invest_assistance/">
+                                <div className="card">
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/portfolio3.jpg" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM Uzbekinvest Assistance
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div data-aos='fade-right' className=" col-lg-4 p-0 col-md-6 ">
+                            <a target='_blank' rel="noreferrer" href="https://www.instagram.com/chinorkent_uz/">
+                                <div className="card h-100">
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/portfolio7.jpg" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM Chinorkent
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-aos='fade-up' className=" col-lg-4 p-0 col-md-6 ">
+                            <a target='_blank' rel="noreferrer" href="https://www.instagram.com/hayotwater.uz/">
+                                <div className="card h-100">
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/portfolio8.jpg" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM Hayotwater
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-aos='fade-left' className=" col-lg-4 p-0 col-md-6 ">
+                            <a target='_blank' rel="noreferrer" href="https://www.instagram.com/chinorkent_uz/">
+                                <div className="card">
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/portfolio9.jpg" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM Chinorkent
                                         </h5>
                                     </div>
                                 </div>
@@ -57,7 +150,7 @@ const Portfolio = () => {
                                     </div>
                                     <div className="card-body">
                                         <h5>
-                                            SMM NLS 
+                                            SMM NLS
                                         </h5>
                                     </div>
                                 </div>
@@ -87,7 +180,53 @@ const Portfolio = () => {
                                     </div>
                                     <div className="card-body">
                                         <h5>
-                                            SMM Midea 
+                                            SMM Midea
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div data-aos='fade-right' className=" col-lg-4 p-0 col-md-6 ">
+                            <a target='_blank' rel="noreferrer" href="https://www.instagram.com/dastyor.uz/">
+                                <div className="card h-100">
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/portfolio4.jpg" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM Dastyor UZ
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-aos='fade-up' className=" col-lg-4 p-0 col-md-6 ">
+                            <a target='_blank' rel="noreferrer" href="https://www.instagram.com/uzbek_invest_assistance/">
+                                <div className="card h-100">
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/portfolio5.jpg" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM Uzbekinvest Assistance
+                                        </h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-aos='fade-left' className=" col-lg-4 p-0 col-md-6 ">
+                            <a target='_blank' rel="noreferrer" href="https://www.instagram.com/chinorkent_uz/">
+                                <div className="card">
+                                    <div className="card-header">
+                                        <img src="/assets/image/portfolio/portfolio6.jpg" className='w-100' alt="" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h5>
+                                            SMM Chinorkent
                                         </h5>
                                     </div>
                                 </div>
@@ -151,7 +290,7 @@ const Portfolio = () => {
                                     </div>
                                     <div className="card-body">
                                         <h5>
-                                            SMM Midea 
+                                            SMM Midea
                                         </h5>
                                     </div>
                                 </div>
@@ -166,7 +305,7 @@ const Portfolio = () => {
                                     </div>
                                     <div className="card-body">
                                         <h5>
-                                            SMM NLS 
+                                            SMM NLS
                                         </h5>
                                     </div>
                                 </div>

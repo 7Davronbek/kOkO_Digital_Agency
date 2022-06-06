@@ -71,7 +71,7 @@ const Navbar = () => {
                                             Услуги
                                             <i className='ml-2'><i className={`icon icon-up ${localStorage.getItem('theme') === 'white' ? 'black' : ''}`}></i></i>
                                             <div className="servicesDiv position-absolute">
-                                                <div className="myLi"><Link onClick={() => setBurger(false)} to='/mobile-development'>Разработка приложенний</Link></div>
+                                                <div className="myLi"><Link onClick={() => setBurger(false)} to='/mobile-development'>Разработка приложений</Link></div>
                                                 <div className="myLi"><Link onClick={() => setBurger(false)} className={`${location.pathname === 'web-development' ? 'navlinkActive' : ''}`} to='/web-development'>Разработка сайтов</Link></div>
                                                 <div className="myLi"><Link onClick={() => setBurger(false)} to='/internet-marketing'>Интернет маркетинг</Link></div>
                                                 <div className="myLi"><Link onClick={() => setBurger(false)} to='/design'>Дизайн</Link></div>
