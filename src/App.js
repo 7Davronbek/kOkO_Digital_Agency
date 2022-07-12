@@ -33,7 +33,7 @@ const App = (props) => {
     <div className={`${props.white ? "themeActive" : ""}`}>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>kOkO Agency uz | Tashkent | KOKO | koko</title>
+        <title>kOkO Digital Agency uz | Tashkent | kOkO</title>
         <link rel="canonical" href="https://www.kokoagency.uz/" />
       </Helmet>
 

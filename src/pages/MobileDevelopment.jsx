@@ -21,7 +21,7 @@ const MobileDevelopment = () => {
 
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>kOkO Agency | Web Development | Tashkent | KOKO | koko</title>
+                <title>kOkO Digital Agency uz | Tashkent | kOkO</title>
                 <link rel="canonical" href="https://www.kokoagency.uz/" />
             </Helmet>
             {isLoading ? (

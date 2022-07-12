@@ -31,7 +31,7 @@ const Design = (props) => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>kOkO Agency | Design | Tashkent | KOKO | koko</title>
+        <title>kOkO Digital Agency uz | Design | Tashkent | kOkO</title>
         <link rel="canonical" href="https://www.kokoagency.uz/" />
       </Helmet>
 

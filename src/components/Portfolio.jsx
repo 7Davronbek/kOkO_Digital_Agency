@@ -320,7 +320,7 @@ const Portfolio = () => {
                                     </div>
                                     <div className="card-body">
                                         <h5>
-                                            SMM Midea Brand
+                                            SMM IL Патио
                                         </h5>
                                     </div>
                                 </div>
