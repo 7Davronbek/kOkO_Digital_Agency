@@ -35,9 +35,13 @@ const Footer2 = (props) => {
                         </div>
 
                         <div className="col-lg-3 d-flex align-items-center mx-auto social" >
-                            <a target='_blank' rel="noreferrer" href="https://www.instagram.com/kokoagency.uz/" className=' cursor'><img src="/assets/icon/ins.svg" alt="" /></a>
+                            <a target='_blank' rel="noreferrer"
+                                // href="https://www.instagram.com/kokoagency.uz/"
+                                className=' cursor'><img src="/assets/icon/ins.svg" alt="" /></a>
                             <a target='_blank' rel="noreferrer" href="https://t.me/kOkOdigital/" className='cursor'><img src="/assets/icon/tg.svg" alt="" /></a>
-                            <a target='_blank' rel="noreferrer" href="https://www.facebook.com/kokoagency.uz/?ref=pages_you_manage" className='cursor'><img src="/assets/image/facebook.png" alt="" /></a>
+                            <a target='_blank' rel="noreferrer"
+                                // href="https://www.facebook.com/kokoagency.uz/?ref=pages_you_manage"
+                                className='cursor'><img src="/assets/image/facebook.png" alt="" /></a>
                         </div>
 
                         <div className="col-lg-4">
@@ -46,6 +50,7 @@ const Footer2 = (props) => {
                             </a>
                             <a className="d-flex mt-2 align-items-center justify-content-center" href="tel: +998908232838">Контакты:</a>
                             <a className="d-flex  align-items-center justify-content-center" href="tel: +998908232838"> +998 90 823 28 38</a>
+                            <a className="d-flex  align-items-center justify-content-center" href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@kokoagency.uz">info@kokoagency.uz</a>
                         </div>
 
                     </div>
