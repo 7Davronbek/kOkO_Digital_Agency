@@ -8,7 +8,7 @@ const DesignPortfolio = () => {
                 <div className="row justify-content-center">
                     <div className="col-lg-6">
                         <div className="cards" data-aos='fade-right'>
-                            <Link to="./AAA"><img className='w-100' src="/assets/image/desingPortfolio/alpa1.jpg" alt="" /></Link>
+                            <Link to="/alpamis-design"><img className='w-100' src="/assets/image/desingPortfolio/alpa1.jpg" alt="" /></Link>
                         </div>
                     </div>
                     <div className="col-lg-6">

@@ -87,7 +87,7 @@ body {
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 9999;
+        z-index: 999;
         transition: all 0.9s linear;
         backdrop-filter: blur(15px);
         -webkit-backdrop-filter: blur(15px);
@@ -1629,6 +1629,27 @@ body {
                 }
             }
         }
+    }
+
+    .desing1 {
+        padding: 50px 0;
+    }
+
+    .fancybox__thumbs {
+        display: none;
+    }
+
+    .carousel__button  {
+
+        &:focus {
+            // border-color: #6f73ee;
+            box-shadow: none;
+            box-shadow: 0 0 0 1px #fff, 0 0 0 2px #6f73ee;
+        }
+    }
+
+    .fancybox__progress {
+        background-color: #6f73ee !important;
     }
 
     .botDevelopment {
