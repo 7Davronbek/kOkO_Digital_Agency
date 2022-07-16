@@ -38,8 +38,8 @@ import Theme from "./components/Theme";
 import ThreeD from "./pages/ThreeD";
 import BotDevelopment from "./pages/BotDevelopment";
 import MobileDevelopment from "./pages/MobileDevelopment";
-import DesignPortfolio from "./components/DesignPortfolio";
-import AAA from "./components/AAA";
+// import DesignPortfolio from "./components/DesignPortfolio";
+// import AAA from "./components/AAA";
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
