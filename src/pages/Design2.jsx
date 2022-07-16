@@ -14,59 +14,36 @@ const Desing2 = () => {
                     </div>
                     <div className="col-lg-4">
                         <div className="cards">
-                            <a href="/assets/image/desingPortfolio/ayron1.jpg" data-fancybox="gallery" >
-                                <img alt='kOkO' src="/assets/image/desingPortfolio/ayron1.jpg" className='w-100 ' />
+                            <a href="/assets/image/desingPortfolio/ayran1.jpg" data-fancybox="gallery" >
+                                <img alt='kOkO' src="/assets/image/desingPortfolio/ayran1.jpg" className='w-100 ' />
                             </a>
                         </div>
                     </div>
 
                     <div className="col-lg-4">
                         <div className="cards">
-                            <a href="/assets/image/desingPortfolio/alpa2.jpg" data-fancybox="gallery" >
-                                <img alt='kOkO' src="/assets/image/desingPortfolio/alpa2.jpg" className='w-100 ' />
+                            <a href="/assets/image/desingPortfolio/ayran2.jpg" data-fancybox="gallery" >
+                                <img alt='kOkO' src="/assets/image/desingPortfolio/ayran2.jpg" className='w-100 ' />
                             </a>
                         </div>
                     </div>
 
                     <div className="col-lg-4">
                         <div className="cards">
-                            <a href="/assets/image/desingPortfolio/alpa3.png" data-fancybox="gallery" >
-                                <img alt='kOkO' src="/assets/image/desingPortfolio/alpa3.png" className='w-100 ' />
+                            <a href="/assets/image/desingPortfolio/ayran3.jpg" data-fancybox="gallery" >
+                                <img alt='kOkO' src="/assets/image/desingPortfolio/ayran3.jpg" className='w-100 ' />
                             </a>
                         </div>
                     </div>
 
                     <div className="col-lg-4">
                         <div className="cards">
-                            <a href="/assets/image/desingPortfolio/alpa4.jpg" data-fancybox="gallery" >
-                                <img alt='kOkO' src="/assets/image/desingPortfolio/alpa4.jpg" className='w-100 ' />
+                            <a href="/assets/image/desingPortfolio/ayran4.jpg" data-fancybox="gallery" >
+                                <img alt='kOkO' src="/assets/image/desingPortfolio/ayran4.jpg" className='w-100 ' />
                             </a>
                         </div>
                     </div>
 
-                    <div className="col-lg-4">
-                        <div className="cards">
-                            <a href="/assets/image/desingPortfolio/alpa5.jpg" data-fancybox="gallery" >
-                                <img alt='kOkO' src="/assets/image/desingPortfolio/alpa5.jpg" className='w-100 ' />
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-4">
-                        <div className="cards">
-                            <a href="/assets/image/desingPortfolio/alpa6.jpg" data-fancybox="gallery" >
-                                <img alt='kOkO' src="/assets/image/desingPortfolio/alpa6.jpg" className='w-100 ' />
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-4">
-                        <div className="cards">
-                            <a href="/assets/image/desingPortfolio/alpa7.jpg" data-fancybox="gallery" >
-                                <img alt='kOkO' src="/assets/image/desingPortfolio/alpa7.jpg" className='w-100 ' />
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

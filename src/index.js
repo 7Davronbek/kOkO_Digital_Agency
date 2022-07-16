@@ -40,6 +40,9 @@ import BotDevelopment from "./pages/BotDevelopment";
 import MobileDevelopment from "./pages/MobileDevelopment";
 import Desing1 from "./pages/Desing1";
 import Desing2 from "./pages/Design2";
+import Desing3 from "./pages/Desing3";
+import Desing4 from "./pages/Desing4";
+import Desing5 from "./pages/Desing5";
 // import DesignPortfolio from "./components/DesignPortfolio";
 // import AAA from "./components/AAA";
 
@@ -80,13 +83,15 @@ ReactDOM.render(
 
           <Route path="/alpamis-design" exact component={Desing1} />
           <Route path="/ayran-design" exact component={Desing2} />
+          <Route path="/bio-design" exact component={Desing3} />
+          <Route path="/centra-design" exact component={Desing4} />
+          <Route path="/chaqqon-design" exact component={Desing5} />
 
           <Route path="/motion" exact component={Moushen} />
           <Route path="/motion-3d" exact component={ThreeD} />
           <Route path="/bot-development" exact component={BotDevelopment} />
           {/* <Route path="/design-portfolio" exact component={DesignPortfolio} /> */}
           {/* <Route path="/AAA" exact component={AAA} /> */}
-          
         </Switch>
 
         <Phone />
