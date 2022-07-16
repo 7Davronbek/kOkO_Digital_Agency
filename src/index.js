@@ -43,6 +43,8 @@ import Desing2 from "./pages/Design2";
 import Desing3 from "./pages/Desing3";
 import Desing4 from "./pages/Desing4";
 import Desing5 from "./pages/Desing5";
+import Desing6 from "./pages/Desing6";
+import Desing7 from "./pages/Desing7";
 // import DesignPortfolio from "./components/DesignPortfolio";
 // import AAA from "./components/AAA";
 
@@ -86,6 +88,8 @@ ReactDOM.render(
           <Route path="/bio-design" exact component={Desing3} />
           <Route path="/centra-design" exact component={Desing4} />
           <Route path="/chaqqon-design" exact component={Desing5} />
+          <Route path="/kulcha-design" exact component={Desing6} />
+          <Route path="/texno-design" exact component={Desing7} />
 
           <Route path="/motion" exact component={Moushen} />
           <Route path="/motion-3d" exact component={ThreeD} />

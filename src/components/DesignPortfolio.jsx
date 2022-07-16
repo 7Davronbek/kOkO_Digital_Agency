@@ -36,12 +36,12 @@ const DesignPortfolio = () => {
                     </div>
                     <div className="col-lg-6">
                         <div className="cards" data-aos='fade-left'>
-                            <Link to="./AAA"><img className='w-100' src="/assets/image/desingPortfolio/kulcha1.jpg" alt="" /></Link>
+                            <Link to="/kulcha-design"><img className='w-100' src="/assets/image/desingPortfolio/kulcha1.jpg" alt="" /></Link>
                         </div>
                     </div>
                     <div className="col-lg-6">
                         <div className="cards" data-aos='fade-right'>
-                            <Link to="./AAA"><img className='w-100' src="/assets/image/desingPortfolio/texno1.jpg" alt="" /></Link>
+                            <Link to="/texno-design"><img className='w-100' src="/assets/image/desingPortfolio/texno1.jpg" alt="" /></Link>
                         </div>
                     </div>
                 </div>
