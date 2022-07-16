@@ -38,6 +38,8 @@ import Theme from "./components/Theme";
 import ThreeD from "./pages/ThreeD";
 import BotDevelopment from "./pages/BotDevelopment";
 import MobileDevelopment from "./pages/MobileDevelopment";
+import DesignPortfolio from "./components/DesignPortfolio";
+import AAA from "./components/AAA";
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
@@ -76,6 +78,9 @@ ReactDOM.render(
           <Route path="/motion" exact component={Moushen} />
           <Route path="/motion-3d" exact component={ThreeD} />
           <Route path="/bot-development" exact component={BotDevelopment} />
+          {/* <Route path="/design-portfolio" exact component={DesignPortfolio} /> */}
+          {/* <Route path="/AAA" exact component={AAA} /> */}
+          
         </Switch>
 
         <Phone />

@@ -10,6 +10,7 @@ import DesignDepends from '../components/DesignDepends';
 import { connect } from "react-redux";
 import { updateState } from '../redux/actions/emailAction'
 import { Helmet } from 'react-helmet';
+import DesignPortfolio from '../components/DesignPortfolio';
 
 const Design = (props) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -73,7 +74,7 @@ const Design = (props) => {
       <DesignConsist />
 
       {/* <WhyWe /> */}
-
+      <DesignPortfolio />
       <Support />
 
       <DesignDepends />
