@@ -45,6 +45,14 @@ $colorWhite: #fff;
       }
     }
   
+    &.icon-back {
+      mask-image: url("../image/back.png");
+      -webkit-mask-image: url("../image/back.png");
+      width: 25px;
+      height: 25px;
+      background-color: #fff;
+    }
+  
     &.icon-comp3 {
       mask-image: url("../image/comp3.png");
       -webkit-mask-image: url("../image/comp3.png");

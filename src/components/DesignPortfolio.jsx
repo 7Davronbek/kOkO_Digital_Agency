@@ -13,7 +13,7 @@ const DesignPortfolio = () => {
                     </div>
                     <div className="col-lg-6">
                         <div className="cards" data-aos='fade-left'>
-                            <Link to="./AAA"><img className='w-100' src="/assets/image/desingPortfolio/ayran1.jpg" alt="" /></Link>
+                            <Link to="/ayran-design"><img className='w-100' src="/assets/image/desingPortfolio/ayran1.jpg" alt="" /></Link>
                         </div>
                     </div>
                     <div className="col-lg-6">

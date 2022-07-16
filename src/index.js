@@ -39,6 +39,7 @@ import ThreeD from "./pages/ThreeD";
 import BotDevelopment from "./pages/BotDevelopment";
 import MobileDevelopment from "./pages/MobileDevelopment";
 import Desing1 from "./pages/Desing1";
+import Desing2 from "./pages/Design2";
 // import DesignPortfolio from "./components/DesignPortfolio";
 // import AAA from "./components/AAA";
 
@@ -78,6 +79,7 @@ ReactDOM.render(
           <Route path="/design" exact component={Design} />
 
           <Route path="/alpamis-design" exact component={Desing1} />
+          <Route path="/ayran-design" exact component={Desing2} />
 
           <Route path="/motion" exact component={Moushen} />
           <Route path="/motion-3d" exact component={ThreeD} />
